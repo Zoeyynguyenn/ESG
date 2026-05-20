@@ -1,0 +1,62 @@
+﻿version: "1.0"
+project:
+  id: "ai-trend-radar"
+  name: "AI Trend Radar"
+  root_path: "E:/Documents/projects/ai-trend-radar"
+  type: "web-api-monorepo"
+  default_branch: "main"
+  language: ["typescript"]
+
+workflow:
+  docs_language: "vi"
+  planning_mode: "project-local"
+  planning_path: ".planning"
+  required_gates:
+    - phase_transition
+    - test_strategy_approval
+    - deploy_go_no_go
+
+context:
+  entrypoints:
+    readme: "README.md"
+    architecture: "docs/architecture/overview.md"
+    requirements: "docs/product/requirements.md"
+    api_contract: "docs/api/contracts.md"
+  optional_paths:
+    - "docs/tasks"
+    - "docs/test-reports"
+    - "docs/deployment"
+  ignore_paths:
+    - "node_modules"
+    - "dist"
+    - ".next"
+
+commands:
+  install: "pnpm install"
+  build: "pnpm build"
+  typecheck: "pnpm typecheck"
+  test_unit: "pnpm test"
+  test_e2e: "pnpm test:e2e"
+  test_api: "pnpm test:e2e:api"
+  dev_web: "pnpm dev:web"
+  dev_api: "pnpm dev:api"
+  deploy_check: "pnpm test && pnpm build"
+  deploy: ""
+
+deployment:
+  provider: "railway+vercel"
+  environments: ["local", "staging", "production"]
+  healthcheck:
+    path: "/api/health"
+    required: true
+  rollback:
+    required: true
+    runbook_path: "docs/deployment/README.md"
+
+security:
+  secrets_policy: "never_commit"
+  required_env:
+    - "DATABASE_URL"
+    - "NEXT_PUBLIC_API_URL"
+  forbidden_files:
+    - ".env"

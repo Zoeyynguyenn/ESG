@@ -1,0 +1,53 @@
+﻿version: "1.0"
+project:
+  id: "ai-price"
+  name: "AI Price"
+  root_path: "E:/Documents/projects/ai-price"
+  type: ""
+  default_branch: "main"
+  language: []
+
+workflow:
+  docs_language: "vi"
+  planning_mode: "project-local"
+  planning_path: ".planning"
+  required_gates:
+    - phase_transition
+    - test_strategy_approval
+    - deploy_go_no_go
+
+context:
+  entrypoints:
+    readme: "README.md"
+  optional_paths: []
+  ignore_paths:
+    - "node_modules"
+    - "dist"
+
+commands:
+  install: ""
+  build: ""
+  typecheck: ""
+  test_unit: ""
+  test_e2e: ""
+  test_api: ""
+  dev_web: ""
+  dev_api: ""
+  deploy_check: ""
+  deploy: ""
+
+deployment:
+  provider: ""
+  environments: ["local", "staging", "production"]
+  healthcheck:
+    path: ""
+    required: false
+  rollback:
+    required: false
+    runbook_path: ""
+
+security:
+  secrets_policy: "never_commit"
+  required_env: []
+  forbidden_files:
+    - ".env"

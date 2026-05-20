@@ -1,0 +1,10 @@
+﻿workflow_root: "{{WORKFLOW_ROOT}}"
+project_root: "{{PROJECT_ROOT}}"
+project_slug: "{{PROJECT_SLUG}}"
+default_mode: "create"
+adapter_path: "{{WORKFLOW_ROOT}}/adapters/{{PROJECT_SLUG}}.yaml"
+docs_language: "vi"
+bootstrap:
+  ask_one_question_at_a_time: true
+  question_language: "vi"
+  require_intake_before_implementation: true
