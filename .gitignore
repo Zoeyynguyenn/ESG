@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.coverage
+coverage_html/
+
+# Vector DB (tái tạo được qua /ingest)
+vector_db/
+
+# Chat history (dữ liệu người dùng)
+chat_history/
+
+# Ollama installer
+OllamaSetup.exe
+
+# IDE
+.vscode/
+.idea/
+
+# Claude internal
+.claude/

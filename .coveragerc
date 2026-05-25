@@ -1,0 +1,19 @@
+[run]
+source = rag_engine, rag_chat
+omit =
+    tests/*
+    make_sample_pdf.py
+    ollama_demo.py
+
+[report]
+exclude_lines =
+    # Không đếm các dòng này vào coverage
+    pragma: no cover
+    if __name__ == .__main__.:
+    ^\s*\.\.\.$
+    raise NotImplementedError
+    pass
+
+[html]
+directory = coverage_html
+title = RAG Chatbot Coverage Report
