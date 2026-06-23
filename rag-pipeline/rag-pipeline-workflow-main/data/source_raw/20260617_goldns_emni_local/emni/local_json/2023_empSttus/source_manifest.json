@@ -1,0 +1,17 @@
+{
+  "company_id": "emni",
+  "company_name": "이엠앤아이",
+  "doc_title": "2023_empSttus.json",
+  "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001778",
+  "file_url": "colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_주요정보/2023_empSttus.json",
+  "link_check": "direct filing page",
+  "confidence": "high",
+  "source_kind": "collector_file_reference",
+  "recommended_action": "resolve_local_file_first",
+  "review_reason": "",
+  "domain": "dart.fss.or.kr",
+  "schema": "dart_employee_status",
+  "record_count": 4,
+  "resolved_local_path": "C:\\Users\\nguye\\Downloads\\data-company\\dataset-excel\\output_restart_emni_20260617\\output_restart_emni_20260617\\이엠앤아이_일반자료_20260617\\02_재무_신용\\DART_주요정보\\2023_empSttus.json",
+  "artifact_dir": "data\\source_raw\\20260617_goldns_emni_local\\emni\\local_json\\2023_empSttus"
+}

@@ -1,0 +1,31 @@
+{
+  "seed_version": "ref_seed_rtx_v2_1_fact_quality",
+  "generated_at": "2026-06-12T16:11:13",
+  "raw_candidates": 165,
+  "filtered_candidates": 42,
+  "usable_count": 42,
+  "dropped_fact_mismatch_count": 23,
+  "dropped_wording_count": 562,
+  "dropped_residue_count": 164,
+  "post_audit_errors": {},
+  "by_question_type": {
+    "quantitative": 30,
+    "trend": 7,
+    "qualitative": 5
+  },
+  "by_document_kind": {
+    "questionnaire": 7,
+    "appendix": 6,
+    "data_table": 8,
+    "10k": 10,
+    "proxy_statement": 9,
+    "policy_page": 2
+  },
+  "v2_input_count": 327,
+  "v2_needs_rebuild": 317,
+  "exact_duplicate_question_count": 0,
+  "review_ready_flag": true,
+  "review_ready_verdict": "Có — question layer v2.1 đủ tốt để mở lại RTX review round 1",
+  "output_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_rtx_v2_1_fact_quality.jsonl",
+  "output_xlsx": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_rtx_v2_1_fact_quality.xlsx"
+}

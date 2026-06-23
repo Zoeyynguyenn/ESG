@@ -1,0 +1,130 @@
+benchmark_id: benchmark_matrix_v1
+description: Matrix ung vien ban dau cho benchmark stage-wise, khong random.
+target_cases: 72
+stagewise_dev_expected_cases: 10
+
+baseline_ref: configs/config_baseline_v6.yaml
+eval_set_path: .rag/rag-pipeline-practice/eval_set.md
+
+cache:
+  parser_version: v1
+  corpus_version: esg_core_v1
+  cache_root: artifacts/benchmark_cache
+
+dataset_lanes:
+  dev_subset:
+    corpus_ratio: 0.2
+    eval_questions: 40
+  validation_subset:
+    corpus_ratio: 0.5
+    eval_questions: 80
+  full_subset:
+    corpus_ratio: 1.0
+    eval_questions: 50
+  company_public_dev_subset:
+    corpus_ratio: 1.0
+    eval_questions: 30
+    corpus_path: data/rag_dataset/04_company_public_curated
+    eval_set_path: .rag/rag-pipeline-practice/eval_set_company_public_dev.md
+    corpus_version: company_public_v1
+  company_export_json_dev_subset:
+    corpus_ratio: 1.0
+    eval_questions: 20
+    corpus_path: data/rag_dataset/05_company_export_json
+    eval_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_dev_ko.md
+    corpus_version: company_export_json_v1
+
+dimensions:
+  chunking:
+    - id: recursive_800_120
+      profile: recursive_800_120
+      chunk_size: 800
+      chunk_overlap: 120
+    - id: recursive_512_80
+      profile: recursive_512_80
+      chunk_size: 512
+      chunk_overlap: 80
+    - id: recursive_1024_160
+      profile: recursive_1024_160
+      chunk_size: 1024
+      chunk_overlap: 160
+    - id: recursive_384_64
+      profile: recursive_384_64
+      chunk_size: 384
+      chunk_overlap: 64
+    - id: section_based
+      profile: section_based
+      chunk_size: 800
+      chunk_overlap: 120
+    - id: section_based_small
+      profile: section_based
+      chunk_size: 512
+      chunk_overlap: 80
+
+  embedding:
+    - id: all-MiniLM-L6-v2
+      model: sentence-transformers/all-MiniLM-L6-v2
+    - id: bge-m3
+      model: BAAI/bge-m3
+    - id: multilingual-e5-base
+      model: intfloat/multilingual-e5-base
+
+  retrieval:
+    - id: dense
+      mode: semantic_dense
+    - id: hybrid_bm25_dense
+      mode: hybrid_dense_bm25
+
+  reranker:
+    - id: none
+      enabled: false
+      retrieval_mode_override: null
+      reranker_model: null
+    - id: bge_reranker_or_flashrank
+      enabled: true
+      retrieval_mode_override: hybrid_dense_bm25_rerank
+      reranker_model: BAAI/bge-reranker-base
+      fallback: flashrank_overlap
+
+fixed:
+  extraction_mode: heuristic_v4
+  verification_mode: v6_loop_mixed_policy_boost
+  corpus_scope: mixed
+  strict_conflict: false
+  top_k: 4
+  pool: 24
+
+stagewise:
+  # Lane dev: chi 3 dai dien chunking (loc nhanh). Cac profile mo rong giu trong dimensions cho focused/full.
+  dev_chunking_ids:
+    - recursive_800_120
+    - recursive_512_80
+    - section_based
+  dev_chunking_excluded_reason: >
+    recursive_1024_160, recursive_384_64, section_based_small bo khoi stagewise dev vi cung profile
+    recursive/section_based, metric dev khong phan hoa (Pha A-1) nhung tang thoi gian ingest.
+  round_a:
+    chunking_candidates: dev_subset
+    embedding_candidates: all
+    retrieval_candidates: all
+    reranker_candidates: all
+    keep_top:
+      chunking: 2
+      embedding: 2
+      retrieval: 1
+      reranker: 1
+  round_b:
+    target_runs_min: 8
+    target_runs_max: 16
+  round_c:
+    top_n_final_confirmation: 3
+
+scoring:
+  composite:
+    retrieval_hit_rate: 0.30
+    citation_correctness: 0.20
+    verified_rate: 0.20
+    priority_field_completion: 0.10
+    one_minus_insufficient_rate: 0.10
+    one_minus_conflict_rate: 0.05
+    latency_normalized: 0.05

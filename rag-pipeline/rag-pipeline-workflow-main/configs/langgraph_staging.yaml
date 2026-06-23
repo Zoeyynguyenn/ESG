@@ -1,0 +1,137 @@
+# LangGraph Evidence API — staging stack (handoff 3 công ty 2026-06-05)
+
+# musinsa | rayshion | hanssem — xem docs/LANGGRAPH_API_HANDOFF.md
+
+
+
+api_id: langgraph_staging_v2
+
+mode: langgraph_staging
+
+status: active
+
+description: >
+
+  Retrieval-only API. Hybrid dense/BM25 + Qdrant + OpenAI embed + Jina rerank (jina-reranker-v3).
+
+  Registry MVP: musinsa, hanssem, rtx (06_rtx_references_raw); rayshion legacy cache.
+
+
+
+cache_root: artifacts/benchmark_cache
+
+
+
+stack:
+
+  lane: company_export_json_full
+
+  company_filter: ""
+
+  corpus_version: langgraph_staging_20260608
+
+  parser_version: jsonl_v1
+
+  corpus_ratio: 1.0
+
+  chunking_profile: section_based
+
+  chunk_size: 800
+
+  chunk_overlap: 120
+
+  embedding_model: openai:text-embedding-3-small
+
+  openai_embed_batch: 32
+
+  retrieval_mode: hybrid_dense_bm25_rerank
+
+  reranker: jina_api
+
+  reranker_backend: jina_api
+
+  reranker_model: jina-reranker-v3
+
+  jina_rerank_max_docs: 16
+
+  jina_max_chars: 400
+
+  jina_min_interval_sec: 2
+
+  jina_max_retries: 3
+
+  rerank_blend_alpha: 0.40
+
+  vector_store: qdrant
+
+  candidate_pool: 64
+
+  top_k: 8
+
+  benchmark_language: ko
+
+
+
+registry:
+
+  # Legacy — giữ cache cũ (data package có thể không còn trên disk)
+
+  nexteye:
+
+    package: 넥스트아이_dataset_package_20260528T091409
+
+    record_split: full
+
+    corpus_version: nexteye_esg_v1_1_1_langgraph_staging
+
+    legacy_cache_only: true
+
+
+
+  musinsa:
+
+    package: 무신사_dataset_package_20260608T092823
+
+    display_name: 무신사
+
+    record_split: full
+
+
+
+  rayshion:
+
+    package: 레이시온_dataset_package_20260608T055801
+
+    display_name: 레이시온
+
+    record_split: full
+
+    legacy_cache_only: true
+
+
+
+  rtx:
+
+    package: 06_rtx_references_raw
+
+    display_name: RTX
+
+    record_split: rtx_chunked
+
+    lane: rtx_references_chunked
+
+    corpus_version: rtx_references_raw_20260612
+
+    benchmark_language: en
+
+
+
+  hanssem:
+
+    package: 한샘_dataset_package_20260608T042739
+
+    display_name: 한샘
+
+    record_split: full
+
+

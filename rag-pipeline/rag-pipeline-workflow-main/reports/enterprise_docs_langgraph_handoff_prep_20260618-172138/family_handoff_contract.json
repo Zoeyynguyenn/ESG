@@ -1,0 +1,288 @@
+{
+  "version": "1.0.0",
+  "schema_version": "1.0.0",
+  "description": "Family-level LangGraph handoff contract — preparation gate only, not runtime integration",
+  "global_constraints": {
+    "no_synthesis": true,
+    "no_langgraph_runtime_trial": true,
+    "no_case_tuning": true,
+    "no_loosening_promotion_rules": true
+  },
+  "promotion_rules_inherited_from": "data/enterprise_docs/family_handoff_registry.json",
+  "families": {
+    "employee_headcount": {
+      "family_id": "employee_headcount",
+      "question_type": "quantitative_headcount",
+      "pilot_order": 1,
+      "handoff_minimum": {
+        "readiness_states_allowed": [
+          "multi_source_sufficient",
+          "single_source_sufficient"
+        ],
+        "readiness_states_blocked": [
+          "coverage_gap",
+          "extraction_ready",
+          "honest_abstain",
+          "needs_sme_review",
+          "not_ready_for_synthesis",
+          "retrieval_ready"
+        ],
+        "kind_required": "quantitative",
+        "required_fields": [
+          "question_id",
+          "company_id",
+          "predicted_value",
+          "evidence_bundle",
+          "primary_doc",
+          "confidence",
+          "readiness_state"
+        ],
+        "optional_fields": [
+          "predicted_unit",
+          "supporting_docs",
+          "sufficiency_status"
+        ],
+        "min_evidence_count": 1,
+        "min_confidence_table": 0.85,
+        "min_confidence_narrative": 0.25,
+        "unit_required": false,
+        "narrative_single_source_ok": true
+      },
+      "prep_gate_outcomes": {
+        "handoff_allowed_for_preparation": "promoted quant case in single/multi_source_sufficient with complete payload, confidence >= family min, needs_review_by=None",
+        "handoff_blocked": "terminal blocker, qualitative, synthesis gate, incomplete package, or retrieval/extraction not promoted",
+        "needs_manual_review_before_handoff": "promoted or near-ready but needs_review_by in (RAG, SME, Dataset)"
+      },
+      "handoff_blockers": [
+        "qualitative_kind",
+        "coverage_gap",
+        "wrong_row_risk",
+        "missing_predicted_value"
+      ],
+      "review_owner_defaults": {
+        "needs_sme_review": "sme",
+        "coverage_gap": "dataset",
+        "default": null
+      },
+      "primary_doc_rule": "doc_hr_safety_or_sustainability_report",
+      "supporting_doc_rule": "optional_context_only",
+      "notes": "Pilot family — table on demo_company; narrative headcount on holdout SR corpus"
+    },
+    "environment_ghg": {
+      "family_id": "environment_ghg",
+      "question_type": "quantitative_climate_metric",
+      "pilot_order": 2,
+      "handoff_minimum": {
+        "readiness_states_allowed": [
+          "multi_source_sufficient",
+          "single_source_sufficient"
+        ],
+        "readiness_states_blocked": [
+          "coverage_gap",
+          "extraction_ready",
+          "honest_abstain",
+          "needs_sme_review",
+          "not_ready_for_synthesis",
+          "retrieval_ready"
+        ],
+        "kind_required": "quantitative",
+        "required_fields": [
+          "question_id",
+          "company_id",
+          "predicted_value",
+          "evidence_bundle",
+          "confidence",
+          "readiness_state"
+        ],
+        "optional_fields": [
+          "predicted_unit",
+          "primary_doc",
+          "supporting_docs"
+        ],
+        "min_evidence_count": 1,
+        "min_confidence_table": 0.85,
+        "min_confidence_narrative": 0.25,
+        "unit_required": false,
+        "narrative_single_source_ok": true
+      },
+      "prep_gate_outcomes": {
+        "handoff_allowed_for_preparation": "promoted quant case in single/multi_source_sufficient with complete payload, confidence >= family min, needs_review_by=None",
+        "handoff_blocked": "terminal blocker, qualitative, synthesis gate, incomplete package, or retrieval/extraction not promoted",
+        "needs_manual_review_before_handoff": "promoted or near-ready but needs_review_by in (RAG, SME, Dataset)"
+      },
+      "handoff_blockers": [
+        "qualitative_kind",
+        "coverage_gap",
+        "unresolved_conflict"
+      ],
+      "review_owner_defaults": {
+        "needs_sme_review": "sme",
+        "coverage_gap": "dataset",
+        "default": null
+      },
+      "primary_doc_rule": "sustainability_report_or_ghg_doc",
+      "supporting_doc_rule": "csv_summary_optional_pilot_only",
+      "notes": "Climate/year/scope narrative metrics; qualitative CDP probes remain blocked"
+    },
+    "governance": {
+      "family_id": "governance",
+      "question_type": "quantitative_governance_narrative",
+      "pilot_order": 3,
+      "handoff_minimum": {
+        "readiness_states_allowed": [
+          "multi_source_sufficient",
+          "single_source_sufficient"
+        ],
+        "readiness_states_blocked": [
+          "coverage_gap",
+          "extraction_ready",
+          "honest_abstain",
+          "needs_sme_review",
+          "not_ready_for_synthesis",
+          "retrieval_ready"
+        ],
+        "kind_required": "quantitative",
+        "required_fields": [
+          "question_id",
+          "company_id",
+          "predicted_value",
+          "evidence_bundle",
+          "confidence",
+          "readiness_state"
+        ],
+        "optional_fields": [
+          "predicted_unit",
+          "primary_doc",
+          "supporting_docs"
+        ],
+        "min_evidence_count": 1,
+        "min_confidence_table": 0.85,
+        "min_confidence_narrative": 0.25,
+        "unit_required": false,
+        "narrative_single_source_ok": true
+      },
+      "prep_gate_outcomes": {
+        "handoff_allowed_for_preparation": "promoted quant case in single/multi_source_sufficient with complete payload, confidence >= family min, needs_review_by=None",
+        "handoff_blocked": "terminal blocker, qualitative, synthesis gate, incomplete package, or retrieval/extraction not promoted",
+        "needs_manual_review_before_handoff": "promoted or near-ready but needs_review_by in (RAG, SME, Dataset)"
+      },
+      "handoff_blockers": [
+        "qualitative_kind",
+        "coverage_gap",
+        "wrong_row_risk"
+      ],
+      "review_owner_defaults": {
+        "needs_sme_review": "sme",
+        "coverage_gap": "dataset",
+        "default": null
+      },
+      "primary_doc_rule": "governance_or_sustainability_report",
+      "supporting_doc_rule": "optional_financial_anchor_demo_only",
+      "notes": "Board meetings, ESG grades, materiality counts — narrative-first on holdout"
+    }
+  },
+  "review_owner_policy": {
+    "version": "1.1.0",
+    "description": "Review owner assignment for LangGraph handoff preparation (not runtime trial)",
+    "owners": [
+      "RAG",
+      "SME",
+      "Dataset",
+      "None"
+    ],
+    "priority_order": [
+      "terminal_readiness_state",
+      "kind_qualitative",
+      "coverage_gap",
+      "needs_sme_review",
+      "wrong_row_risk",
+      "confidence_calibration",
+      "promoted_clean"
+    ],
+    "rules": [
+      {
+        "id": "qualitative_blocked",
+        "condition": "kind == qualitative",
+        "owner": null,
+        "prep_status": "handoff_blocked",
+        "reason": "qualitative_requires_synthesis_not_extractive_handoff"
+      },
+      {
+        "id": "not_ready_for_synthesis",
+        "condition": "readiness_state == not_ready_for_synthesis",
+        "owner": null,
+        "prep_status": "handoff_blocked",
+        "reason": "synthesis_blocker"
+      },
+      {
+        "id": "coverage_gap",
+        "condition": "readiness_state == coverage_gap OR blocker coverage",
+        "owner": "Dataset",
+        "prep_status": "needs_manual_review_before_handoff",
+        "reason": "corpus_or_logical_doc_gap"
+      },
+      {
+        "id": "needs_sme_review",
+        "condition": "readiness_state == needs_sme_review OR wrong_row_risk",
+        "owner": "SME",
+        "prep_status": "needs_manual_review_before_handoff",
+        "reason": "sme_validation_required"
+      },
+      {
+        "id": "confidence_below_family_min",
+        "condition": "promoted AND confidence < family_min AND NOT wrong_row_risk",
+        "owner": "RAG",
+        "prep_status": "needs_manual_review_before_handoff",
+        "reason": "confidence_policy_calibration"
+      },
+      {
+        "id": "retrieval_or_extraction_not_promoted",
+        "condition": "readiness_state in (retrieval_ready, extraction_ready) AND NOT promoted",
+        "owner": "RAG",
+        "prep_status": "handoff_blocked",
+        "reason": "extraction_or_retrieval_incomplete"
+      },
+      {
+        "id": "promoted_adequate_confidence",
+        "condition": "promoted AND single_source_sufficient AND confidence >= family_min",
+        "owner": "None",
+        "prep_status": "handoff_allowed_for_preparation",
+        "reason": "family_contract_met"
+      },
+      {
+        "id": "promoted_multi_source",
+        "condition": "promoted AND multi_source_sufficient",
+        "owner": "None",
+        "prep_status": "handoff_allowed_for_preparation",
+        "reason": "multi_source_contract_met"
+      },
+      {
+        "id": "default_blocked",
+        "condition": "fallback",
+        "owner": "RAG",
+        "prep_status": "handoff_blocked",
+        "reason": "prep_conditions_not_met"
+      }
+    ],
+    "family_overrides": {
+      "governance": {
+        "narrative_promoted_borderline_conf": "SME",
+        "note": "Governance narrative metrics default SME when confidence < 0.35 on holdout"
+      },
+      "environment_ghg": {
+        "unresolved_conflict": "SME"
+      },
+      "employee_headcount": {
+        "wrong_row_risk": "SME"
+      }
+    },
+    "metric_types": {
+      "exact": [
+        "needs_review_by when rule matches"
+      ],
+      "heuristic": [
+        "governance borderline SME override"
+      ]
+    }
+  }
+}

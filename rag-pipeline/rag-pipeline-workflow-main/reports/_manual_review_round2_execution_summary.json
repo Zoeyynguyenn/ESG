@@ -1,0 +1,41 @@
+{
+  "exec_version": "ref_manual_round2_exec",
+  "generated_at": "2026-06-11T13:49:48",
+  "input_lane_ab": 80,
+  "confirm_count": 31,
+  "revise_count": 30,
+  "drop_count": 19,
+  "canonical_candidate_estimate": 61,
+  "raysolution_survivors": 1,
+  "by_company": {
+    "레이시온": {
+      "confirm": 1,
+      "revise": 0,
+      "drop": 12,
+      "canonical_candidate": 1
+    },
+    "무신사": {
+      "confirm": 6,
+      "revise": 5,
+      "drop": 6,
+      "canonical_candidate": 11
+    },
+    "한샘": {
+      "confirm": 24,
+      "revise": 25,
+      "drop": 1,
+      "canonical_candidate": 49
+    }
+  },
+  "by_question_type": {
+    "quantitative": 39,
+    "trend": 5,
+    "qualitative": 17
+  },
+  "lane_c_backlog_count": 22,
+  "ready_for_canonical_round_flag": true,
+  "ready_for_canonical_verdict": "Có — đủ anchor để mở canonical round (Lane A/B); Lane C giữ backlog",
+  "lane_c_recommendation": "Giữ backlog — chỉ mở Lane C nếu cần mở rộng coverage RX/MS sau canonical core",
+  "output_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_v4_manual_round2_reviewed.jsonl",
+  "output_workbook": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_v4_manual_round2_reviewed.xlsx"
+}

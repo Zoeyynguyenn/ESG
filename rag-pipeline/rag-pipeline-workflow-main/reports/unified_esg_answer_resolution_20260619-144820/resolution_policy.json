@@ -1,0 +1,112 @@
+{
+  "version": "unified_esg_resolution_v1",
+  "identity": {
+    "primary_key": "question_id",
+    "fallback_business_key": [
+      "company_id",
+      "family_id",
+      "metric_name",
+      "year"
+    ],
+    "metric_name_normalize": "strip_lower_collapse_ws"
+  },
+  "answer_presence": {
+    "dataset_has_answer": "predicted_answer not null and not predicted_abstain",
+    "internal_has_answer": "extraction_success and value not null and sufficiency not failed"
+  },
+  "value_equivalence": {
+    "numeric_tolerance": 0.01,
+    "strip_commas": true,
+    "case_insensitive_text": true,
+    "treat_abstain_as_no_answer": true
+  },
+  "resolution_rules": [
+    {
+      "order": 1,
+      "when": "neither_source_has_answer",
+      "status": "NO_ANSWER_FOUND",
+      "best_answer_origin": null,
+      "auto_confirm": false,
+      "review_required": false
+    },
+    {
+      "order": 2,
+      "when": "only_dataset_has_answer",
+      "status": "BACKFILL_FROM_DATASET",
+      "best_answer_origin": "dataset",
+      "auto_confirm": true,
+      "review_required": false,
+      "note": "Public/source-based RAG answer when internal-doc absent"
+    },
+    {
+      "order": 3,
+      "when": "only_internal_has_answer",
+      "status": "BACKFILL_FROM_INTERNAL",
+      "best_answer_origin": "internal_doc",
+      "auto_confirm_if": "internal_confidence >= 0.85 and sufficiency_resolved",
+      "candidate_only_if": "internal_confidence < 0.85 or not extraction_success",
+      "review_required_if": "not auto_confirm"
+    },
+    {
+      "order": 4,
+      "when": "both_have_answer_and_values_match",
+      "status": "MATCH_CONFIRMED",
+      "best_answer_origin": "both_confirmed",
+      "prefer_evidence_from": "internal_doc",
+      "prefer_canonical_from": "dataset",
+      "auto_confirm": true,
+      "review_required": false
+    },
+    {
+      "order": 5,
+      "when": "both_have_answer_and_values_conflict",
+      "status": "CONFLICT_REVIEW_REQUIRED",
+      "best_answer_origin": "unresolved",
+      "auto_confirm": false,
+      "review_required": true,
+      "review_owner_hint": "SME",
+      "tie_break_guidance": "Company SR/internal-doc wins for company-specific narrative metrics when multi_source_confirmed; dataset/public source wins for regulatory filings"
+    },
+    {
+      "order": 6,
+      "when": "partial_signal_below_threshold",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "best_answer_origin": "candidate",
+      "auto_confirm": false,
+      "review_required": true,
+      "review_owner_hint": "RAG"
+    }
+  ],
+  "business_decisions": {
+    "prefer_internal_doc_when": [
+      "multi_source_confirmed on internal record",
+      "company-specific SR metric with primary_evidence from sustainability_report",
+      "dataset absent or abstained"
+    ],
+    "prefer_dataset_when": [
+      "regulatory/public filing source (DART, government)",
+      "internal-doc extraction_success false",
+      "MATCH_CONFIRMED — dataset provides canonical gold alignment"
+    ],
+    "sme_review_when": [
+      "CONFLICT_REVIEW_REQUIRED",
+      "semantic_ambiguity on dataset row",
+      "internal conflict_status in conflict_numeric, conflict_text"
+    ],
+    "auto_confirm_when": [
+      "MATCH_CONFIRMED",
+      "BACKFILL_FROM_DATASET with answer_correct",
+      "BACKFILL_FROM_INTERNAL with confidence >= 0.85 and sufficiency resolved"
+    ],
+    "do_not_auto_confirm_when": [
+      "CONFLICT_REVIEW_REQUIRED",
+      "INSUFFICIENT_EVIDENCE",
+      "internal readiness_state not_ready_for_synthesis with only candidate value"
+    ]
+  },
+  "thresholds": {
+    "internal_auto_confirm_confidence": 0.85,
+    "internal_min_candidate_confidence": 0.5,
+    "dataset_trust_answer_correct": true
+  }
+}

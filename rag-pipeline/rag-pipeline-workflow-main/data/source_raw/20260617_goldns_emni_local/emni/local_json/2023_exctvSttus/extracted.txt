@@ -1,0 +1,22 @@
+company_id: emni
+company_name: 이엠앤아이
+doc_title: 2023_exctvSttus.json
+source_url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001778
+file_url: colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_주요정보/2023_exctvSttus.json
+schema: dart_executive_status
+local_path: C:\Users\nguye\Downloads\data-company\dataset-excel\output_restart_emni_20260617\output_restart_emni_20260617\이엠앤아이_일반자료_20260617\02_재무_신용\DART_주요정보\2023_exctvSttus.json
+
+# DART structured source (2023_exctvSttus.json, schema=dart_executive_status)
+- corp=이엠앤아이 | name=고창훈 | sex=남 | position=대표이사 | registered_exec=사내이사 | full_time=상근 | role=경영총괄 | tenure=13년 3개월
+주) | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=고계영 | sex=여 | position=전무 | registered_exec=미등기 | full_time=상근 | role=재무 총괄 | tenure=10년 11개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=조철호 | sex=남 | position=상무 | registered_exec=미등기 | full_time=상근 | role=전략기획 총괄 | tenure=8개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=오승규 | sex=남 | position=상무 | registered_exec=미등기 | full_time=상근 | role=지원 총괄 | tenure=1년 3개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=박종오 | sex=남 | position=상무 | registered_exec=사내이사 | full_time=상근 | role=기획 | tenure=2년 8개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=김혜민 | sex=여 | position=이사 | registered_exec=사내이사 | full_time=상근 | role=사업부 총괄 | tenure=6년 3개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=이충재 | sex=남 | position=사내이사 | registered_exec=사내이사 | full_time=비상근 | role=- | tenure=2년 3개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=김정상 | sex=남 | position=사내이사 | registered_exec=사내이사 | full_time=비상근 | role=- | tenure=4개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=성열헌 | sex=남 | position=사외이사 | registered_exec=사외이사 | full_time=비상근 | role=감사위원 不 | tenure=2년 9개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=권장혁 | sex=남 | position=사외이사 | registered_exec=사외이사 | full_time=비상근 | role=감사위원 不 | tenure=2개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=진병두 | sex=남 | position=사외이사 | registered_exec=사내이사 | full_time=비상근 | role=감사위원 不 | tenure=2개월 | stlm_dt=2023-12-31
+- corp=이엠앤아이 | name=박경성 | sex=남 | position=전무 | registered_exec=미등기 | full_time=상근 | role=지원본부 총괄 | tenure=2년 3개월 | stlm_dt=2023-12-31

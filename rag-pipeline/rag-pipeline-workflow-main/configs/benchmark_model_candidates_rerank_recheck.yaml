@@ -1,0 +1,46 @@
+benchmark_id: benchmark_model_candidates_rerank_recheck
+description: Mini recheck 2 cases after reranker debug fix.
+lane: company_public_dev
+eval_set_path: .rag/rag-pipeline-practice/eval_set_company_public_dev.md
+corpus_version: company_public_v1
+parser_version: v1
+cache_root: artifacts/benchmark_cache
+
+lane_config:
+  corpus_ratio: 1.0
+  eval_questions: 30
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  top_k: 4
+
+timeouts:
+  default_sec: 3600
+  embedding_heavy_sec: 3600
+
+scoring:
+  retrieval_hit_rate: 0.30
+  citation_correctness: 0.20
+  answer_correctness: 0.15
+  insufficient_information_handling: 0.10
+  groundedness: 0.10
+  latency_normalized: 0.10
+  stability_penalty: 0.05
+
+candidates:
+  - config_id: minilm_hybrid_none
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    timeout_sec: 3600
+
+  - config_id: minilm_hybrid_rerank
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: hybrid_dense_bm25_rerank
+    reranker: bge_reranker_or_flashrank
+    reranker_model: BAAI/bge-reranker-base
+    vector_store: chroma
+    candidate_pool: 64
+    timeout_sec: 3600

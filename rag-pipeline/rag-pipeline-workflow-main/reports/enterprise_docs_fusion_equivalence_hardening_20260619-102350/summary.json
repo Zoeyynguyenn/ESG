@@ -1,0 +1,159 @@
+{
+  "artifact": "enterprise_docs_fusion_equivalence_hardening",
+  "timestamp": "20260619-102350",
+  "phase": "fusion_equivalence_hardening",
+  "prior_artifact": "enterprise_docs_cross_role_hardening_20260619-101153",
+  "cases_meta": {
+    "path": "data/enterprise_docs/crossdoc_capability_cases.jsonl",
+    "total": 24,
+    "constructed": 11,
+    "natural": 13
+  },
+  "capability_metrics": {
+    "alias_normalization_success_rate": 1.0,
+    "cross_doc_equivalence_match_rate": 1.0,
+    "cross_role_extraction_alignment_rate": 1.0,
+    "evidence_fusion_success_rate": 1.0,
+    "conflict_classification_accuracy": 1.0,
+    "conflict_resolution_readiness_rate": 1.0,
+    "single_source_to_multi_source_promotion_rate": 1.0,
+    "counts": {
+      "alias": {
+        "ok": 2,
+        "total": 2
+      },
+      "equivalence": {
+        "ok": 4,
+        "total": 4
+      },
+      "extraction": {
+        "ok": 7,
+        "total": 7
+      },
+      "fusion": {
+        "ok": 7,
+        "total": 7
+      },
+      "classification": {
+        "ok": 7,
+        "total": 7
+      },
+      "resolution": {
+        "ok": 7,
+        "total": 7
+      },
+      "promotion": {
+        "ok": 7,
+        "total": 7
+      }
+    },
+    "metric_notes": {
+      "alias_normalization_success_rate": "constructed value_pair cases",
+      "cross_doc_equivalence_match_rate": "constructed canonical/equiv cases",
+      "cross_role_extraction_alignment_rate": "constructed multi-source extract per logical doc",
+      "evidence_fusion_success_rate": "constructed multi_source_confirmed expectation",
+      "conflict_classification_accuracy": "constructed expected_conflict_status match",
+      "conflict_resolution_readiness_rate": "proxy: aggregation resolution_status resolved*",
+      "single_source_to_multi_source_promotion_rate": "constructed promotion_ok heuristic"
+    }
+  },
+  "capability_metrics_delta": {
+    "alias_normalization_success_rate": {
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0
+    },
+    "cross_doc_equivalence_match_rate": {
+      "before": 0.6667,
+      "after": 1.0,
+      "delta": 0.3333
+    },
+    "cross_role_extraction_alignment_rate": {
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0
+    },
+    "evidence_fusion_success_rate": {
+      "before": 0.8333,
+      "after": 1.0,
+      "delta": 0.1667
+    },
+    "conflict_classification_accuracy": {
+      "before": 0.8333,
+      "after": 1.0,
+      "delta": 0.1667
+    },
+    "conflict_resolution_readiness_rate": {
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0
+    },
+    "single_source_to_multi_source_promotion_rate": {
+      "before": 0.8333,
+      "after": 1.0,
+      "delta": 0.1667
+    }
+  },
+  "mandatory_answers": {
+    "1_cross_doc_equivalence_increased": {
+      "before": 0.6667,
+      "after": 1.0,
+      "delta": 0.3333,
+      "increased": true
+    },
+    "2_evidence_fusion_increased_and_remaining_failures": {
+      "before": 0.8333,
+      "after": 1.0,
+      "delta": 0.1667,
+      "remaining_failure_stages": {}
+    },
+    "3_narrative_table_fusion_status": {
+      "narrative_vs_table_cases": [
+        {
+          "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+          "family_id": "environment_ghg",
+          "item": "총 온실가스",
+          "extract_alignment_ok": true,
+          "equivalence_collapse_ok": true,
+          "fusion_ok": true,
+          "multi_source_confirmed": true,
+          "confirming_logical_docs": [
+            "doc_evidence_csv",
+            "doc_sr_narrative"
+          ],
+          "resolved_value": "12500",
+          "failure_stage": "none"
+        },
+        {
+          "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+          "family_id": "environment_ghg",
+          "item": "총 온실가스",
+          "extract_alignment_ok": true,
+          "equivalence_collapse_ok": true,
+          "fusion_ok": true,
+          "multi_source_confirmed": true,
+          "confirming_logical_docs": [
+            "doc_evidence_csv",
+            "doc_sr_narrative"
+          ],
+          "resolved_value": "12,500",
+          "failure_stage": "none"
+        }
+      ]
+    },
+    "4_hardest_numeric_equivalence_type": "comma_decimal_format",
+    "5_promotion_integrity": {
+      "promotion_rate": 1.0,
+      "fusion_rate": 1.0,
+      "ghost_pass_count": 0,
+      "bams_fusion": true
+    },
+    "6_next_step_for_real_docs": "Giữ constructed regression gate; plug-in tài liệu thật bằng natural cases; tiếp tục mở rộng scaled/unit equivalence khi gặp pattern mới"
+  },
+  "constraints": {
+    "no_synthesis": true,
+    "no_langgraph_trial": true,
+    "no_case_tuning": true,
+    "constructed_regression_gate": true
+  }
+}

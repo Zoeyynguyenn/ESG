@@ -1,0 +1,988 @@
+
+
+
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<script>
+    if(top != window) {
+        top.location = window.location;
+    }
+</script>
+    <title>안전한 제품, 행복한 국민 제품안전정보센터입니다.</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/resources/img/icon/favicon.ico" type="image/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/resources/font/font.css"/>
+    <link rel="stylesheet" href="/resources/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css"/>
+    <script src="/resources/js/jquery-1.11.2.js"></script>
+    <script src="/resources/js/common.js"></script>
+    <script src="/resources/js/jquery.bpopup.min.js"></script>
+	<script src="/resources/js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<script >
+console.log("40H");
+    if(top != window) {
+        top.location = window.location;
+    }
+	$(document).ready(function(){
+//if($(".contents_area").length){
+//$('.sns').prepend('<li><a href="#contMove">< 본문 바로가기 ></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>');
+$('.contents_top').wrap('<a href="#none" id="contMove"></a>');
+//}
+	$('.gnb>li> *').focus(function(){
+	$(this).addClass('on');
+    $('.gnb>li>ul').show();
+});   
+   
+$('#lastManu').blur(function(){
+ 	  $('.gnb>li>ul').hide();
+       $(this).removeClass('on');
+ });
+	});
+
+</script>	 
+<!-- header -->
+<div class="header">
+    <!-- inner -->
+    <div class="inner">
+	<div><a href="#contMove" autofocus>&lt;본문 바로가기&gt;</a></div>
+        <h1><a href="/"><img
+                src="/resources/img/common/h1.gif" alt="안전한제품, 행복한국민 KATS 제품안전정보센터" title="메인"/></a>
+        </h1>
+
+        <!-- search -->
+        <div class="search">
+            <ul style="padding-top:10px;">
+                <li class="tit"><img title="통합 검색" src="/resources/img/common/search_tit.gif"
+                                     alt="통합 검색"/></li>
+                <li class="input"><input type="text" id="SafetyTopic" class="FT_input_box ui-autocomplete-input"
+                                         title="검색어" /></li>
+                <li class="btn"><input type="image"
+                                       src="/resources/img/common/search_btn.gif"
+                                       alt="검색" title="검색"/></li>
+                <script >
+var k ='o';						 
+                    $("input[alt=검색]").click(function () {
+if(k=='o'){				
+var loading = $('<div id="loading style" style="width:100%;height:100%;top:0px;left:0px;position:fixed;display:block;opacity:0.7;background-color:#fff;z-index:1000;text-align:center;"><img style="position:absolute;top:50%;left: 50%;z-index: 100;" id="loading_img" alt="loading" src="/resources/img/sub/49_body_4_3.jpg" /></div>')
+						.appendTo(document.body).show();
+                    	k='x';			
+                        var SafetyTopic = $("#SafetyTopic").val();
+						var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?<>(),]/gi;
+						if(special_pattern.test(SafetyTopic)==true){
+							alert("사용불가능한 특수문자 입니다.");
+							return;		
+						}
+                        var expose_SafetyTopicMapURL_link_url = "https://search.safetykorea.kr/tm/tmsearch.do?qry=";
+                        $(location).attr("href", expose_SafetyTopicMapURL_link_url + encodeURIComponent(SafetyTopic));
+}						
+                    });
+                    function enterSearch(e) {
+
+                    	alert("통합검색 서비스 점검 중입니다. 서비스 이용에 불편을 드려 죄송합니다.");
+                    	return;
+                        if (e.keyCode == 13) {
+							   if(k=='o'){
+
+var loading = $('<div id="loading style" style="width:100%;height:100%;top:0px;left:0px;position:fixed;display:block;opacity:0.7;background-color:#fff;z-index:1000;text-align:center;"><img style="position:absolute;top:50%;left: 50%;z-index: 100;" id="loading_img" alt="loading" src="/resources/img/sub/49_body_4_3.jpg" /></div>')
+    						.appendTo(document.body).show();                    	
+                        	k='x';
+                            var SafetyTopic = $("#SafetyTopic").val();
+
+                            var expose_SafetyTopicMapURL_link_url = "https://search.safetykorea.kr/tm/tmsearch.do?qry=";
+                        $(location).attr("href", expose_SafetyTopicMapURL_link_url + encodeURIComponent(SafetyTopic));
+						   }
+                        }
+                    }
+                </script>
+            </ul>
+        </div>
+        <!-- //search -->
+
+        <!-- sns -->
+        <ul class="sns">
+            <li><a target="_blank"
+                   href="https://www.korea.kr/news/policyFocusList.do?pkgId=49500813&call_from=dept"><img
+                    src="/resources/img/common/banner_h25.jpg" alt="banner" title="banner"/></a>
+            </li>
+            <li><a target="_blank"
+                   href="https://www.facebook.com/pages/%EC%A0%9C%ED%92%88%EC%95%88%EC%A0%84%EC%A0%95%EB%B3%B4%EC%84%BC%ED%84%B0/581276555339255"><img
+                    src="/resources/img/common/sns02.gif" alt="facebook" title="facebook"/></a>
+            </li>
+            <li><a target="_blank" href="https://www.instagram.com/kats.safetykorea/"><img
+                    src="/resources/img/common/sns05.gif" alt="instagram" title="instagram"/></a>
+            </li>            
+<li><a target="_blank" href="https://www.youtube.com/kats_safetykorea"><img 
+                     src="/resources/img/common/sns06.png" alt="youtube" title="youtube"/></a> 
+             </li> 				
+        </ul>
+        <!-- //sns -->
+    </div>
+    <!-- //inner -->
+
+    <!-- gnb_area -->
+    <div class="gnb_area">
+        <!-- inner -->
+        <div class="inner">
+            <!-- gnb -->
+            <ul class="gnb">
+                <li>
+                    <a href="#certinfoMenu">정보공개</a>
+                    <ul class="first">
+
+                        <li><span>·</span><a id="certInfoMenu" href="#" onclick="$('#certifiGo').submit();">인증정보 검색</a></li>
+
+                        <li><span>·</span><a href="/release/openapi">Open API</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#recallMenu">제품리콜</a>
+                    <ul>
+                        <li><span>·</span><a id="recallMenu" href="/recall/recallBoard">리콜정보 검색</a>
+                        </li>
+                        <li><span>·</span><a href="/recall/recallIntro">리콜제도 소개</a>
+                        </li>
+                        <li><span>·</span><a href="/recall/recallProc01">리콜절차 안내</a>
+                        </li>
+                        <li><span>·</span><a href="/recall/recallReportRegist">사업자 리콜
+                            보고</a></li>
+                        <li><span>·</span><a href="/recall/recallGlobalSite">해외 리콜
+                            사이트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#productMenu">위해신고</a>
+                    <ul>
+                        <li><span>·</span><a id="productMenu" href="/report/product">제품사고 신고</a></li>
+
+                        <li><span>·</span><a href="/report/product_incident_report">제품사고 발생 보고</a>
+                        </li> 
+                        <li><span>·</span><a target="_self" href="/report/qna">민원
+                            Q&amp;A</a></li>
+                        <li><span>·</span><a target="_self"
+                                             href="/report/illegal_entry">불법·불량
+                            제품신고</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#statuteMenu">안전정책</a>
+                    <ul>
+                        <li><span>·</span><a id="statuteMenu" href="/policy/statute">법령</a></li>
+						<li><span>·</span><a href="/policy/totalPlan">제품안전 종합계획</a></li>
+						<li><span>·</span><a href="/policy/childPlan">어린이 기본계획</a>
+                        </li>
+                        <li><span>·</span><a href="/policy/targetsSafetyCert">제품안전
+                            대상품목</a></li>
+                        <li><span>·</span><a href="/policy/standard">제품안전 기준열람</a>
+                        </li>
+                        <li><span>·</span><a href="/policy/b_marketProductCert">시장유통
+                            전</a></li>
+                        <li><span>·</span><a href="/policy/a_marketSafety">시장유통 후</a>
+                        </li>
+                        <li><span>·</span><a href="/policy/certification_info">인증기관
+                            소개</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#noticeMenu">알림뉴스</a>
+                    <ul>
+                        <li><span>·</span><a id="noticeMenu" href="/news/notice">공지사항</a></li>
+                        <li><span>·</span><a href="/news/notification_policy">정책알림</a>
+                        </li>
+                        <li><span>·</span><a href="/news/promote">보도자료</a></li>
+                        <li><span>·</span><a href="/news/animation">웹툰</a></li>
+                        <li><span>·</span><a href="/news/public">홍보영상</a></li>
+                        <li><span>·</span><a href="/news/publications">간행물</a></li>
+                        <li><span>·</span><a href="/news/studentList">제품안전 교육자료</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#centerintroMenu">센터소개</a>
+                    <ul class="last">
+                        <li><span>·</span><a id="centerintroMenu" href="/introduce/centerintro">소개</a></li>
+                        <li><span>·</span><a href="/introduce/staff">직원안내</a></li>
+                        <li><span>·</span><a href="/introduce/comeway">오시는길</a></li>
+                        <li><span>·</span><a href="/introduce/complain">시스템 불편사항</a></li>
+                        <li><span>·</span><a id="lastManu" href="/introduce/media">자주하는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+    		<form action="/release/certificationsearch" method="post" id="certifiGo"></form>
+        </div>
+        <!-- //inner -->
+    </div>
+    <!-- //gnb_area -->
+</div>
+<!-- //header -->
+
+<div class="container">
+    <h2 class="hide">주메뉴</h2>
+    
+    
+<script>
+    if(top != window) {
+        top.location = window.location;
+    }
+    </script>
+<!-- lnb -->
+<div class="lnb">
+    <ul>
+        <li>
+            <a href="#none">정보공개 </a>
+            <ul class="first" style="display: none">
+                
+                
+                <li><a href="#" onclick="$('#certifiGo').submit();">인증정보 검색</a></li>
+                
+                <li><a href="/release/openapi">Open API</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#none">제품리콜</a>
+            <ul style="display: block">
+                <li><a href="/recall/recallBoard">리콜정보 검색</a></li>
+                <li><a href="/recall/recallIntro">리콜제도 소개</a></li>
+                <li><a href="/recall/recallProc01">리콜절차 안내</a></li>
+                <li><a href="/recall/recallReportRegist">사업자 리콜 보고</a></li>
+
+                <li><a href="/recall/recallGlobalSite">해외 리콜 사이트</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#none">위해신고</a>
+            <ul style="display: none">
+                <li><a href="/report/product">제품사고 신고</a></li>
+
+                
+                <li><a href="/report/product_incident_report">제품사고 발생 보고</a></li> <!-- 제품사고 발생 보고 추가 (2016-09-06 : 김연준) -->
+                
+ <!-- 전문가 SNS 메뉴 숨김 (2016-07-26 : 김연준) -->
+                <li><a target="_self" href="/report/qna">민원 Q&amp;A</a></li>
+                <li><a target="_self" href="/report/illegal_entry">불법·불량 제품신고</a></li>
+                
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#none">안전정책</a>
+            <ul style="display: none">
+                <li><a href="/policy/statute">법령</a></li>
+                <li><a href="/policy/totalPlan">제품안전 종합계획</a></li>
+                <li><a href="/policy/childPlan">어린이 기본계획</a></li>
+                <li><a href="/policy/targetsSafetyCert">제품안전 대상품목</a></li>
+                <li><a href="/policy/standard">제품안전 기준열람</a></li>
+                <li><a href="/policy/b_marketProductCert">시장유통 전</a></li>
+                <li><a href="/policy/a_marketSafety">시장유통 후</a></li>
+                <li><a href="/policy/certification_info">인증기관 소개</a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#none">알림뉴스</a>
+            <ul style="display: none">
+                <li><a href="/news/notice">공지사항</a></li>
+                <li><a href="/news/notification_policy">정책알림</a></li>
+                <li><a href="/news/promote">보도자료</a></li>
+                <li><a href="/news/animation">웹툰</a></li>
+                <li><a href="/news/public">홍보영상</a></li>
+                <li><a href="/news/publications">간행물</a></li>
+                <li><a href="/news/studentList">제품안전 교육자료</a></li>
+
+
+ 
+            </ul>
+        </li>
+        <li>
+            <a href="#none">센터소개</a>
+            <ul class="last" style="display: none">
+                <li><a href="/introduce/centerintro">소개</a></li>
+                <li><a href="/introduce/staff">직원안내</a></li>
+                <li><a href="/introduce/comeway">오시는길</a></li>
+                <li><a href="/introduce/complain">시스템 불편사항</a></li>
+                <li><a href="/introduce/media">자주하는 질문</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- //lnb -->
+    
+    
+
+
+
+
+
+
+
+
+
+
+<script >
+document.title="리콜정보 검색";
+	/* $(document).ready(function () {
+		var recallUid = "";
+		var url = "/recall/ajax/recallBoard";
+		if (recallUid != "") {
+			$.ajax({
+				url: url,
+				data: {"recallUid": ""},
+				dataType: "html",
+				beforeSend: function () {
+				},
+				success: function (result) {
+
+					$(".layer_popup").html(result);
+				},
+				error: function (xhr, status, error) {
+					console.log(xhr.responseText);
+				}
+			});
+
+
+			var sWidth = $(window).width() / 4 + 50;
+			var sHeight = $(window).height() / 4 - 50;
+			$('.layer_popup').bPopup({
+				zIndex: 2,
+				modalClose: false,
+				position: [sWidth, sHeight],
+				follow: [false, false]
+			});
+		}
+	});
+	  */
+	  
+	  function goDetail(recallUid) {
+			//	var data = "?recallUid=" + recallUid ;
+		//	var url = "/recall/ajax/recallBoard" + data;
+
+		//	$(location).attr("href", url);
+			var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?<>(),\{\}=]/gi;
+			if(special_pattern.test(recallUid)==true ){
+				alert("사용불가능한 특수문자 입니다.");
+				return;	
+			}
+			var form = document.createElement("form");
+			form.setAttribute("charset", "UTF-8");
+			form.setAttribute("method", "Post"); 
+			form.setAttribute("action", "/recall/ajax/recallBoard");
+			
+			var hiddenField = document.createElement("input");
+			hiddenField.setAttribute("type", "hidden");
+			hiddenField.setAttribute("name", "recallUid");
+			hiddenField.setAttribute("value", recallUid);
+			form.appendChild(hiddenField);
+			
+			document.body.appendChild(form);				  
+			form.submit();
+		}
+
+	 
+</script>
+<!-- contents_area -->
+<div class="contents_area">
+	<!-- contents_top -->
+	<div class="contents_top">
+		<h3>리콜(결함보상)정보 검색</h3>
+		<ul>
+			<li><img src="/resources/img/common/home.gif" alt="홈"/></li>
+			<li>&gt;</li>
+			<li>제품리콜</li>
+			<li>&gt;</li>
+			<li>리콜정보검색</li>
+		</ul>
+	</div>
+	<!-- //contents_top -->
+
+	<!-- contents -->
+	<div class="contents">
+
+		<!-- tab_menu -->
+		<ul class="tab_menu">
+			<li class="on"><a href="/recall/recallBoard" title="국내리콜">국내리콜</a></li>
+			<li><a href="/recall/fRecallBoard" title="국외리콜 및 소비자 주의">국외리콜 및 소비자 주의</a></li>
+			<li><a href="/recall/overseasBoard" title="해외직구 안전성조사결과">해외직구 안전성조사결과</a></li>
+		</ul>
+		<!-- //tab_menu -->
+
+		<!-- section -->
+		<div class="section">
+
+			<p class="ta_right">
+					<span>
+						<select name="selectBox" id="selectBox" class="s_box W100" title="검색조건">
+							<option value="0" >
+								전체검색
+							</option>
+							<option value="1" >
+								모델명
+							</option>
+							<option value="2" >
+								제품명
+							</option>
+							<option value="3" selected>
+								제조/리콜업체
+							</option>
+							<option value="4" >
+								바코드
+							</option>
+							<option value="5" >
+								인증번호
+							</option>
+							<option value="6" >
+								공표일
+							</option>
+						</select>
+					</span>
+				<span class="textSearch">
+					<input type="text" class="t_box searchText"
+							 onkeypress="if(event.keyCode==13) {goPage(0); event.returnValue= false;}"
+							 value="골드앤에스" title="리콜정보검색" />
+				</span>
+				<span class="dateSearch" style="display: none;">
+					<input type="text" class="t_box startDate datepicker" style="width: 60px; margin-left: 5px;" maxlength="10" placeholder="YYYYMMDD"  readonly
+							 onkeypress="if(event.keyCode==13) {goPage(0); event.returnValue= false;}" 
+							 value="" title="공표일 시작" >
+					<span>-</span>
+					<input type="text" class="t_box endDate datepicker" style="width: 60px; margin-right: 5px;"  maxlength="10"  placeholder="YYYYMMDD"  readonly
+							 onkeypress="if(event.keyCode==13) {goPage(0); event.returnValue= false;}" 
+							 value="" title="공표일 끝" >
+				</span>
+				<span><a href="#" class="Button"
+						 onclick="goPage(0)" title="검색" >검색</a></span>
+			</p>
+			<!-- tb_wrap -->
+			<div class="tb_wrap pt10">
+				<table class="tb_list">
+						<caption><strong>리콜정보 리스트</strong> <P>리콜정보 리스트 입니다</P></caption>
+					
+					<!--<colgroup>
+						<col width="6%"/>
+						<col width="82px"/>
+						<col width=""/>
+						<col width="20%"/>
+						<col width="15%"/>
+						<col width="12%"/>
+						<col width="9%"/> 
+						<col width="12%"/>
+					</colgroup> -->
+					<tr>
+						<th style="width:6%">번호</th>
+						<th style="width:82px">사진</th>
+						<th>제품명</th>
+						<th style="width:16%">모델명</th>
+						<th style="width:15%">사업자명</th>
+						<th style="width:12%">리콜종류</th>
+						<th style="width:13%">바코드번호</th>
+						<th style="width:12%">공표일</th>
+					</tr>
+					
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+						<tr>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+							<td class="ta_center">&nbsp; </td>
+						</tr>
+					
+				</table>
+			</div>
+			<!-- //tb_wrap -->
+
+			<!-- page -->
+			<div class="page">
+				<ul>
+					<li><a href="javascript:goPage(0)" title="첫 페이지">&lt;&lt;</a></li>
+					<li><a href="javascript:goPage(-1)" title="이전 페이지" >&lt;</a></li>
+					
+						
+							
+								<li class="on"><a href="javascript:goPage(0)">1</a></li>
+							
+							
+						
+					
+					<script >
+						var pageTotal = 0;
+
+						function goPage(pageNo) {
+							selectedOption = $("select option:selected").val();
+							textWord = $(".searchText").val();
+							startDate = $(".startDate").val();
+							endDate = $(".endDate").val();
+							//textWord=textWord.trim();
+							textWord=textWord.replace(/ /gi, ''); // 공백은 다지움									   
+							var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?<>(),\{\}=]/gi;
+							if(special_pattern.test(textWord)==true){
+								alert("사용불가능한 특수문자 입니다.");
+								return;		
+							}
+							
+							if(selectedOption == "6") {
+								if(startDate == ""){
+									alert("검색 시작일을 입력하세요.");
+									return;
+								}
+								if(endDate == ""){
+									alert("검색 종료일을 입력하세요.");
+									return;
+								}
+								startDate = startDate.replace(/-/gi, "");
+								endDate = endDate.replace(/-/gi, "");
+								if(startDate > endDate){
+									alert("종료일이 시작일보다 빠를 수 없습니다.");
+									return;
+								}
+								
+							}
+/* 							var firstPageNo = 0;
+							var endPageNo = 1; */
+
+							if (pageNo <= 0) {
+								pageNo = 0;
+//								firstPageNo = 0;
+							} else if (pageNo > pageTotal || pageNo == pageTotal) {
+//								pageNo = pageTotal;
+								pageNo = pageTotal - 1;
+							}
+
+/* 							var data = "selectedOption=" + selectedOption + "&textWord=" + textWord + "&pageNo=" + pageNo + "&firstPageNo=" + firstPageNo + "&endPageNo=" + endPageNo;
+
+							if (( pageNo < 10)) {
+								data = "selectedOption=" + selectedOption + "&textWord=" + textWord + "&pageNo=" + pageNo + "&firstPageNo=" + firstPageNo + "&endPageNo=" + endPageNo;
+							}
+
+							if (pageNo % 10 == 0) {
+								firstPageNo = Math.round(pageNo / 10) * 10;
+								endPageNo = Number(endPageNo) + Number(10);	// 현재 페이지가 10단위인 경우 다음 페이지의 endPageNo에 10 추가 (2016-09-23 : 김연준)
+								data = "selectedOption=" + selectedOption + "&textWord=" + textWord + "&pageNo=" + pageNo + "&firstPageNo=" + firstPageNo + "&endPageNo=" + endPageNo;
+							} */	/* 필요없는 파라미터 제거 (2016-11-11 : 김연준) */
+							
+			//				var data = "selectedOption=" + selectedOption + "&textWord=" + textWord + "&pageNo=" + pageNo;	/* 필요없는 파라미터 제거 (2016-11-11 : 김연준) */
+							
+			//				var url = "/recall/recallBoard?" + data;
+			//				location.href = url;
+				
+							var form = document.createElement("form");
+							form.setAttribute("charset", "UTF-8");
+							form.setAttribute("method", "Post"); 
+							form.setAttribute("action", "/recall/recallBoard");
+							
+							var hiddenField = document.createElement("input");
+							hiddenField.setAttribute("type", "hidden");
+							hiddenField.setAttribute("name", "selectedOption");
+							hiddenField.setAttribute("value", selectedOption);
+							form.appendChild(hiddenField);
+							
+							if(selectedOption == "6") {
+								// 공표일로 검색
+								var hiddenField = document.createElement("input");
+								hiddenField.setAttribute("type", "hidden");
+								hiddenField.setAttribute("name", "startDate");
+								hiddenField.setAttribute("value", startDate);
+								form.appendChild(hiddenField);
+
+								var hiddenField = document.createElement("input");
+								hiddenField.setAttribute("type", "hidden");
+								hiddenField.setAttribute("name", "endDate");
+								hiddenField.setAttribute("value", endDate);
+								form.appendChild(hiddenField);
+								
+							} else {
+								// 그 외
+								var hiddenField = document.createElement("input");
+								hiddenField.setAttribute("type", "hidden");
+								hiddenField.setAttribute("name", "textWord");
+								hiddenField.setAttribute("value", textWord);
+								form.appendChild(hiddenField);
+								
+							}
+							
+							var hiddenField = document.createElement("input");
+							hiddenField.setAttribute("type", "hidden");
+							hiddenField.setAttribute("name", "pageNo");
+							hiddenField.setAttribute("value", pageNo);
+							form.appendChild(hiddenField);
+							
+							document.body.appendChild(form);				  
+							form.submit();								  
+						}
+					</script>
+					<li><a href="javascript:goPage(1)" title="다음 페이지">&gt;</a></li>
+
+					<li><a href="javascript:goPage(-1)" title="마지막 페이지" >&gt;&gt;</a></li>
+				</ul>
+			</div>
+			<!-- //page -->
+
+		</div>
+		<!-- //section -->
+
+	</div>
+	<!-- //contents -->
+
+</div>
+<!-- //contents_area -->
+
+<!-- layer_popup -->
+<div class="layer_popup">
+</div>
+<!-- //layer_popup -->
+
+<script >
+	(function ($) {
+
+		$('.btn_popup').bind('click', function (e) {
+			e.preventDefault();
+			var idx = $(this).index() - 1;
+			//var recallUid = $('tr > input[type=hidden]').eq(idx).val();
+			var recallUid = $('input[name=recallUid]').eq(idx).val();
+			//console.log(recallUid);
+			var url = "/recall/ajax/recallBoard";
+			$.ajax({
+				url: url,
+				data: {"recallUid": recallUid},
+				dataType: "html",
+				success: function (result) {
+
+					$(".layer_popup").html(result);
+				},
+				error: function (xhr, status, error) {
+					console.log(xhr.responseText);
+				}
+			});
+
+			var sWidth = $(window).width() / 4 + 50;
+			var sHeight = $(window).height() / 4 - 50;
+			$('.layer_popup').bPopup({
+				zIndex: 2,
+				modalClose: false,
+				position: [sWidth, sHeight],
+				follow: [false, false]
+			});
+		});
+		
+		$( ".datepicker" ).datepicker({
+			dateFormat: 'yymmdd'
+	        ,prevText: '이전 달'
+	        ,nextText: '다음 달'
+	        ,monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+	        ,monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+	        ,dayNames: ['일', '월', '화', '수', '목', '금', '토']
+	        ,dayNamesShort: ['일', '월', '화', '수', '목', '금', '토']
+	        ,dayNamesMin: ['일', '월', '화', '수', '목', '금', '토']
+        	,yearSuffix: '년'
+        	,changeMonth: true
+            ,changeYear: true
+            , yearRange:"2008:c"
+	        ,showMonthAfterYear: true
+	        ,showOtherMonths: true
+	    });
+		
+		function selectChange() {
+			if($("#selectBox").val() == '6'){
+				$(".searchText").val("");
+				$(".textSearch").hide();
+				$(".dateSearch").show();
+			} else {
+				$(".startDate").val("");
+				$(".endDate").val("");
+				$(".dateSearch").hide();
+				$(".textSearch").show();
+			}
+		}
+		selectChange();
+		$("#selectBox").change(function(){
+			selectChange();
+		});
+		
+	})(jQuery);
+</script>
+
+
+</div>
+
+
+
+<script>
+    if(top != window) {
+        top.location = window.location;
+    }
+    function addMenu(){
+    	$("#addMenu").show();
+    }
+    </script>		 
+<!-- main_cont04 -->
+<div class="main_container">
+    <div class="main_cont04">
+        <div class="part02 radius">
+            <ul>              
+                        
+                <li><a href="https://globalrecalls.oecd.org/" target="_blank"><img
+                        src="/resources/img/main/icon_main_cont04_201.gif" alt="OECD리콜정보" title="OECD리콜정보"/>OECD리콜정보</a>
+                </li>
+				   <li><a href="https://www.ciss.go.kr/www/contents.do?key=91" target="_blank"><img
+                        src="/resources/img/main/icon_main_cont04_206.gif" alt="한국소비자원" title="한국소비자원"/>소비자위해감시시스템</a>
+                </li>
+                <li><a href="https://kreach.me.go.kr/repwrt/index.do" target="_blank"><img
+                        src="/resources/img/main/icon_main_cont04_204.gif" alt="위해화학물질" title="위해화학물질"/>위해화학물질DB</a>
+                </li>
+                <li><a href="http://www.nifds.go.kr/toxinfo/" target="_blank"><img
+                        src="/resources/img/main/icon_main_cont04_204.gif" alt="독성정보DB" title="독성정보DB"/>독성정보DB</a>
+				</li>
+                <li><a href="https://www.consumer.go.kr/" target="_blank"><img
+                        src="/resources/img/main/icon_main_cont04_207.png" alt="소비자24" title="소비자24"/>소비자24</a>
+				</li>
+				 <li><a href="/monitoring/monitorMain"><img
+                        src="/resources/img/main/icon_main_cont04_202.gif"
+                        alt="모니터링" title="모니터링"/>모니터링</a></li>
+				 <li><a href="https://certi-icnp.kr" target="_blank"><img
+                        src="/resources/img/main/icon_main_cont04_205.jpg"
+                        alt="적합성인증" title="적합성인증"/>적합성인증</a></li>
+				 <li><a href="javascript:addMenu();"><img
+                        src="/resources/img/main/icon_main_cont04_101.gif"
+                        alt="유관기관" title="유관기관"/>유관기관</a></li>	
+            </ul>
+               
+                        <div id="addMenu" style="display:none;padding-right:50px;float:right;">
+                        <ul>
+                        <li><a href="https://kips.kr/" target="_blank">▶한국제품안전관리원</a></li>
+                        <li><a href="http://www.motie.go.kr/www/main.do" target="_blank">▶산업통상부</a></li>
+                        <li><a href="https://kats.go.kr/main.do" target="_blank">▶국가기술표준원</a></li>
+                        <li><a href="https://www.standard.go.kr/KSCI/portalindex.do" target="_blank">▶e나라표준인증</a></li>
+                        </ul>
+                        </div>
+        </div>
+    </div>
+    <br/>
+</div>
+<!-- //main_cont04 -->
+
+<!-- footer -->
+<div class="footer">
+    <!-- bottom_menu -->
+    <div class="bottom_menu">
+        <ul>
+			<li><a style="color:blue;font-size:10pt;" target="_blank" href="http://www.kats.go.kr/content.do?cmsid=366" title="개인정보취급방침">개인정보 처리방침</a></li>
+            <li>|</li>
+            <li><a href="/footer/mailCollect" title="이메일무단수집거부">이메일무단수집거부</a></li>
+            <li>|</li>
+            <li><a href="/footer/mailService" title="이메일서비스">이메일서비스</a></li>
+            <li>|</li>
+            <li><a href="#" id="btn_menu_all" title="전체메뉴">전체메뉴</a></li>
+        </ul>
+    </div>
+    <!-- //bottom_menu -->
+
+    <!-- inner -->
+    <div class="inner">
+        <p class="logo"><img src="/resources/img/common/foot_logo.jpg"
+                             alt="Safety KOREA산업통상부 국가기술표준원" title="Safety KOREA산업통상부 국가기술표준원"/></p>
+        <address>
+            <p>
+            <b>충북 음성군 맹동면 이수로 93 (우 27737)</b>
+            <b style="padding-left:50px;">시스템 장애 문의 : 043-870-5620</b>
+            </p>
+            <p><span>COPYRIGHT 2014 KATS. ALL RIGHT RESERVED.</span></p>
+            
+        </address>
+        
+    </div>
+    <!-- //inner -->
+</div>
+<!-- //footer -->
+
+
+<!-- menu_all -->
+<div id="menu_all">
+    <div class="inner">
+
+        <dl class="ml0">
+            <dt>정보공개</dt>
+
+            <dd><a href="#" onclick="$('#certifiGo').submit();"><em>·</em>인증정보 검색</a></dd>
+
+            <dd><a href="/release/openapi"><em>·</em>Open API</a></dd>
+        </dl>
+        <dl>
+            <dt>제품리콜</dt>
+            <dd><a href="/recall/recallBoard"><em>·</em>리콜정보 검색</a></dd>
+            <dd><a href="/recall/recallIntro"><em>·</em>리콜제도 소개</a></dd>
+            <dd><a href="/recall/recallProc01"><em>·</em>리콜절차 안내</a></dd>
+            <dd><a href="/recall/recallReportRegist"><em>·</em>사업자 리콜 보고</a></dd>
+
+            <dd><a href="/recall/recallGlobalSite"><em>·</em>해외 리콜 사이트</a></dd>
+        </dl>
+        <dl>
+            <dt>위해신고</dt>
+            <dd><a href="/report/product"><em>·</em>제품사고 신고</a></dd>
+            <dd><a href="/report/product_incident_report"><em>·</em>제품사고 발생 보고</a></dd> 
+
+            <dd><a href="/report/qna"><em>·</em>민원 Q&amp;A (외부링크)</a></dd>
+            <dd><a href="/report/illegal_entry"><em>·</em>불법·불량 제품신고 (외부링크)</a></dd>
+
+
+        </dl>
+        <dl>
+            <dt>안전정책</dt>
+            <dd><a href="/policy/statute"><em>·</em>법령</a></dd>
+            <dd><a href="/policy/totalPlan"><em>·</em>제품안전 종합계획</a></dd>
+            <dd><a href="/policy/childPlan"><em>·</em>어린이 기본계획</a></dd>
+            <dd><a href="/policy/targetsSafetyCert"><em>·</em>제품안전 대상품목</a></dd>
+            <dd><a href="/policy/standard"><em>·</em>제품안전 기준열람</a></dd>
+            <dd><a href="/policy/b_marketProductCert"><em>·</em>시장유통 전</a></dd>
+            <dd><a href="/policy/a_marketSafety"><em>·</em>시장유통 후</a></dd>
+            <dd><a href="/policy/certification_info"><em>·</em>인증기관 소개</a></dd>
+        </dl>
+        <dl>
+            <dt>알림뉴스</dt>
+            <dd><a href="/news/notice"><em>·</em>공지사항</a></dd>
+            <dd><a href="/news/notification_policy"><em>·</em>정책알림  (외부링크)</a></dd>
+            <dd><a href="/news/promote"><em>·</em>보도자료</a></dd>
+            <dd><a href="/news/animation"><em>·</em>웹툰</a></dd>
+            <dd><a href="/news/public"><em>·</em>홍보영상</a></dd>
+            <dd><a href="/news/publications"><em>·</em>간행물</a></dd>
+			<dd><a href="/news/studentList"><em>·</em>제품안전 교육자료</a></dd>
+
+        </dl>
+        <dl>
+            <dt>센터소개</dt>
+            <dd><a href="/introduce/centerintro"><em>·</em>소개</a></dd>
+            <dd><a href="/introduce/staff"><em>·</em>직원안내</a></dd>
+            <dd><a href="/introduce/comeway"><em>·</em>오시는길</a></dd>
+            <dd><a href="/introduce/complain"><em>·</em>시스템 불편사항</a></dd>
+            <dd><a href="/introduce/media"><em>·</em>자주하는 질문</a></dd>
+        </dl>
+        <span class="b-close"><a href="#none"><img src="/resources/img/common/btn_menuall_close.gif" alt="닫기"/></a></span>
+    </div>
+</div>
+<!-- menu_all -->
+
+
+<script >
+    (function ($) {
+        $(function () {
+        	
+        	$('#btn_menu_all').on("click", function(e){
+        		e.preventDefault();
+                $("#menu_all").fadeIn();
+        	});
+        	$(".b-close").on("click", function(){
+        		$("#menu_all").fadeOut();
+        	});
+        	
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

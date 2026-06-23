@@ -1,0 +1,224 @@
+{
+  "version": "1.3.0",
+  "description": "Logical document registry per company for enterprise internal-doc lane",
+  "defaults": {
+    "ingest_profile": {
+      "chunk_size": 900,
+      "chunk_overlap": 150,
+      "supported_extensions": [".md", ".markdown", ".html", ".htm", ".json", ".jsonl", ".xml", ".csv", ".txt", ".pdf"]
+    },
+    "routing_defaults": {
+      "fallback_logical_doc": null,
+      "csv_supporting_logical_doc": null
+    },
+    "holdout_routing": {
+      "force_single_doc_quant": true,
+      "max_primary_docs": 1,
+      "require_primary_logical_map_only": true
+    }
+  },
+  "companies": {
+    "demo_company": {
+      "label": "demo_company",
+      "role": "development",
+      "corpus_artifact": "data/enterprise_docs/demo_company/corpus_units.jsonl",
+      "routing_defaults": {
+        "fallback_logical_doc": "doc_01_business",
+        "csv_supporting_logical_doc": "doc_evidence_csv"
+      },
+      "logical_documents": {
+        "doc_01_business": {
+          "path_hint": "01_사업보고서",
+          "domains": "일반,경제",
+          "topics": "매출,수익,사업,재무,financial,revenue",
+          "scope": "company_specific",
+          "role_labels": {
+            "qualitative": "business context / strategy narrative",
+            "quantitative": "financial / enterprise metrics"
+          }
+        },
+        "doc_02_ghg_energy": {
+          "path_hint": "02_온실가스",
+          "domains": "환경",
+          "topics": "온실가스,GHG,에너지,배출,scope,climate,energy",
+          "scope": "company_specific",
+          "role_labels": {
+            "qualitative": "environment performance narrative",
+            "quantitative": "environment / energy metrics"
+          }
+        },
+        "doc_03_renewable": {
+          "path_hint": "03_재생에너지",
+          "domains": "환경",
+          "topics": "재생에너지,renewable,전력,PPA",
+          "scope": "company_specific",
+          "role_labels": {
+            "quantitative": "environment / energy metrics"
+          }
+        },
+        "doc_04_hr_safety": {
+          "path_hint": "04_인사",
+          "domains": "사회",
+          "topics": "구성원,임원,직원,인사,안전,다양성,채용,이직,교육,HR,employee,safety",
+          "scope": "company_specific",
+          "role_labels": {
+            "qualitative": "workforce / safety narrative",
+            "quantitative": "workforce / safety statistics"
+          }
+        },
+        "doc_05_social": {
+          "path_hint": "05_사회공헌",
+          "domains": "사회",
+          "topics": "사회공헌,인권,지역사회,공급망,human rights,community",
+          "scope": "company_specific",
+          "role_labels": {
+            "qualitative": "social / human rights narrative"
+          }
+        },
+        "doc_06_governance": {
+          "path_hint": "06_지배구조",
+          "domains": "지배구조,일반",
+          "topics": "이사,지배구조,윤리,컴플라이언스,거버넌스,governance,board,ethics",
+          "scope": "company_specific",
+          "authoritative_for": ["financial_en_table"],
+          "role_labels": {
+            "qualitative": "governance structure / decision process",
+            "quantitative": "board / governance counts"
+          }
+        },
+        "doc_07_certification": {
+          "path_hint": "07_인증",
+          "domains": "일반,환경,사회,지배구조",
+          "topics": "인증,ISO,certification,CDP",
+          "scope": "company_specific",
+          "role_labels": {
+            "qualitative": "certification / disclosure narrative"
+          }
+        },
+        "doc_evidence_csv": {
+          "path_hint": "ESG_quant",
+          "domains": "일반,환경,사회,지배구조,경제",
+          "topics": "summary,aggregate,quantitative,performance",
+          "scope": "pilot_only",
+          "notes": "CSV boost pilot_only for demo_company",
+          "role_labels": {
+            "quantitative": "aggregated performance summary / year series"
+          }
+        }
+      }
+    },
+    "hanssem": {
+      "label": "hanssem",
+      "role": "holdout",
+      "corpus_artifact": "data/golden_set/v2/step1_corpus_units/pilot_hanssem_15_eligible.jsonl",
+      "corpus_reingested_artifact": "data/enterprise_docs/hanssem/corpus_units_reingested.jsonl",
+      "corpus_filtered_artifact": "data/enterprise_docs/hanssem/corpus_units_filtered.jsonl",
+      "corpus_family_scoped_artifact": "data/enterprise_docs/hanssem/corpus_units_family_scoped.jsonl",
+      "corpus_overlap_ready_artifact": "data/enterprise_docs/hanssem/corpus_units_overlap_ready.jsonl",
+      "source_package": "hanssem_mixed",
+      "retrieval_scope_default": "structured_esg_retrieval_ready",
+      "routing_defaults": {
+        "fallback_logical_doc": "doc_sr_narrative",
+        "csv_supporting_logical_doc": null
+      },
+      "holdout_routing": {
+        "force_single_doc_quant": true,
+        "max_primary_docs": 1,
+        "cross_doc_max_primary_docs": 2,
+        "cross_doc_quant_probe_pattern_families": [
+          "climate_narrative",
+          "scope_expansion",
+          "governance_numeric_narrative",
+          "environment_esg_grade",
+          "governance_materiality",
+          "esg_rating_narrative"
+        ]
+      },
+      "logical_documents": {
+        "doc_sr_narrative": {
+          "path_hint": "Environment",
+          "corpus_match_tokens": ["Environment", "Business", "sustain", "sustainability", "지속가능", "impact"],
+          "domains": "일반,환경,사회,지배구조",
+          "topics": "지속가능,ESG,SR,report,governance,climate",
+          "scope": "generic",
+          "document_type": "sustainability_report",
+          "role_labels": {
+            "qualitative": "sustainability narrative evidence",
+            "quantitative": "sustainability report numeric narrative"
+          },
+          "narrative_probe_priority": 1
+        },
+        "doc_governance_disclosure": {
+          "path_hint": "Governance",
+          "corpus_match_tokens": ["Governance", "지배구조", "기업지배구조", "DART", "board"],
+          "domains": "지배구조",
+          "topics": "이사회,ESG,board,governance",
+          "scope": "generic",
+          "document_type": "governance_report",
+          "role_labels": {
+            "qualitative": "governance disclosure narrative",
+            "quantitative": "governance disclosure numeric narrative"
+          },
+          "narrative_probe_priority": 2
+        }
+      }
+    },
+    "musinsa": {
+      "label": "musinsa",
+      "role": "holdout_probe",
+      "corpus_artifact": "data/golden_set/v2/step1_corpus_units/corpus_units.jsonl",
+      "corpus_reingested_artifact": "data/enterprise_docs/musinsa/corpus_units_reingested.jsonl",
+      "corpus_filtered_artifact": "data/enterprise_docs/musinsa/corpus_units_filtered.jsonl",
+      "corpus_family_scoped_artifact": "data/enterprise_docs/musinsa/corpus_units_family_scoped.jsonl",
+      "corpus_overlap_ready_artifact": "data/enterprise_docs/musinsa/corpus_units_overlap_ready.jsonl",
+      "source_package": "musinsa_mixed",
+      "retrieval_scope_default": "structured_esg_retrieval_ready",
+      "corpus_filter": {"company": "무신사"},
+      "routing_defaults": {
+        "fallback_logical_doc": "doc_impact_report",
+        "csv_supporting_logical_doc": null
+      },
+      "holdout_routing": {
+        "force_single_doc_quant": true,
+        "max_primary_docs": 1,
+        "cross_doc_max_primary_docs": 2,
+        "cross_doc_quant_probe_pattern_families": [
+          "climate_narrative",
+          "scope_expansion",
+          "governance_numeric_narrative",
+          "environment_esg_grade",
+          "governance_materiality",
+          "esg_rating_narrative"
+        ]
+      },
+      "logical_documents": {
+        "doc_impact_report": {
+          "path_hint": "Business",
+          "corpus_match_tokens": ["Business", "Governance", "impact", "임팩트", "사업보고서", "sustain"],
+          "domains": "일반,사회,환경",
+          "topics": "impact,ESG,report,지속가능",
+          "scope": "generic",
+          "document_type": "sustainability_report",
+          "role_labels": {
+            "qualitative": "impact report narrative evidence",
+            "quantitative": "impact report numeric narrative"
+          },
+          "narrative_probe_priority": 1
+        },
+        "doc_dart_disclosure": {
+          "path_hint": "Governance",
+          "corpus_match_tokens": ["Governance", "지배구조", "DART", "공시", "dart"],
+          "domains": "지배구조",
+          "topics": "공시,governance,board",
+          "scope": "generic",
+          "document_type": "dart_filing",
+          "role_labels": {
+            "qualitative": "regulatory disclosure narrative",
+            "quantitative": "regulatory disclosure numeric narrative"
+          },
+          "narrative_probe_priority": 2
+        }
+      }
+    }
+  }
+}

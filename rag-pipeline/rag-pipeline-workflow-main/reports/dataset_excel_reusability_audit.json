@@ -1,0 +1,151 @@
+{
+  "diagnostic_view": "generalization_hardening_v5_freeze",
+  "answerable_count": 67,
+  "reusable_system_coverage": 0.8955,
+  "company_specific_dependency": 0.1045,
+  "reusable_family_answer_accuracy": 1.0,
+  "company_tuned_family_answer_accuracy": 1.0,
+  "family_coverage": {
+    "board_director": {
+      "total_answerable": 8,
+      "answer_correct": 8,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "board_director"
+    },
+    "employee_status": {
+      "total_answerable": 33,
+      "answer_correct": 33,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "employee"
+    },
+    "executive_diversity": {
+      "total_answerable": 4,
+      "answer_correct": 4,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "executive"
+    },
+    "fair_trade_sanction": {
+      "total_answerable": 2,
+      "answer_correct": 2,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "company_or_semantic_tuned",
+      "display_family": "sanction_fair_trade"
+    },
+    "financial_capex": {
+      "total_answerable": 1,
+      "answer_correct": 1,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "financial"
+    },
+    "financial_interest": {
+      "total_answerable": 3,
+      "answer_correct": 3,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "financial"
+    },
+    "financial_revenue": {
+      "total_answerable": 4,
+      "answer_correct": 4,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "financial"
+    },
+    "financial_tax": {
+      "total_answerable": 5,
+      "answer_correct": 5,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "company_or_semantic_tuned",
+      "display_family": "financial"
+    },
+    "minimum_wage": {
+      "total_answerable": 2,
+      "answer_correct": 2,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "minimum_wage"
+    },
+    "sanction_pipc": {
+      "total_answerable": 2,
+      "answer_correct": 2,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "sanction_fair_trade"
+    },
+    "sanction_safetykorea": {
+      "total_answerable": 3,
+      "answer_correct": 3,
+      "answer_accuracy": 1.0,
+      "reusability_tier": "reusable_pattern",
+      "display_family": "sanction_fair_trade"
+    }
+  },
+  "counts": {
+    "reusable_family_questions": 60,
+    "company_tuned_family_questions": 7,
+    "other_questions": 0,
+    "reusable_clean_questions": 60,
+    "company_dependency_questions": 7
+  },
+  "qualitative_summary": {
+    "reusable_system_coverage_interpretation": "~89.5% answerable questions answered via reusable families (board_director, employee_status, executive_diversity, financial_capex, financial_generic, financial_interest, financial_revenue, minimum_wage, sanction_pipc, sanction_safetykorea) without coverage/semantic exception tags.",
+    "company_specific_dependency_interpretation": "~10.4% answerable questions touch company-tuned families, FTC blocked paths, or SME ambiguity tags.",
+    "rule_inventory": {
+      "reusable_generic_rule": 7,
+      "pattern_specific_rule": 14,
+      "company_specific_rule": 3,
+      "semantic_or_coverage_exception": 4
+    },
+    "v5_residual_not_baseline_gaps": {
+      "coverage_gap_ftc_blocked": 2,
+      "semantic_ambiguity": 4,
+      "retrieval_top1_miss_with_correct_answer": 4
+    }
+  },
+  "reusable_rule_ids": [
+    "abstain_low_evidence",
+    "corpus_local_over_web_dedup",
+    "corpus_sanction_lane_doc_title",
+    "extractor_board_director",
+    "extractor_employee_kv",
+    "extractor_executive_female_ratio",
+    "extractor_financial_capex_cashflow",
+    "extractor_financial_period_offset",
+    "extractor_financial_tax_distribution",
+    "extractor_financial_tax_retained_proxy",
+    "extractor_minimum_wage_year_token",
+    "extractor_numeric_fallback",
+    "extractor_safetykorea_empty_recall",
+    "extractor_sanction_zero_signals",
+    "retrieval_bm25_lexical_hybrid",
+    "retrieval_board_vs_executive_separation",
+    "retrieval_cross_family_penalty",
+    "retrieval_employee_vs_executive_separation",
+    "retrieval_sanction_lane_routing",
+    "retrieval_year_boost",
+    "source_match_lane_aware"
+  ],
+  "company_specific_rule_ids": [
+    "audit_emni_0237_note",
+    "corpus_goldns_local_file_supplement",
+    "corpus_goldns_minimum_wage_clone"
+  ],
+  "exception_rule_ids": [
+    "ftc_blocked_zero_assumption",
+    "not_worth_productizing_case_tweaks",
+    "retrieval_top1_miss_answer_correct",
+    "tax_label_semantic_ambiguity"
+  ],
+  "baseline_v5_metrics": {
+    "retrieval_hit_top1": 0.9403,
+    "answer_accuracy": 1.0,
+    "abstain_accuracy": 1.0,
+    "overall_score": 0.9702
+  },
+  "rule_inventory_path": "data/dataset_excel/rule_inventory.json",
+  "results_source": "reports/goldns_emni_rag_eval_20260618-100003/results.jsonl"
+}

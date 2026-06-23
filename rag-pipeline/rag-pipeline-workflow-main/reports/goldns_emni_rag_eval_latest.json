@@ -1,0 +1,482 @@
+{
+  "total_questions": 530,
+  "answerable_count": 67,
+  "abstain_count": 463,
+  "retrieval_hit_top1": 0.9403,
+  "retrieval_hit_topk": 0.9403,
+  "source_match_top1": 0.9403,
+  "source_match_topk": 0.9403,
+  "answer_accuracy": 1.0,
+  "abstain_accuracy": 1.0,
+  "overall_score": 0.9702,
+  "delta_vs_v2": {
+    "retrieval_hit_top1": 0.1791,
+    "retrieval_hit_topk": 0.0896,
+    "source_match_top1": 0.1791,
+    "source_match_topk": 0.0896,
+    "answer_accuracy": 0.1343,
+    "abstain_accuracy": 0.0,
+    "overall_score": 0.1232
+  },
+  "delta_vs_v3": {
+    "retrieval_hit_top1": 0.0896,
+    "retrieval_hit_topk": 0.0896,
+    "source_match_top1": 0.0896,
+    "source_match_topk": 0.0896,
+    "answer_accuracy": 0.1045,
+    "abstain_accuracy": 0.0,
+    "overall_score": 0.071
+  },
+  "delta_vs_v4": {
+    "retrieval_hit_top1": 0.0,
+    "retrieval_hit_topk": 0.0,
+    "source_match_top1": 0.0,
+    "source_match_topk": 0.0,
+    "answer_accuracy": 0.0746,
+    "abstain_accuracy": 0.0,
+    "overall_score": 0.0187
+  },
+  "v2_baseline": {
+    "retrieval_hit_top1": 0.7612,
+    "retrieval_hit_topk": 0.8507,
+    "source_match_top1": 0.7612,
+    "source_match_topk": 0.8507,
+    "answer_accuracy": 0.8657,
+    "abstain_accuracy": 1.0,
+    "overall_score": 0.847
+  },
+  "v3_baseline": {
+    "retrieval_hit_top1": 0.8507,
+    "retrieval_hit_topk": 0.8507,
+    "source_match_top1": 0.8507,
+    "source_match_topk": 0.8507,
+    "answer_accuracy": 0.8955,
+    "abstain_accuracy": 1.0,
+    "overall_score": 0.8992
+  },
+  "v4_baseline": {
+    "retrieval_hit_top1": 0.9403,
+    "retrieval_hit_topk": 0.9403,
+    "source_match_top1": 0.9403,
+    "source_match_topk": 0.9403,
+    "answer_accuracy": 0.9254,
+    "abstain_accuracy": 1.0,
+    "overall_score": 0.9515
+  },
+  "metric_definitions": {
+    "retrieval_hit_top1": "answerable only; doc_title/file_url/lane khop o top-1 evidence",
+    "retrieval_hit_topk": "answerable only; doc_title/file_url/lane khop trong top-k evidence",
+    "source_match_top1": "alias cua retrieval_hit_top1",
+    "source_match_topk": "alias cua retrieval_hit_topk",
+    "answer_accuracy": "answerable only; predicted answer match gold",
+    "abstain_accuracy": "abstain only; model abstain khi gold khong co provenance",
+    "overall_score": "trung binh 4 metric: retrieval_hit_top1, source_match_top1, answer_accuracy, abstain_accuracy"
+  },
+  "fail_type_definitions": {
+    "answer_fail": "answerable; answer sai",
+    "retrieval_top1_miss": "answerable; tong so cau retrieval top-1 miss (co the overlap answer_fail)",
+    "answer_correct_but_wrong_top1": "answerable; answer dung nhung top-1 doc/lane sai",
+    "semantic_ambiguity": "answerable; co semantic_ambiguity hoac semantic_audit_note",
+    "coverage_gap": "answerable; thieu source that (vi du FTC blocked)",
+    "rule_extractor_gap": "answerable; answer sai do rule extractor/mapping"
+  },
+  "by_company": {
+    "emni": {
+      "total": 279,
+      "answerable": 43,
+      "abstain": 236,
+      "retrieval_hit_top1": 0.9535,
+      "answer_accuracy": 1.0,
+      "abstain_accuracy": 1.0
+    },
+    "goldns": {
+      "total": 251,
+      "answerable": 24,
+      "abstain": 227,
+      "retrieval_hit_top1": 0.9167,
+      "answer_accuracy": 1.0,
+      "abstain_accuracy": 1.0
+    }
+  },
+  "fail_by_family": {
+    "fair_trade_sanction": 2
+  },
+  "fail_type_breakdown": {
+    "semantic_ambiguity": 4,
+    "answer_correct_but_wrong_top1": 2,
+    "retrieval_top1_miss": 4
+  },
+  "diagnostic_breakdown": {
+    "semantic_ambiguity": 4,
+    "coverage_gap": 2
+  },
+  "coverage_gap_cases": [
+    {
+      "question_id": "goldns-0237",
+      "company_id": "goldns",
+      "question_family": "fair_trade_sanction",
+      "coverage_gap": "coverage_gap_ftc_blocked",
+      "source_url": "https://case.ftc.go.kr/ocp/co/violtLawList.do",
+      "fail_type": "answer_correct_but_wrong_top1"
+    },
+    {
+      "question_id": "goldns-0238",
+      "company_id": "goldns",
+      "question_family": "fair_trade_sanction",
+      "coverage_gap": "coverage_gap_ftc_blocked",
+      "source_url": "https://case.ftc.go.kr/ocp/co/violtLawList.do",
+      "fail_type": "answer_correct_but_wrong_top1"
+    }
+  ],
+  "fail_type_examples": {
+    "answer_fail": [],
+    "answer_correct_but_wrong_top1": [
+      {
+        "question_id": "goldns-0237",
+        "company_id": "goldns",
+        "question_family": "fair_trade_sanction",
+        "gold": "0",
+        "pred": "0",
+        "top1": "제재이력_pipc.json"
+      },
+      {
+        "question_id": "goldns-0238",
+        "company_id": "goldns",
+        "question_family": "fair_trade_sanction",
+        "gold": "0",
+        "pred": "0",
+        "top1": "제재이력_pipc.json"
+      }
+    ],
+    "semantic_ambiguity": [
+      {
+        "question_id": "emni-0236",
+        "company_id": "emni",
+        "question_family": "financial_tax",
+        "gold": "-4838",
+        "pred": "-4838",
+        "top1": "2025_재무_CFS.json"
+      },
+      {
+        "question_id": "emni-0237",
+        "company_id": "emni",
+        "question_family": "financial_tax",
+        "gold": "1487",
+        "pred": "1487",
+        "top1": "2024_exctvSttus.json"
+      },
+      {
+        "question_id": "emni-0238",
+        "company_id": "emni",
+        "question_family": "financial_tax",
+        "gold": "-387",
+        "pred": "-387",
+        "top1": "2023_exctvSttus.json"
+      },
+      {
+        "question_id": "goldns-0214",
+        "company_id": "goldns",
+        "question_family": "financial_tax",
+        "gold": "-1474",
+        "pred": "-1474",
+        "top1": "2025_재무_OFS.json"
+      }
+    ],
+    "retrieval_top1_miss": [
+      {
+        "question_id": "emni-0237",
+        "company_id": "emni",
+        "question_family": "financial_tax",
+        "gold": "1487",
+        "pred": "1487",
+        "top1": "2024_exctvSttus.json",
+        "answer_correct": true
+      },
+      {
+        "question_id": "emni-0238",
+        "company_id": "emni",
+        "question_family": "financial_tax",
+        "gold": "-387",
+        "pred": "-387",
+        "top1": "2023_exctvSttus.json",
+        "answer_correct": true
+      },
+      {
+        "question_id": "goldns-0237",
+        "company_id": "goldns",
+        "question_family": "fair_trade_sanction",
+        "gold": "0",
+        "pred": "0",
+        "top1": "제재이력_pipc.json",
+        "answer_correct": true
+      },
+      {
+        "question_id": "goldns-0238",
+        "company_id": "goldns",
+        "question_family": "fair_trade_sanction",
+        "gold": "0",
+        "pred": "0",
+        "top1": "제재이력_pipc.json",
+        "answer_correct": true
+      }
+    ]
+  },
+  "wrong_top_docs": {
+    "제재이력_pipc.json": 2,
+    "2024_exctvSttus.json": 1,
+    "2023_exctvSttus.json": 1
+  },
+  "emni_fail_examples": [
+    {
+      "question_id": "emni-0237",
+      "company_id": "emni",
+      "partition": "answerable_gold",
+      "scoring_rule": "value_match_with_unit",
+      "question_family": "financial_tax",
+      "question_text": "2024년 거버넌스 / 경제적 가치 창출 및 분배 / 유보된 경제가치 / 세금 및 공과 + 법인세 값은 무엇인가? (단위: 백만 원)",
+      "gold_answer_raw": "1487",
+      "gold_answer_normalized": 1487,
+      "doc_title": "2024_재무_OFS.json",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001534",
+      "file_url": "colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_재무/2024_재무_OFS.json",
+      "predicted_answer": "1487",
+      "predicted_abstain": false,
+      "predict_reason": "retained_value_profit_proxy",
+      "unsupported_family": null,
+      "semantic_ambiguity": "workbook label tax nhung gold map sang 당기순이익",
+      "retrieval_hit_top1": false,
+      "retrieval_hit_topk": false,
+      "source_match_top1": false,
+      "source_match_topk": false,
+      "answer_correct": true,
+      "abstain_correct": null,
+      "top_score": 4.4417,
+      "top_doc_titles": [
+        "2024_exctvSttus.json",
+        "2024_exctvSttus.json",
+        "2024_exctvSttus.json"
+      ],
+      "semantic_audit_note": "SME follow-up: workbook label may not match account in OFS",
+      "fail_type": "semantic_ambiguity",
+      "diagnostic_tags": [
+        "semantic_ambiguity"
+      ]
+    },
+    {
+      "question_id": "emni-0238",
+      "company_id": "emni",
+      "partition": "answerable_gold",
+      "scoring_rule": "value_match_with_unit",
+      "question_family": "financial_tax",
+      "question_text": "2023년 거버넌스 / 경제적 가치 창출 및 분배 / 유보된 경제가치 / 세금 및 공과 + 법인세 값은 무엇인가? (단위: 백만 원)",
+      "gold_answer_raw": "-387",
+      "gold_answer_normalized": -387,
+      "doc_title": "2023_재무_CFS.json",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001778",
+      "file_url": "colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_재무/2023_재무_CFS.json",
+      "predicted_answer": "-387",
+      "predicted_abstain": false,
+      "predict_reason": "retained_value_profit_proxy",
+      "unsupported_family": null,
+      "semantic_ambiguity": "workbook label tax nhung gold map sang 당기순이익",
+      "retrieval_hit_top1": false,
+      "retrieval_hit_topk": false,
+      "source_match_top1": false,
+      "source_match_topk": false,
+      "answer_correct": true,
+      "abstain_correct": null,
+      "top_score": 4.4417,
+      "top_doc_titles": [
+        "2023_exctvSttus.json",
+        "2023_exctvSttus.json",
+        "2023_exctvSttus.json"
+      ],
+      "semantic_audit_note": null,
+      "fail_type": "semantic_ambiguity",
+      "diagnostic_tags": [
+        "semantic_ambiguity"
+      ]
+    }
+  ],
+  "semantic_audit_cases": [
+    {
+      "question_id": "emni-0236",
+      "question_family": "financial_tax",
+      "note": "workbook label tax nhung gold map sang 당기순이익"
+    },
+    {
+      "question_id": "emni-0237",
+      "question_family": "financial_tax",
+      "note": "SME follow-up: workbook label may not match account in OFS"
+    },
+    {
+      "question_id": "emni-0238",
+      "question_family": "financial_tax",
+      "note": "workbook label tax nhung gold map sang 당기순이익"
+    },
+    {
+      "question_id": "goldns-0214",
+      "question_family": "financial_tax",
+      "note": "workbook label tax nhung gold map sang 당기순이익"
+    }
+  ],
+  "coverage_gaps_logged": [
+    "case.ftc.go.kr self_redirect_loop_blocked_by_site (FTC lane chua co raw HTML)"
+  ],
+  "blocked_sources_logged": [
+    "case.ftc.go.kr self_redirect_loop_blocked_by_site (web download lane)"
+  ],
+  "baseline_version": "v5",
+  "generalization_hardening": {
+    "diagnostic_view": "generalization_hardening_v5_freeze",
+    "answerable_count": 67,
+    "reusable_system_coverage": 0.8955,
+    "company_specific_dependency": 0.1045,
+    "reusable_family_answer_accuracy": 1.0,
+    "company_tuned_family_answer_accuracy": 1.0,
+    "family_coverage": {
+      "board_director": {
+        "total_answerable": 8,
+        "answer_correct": 8,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "board_director"
+      },
+      "employee_status": {
+        "total_answerable": 33,
+        "answer_correct": 33,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "employee"
+      },
+      "executive_diversity": {
+        "total_answerable": 4,
+        "answer_correct": 4,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "executive"
+      },
+      "fair_trade_sanction": {
+        "total_answerable": 2,
+        "answer_correct": 2,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "company_or_semantic_tuned",
+        "display_family": "sanction_fair_trade"
+      },
+      "financial_capex": {
+        "total_answerable": 1,
+        "answer_correct": 1,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "financial"
+      },
+      "financial_interest": {
+        "total_answerable": 3,
+        "answer_correct": 3,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "financial"
+      },
+      "financial_revenue": {
+        "total_answerable": 4,
+        "answer_correct": 4,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "financial"
+      },
+      "financial_tax": {
+        "total_answerable": 5,
+        "answer_correct": 5,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "company_or_semantic_tuned",
+        "display_family": "financial"
+      },
+      "minimum_wage": {
+        "total_answerable": 2,
+        "answer_correct": 2,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "minimum_wage"
+      },
+      "sanction_pipc": {
+        "total_answerable": 2,
+        "answer_correct": 2,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "sanction_fair_trade"
+      },
+      "sanction_safetykorea": {
+        "total_answerable": 3,
+        "answer_correct": 3,
+        "answer_accuracy": 1.0,
+        "reusability_tier": "reusable_pattern",
+        "display_family": "sanction_fair_trade"
+      }
+    },
+    "counts": {
+      "reusable_family_questions": 60,
+      "company_tuned_family_questions": 7,
+      "other_questions": 0,
+      "reusable_clean_questions": 60,
+      "company_dependency_questions": 7
+    },
+    "qualitative_summary": {
+      "reusable_system_coverage_interpretation": "~89.5% answerable questions answered via reusable families (board_director, employee_status, executive_diversity, financial_capex, financial_generic, financial_interest, financial_revenue, minimum_wage, sanction_pipc, sanction_safetykorea) without coverage/semantic exception tags.",
+      "company_specific_dependency_interpretation": "~10.4% answerable questions touch company-tuned families, FTC blocked paths, or SME ambiguity tags.",
+      "rule_inventory": {
+        "reusable_generic_rule": 7,
+        "pattern_specific_rule": 14,
+        "company_specific_rule": 3,
+        "semantic_or_coverage_exception": 4
+      },
+      "v5_residual_not_baseline_gaps": {
+        "coverage_gap_ftc_blocked": 2,
+        "semantic_ambiguity": 4,
+        "retrieval_top1_miss_with_correct_answer": 4
+      }
+    },
+    "reusable_rule_ids": [
+      "abstain_low_evidence",
+      "corpus_local_over_web_dedup",
+      "corpus_sanction_lane_doc_title",
+      "extractor_board_director",
+      "extractor_employee_kv",
+      "extractor_executive_female_ratio",
+      "extractor_financial_capex_cashflow",
+      "extractor_financial_period_offset",
+      "extractor_financial_tax_distribution",
+      "extractor_financial_tax_retained_proxy",
+      "extractor_minimum_wage_year_token",
+      "extractor_numeric_fallback",
+      "extractor_safetykorea_empty_recall",
+      "extractor_sanction_zero_signals",
+      "retrieval_bm25_lexical_hybrid",
+      "retrieval_board_vs_executive_separation",
+      "retrieval_cross_family_penalty",
+      "retrieval_employee_vs_executive_separation",
+      "retrieval_sanction_lane_routing",
+      "retrieval_year_boost",
+      "source_match_lane_aware"
+    ],
+    "company_specific_rule_ids": [
+      "audit_emni_0237_note",
+      "corpus_goldns_local_file_supplement",
+      "corpus_goldns_minimum_wage_clone"
+    ],
+    "exception_rule_ids": [
+      "ftc_blocked_zero_assumption",
+      "not_worth_productizing_case_tweaks",
+      "retrieval_top1_miss_answer_correct",
+      "tax_label_semantic_ambiguity"
+    ],
+    "baseline_v5_metrics": {
+      "retrieval_hit_top1": 0.9403,
+      "retrieval_hit_topk": 0.9403,
+      "source_match_top1": 0.9403,
+      "source_match_topk": 0.9403,
+      "answer_accuracy": 1.0,
+      "abstain_accuracy": 1.0,
+      "overall_score": 0.9702
+    }
+  }
+}

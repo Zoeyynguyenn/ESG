@@ -1,0 +1,244 @@
+{
+  "artifact": "enterprise_docs_natural_onboarding_gate",
+  "timestamp": "20260622-024105",
+  "phase": "natural_case_onboarding_gate",
+  "prior_artifact": "reports/enterprise_docs_fusion_equivalence_hardening_20260619-102350",
+  "cases_meta": {
+    "path": "data/enterprise_docs/crossdoc_capability_cases.jsonl",
+    "total": 24,
+    "constructed": 11,
+    "natural": 13
+  },
+  "capability_metrics": {
+    "alias_normalization_success_rate": 1.0,
+    "cross_doc_equivalence_match_rate": 1.0,
+    "cross_role_extraction_alignment_rate": 1.0,
+    "evidence_fusion_success_rate": 1.0,
+    "conflict_classification_accuracy": 1.0,
+    "conflict_resolution_readiness_rate": 1.0,
+    "single_source_to_multi_source_promotion_rate": 1.0,
+    "counts": {
+      "alias": {
+        "ok": 2,
+        "total": 2
+      },
+      "equivalence": {
+        "ok": 4,
+        "total": 4
+      },
+      "extraction": {
+        "ok": 7,
+        "total": 7
+      },
+      "fusion": {
+        "ok": 7,
+        "total": 7
+      },
+      "classification": {
+        "ok": 7,
+        "total": 7
+      },
+      "resolution": {
+        "ok": 7,
+        "total": 7
+      },
+      "promotion": {
+        "ok": 7,
+        "total": 7
+      }
+    },
+    "metric_notes": {
+      "alias_normalization_success_rate": "constructed value_pair cases",
+      "cross_doc_equivalence_match_rate": "constructed canonical/equiv cases",
+      "cross_role_extraction_alignment_rate": "constructed multi-source extract per logical doc",
+      "evidence_fusion_success_rate": "constructed multi_source_confirmed expectation",
+      "conflict_classification_accuracy": "constructed expected_conflict_status match",
+      "conflict_resolution_readiness_rate": "proxy: aggregation resolution_status resolved*",
+      "single_source_to_multi_source_promotion_rate": "constructed promotion_ok heuristic"
+    }
+  },
+  "natural_metrics": {
+    "case_count": 13,
+    "candidate_found_rate": 0.0,
+    "corpus_limited_rate": 1.0,
+    "system_gap_rate": 0.0,
+    "by_failure_mode": {
+      "corpus_limited_no_candidate": 13
+    }
+  },
+  "gate_evaluation": {
+    "gate_version": "natural_onboarding_gate_draft_v1",
+    "regression_gate_passed": true,
+    "natural_onboarding_draft_checks": {
+      "parser_coverage_minimum": {
+        "value": 0.0,
+        "threshold": 0.5,
+        "passed": false
+      }
+    },
+    "natural_onboarding_informational_only": true,
+    "layer_report": {
+      "by_capability_layer": {
+        "extraction": {
+          "metric": "cross_role_extraction_alignment_rate",
+          "value": 1.0,
+          "minimum": 1.0,
+          "passed": true,
+          "ghost_pass_count": null
+        },
+        "equivalence_collapse": {
+          "metric": "cross_doc_equivalence_match_rate",
+          "value": 1.0,
+          "minimum": 1.0,
+          "passed": true,
+          "ghost_pass_count": null
+        },
+        "fusion": {
+          "metric": "evidence_fusion_success_rate",
+          "value": 1.0,
+          "minimum": 1.0,
+          "passed": true,
+          "ghost_pass_count": null
+        },
+        "conflict_classification": {
+          "metric": "conflict_classification_accuracy",
+          "value": 1.0,
+          "minimum": 1.0,
+          "passed": true,
+          "ghost_pass_count": null
+        },
+        "readiness_promotion": {
+          "metric": "single_source_to_multi_source_promotion_rate",
+          "value": 1.0,
+          "minimum": 1.0,
+          "passed": true,
+          "ghost_pass_count": 0
+        }
+      },
+      "constructed_regression": {
+        "case_count": 11,
+        "all_layers_passed": true,
+        "metrics": {
+          "cross_role_extraction_alignment_rate": 1.0,
+          "cross_doc_equivalence_match_rate": 1.0,
+          "evidence_fusion_success_rate": 1.0,
+          "conflict_classification_accuracy": 1.0,
+          "single_source_to_multi_source_promotion_rate": 1.0
+        },
+        "ghost_pass_count": 0
+      },
+      "natural_diagnostics": {
+        "case_count": 13,
+        "candidate_found_rate": 0.0,
+        "corpus_limited_rate": 1.0,
+        "system_gap_rate": 0.0,
+        "by_failure_mode": {
+          "corpus_limited_no_candidate": 13
+        }
+      }
+    },
+    "overall_status": "ready_for_natural_plug_in"
+  },
+  "mandatory_answers": {
+    "1_core_gate_reusable_for_natural_cases": {
+      "answer": "Có — cùng harness `run_capability_benchmark()` và `evaluate_case()`; natural cases chỉ cần `test_type=natural_holdout_probe` + embedded probe. Không sửa pipeline lõi khi thêm case mới.",
+      "regression_gate_passed": true,
+      "reusable_harness": true
+    },
+    "2_natural_case_schema_fields": {
+      "answer": "case_id, case_origin=natural, company_id, family_id, pattern_family, logical_docs (optional), expected_capability_type, expected_outcome_class, expected_canonical_value / conflict / readiness (optional), probe embed.",
+      "schema_path": "data/enterprise_docs/natural_capability_case_schema.json"
+    },
+    "3_acceptance_gate_draft_for_real_docs": {
+      "constructed_regression": {
+        "case_count": 11,
+        "all_layers_passed": true,
+        "metrics": {
+          "cross_role_extraction_alignment_rate": 1.0,
+          "cross_doc_equivalence_match_rate": 1.0,
+          "evidence_fusion_success_rate": 1.0,
+          "conflict_classification_accuracy": 1.0,
+          "single_source_to_multi_source_promotion_rate": 1.0
+        },
+        "ghost_pass_count": 0
+      },
+      "natural_draft_thresholds": {
+        "parser_coverage_minimum": 0.5,
+        "candidate_found_rate_minimum": 0.3,
+        "corpus_limited_rate_maximum": 0.9,
+        "system_gap_rate_maximum": 0.2,
+        "cross_doc_eligible_fusion_minimum": null,
+        "notes": "Natural thresholds are draft — primary signal is failure_mode split (corpus_limited vs system_gap), not headline pass rate"
+      },
+      "natural_diagnostics": {
+        "case_count": 13,
+        "candidate_found_rate": 0.0,
+        "corpus_limited_rate": 1.0,
+        "system_gap_rate": 0.0,
+        "by_failure_mode": {
+          "corpus_limited_no_candidate": 13
+        }
+      }
+    },
+    "4_demo_constructed_dependencies_remaining": {
+      "answer": "Constructed `source_units` synthetic corpus; holdout corpus paths hanssem/musinsa; PROBE_PATHS hardcoded; pilot PILOT_FAMILIES filter; metric_equivalence_registry mở rộng khi gặp pattern mới — không block plug-in case mới.",
+      "depends_on_demo_corpus": [
+        "hanssem",
+        "musinsa holdout ingest"
+      ],
+      "depends_on_constructed_regression": true,
+      "independent_of_langgraph_synthesis": true
+    },
+    "5_shortest_onboarding_flow_for_real_docs": {
+      "steps": [
+        {
+          "step": 1,
+          "name": "ingest_documents",
+          "action": "Ingest enterprise PDF/HTML/XML/Excel via existing enterprise_docs ingest path",
+          "output": "Corpus units + logical_doc mapping for company_id"
+        },
+        {
+          "step": 2,
+          "name": "define_probes",
+          "action": "Author holdout probes JSONL (question, item, pattern_family, expected_signal)",
+          "output": "data/enterprise_docs/holdout_probes_{company_id}.jsonl"
+        },
+        {
+          "step": 3,
+          "name": "build_natural_cases",
+          "action": "Run natural_case_from_probe / build_natural_cases_for_company or write_onboarding_cases_jsonl",
+          "output": "Natural rows in crossdoc_capability_cases.jsonl with case_origin=natural"
+        },
+        {
+          "step": 4,
+          "name": "run_capability_gate",
+          "action": "scripts/run_enterprise_docs_natural_onboarding_gate.py",
+          "output": "Gate report: constructed regression must pass; natural diagnostics by failure_mode"
+        },
+        {
+          "step": 5,
+          "name": "review_by_layer",
+          "action": "Inspect report_by_capability_layer — corpus_limited vs system_gap",
+          "output": "Decision: expand corpus overlap vs extend registry/equivalence"
+        }
+      ],
+      "minimal_command": "python scripts/run_enterprise_docs_natural_onboarding_gate.py"
+    },
+    "6_next_step_after_onboarding_gate": {
+      "answer": "Onboard công ty thật đầu tiên: ingest → probes → natural cases → gate; phân tích corpus_limited vs system_gap; mở registry/equivalence chỉ khi system_gap; giữ constructed regression làm CI gate.",
+      "do_not": [
+        "LangGraph runtime",
+        "synthesis",
+        "parser/retrieval rebuild",
+        "case tuning for demo score"
+      ]
+    }
+  },
+  "schema_path": "data/enterprise_docs/natural_capability_case_schema.json",
+  "constraints": {
+    "no_synthesis": true,
+    "no_langgraph_trial": true,
+    "no_case_tuning": true,
+    "no_core_pipeline_rebuild": true
+  }
+}

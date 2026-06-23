@@ -1,0 +1,496 @@
+{
+  "matrix": [
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-001",
+      "document_type": "sustainability_report",
+      "family_guess": "governance_narrative",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-002",
+      "document_type": "sustainability_report",
+      "family_guess": "climate_narrative",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": true,
+      "aggregation_feasible": true,
+      "readiness_state": "extraction_ready",
+      "fail_stage": "ready",
+      "kind": "quantitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-003",
+      "document_type": "sustainability_report",
+      "family_guess": "governance_numeric_narrative",
+      "parser_ok": true,
+      "retrieval_feasible": false,
+      "extraction_feasible": true,
+      "aggregation_feasible": true,
+      "readiness_state": "extraction_ready",
+      "fail_stage": "ready",
+      "kind": "quantitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-004",
+      "document_type": "sustainability_report",
+      "family_guess": "esg_rating_narrative",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": true,
+      "aggregation_feasible": true,
+      "readiness_state": "extraction_ready",
+      "fail_stage": "ready",
+      "kind": "quantitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-005",
+      "document_type": "sustainability_report",
+      "family_guess": "employee_safety",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-006",
+      "document_type": "sustainability_report",
+      "family_guess": "supply_chain",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-007",
+      "document_type": "sustainability_report",
+      "family_guess": "scope_expansion",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": true,
+      "aggregation_feasible": true,
+      "readiness_state": "extraction_ready",
+      "fail_stage": "ready",
+      "kind": "quantitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-008",
+      "document_type": "sustainability_report",
+      "family_guess": "report_meta",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-009",
+      "document_type": "sustainability_report",
+      "family_guess": "environment_cdp",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-010",
+      "document_type": "sustainability_report",
+      "family_guess": "governance_materiality",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-011",
+      "document_type": "sustainability_report",
+      "family_guess": "employee_hr",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "hanssem",
+      "probe_id": "HOLDOUT-012",
+      "document_type": "sustainability_report",
+      "family_guess": "narrative_esg",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M001",
+      "document_type": "other",
+      "family_guess": "impact_report_meta",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M002",
+      "document_type": "other",
+      "family_guess": "governance_dart",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M003",
+      "document_type": "other",
+      "family_guess": "business_narrative",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": true,
+      "aggregation_feasible": true,
+      "readiness_state": "extraction_ready",
+      "fail_stage": "ready",
+      "kind": "quantitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M004",
+      "document_type": "other",
+      "family_guess": "platform_metric",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": true,
+      "aggregation_feasible": true,
+      "readiness_state": "extraction_ready",
+      "fail_stage": "ready",
+      "kind": "quantitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M005",
+      "document_type": "other",
+      "family_guess": "esg_report_listing",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M006",
+      "document_type": "other",
+      "family_guess": "environment_narrative",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M007",
+      "document_type": "other",
+      "family_guess": "employee_headcount",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": true,
+      "aggregation_feasible": true,
+      "readiness_state": "extraction_ready",
+      "fail_stage": "ready",
+      "kind": "quantitative",
+      "note": "feasibility_only_no_gold_answer"
+    },
+    {
+      "company_id": "musinsa",
+      "probe_id": "HOLDOUT-M008",
+      "document_type": "other",
+      "family_guess": "governance_board",
+      "parser_ok": true,
+      "retrieval_feasible": true,
+      "extraction_feasible": false,
+      "aggregation_feasible": false,
+      "readiness_state": "not_ready_for_synthesis",
+      "fail_stage": "synthesis_gap",
+      "kind": "qualitative",
+      "note": "feasibility_only_no_gold_answer"
+    }
+  ],
+  "by_company": {
+    "hanssem": {
+      "probe_count": 12,
+      "parser_ok_rate": 1.0,
+      "retrieval_feasible_rate": 0.9167,
+      "extraction_feasible_rate": 0.3333,
+      "aggregation_feasible_rate": 0.3333,
+      "readiness_distribution": {
+        "not_ready_for_synthesis": 8,
+        "extraction_ready": 4
+      },
+      "corpus_units": 15,
+      "role": "holdout"
+    },
+    "musinsa": {
+      "probe_count": 8,
+      "parser_ok_rate": 1.0,
+      "retrieval_feasible_rate": 1.0,
+      "extraction_feasible_rate": 0.375,
+      "aggregation_feasible_rate": 0.375,
+      "readiness_distribution": {
+        "not_ready_for_synthesis": 5,
+        "extraction_ready": 3
+      },
+      "corpus_units": 38,
+      "role": "holdout_probe"
+    }
+  },
+  "by_family": {
+    "families": {
+      "employee": {
+        "probe_count": 3,
+        "companies": [
+          "hanssem",
+          "musinsa"
+        ],
+        "registry_families": [
+          "employee_headcount",
+          "employee_ratio",
+          "hr_welfare"
+        ],
+        "scope": "generic",
+        "driver": "registry",
+        "parser_ok_rate": 1.0,
+        "retrieval_feasible_rate": 1.0,
+        "extraction_feasible_rate": 0.3333,
+        "aggregation_feasible_rate": 0.3333,
+        "readiness_distribution": {
+          "not_ready_for_synthesis": 2,
+          "extraction_ready": 1
+        },
+        "dominant_readiness_state": "not_ready_for_synthesis",
+        "reusability_level": "retrieval_only",
+        "holdout_runs": true,
+        "handoff_candidate": false,
+        "synthesis_allowed": false,
+        "probe_ids": [
+          "HOLDOUT-005",
+          "HOLDOUT-011",
+          "HOLDOUT-M004"
+        ]
+      },
+      "employee_headcount": {
+        "probe_count": 1,
+        "companies": [
+          "musinsa"
+        ],
+        "registry_families": [
+          "employee_headcount"
+        ],
+        "scope": "generic",
+        "driver": "registry",
+        "parser_ok_rate": 1.0,
+        "retrieval_feasible_rate": 1.0,
+        "extraction_feasible_rate": 1.0,
+        "aggregation_feasible_rate": 1.0,
+        "readiness_distribution": {
+          "extraction_ready": 1
+        },
+        "dominant_readiness_state": "extraction_ready",
+        "reusability_level": "reusable_holdout",
+        "holdout_runs": true,
+        "handoff_candidate": false,
+        "synthesis_allowed": false,
+        "probe_ids": [
+          "HOLDOUT-M007"
+        ]
+      },
+      "environment_ghg": {
+        "probe_count": 4,
+        "companies": [
+          "hanssem",
+          "musinsa"
+        ],
+        "registry_families": [
+          "environment_ghg"
+        ],
+        "scope": "generic",
+        "driver": "registry",
+        "parser_ok_rate": 1.0,
+        "retrieval_feasible_rate": 1.0,
+        "extraction_feasible_rate": 0.5,
+        "aggregation_feasible_rate": 0.5,
+        "readiness_distribution": {
+          "extraction_ready": 2,
+          "not_ready_for_synthesis": 2
+        },
+        "dominant_readiness_state": "extraction_ready",
+        "reusability_level": "reusable_holdout",
+        "holdout_runs": true,
+        "handoff_candidate": false,
+        "synthesis_allowed": false,
+        "probe_ids": [
+          "HOLDOUT-002",
+          "HOLDOUT-007",
+          "HOLDOUT-009",
+          "HOLDOUT-M006"
+        ]
+      },
+      "financial": {
+        "probe_count": 1,
+        "companies": [
+          "musinsa"
+        ],
+        "registry_families": [
+          "financial_en_bridge"
+        ],
+        "scope": "pilot_only",
+        "driver": "code_fallback",
+        "parser_ok_rate": 1.0,
+        "retrieval_feasible_rate": 1.0,
+        "extraction_feasible_rate": 1.0,
+        "aggregation_feasible_rate": 1.0,
+        "readiness_distribution": {
+          "extraction_ready": 1
+        },
+        "dominant_readiness_state": "extraction_ready",
+        "reusability_level": "pilot_only",
+        "holdout_runs": true,
+        "handoff_candidate": false,
+        "synthesis_allowed": false,
+        "probe_ids": [
+          "HOLDOUT-M003"
+        ]
+      },
+      "governance": {
+        "probe_count": 6,
+        "companies": [
+          "hanssem",
+          "musinsa"
+        ],
+        "registry_families": [
+          "governance_financial_anchor"
+        ],
+        "scope": "mixed",
+        "driver": "registry",
+        "parser_ok_rate": 1.0,
+        "retrieval_feasible_rate": 0.8333,
+        "extraction_feasible_rate": 0.3333,
+        "aggregation_feasible_rate": 0.3333,
+        "readiness_distribution": {
+          "not_ready_for_synthesis": 4,
+          "extraction_ready": 2
+        },
+        "dominant_readiness_state": "not_ready_for_synthesis",
+        "reusability_level": "retrieval_only",
+        "holdout_runs": true,
+        "handoff_candidate": false,
+        "synthesis_allowed": false,
+        "probe_ids": [
+          "HOLDOUT-001",
+          "HOLDOUT-003",
+          "HOLDOUT-004",
+          "HOLDOUT-010",
+          "HOLDOUT-M002",
+          "HOLDOUT-M008"
+        ]
+      },
+      "other": {
+        "probe_count": 5,
+        "companies": [
+          "hanssem",
+          "musinsa"
+        ],
+        "registry_families": [],
+        "scope": "narrative_only",
+        "driver": "narrative_retrieval_only",
+        "parser_ok_rate": 1.0,
+        "retrieval_feasible_rate": 1.0,
+        "extraction_feasible_rate": 0.0,
+        "aggregation_feasible_rate": 0.0,
+        "readiness_distribution": {
+          "not_ready_for_synthesis": 5
+        },
+        "dominant_readiness_state": "not_ready_for_synthesis",
+        "reusability_level": "retrieval_only",
+        "holdout_runs": true,
+        "handoff_candidate": false,
+        "synthesis_allowed": false,
+        "probe_ids": [
+          "HOLDOUT-006",
+          "HOLDOUT-008",
+          "HOLDOUT-012",
+          "HOLDOUT-M001",
+          "HOLDOUT-M005"
+        ]
+      }
+    },
+    "strongest_family": "employee_headcount",
+    "weakest_family": "governance",
+    "family_count": 6
+  }
+}

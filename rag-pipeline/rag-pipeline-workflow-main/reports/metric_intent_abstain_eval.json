@@ -1,0 +1,244 @@
+{
+  "summaries": {
+    "headcount_answer": {
+      "ok": 3,
+      "cases": 3
+    },
+    "gender_ratio_abstain": {
+      "ok": 3,
+      "cases": 3
+    },
+    "blocked_metrics": {
+      "ok": 5,
+      "cases": 5
+    }
+  },
+  "rows": [
+    {
+      "query": "무신사의 직원 수는 몇 명인가요?",
+      "group": "HC",
+      "expect": "answer",
+      "gt_status": "clean",
+      "note": "1891명 GT",
+      "abstain_recommended": false,
+      "no_relevant_evidence": false,
+      "retrieval_confidence": "high",
+      "abstain_reason": "",
+      "reliability_reason": "",
+      "reliability_flags": [],
+      "items_count": 5,
+      "top1_preview": "링 디렉터, 쿠팡 출신 엔지니어인 김상범 엔지니어링 담당임원 등이 올해 영입한 임원이다. 특히 테크 인력 확대가 눈에 띈다. 지난 6월까지 영입된 7명의 임원진 ",
+      "top1_answerable": true,
+      "all_items_unanswerable": false,
+      "ok": true
+    },
+    {
+      "query": "해당 기업의 총 구성원 수는 몇 명인가요?",
+      "group": "HC",
+      "expect": "answer",
+      "gt_status": "clean",
+      "note": "1891명 GT",
+      "abstain_recommended": false,
+      "no_relevant_evidence": false,
+      "retrieval_confidence": "high",
+      "abstain_reason": "",
+      "reliability_reason": "",
+      "reliability_flags": [],
+      "items_count": 5,
+      "top1_preview": "링 디렉터, 쿠팡 출신 엔지니어인 김상범 엔지니어링 담당임원 등이 올해 영입한 임원이다. 특히 테크 인력 확대가 눈에 띈다. 지난 6월까지 영입된 7명의 임원진 ",
+      "top1_answerable": true,
+      "all_items_unanswerable": false,
+      "ok": true
+    },
+    {
+      "query": "무신사 임직원은 몇 명인가요?",
+      "group": "HC",
+      "expect": "answer",
+      "gt_status": "clean",
+      "note": "",
+      "abstain_recommended": false,
+      "no_relevant_evidence": false,
+      "retrieval_confidence": "high",
+      "abstain_reason": "",
+      "reliability_reason": "",
+      "reliability_flags": [],
+      "items_count": 5,
+      "top1_preview": "링 디렉터, 쿠팡 출신 엔지니어인 김상범 엔지니어링 담당임원 등이 올해 영입한 임원이다. 특히 테크 인력 확대가 눈에 띈다. 지난 6월까지 영입된 7명의 임원진 ",
+      "top1_answerable": true,
+      "all_items_unanswerable": false,
+      "ok": true
+    },
+    {
+      "query": "해당 기업의 남성 비율은 몇 %인가요?",
+      "group": "GR",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "reliability_reason": "Top candidates lack numeric anchors matching the requested metric.",
+      "reliability_flags": [
+        "metric_anchor_missing",
+        "domain_mismatch",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "record_id: rec_21a52266362d5400 doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    },
+    {
+      "query": "해당 기업의 여성 비율은 몇 %인가요?",
+      "group": "GR",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "domain_mismatch",
+      "reliability_reason": "Top candidates appear to be policy, national statistics, or off-domain content.",
+      "reliability_flags": [
+        "domain_mismatch",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "record_id: rec_c959827fdefe1ad4 doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    },
+    {
+      "query": "무신사의 여성 구성 비중은 얼마인가요?",
+      "group": "GR",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "reliability_reason": "Top candidates lack numeric anchors matching the requested metric.",
+      "reliability_flags": [
+        "metric_anchor_missing",
+        "domain_mismatch",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "record_id: rec_2a7eca4eb720549a doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    },
+    {
+      "query": "해당 기업의 장애인 고용률은 몇 %인가요?",
+      "group": "BM",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "National mss.go.kr stats only; no Musinsa workforce disability rate",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "reliability_reason": "Top candidates lack numeric anchors matching the requested metric.",
+      "reliability_flags": [
+        "metric_anchor_missing",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "record_id: rec_521ee9578824a2a3 doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    },
+    {
+      "query": "해당 기업의 육아휴직 대상자 수는 몇 명인가요?",
+      "group": "BM",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "Policy text only; no numeric 대상자 count",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "domain_mismatch",
+      "reliability_reason": "Top candidates appear to be policy, national statistics, or off-domain content.",
+      "reliability_flags": [
+        "domain_mismatch",
+        "entity_mismatch",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "문적인 금융 서비스를 제공하고 있다. IBK기업은행은 직원들이 도전과 열정을 회복할 수 있도록 다양한 인사제도를 운영하고 있다. 2024년 상반기 정기인사 결과를",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    },
+    {
+      "query": "무신사의 장애인 고용률은 얼마인가요?",
+      "group": "BM",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "reliability_reason": "Top candidates lack numeric anchors matching the requested metric.",
+      "reliability_flags": [
+        "metric_anchor_missing",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "record_id: rec_77c53984c524b7f6 doc_id: doc_58e6364bd9ac8a59 company: 무신사 year: None sourc",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    },
+    {
+      "query": "이 회사 육아휴직 사용 인원은 몇 명입니까?",
+      "group": "BM",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "reliability_reason": "Top candidates lack numeric anchors matching the requested metric.",
+      "reliability_flags": [
+        "metric_anchor_missing",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "링 디렉터, 쿠팡 출신 엔지니어인 김상범 엔지니어링 담당임원 등이 올해 영입한 임원이다. 특히 테크 인력 확대가 눈에 띈다. 지난 6월까지 영입된 7명의 임원진 ",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    },
+    {
+      "query": "해당 기업의 여성기업 인증 비율은 몇 %인가요?",
+      "group": "BM",
+      "expect": "abstain",
+      "gt_status": "not_present",
+      "note": "No such company metric",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "reliability_reason": "Top candidates lack numeric anchors matching the requested metric.",
+      "reliability_flags": [
+        "metric_anchor_missing",
+        "domain_mismatch",
+        "no_answerable_evidence"
+      ],
+      "items_count": 5,
+      "top1_preview": "record_id: rec_490e19ec60f38936 doc_id: doc_fe5c2ae814531545 company: 무신사 year: None sourc",
+      "top1_answerable": false,
+      "all_items_unanswerable": true,
+      "ok": true
+    }
+  ]
+}

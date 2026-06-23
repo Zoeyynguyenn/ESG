@@ -1,0 +1,11 @@
+company_id: goldns
+company_name: 골드앤에스
+doc_title: 2025_empSttus.json
+source_url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000991
+file_url: colletor-ai/output_restart_goldns_20260616/골드앤에스_일반자료_20260616/02_재무_신용/DART_주요정보/2025_empSttus.json
+schema: dart_employee_status
+local_path: C:\Users\nguye\Downloads\data-company\dataset-excel\output_restart_goldns_20260616\output_restart_goldns_20260616\골드앤에스_일반자료_20260616\02_재무_신용\DART_주요정보\2025_empSttus.json
+
+# DART structured source (2025_empSttus.json, schema=dart_employee_status)
+- corp=골드앤에스 | division=교육 | sex=남 | regular=12 | contract=- | total=12 | avg_tenure=1.92 | annual_salary=692,606,000 | monthly_salary=46,173,000 | stlm_dt=2025-12-31
+- corp=골드앤에스 | division=교육 | sex=여 | regular=34 | contract=- | total=34 | avg_tenure=2.56 | annual_salary=1,304,947,000 | monthly_salary=31,827,000 | stlm_dt=2025-12-31

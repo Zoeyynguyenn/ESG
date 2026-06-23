@@ -1,0 +1,305 @@
+{
+  "version": "1.0.0",
+  "audit_type": "multi_format_transformation",
+  "by_format": {
+    "markdown": {
+      "format": "markdown",
+      "document_count": 32,
+      "companies": [
+        "demo_company",
+        "demo_company_rtx_7step",
+        "hanssem_mixed",
+        "musinsa_mixed"
+      ],
+      "parser_status": "implemented",
+      "parse_success_expected": 1.0,
+      "section_preservation": 0.9,
+      "table_preservation": 0.85,
+      "metadata_preservation": 0.7,
+      "unit_value_preservation": 0.8,
+      "structured_extraction_readiness": "strong",
+      "notes": "split_markdown_sections + table rows preserved in text",
+      "transformation_readiness_score": 0.85,
+      "readiness_tier": "strong"
+    },
+    "csv": {
+      "format": "csv",
+      "document_count": 1,
+      "companies": [
+        "demo_company"
+      ],
+      "parser_status": "implemented",
+      "parse_success_expected": 1.0,
+      "section_preservation": 0.3,
+      "table_preservation": 0.75,
+      "metadata_preservation": 0.4,
+      "unit_value_preservation": 0.7,
+      "structured_extraction_readiness": "adequate",
+      "notes": "pipe-delimited rows; no typed schema",
+      "transformation_readiness_score": 0.63,
+      "readiness_tier": "adequate"
+    },
+    "json": {
+      "format": "json",
+      "document_count": 24,
+      "companies": [
+        "demo_company",
+        "hanssem_mixed",
+        "musinsa_mixed"
+      ],
+      "parser_status": "implemented",
+      "parse_success_expected": 0.95,
+      "section_preservation": 0.2,
+      "table_preservation": 0.5,
+      "metadata_preservation": 0.6,
+      "unit_value_preservation": 0.65,
+      "structured_extraction_readiness": "adequate",
+      "notes": "pretty-print to text; structure flattened",
+      "transformation_readiness_score": 0.58,
+      "readiness_tier": "adequate"
+    },
+    "jsonl": {
+      "format": "jsonl",
+      "document_count": 2,
+      "companies": [
+        "hanssem_mixed",
+        "musinsa_mixed"
+      ],
+      "parser_status": "partial",
+      "parse_success_expected": 0.9,
+      "section_preservation": 0.2,
+      "table_preservation": 0.4,
+      "metadata_preservation": 0.5,
+      "unit_value_preservation": 0.5,
+      "structured_extraction_readiness": "weak",
+      "notes": "line-by-line not specialized in ingest_path",
+      "transformation_readiness_score": 0.5,
+      "readiness_tier": "adequate"
+    },
+    "html": {
+      "format": "html",
+      "document_count": 140,
+      "companies": [
+        "hanssem_mixed",
+        "musinsa_mixed"
+      ],
+      "parser_status": "implemented",
+      "parse_success_expected": 0.85,
+      "section_preservation": 0.2,
+      "table_preservation": 0.25,
+      "metadata_preservation": 0.3,
+      "unit_value_preservation": 0.4,
+      "structured_extraction_readiness": "weak",
+      "notes": "strip_html only; layout/tables lost",
+      "transformation_readiness_score": 0.4,
+      "readiness_tier": "weak"
+    },
+    "xml": {
+      "format": "xml",
+      "document_count": 98,
+      "companies": [
+        "hanssem_mixed",
+        "musinsa_mixed"
+      ],
+      "parser_status": "implemented",
+      "parse_success_expected": 0.8,
+      "section_preservation": 0.15,
+      "table_preservation": 0.2,
+      "metadata_preservation": 0.35,
+      "unit_value_preservation": 0.35,
+      "structured_extraction_readiness": "weak",
+      "notes": "raw text read; no DART/XML structure parser",
+      "transformation_readiness_score": 0.37,
+      "readiness_tier": "weak"
+    },
+    "pdf": {
+      "format": "pdf",
+      "document_count": 26,
+      "companies": [
+        "demo_company",
+        "hanssem_mixed",
+        "musinsa_mixed"
+      ],
+      "parser_status": "partial",
+      "parse_success_expected": 0.7,
+      "section_preservation": 0.15,
+      "table_preservation": 0.2,
+      "metadata_preservation": 0.25,
+      "unit_value_preservation": 0.3,
+      "structured_extraction_readiness": "weak",
+      "notes": "pypdf text extract; tables/layout fragile",
+      "transformation_readiness_score": 0.32,
+      "readiness_tier": "weak"
+    },
+    "image_ocr": {
+      "format": "image_ocr",
+      "document_count": 0,
+      "companies": [],
+      "parser_status": "planned",
+      "parse_success_expected": 0.0,
+      "section_preservation": 0.0,
+      "table_preservation": 0.0,
+      "metadata_preservation": 0.0,
+      "unit_value_preservation": 0.0,
+      "structured_extraction_readiness": "not_implemented",
+      "notes": "framework slot for image OCR pipeline",
+      "transformation_readiness_score": 0.0,
+      "readiness_tier": "weak"
+    },
+    "ppt": {
+      "format": "ppt",
+      "document_count": 0,
+      "companies": [],
+      "parser_status": "planned",
+      "parse_success_expected": 0.0,
+      "section_preservation": 0.0,
+      "table_preservation": 0.0,
+      "metadata_preservation": 0.0,
+      "unit_value_preservation": 0.0,
+      "structured_extraction_readiness": "not_implemented",
+      "notes": "framework slot for .pptx — not in supported_extensions",
+      "transformation_readiness_score": 0.0,
+      "readiness_tier": "weak"
+    },
+    "word": {
+      "format": "word",
+      "document_count": 0,
+      "companies": [],
+      "parser_status": "planned",
+      "parse_success_expected": 0.0,
+      "section_preservation": 0.0,
+      "table_preservation": 0.0,
+      "metadata_preservation": 0.0,
+      "unit_value_preservation": 0.0,
+      "structured_extraction_readiness": "not_implemented",
+      "notes": "framework slot for .docx — not in supported_extensions",
+      "transformation_readiness_score": 0.0,
+      "readiness_tier": "weak"
+    }
+  },
+  "format_priority_list": {
+    "strengthen_next": [
+      "html",
+      "xml",
+      "pdf"
+    ],
+    "maintain": [
+      "markdown",
+      "csv",
+      "json",
+      "jsonl"
+    ],
+    "planned_not_in_corpus": [
+      "word",
+      "ppt",
+      "image_ocr"
+    ]
+  },
+  "by_company_format": {
+    "demo_company": {
+      "csv": 1,
+      "json": 2,
+      "markdown": 16,
+      "pdf": 4
+    },
+    "demo_company_rtx_7step": {
+      "markdown": 8
+    },
+    "hanssem_mixed": {
+      "json": 11,
+      "xml": 78,
+      "html": 61,
+      "pdf": 15,
+      "markdown": 4,
+      "jsonl": 1
+    },
+    "musinsa_mixed": {
+      "json": 11,
+      "xml": 20,
+      "html": 79,
+      "pdf": 7,
+      "markdown": 4,
+      "jsonl": 1
+    }
+  },
+  "live_sample_probes": [
+    {
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\26.03.27_ESG_quant_RTX_EEO_CDP_evidence - 2024 Update Summary.csv",
+      "exists": true,
+      "source_type": "csv",
+      "parse_success": true,
+      "char_count": 2877,
+      "has_sections": false,
+      "has_table_markers": true,
+      "has_year": true,
+      "has_numeric": true
+    },
+    {
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\questions\\questions\\qualitative.json",
+      "exists": true,
+      "source_type": "json",
+      "parse_success": true,
+      "char_count": 17525,
+      "has_sections": false,
+      "has_table_markers": false,
+      "has_year": false,
+      "has_numeric": true
+    },
+    {
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\01_사업보고서_발췌.md",
+      "exists": true,
+      "source_type": "markdown",
+      "parse_success": true,
+      "char_count": 2526,
+      "has_sections": true,
+      "has_table_markers": true,
+      "has_year": true,
+      "has_numeric": true
+    },
+    {
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\02_온실가스_에너지_명세.md",
+      "exists": true,
+      "source_type": "markdown",
+      "parse_success": true,
+      "char_count": 2835,
+      "has_sections": true,
+      "has_table_markers": true,
+      "has_year": true,
+      "has_numeric": true
+    },
+    {
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_corp_code.json",
+      "exists": true,
+      "source_type": "json",
+      "parse_success": true,
+      "char_count": 70,
+      "has_sections": false,
+      "has_table_markers": false,
+      "has_year": false,
+      "has_numeric": true
+    },
+    {
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_공시목록.json",
+      "exists": true,
+      "source_type": "json",
+      "parse_success": true,
+      "char_count": 17814,
+      "has_sections": false,
+      "has_table_markers": false,
+      "has_year": true,
+      "has_numeric": true
+    }
+  ],
+  "metric_types": {
+    "exact": [
+      "document_count per format from inventory"
+    ],
+    "heuristic": [
+      "transformation_readiness_score",
+      "readiness_tier"
+    ],
+    "proxy": [
+      "live_sample_probes when file path accessible"
+    ]
+  }
+}

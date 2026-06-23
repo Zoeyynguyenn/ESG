@@ -1,0 +1,82 @@
+# Production stack - frozen 2026-06-10 (gate FlashRank)
+# OpenAI LLM + FlashRank CPU rerank cho luong RAG ESG hien tai.
+
+production_id: openai_hybrid_qdrant_flashrank
+frozen_at: "2026-06-10"
+status: frozen
+gate_benchmark: configs/benchmark_exportjson_openai_flashrank_gate.yaml
+gate_run_id: mc_20260610-100851
+description: >
+  Section-based + hybrid_dense_bm25_rerank + text-embedding-3-small
+  + Qdrant + FlashRank (CPU/ONNX) + generative gpt-4o-mini.
+
+baseline_reference: configs/production_openai_hybrid_qdrant_generative.yaml
+
+cache_root: artifacts/benchmark_cache
+
+stack:
+  lane: company_export_json_full
+  company_filter: 넥스트아이_dataset_package_20260528T091409
+  corpus_version: nexteye_esg_v1_1_1_openai_full_e2e
+  parser_version: jsonl_v1
+  corpus_ratio: 1.0
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: openai:text-embedding-3-small
+  openai_embed_batch: 32
+  retrieval_mode: hybrid_dense_bm25_rerank
+  reranker: flashrank
+  reranker_backend: flashrank
+  reranker_model: ms-marco-MultiBERT-L-12
+  vector_store: qdrant
+  candidate_pool: 64
+  top_k: 4
+  benchmark_language: ko
+  answer_mode: generative
+  llm_provider: openai_api
+  llm_model: gpt-4o-mini
+
+eval:
+  full_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_dev_ko.md
+  smoke_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_smoke_ci_ko.md
+
+smoke_ci:
+  question_ids:
+    - CE-J02
+    - CE-J03
+    - CE-J06
+    - CE-J07
+    - CE-J16
+  per_question:
+    CE-J02:
+      require: [retrieval_hit, citation_correct]
+    CE-J03:
+      require: [retrieval_hit, citation_correct, answer_correct]
+    CE-J06:
+      require: [retrieval_hit, citation_correct]
+      waive_answer: true
+      note: "J06 generative follow-up ticket P1-J06"
+    CE-J07:
+      require: [retrieval_hit, citation_correct, answer_correct]
+    CE-J16:
+      require: [insufficient_ok]
+
+monitoring:
+  thresholds:
+    retrieval_hit_rate_min: 0.8667
+    citation_correctness_min: 0.8667
+    insufficient_smoke_min: 1.0
+    answer_correctness_min: 0.7333
+    answer_correctness_waived_ids:
+      - CE-J06
+    query_time_avg_max_sec: 30.0
+  alert_on_regression:
+    - retrieval_hit_rate
+    - citation_correctness
+    - answer_correctness
+
+gate:
+  note: "Chay benchmark 15 cau KO truoc khi doi DEFAULT_PRODUCTION_CONFIG"
+  compare_against:
+    - configs/production_openai_hybrid_qdrant_generative.yaml

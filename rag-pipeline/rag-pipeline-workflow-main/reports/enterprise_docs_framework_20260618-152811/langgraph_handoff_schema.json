@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Handoff contract from enterprise internal-doc lane to LangGraph synthesis",
+  "required_fields": [
+    "question_id",
+    "company_id",
+    "answer_mode",
+    "readiness_state",
+    "predicted_value",
+    "evidence_bundle",
+    "handoff_allowed"
+  ],
+  "readiness_states": {
+    "handoff_allowed": [
+      "aggregation_ready",
+      "multi_source_sufficient",
+      "single_source_sufficient"
+    ],
+    "handoff_blocked": [
+      "coverage_gap",
+      "extraction_ready",
+      "honest_abstain",
+      "needs_sme_review",
+      "not_ready_for_synthesis",
+      "retrieval_ready"
+    ]
+  },
+  "synthesis_gate": {
+    "allowed_readiness_states": [
+      "single_source_sufficient",
+      "multi_source_sufficient",
+      "aggregation_ready"
+    ],
+    "min_quant_rate": 0.6,
+    "qualitative_requires_synthesis": true
+  },
+  "evidence_bundle_item": {
+    "logical_document_id": "string",
+    "unit_id": "string",
+    "metric_label": "string",
+    "value": "string",
+    "unit": "string|null",
+    "role": "string|null",
+    "snippet": "string"
+  },
+  "needs_review_by_values": [
+    "sme",
+    "dataset",
+    "none",
+    null
+  ]
+}

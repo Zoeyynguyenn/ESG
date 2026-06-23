@@ -1,0 +1,86 @@
+[
+  {
+    "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+    "expected_multi_source": true,
+    "promotion": {
+      "before_state": "extraction_ready",
+      "after_state": "multi_source_sufficient",
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "blockers": [],
+      "promotion_reason": "multi_role_aggregation"
+    },
+    "promotion_ok": true,
+    "conflict_status": "multi_source_confirmed"
+  },
+  {
+    "case_id": "CONSTRUCT-FUSION-GRADE-A",
+    "expected_multi_source": true,
+    "promotion": {
+      "before_state": "extraction_ready",
+      "after_state": "multi_source_sufficient",
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "blockers": [],
+      "promotion_reason": "multi_role_aggregation"
+    },
+    "promotion_ok": true,
+    "conflict_status": "multi_source_confirmed"
+  },
+  {
+    "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+    "expected_multi_source": false,
+    "promotion": {
+      "before_state": "extraction_ready",
+      "after_state": "multi_source_sufficient",
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "blockers": [],
+      "promotion_reason": "multi_role_aggregation"
+    },
+    "promotion_ok": true,
+    "conflict_status": "conflict_numeric"
+  },
+  {
+    "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+    "expected_multi_source": false,
+    "promotion": {
+      "before_state": "extraction_ready",
+      "after_state": "single_source_sufficient",
+      "promoted": true,
+      "promotion_target": "single_source_sufficient",
+      "blockers": [],
+      "promotion_reason": "family_package_rules_met"
+    },
+    "promotion_ok": true,
+    "conflict_status": "insufficient_cross_doc_support"
+  },
+  {
+    "case_id": "CONSTRUCT-SINGLE-SOURCE",
+    "expected_multi_source": false,
+    "promotion": {
+      "before_state": "extraction_ready",
+      "after_state": "single_source_sufficient",
+      "promoted": true,
+      "promotion_target": "single_source_sufficient",
+      "blockers": [],
+      "promotion_reason": "aggregator_sufficiency"
+    },
+    "promotion_ok": true,
+    "conflict_status": "single_source_sufficient"
+  },
+  {
+    "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+    "expected_multi_source": true,
+    "promotion": {
+      "before_state": "extraction_ready",
+      "after_state": "multi_source_sufficient",
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "blockers": [],
+      "promotion_reason": "multi_role_aggregation"
+    },
+    "promotion_ok": false,
+    "conflict_status": "conflict_numeric"
+  }
+]

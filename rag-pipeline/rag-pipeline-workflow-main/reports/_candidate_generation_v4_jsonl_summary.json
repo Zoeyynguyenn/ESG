@@ -1,0 +1,47 @@
+{
+  "ingest_version": "ref_seed_v4_jsonl",
+  "generated_at": "2026-06-11T11:58:15",
+  "input_units": 118,
+  "input_passages": 98,
+  "passages_rejected": 20,
+  "passage_reject_reasons": {
+    "cross_company_contamination": 14,
+    "no_esg_substance": 3,
+    "portal_navigation_noise": 2,
+    "pure_financial_or_analyst_noise": 1
+  },
+  "raw_candidates": 899,
+  "after_dedupe": 383,
+  "filtered_candidates": 175,
+  "companies": {
+    "한샘": 97,
+    "레이시온": 31,
+    "무신사": 47
+  },
+  "question_type_breakdown": {
+    "trend": 12,
+    "quantitative": 88,
+    "qualitative": 75
+  },
+  "candidate_kind_breakdown": {
+    "trend_or_change": 5,
+    "governance_policy": 34,
+    "report_or_framework_disclosure": 64,
+    "materiality_or_stakeholder": 12,
+    "quantitative_fact": 30,
+    "qualitative_narrative": 30
+  },
+  "seed_origin_breakdown": {
+    "jsonl_primary_candidate": 121,
+    "jsonl_mixed_candidate": 54
+  },
+  "high_noise_rejections": 2,
+  "yield_vs_old": "Có — v4 có 175 rows vs v1 ~17",
+  "diversity_vs_old": "Có — multi-seed per passage + 3 company mix",
+  "noise_note": "~0 noisy-salvageable; reviewer should triage portal/press rows",
+  "v4_spirit": "Có — workbook-first, candidate-rich, chưa canonical",
+  "review_ready_estimate": "Có — đủ để mở review workbook round tiếp (draft candidates, không gold-ready)",
+  "review_ready_flag": true,
+  "output_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_v4_jsonl.jsonl",
+  "output_xlsx": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_v4_jsonl.xlsx"
+}

@@ -1,0 +1,158 @@
+{
+  "total_questions": 530,
+  "answerable_count": 67,
+  "abstain_count": 463,
+  "retrieval_hit_top1": 0.8507,
+  "retrieval_hit_topk": 0.8507,
+  "source_match_top1": 0.8507,
+  "source_match_topk": 0.8507,
+  "answer_accuracy": 0.8955,
+  "abstain_accuracy": 1.0,
+  "overall_score": 0.8992,
+  "delta_vs_v2": {
+    "retrieval_hit_top1": 0.0895,
+    "retrieval_hit_topk": 0.0,
+    "source_match_top1": 0.0895,
+    "source_match_topk": 0.0,
+    "answer_accuracy": 0.0298,
+    "abstain_accuracy": 0.0,
+    "overall_score": 0.0522
+  },
+  "v2_baseline": {
+    "retrieval_hit_top1": 0.7612,
+    "retrieval_hit_topk": 0.8507,
+    "source_match_top1": 0.7612,
+    "source_match_topk": 0.8507,
+    "answer_accuracy": 0.8657,
+    "abstain_accuracy": 1.0,
+    "overall_score": 0.847
+  },
+  "metric_definitions": {
+    "retrieval_hit_top1": "answerable only; doc_title/file_url khop o top-1 evidence (khong dung source_url chung)",
+    "retrieval_hit_topk": "answerable only; doc_title/file_url khop trong top-k evidence",
+    "source_match_top1": "alias cua retrieval_hit_top1 trong v2",
+    "source_match_topk": "alias cua retrieval_hit_topk trong v2",
+    "answer_accuracy": "answerable only; predicted answer match gold",
+    "abstain_accuracy": "abstain only; model abstain khi gold khong co provenance",
+    "overall_score": "trung binh 4 metric: retrieval_hit_top1, source_match_top1, answer_accuracy, abstain_accuracy"
+  },
+  "by_company": {
+    "emni": {
+      "total": 279,
+      "answerable": 43,
+      "abstain": 236,
+      "retrieval_hit_top1": 0.9535,
+      "answer_accuracy": 1.0,
+      "abstain_accuracy": 1.0
+    },
+    "goldns": {
+      "total": 251,
+      "answerable": 24,
+      "abstain": 227,
+      "retrieval_hit_top1": 0.6667,
+      "answer_accuracy": 0.7083,
+      "abstain_accuracy": 1.0
+    }
+  },
+  "fail_by_family": {
+    "financial_tax": 4,
+    "generic": 2,
+    "board_director": 2,
+    "executive_diversity": 1,
+    "minimum_wage": 1,
+    "financial_revenue": 1,
+    "financial_generic": 1
+  },
+  "wrong_top_docs": {
+    "2025_empSttus.json": 7,
+    "2024_exctvSttus.json": 1,
+    "2023_exctvSttus.json": 1,
+    "제재이력.json": 1
+  },
+  "emni_fail_examples": [
+    {
+      "question_id": "emni-0237",
+      "company_id": "emni",
+      "partition": "answerable_gold",
+      "scoring_rule": "value_match_with_unit",
+      "question_family": "financial_tax",
+      "question_text": "2024년 거버넌스 / 경제적 가치 창출 및 분배 / 유보된 경제가치 / 세금 및 공과 + 법인세 값은 무엇인가? (단위: 백만 원)",
+      "gold_answer_raw": "1487",
+      "gold_answer_normalized": 1487,
+      "doc_title": "2024_재무_OFS.json",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001534",
+      "file_url": "colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_재무/2024_재무_OFS.json",
+      "predicted_answer": "1487",
+      "predicted_abstain": false,
+      "predict_reason": "retained_value_profit_proxy",
+      "unsupported_family": null,
+      "semantic_ambiguity": "workbook label tax nhung gold map sang 당기순이익",
+      "retrieval_hit_top1": false,
+      "retrieval_hit_topk": false,
+      "source_match_top1": false,
+      "source_match_topk": false,
+      "answer_correct": true,
+      "abstain_correct": null,
+      "top_score": 4.4417,
+      "top_doc_titles": [
+        "2024_exctvSttus.json",
+        "2024_exctvSttus.json",
+        "2024_exctvSttus.json"
+      ],
+      "semantic_audit_note": "SME follow-up: workbook label may not match account in OFS"
+    },
+    {
+      "question_id": "emni-0238",
+      "company_id": "emni",
+      "partition": "answerable_gold",
+      "scoring_rule": "value_match_with_unit",
+      "question_family": "financial_tax",
+      "question_text": "2023년 거버넌스 / 경제적 가치 창출 및 분배 / 유보된 경제가치 / 세금 및 공과 + 법인세 값은 무엇인가? (단위: 백만 원)",
+      "gold_answer_raw": "-387",
+      "gold_answer_normalized": -387,
+      "doc_title": "2023_재무_CFS.json",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001778",
+      "file_url": "colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_재무/2023_재무_CFS.json",
+      "predicted_answer": "-387",
+      "predicted_abstain": false,
+      "predict_reason": "retained_value_profit_proxy",
+      "unsupported_family": null,
+      "semantic_ambiguity": "workbook label tax nhung gold map sang 당기순이익",
+      "retrieval_hit_top1": false,
+      "retrieval_hit_topk": false,
+      "source_match_top1": false,
+      "source_match_topk": false,
+      "answer_correct": true,
+      "abstain_correct": null,
+      "top_score": 4.4417,
+      "top_doc_titles": [
+        "2023_exctvSttus.json",
+        "2023_exctvSttus.json",
+        "2023_exctvSttus.json"
+      ],
+      "semantic_audit_note": null
+    }
+  ],
+  "semantic_audit_cases": [
+    {
+      "question_id": "emni-0236",
+      "question_family": "financial_tax",
+      "note": "workbook label tax nhung gold map sang 당기순이익"
+    },
+    {
+      "question_id": "emni-0237",
+      "question_family": "financial_tax",
+      "note": "SME follow-up: workbook label may not match account in OFS"
+    },
+    {
+      "question_id": "emni-0238",
+      "question_family": "financial_tax",
+      "note": "workbook label tax nhung gold map sang 당기순이익"
+    }
+  ],
+  "blocked_sources_logged": [
+    "case.ftc.go.kr self_redirect_loop_blocked_by_site (web download lane)",
+    "goldns outcmpnyDrctrNdChangeSttus + 재무_OFS chua co trong local corpus lane"
+  ],
+  "baseline_version": "v3"
+}

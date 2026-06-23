@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Set RAG — Quy trình Silver → Gold</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' },
+            silver: { 100: '#f1f5f9', 300: '#cbd5e1', 500: '#64748b' },
+            gold: { 100: '#fef9c3', 400: '#facc15', 600: '#ca8a04' },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .timeline-line { background: linear-gradient(180deg, #94a3b8 0%, #2563eb 50%, #ca8a04 100%); }
+    .step-card:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -8px rgba(37, 99, 235, 0.15); }
+    .step-card { transition: all 0.2s ease; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-brand-800 to-brand-600 text-white">
+    <div class="max-w-5xl mx-auto px-6 py-12">
+      <p class="text-brand-100 text-sm font-medium uppercase tracking-wider mb-2">RAG Pipeline · ESG Evidence</p>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Quy trình 6 bước xây dựng Golden Set</h1>
+      <p class="text-blue-100 max-w-3xl text-lg leading-relaxed">
+        Mô hình <strong class="text-white">Từ Bạc thành Vàng</strong> (Silver → Gold): chuyển dữ liệu Q&A tổng hợp tự động
+        thành bộ đánh giá chuẩn do chuyên gia phê duyệt — nguồn sự thật cho regression RAG.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm">
+        <span class="bg-white/10 backdrop-blur px-3 py-1.5 rounded-full border border-white/20">
+          Dataset: <code class="text-yellow-200">data/rag_dataset/05_company_export_json/</code>
+        </span>
+        <span class="bg-white/10 backdrop-blur px-3 py-1.5 rounded-full border border-white/20">50–100 mẫu Gold khởi đầu</span>
+        <span class="bg-white/10 backdrop-blur px-3 py-1.5 rounded-full border border-white/20">Metrics: Faithfulness · Relevancy · Groundedness</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-10 space-y-14">
+
+    <!-- Silver to Gold Flow -->
+    <section aria-labelledby="flow-title">
+      <h2 id="flow-title" class="text-2xl font-bold text-brand-900 mb-6">Luồng chuyển đổi Silver → Gold</h2>
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
+        <div class="flex flex-col md:flex-row items-stretch gap-4 md:gap-2">
+          <!-- Silver -->
+          <div class="flex-1 rounded-xl bg-slate-100 border-2 border-slate-300 p-5 text-center">
+            <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-slate-400 flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="font-bold text-slate-700 text-lg">Silver Dataset</h3>
+            <p class="text-sm text-slate-600 mt-2">LLM sinh Q&A từ chunk · Distillation + Evol-Instruct · Chưa kiểm SME</p>
+            <p class="text-xs text-slate-500 mt-3">Hàng trăm–nghìn cặp · Cần lọc &amp; review</p>
+          </div>
+          <div class="hidden md:flex items-center justify-center px-2 text-brand-500">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+          <div class="md:hidden flex justify-center text-brand-500">
+            <svg class="w-6 h-6 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+          <!-- Filters -->
+          <div class="flex-1 rounded-xl bg-brand-50 border-2 border-brand-200 p-5 text-center">
+            <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-brand-500 flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+            </div>
+            <h3 class="font-bold text-brand-800 text-lg">Lọc &amp; QC</h3>
+            <p class="text-sm text-brand-700 mt-2">Answerability · Difficulty · Groundedness · LLM-as-a-judge</p>
+          </div>
+          <div class="hidden md:flex items-center justify-center px-2 text-brand-500">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+          <div class="md:hidden flex justify-center text-brand-500">
+            <svg class="w-6 h-6 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+          <!-- Gold -->
+          <div class="flex-1 rounded-xl bg-gradient-to-br from-gold-100 to-amber-50 border-2 border-gold-400 p-5 text-center">
+            <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-gold-600 flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <h3 class="font-bold text-amber-900 text-lg">Golden Set</h3>
+            <p class="text-sm text-amber-800 mt-2">SME phê duyệt · Source of Truth · JSONL/CSV versioned</p>
+            <p class="text-xs text-amber-700 mt-3">Regression CI/CD · Component-level eval</p>
+          </div>
+        </div>
+        <p class="text-center text-sm text-slate-500 mt-6">
+          Mỗi mẫu Gold: <strong>Question</strong> + <strong>Context (reference)</strong> + <strong>Ground Truth</strong> + <strong>Metadata</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Data source context -->
+    <section class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+      <h2 class="text-lg font-semibold text-brand-900 mb-3">Nguồn dữ liệu trong repo</h2>
+      <p class="text-slate-600 text-sm leading-relaxed mb-4">
+        Lane <code class="bg-slate-100 px-1.5 py-0.5 rounded text-brand-700">company_export_json_full</code> đọc các package
+        tại <code class="bg-slate-100 px-1.5 py-0.5 rounded">data/rag_dataset/05_company_export_json/</code>
+        (manifest, splits/full.jsonl, company_evidence, requirement_taxonomy). Bảng chuẩn ESG
+        <code class="bg-slate-100 px-1.5 py-0.5 rounded">ESG-정량</code> / <code class="bg-slate-100 px-1.5 py-0.5 rounded">ESG-정성</code>
+        cung cấp metadata GRI/SASB/K-ESG gắn vào chunk.
+      </p>
+      <div class="grid md:grid-cols-3 gap-3 text-xs">
+        <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">한샘_dataset_package_20260608T042739</div>
+        <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">레이시온_dataset_package_20260608T055801</div>
+        <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">무신사_dataset_package_20260608T092823</div>
+      </div>
+    </section>
+
+    <!-- 6 Steps Timeline -->
+    <section aria-labelledby="steps-title">
+      <h2 id="steps-title" class="text-2xl font-bold text-brand-900 mb-8">6 bước cốt lõi</h2>
+
+      <div class="relative">
+        <div class="absolute left-6 md:left-8 top-0 bottom-0 w-1 timeline-line rounded-full opacity-40" aria-hidden="true"></div>
+
+        <ol class="space-y-8">
+
+          <!-- Step 1 -->
+          <li class="relative pl-16 md:pl-20">
+            <div class="absolute left-3 md:left-5 top-4 w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-sm font-bold ring-4 ring-white shadow">1</div>
+            <article class="step-card bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex w-11 h-11 shrink-0 rounded-lg bg-brand-50 text-brand-600 items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-brand-900">Chuẩn bị dữ liệu nguồn</h3>
+                  <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                    Thu thập tài liệu từ export JSON package; <strong>chunking 200–1000 tokens</strong>, overlap 10–20%.
+                    Gắn <strong>metadata</strong>: chunk_id, source path, company package, và mã chuẩn từ
+                    <strong>ESG-정량</strong> (GRI, SASB, K-ESG, KBIZ).
+                  </p>
+                  <div class="mt-4 bg-slate-50 rounded-lg p-4 border-l-4 border-brand-500 text-sm">
+                    <p class="font-medium text-slate-700 mb-1">Ví dụ — Tỷ lệ nhân viên nữ (ESG-정량)</p>
+                    <p class="text-slate-600 font-mono text-xs leading-relaxed">
+                      영역: 사회 · 카테고리: 구성원 현황 · 항목: 여성 · 단위: % · GRI: <strong>405-1-b-i</strong> · K-ESG: <strong>S-3-1</strong>
+                    </p>
+                    <p class="text-slate-500 text-xs mt-2">
+                      Chunk metadata: <code>gri_code=405-1-b-i</code>, <code>unit=%</code>, <code>source=.../company_evidence.jsonl</code>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Step 2 -->
+          <li class="relative pl-16 md:pl-20">
+            <div class="absolute left-3 md:left-5 top-4 w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-sm font-bold ring-4 ring-white shadow">2</div>
+            <article class="step-card bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex w-11 h-11 shrink-0 rounded-lg bg-slate-100 text-slate-600 items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-brand-900">Sinh dữ liệu tổng hợp (SDG) — Distillation</h3>
+                  <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                    Teacher LLM (GPT-4o / Claude) đọc chunk → sinh cặp Q&A chỉ dựa trên context.
+                    Tạo <span class="inline-block px-2 py-0.5 bg-slate-200 text-slate-700 rounded text-xs font-medium">Silver Dataset</span> quy mô lớn, nhanh và rẻ.
+                  </p>
+                  <div class="mt-4 bg-slate-50 rounded-lg p-4 border-l-4 border-slate-400 text-sm">
+                    <p class="font-medium text-slate-700 mb-1">Ví dụ Silver (Simple)</p>
+                    <p class="text-slate-600"><strong>Q:</strong> GRI 405-1-b-i에 따른 여성 구성원 비율의 보고 단위는 무엇인가?</p>
+                    <p class="text-slate-600 mt-1"><strong>A:</strong> % (퍼센트)</p>
+                    <p class="text-slate-500 text-xs mt-2">ground_truth_context_id → chunk có GRI 405-1-b-i, 항목=여성</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Step 3 -->
+          <li class="relative pl-16 md:pl-20">
+            <div class="absolute left-3 md:left-5 top-4 w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-sm font-bold ring-4 ring-white shadow">3</div>
+            <article class="step-card bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex w-11 h-11 shrink-0 rounded-lg bg-brand-50 text-brand-600 items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-brand-900">Tiến hóa câu hỏi (Evol-Instruct)</h3>
+                  <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                    Biến đổi câu simple → <strong>Reasoning</strong> (suy luận), <strong>Multi-context</strong> (nhiều chunk),
+                    In-depth / Adversarial. Khắc phục mode collapse của Distillation thuần.
+                  </p>
+                  <div class="mt-4 bg-brand-50 rounded-lg p-4 border-l-4 border-brand-500 text-sm">
+                    <p class="font-medium text-brand-900 mb-1">Ví dụ Evolved (Reasoning + Multi-context)</p>
+                    <p class="text-brand-800 text-sm leading-relaxed">
+                      <strong>Q:</strong> 구성원 현황에서 여성 비율(405-1-b-i, 단위 %)과 정규직 여성 인원(2-7-b-i, 단위 명)을 함께 공시할 때,
+                      두 지표의 GRI disclosure와 보고 단위 차이를 설명하시오.
+                    </p>
+                    <p class="text-brand-700 text-xs mt-2">context_ids: [chunk_여성_%, chunk_정규직_여성_명]</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Step 4 -->
+          <li class="relative pl-16 md:pl-20">
+            <div class="absolute left-3 md:left-5 top-4 w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-sm font-bold ring-4 ring-white shadow">4</div>
+            <article class="step-card bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex w-11 h-11 shrink-0 rounded-lg bg-slate-100 text-slate-600 items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-brand-900">Lọc tự động (QC + LLM-as-a-judge)</h3>
+                  <ul class="mt-2 space-y-2 text-sm text-slate-600">
+                    <li class="flex gap-2"><span class="text-brand-500">●</span><strong>Answerability:</strong> Câu hỏi có thể trả lời chỉ từ context?</li>
+                    <li class="flex gap-2"><span class="text-brand-500">●</span><strong>Difficulty:</strong> Loại câu quá dễ (copy keyword).</li>
+                    <li class="flex gap-2"><span class="text-brand-500">●</span><strong>Groundedness:</strong> Câu trả lời không chứa thông tin ngoài context — chống ảo giác trong Golden.</li>
+                  </ul>
+                  <div class="mt-4 grid sm:grid-cols-3 gap-2 text-xs">
+                    <div class="bg-red-50 text-red-800 p-2 rounded border border-red-100 text-center">Faithfulness</div>
+                    <div class="bg-blue-50 text-blue-800 p-2 rounded border border-blue-100 text-center">Answer Relevancy</div>
+                    <div class="bg-emerald-50 text-emerald-800 p-2 rounded border border-emerald-100 text-center">Groundedness</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Step 5 -->
+          <li class="relative pl-16 md:pl-20">
+            <div class="absolute left-3 md:left-5 top-4 w-7 h-7 rounded-full bg-gold-600 text-white flex items-center justify-center text-sm font-bold ring-4 ring-white shadow">5</div>
+            <article class="step-card bg-gradient-to-br from-amber-50 to-white rounded-xl border-2 border-gold-400 p-6 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex w-11 h-11 shrink-0 rounded-lg bg-gold-100 text-gold-600 items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-amber-900">Kiểm chứng SME — Bước chốt “Vàng”</h3>
+                  <p class="text-amber-900/80 mt-2 text-sm leading-relaxed">
+                    Chuyên gia ESG (SME) review Silver đã lọc: sửa Q/A, bổ sung edge cases (câu mơ hồ, bẫy pillar),
+                    xác nhận map GRI/SASB đúng chuẩn disclosure. <strong>Chỉ sau bước này mới là Golden Set.</strong>
+                  </p>
+                  <div class="mt-4 bg-white/80 rounded-lg p-4 border border-gold-300 text-sm">
+                    <p class="font-medium text-amber-900 mb-1">SME kiểm tra ví dụ 여성 %</p>
+                    <p class="text-amber-800 text-xs">Đúng disclosure 405-1-b-i? Đơn vị % khớp taxonomy? Không nhầm với 정규직 여성 (명)?</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Step 6 -->
+          <li class="relative pl-16 md:pl-20">
+            <div class="absolute left-3 md:left-5 top-4 w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-sm font-bold ring-4 ring-white shadow">6</div>
+            <article class="step-card bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex w-11 h-11 shrink-0 rounded-lg bg-brand-50 text-brand-600 items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-brand-900">Phiên bản hóa &amp; CI/CD</h3>
+                  <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                    Lưu JSONL/CSV: <code class="text-xs bg-slate-100 px-1 rounded">question</code>,
+                    <code class="text-xs bg-slate-100 px-1 rounded">ground_truth_answer</code>,
+                    <code class="text-xs bg-slate-100 px-1 rounded">ground_truth_context_ids</code>,
+                    metadata (difficulty, gri_code, company_package). Version v1.0, v1.1…
+                    Tích hợp smoke/regression CI (tương tự <code class="text-xs">run_production_smoke_ci.py</code>).
+                  </p>
+                  <pre class="mt-4 bg-slate-900 text-slate-100 text-xs p-4 rounded-lg overflow-x-auto"><code>{
+  "question": "GRI 405-1-b-i에 따른 여성 구성원 비율의 단위는?",
+  "ground_truth_answer": "%",
+  "ground_truth_context_ids": ["hanssem_evidence_chunk_042"],
+  "metadata": { "gri_code": "405-1-b-i", "difficulty": "easy", "company": "한샘" }
+}</code></pre>
+                </div>
+              </div>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- Tools comparison -->
+    <section aria-labelledby="tools-title">
+      <h2 id="tools-title" class="text-2xl font-bold text-brand-900 mb-6">Công cụ hỗ trợ</h2>
+      <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm bg-white">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-brand-800 text-white">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Công cụ</th>
+              <th class="px-4 py-3 font-semibold">Vai trò chính</th>
+              <th class="px-4 py-3 font-semibold">Ưu điểm</th>
+              <th class="px-4 py-3 font-semibold">Nhược điểm</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="hover:bg-brand-50/50">
+              <td class="px-4 py-3 font-semibold text-brand-700">Ragas</td>
+              <td class="px-4 py-3 text-slate-600">Evolutionary Query Gen. + metric RAG chuẩn</td>
+              <td class="px-4 py-3 text-slate-600">Simple / Reasoning / Multi-context; Faithfulness, Context Precision</td>
+              <td class="px-4 py-3 text-slate-500">Tốn token; cần tinh prompt</td>
+            </tr>
+            <tr class="hover:bg-brand-50/50">
+              <td class="px-4 py-3 font-semibold text-brand-700">DeepEval</td>
+              <td class="px-4 py-3 text-slate-600">Synthesizer + unit test Pytest / CI/CD</td>
+              <td class="px-4 py-3 text-slate-600">Dễ tích hợp pipeline; lọc low-quality; báo cáo đẹp</td>
+              <td class="px-4 py-3 text-slate-500">Câu hỏi phức tạp kém đa dạng hơn Ragas</td>
+            </tr>
+            <tr class="hover:bg-brand-50/50">
+              <td class="px-4 py-3 font-semibold text-brand-700">Arize Phoenix</td>
+              <td class="px-4 py-3 text-slate-600">Observability, trace, synthetic data UI</td>
+              <td class="px-4 py-3 text-slate-600">Trực quan hóa embedding &amp; trace; debug retrieval miss</td>
+              <td class="px-4 py-3 text-slate-500">Sinh Golden không phải trọng tâm mạnh nhất</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-slate-500 mt-4">
+        Đề xuất kết hợp: <strong>Ragas</strong> sinh &amp; đo metric → <strong>DeepEval</strong> gate CI/CD → <strong>Phoenix</strong> phân tích khi regression.
+      </p>
+    </section>
+
+    <!-- Metrics footer -->
+    <section class="bg-brand-900 text-white rounded-2xl p-8">
+      <h2 class="text-lg font-bold mb-4">Metric đánh giá RAG trên Golden Set</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-semibold text-brand-100 mb-2">Retrieval</h3>
+          <ul class="space-y-1 text-blue-100">
+            <li>Context Precision &amp; Recall</li>
+            <li>Retrieval hit / citation correctness</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-brand-100 mb-2">Generation</h3>
+          <ul class="space-y-1 text-blue-100">
+            <li><strong>Faithfulness</strong> — không ảo giác</li>
+            <li><strong>Answer Relevancy</strong> — đúng trọng tâm</li>
+            <li><strong>Groundedness</strong> — bám context</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white mt-12">
+    <div class="max-w-5xl mx-auto px-6 py-6 text-center text-xs text-slate-500">
+      Golden Set Workflow · RAG Pipeline · Dataset: <code>data/rag_dataset/05_company_export_json/</code>
+      · Tham chiếu tài liệu Silver-to-Gold &amp; ESG-정량 taxonomy
+    </div>
+  </footer>
+
+</body>
+</html>

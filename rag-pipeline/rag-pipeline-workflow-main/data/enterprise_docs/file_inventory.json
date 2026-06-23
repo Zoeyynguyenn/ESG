@@ -1,0 +1,2334 @@
+{
+  "supported_extensions": [
+    ".csv",
+    ".htm",
+    ".html",
+    ".json",
+    ".jsonl",
+    ".markdown",
+    ".md",
+    ".pdf",
+    ".txt",
+    ".xml"
+  ],
+  "packages": [
+    {
+      "label": "demo_company",
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company",
+      "exists": true,
+      "document_count": 23,
+      "by_source_type": {
+        "csv": 1,
+        "json": 2,
+        "markdown": 16,
+        "pdf": 4
+      },
+      "documents": [
+        {
+          "document_id": "26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv",
+          "source_type": "csv",
+          "title": "26.03.27_ESG_quant_RTX_EEO_CDP_evidence - 2024 Update Summary",
+          "byte_size": 2751,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\26.03.27_ESG_quant_RTX_EEO_CDP_evidence - 2024 Update Summary.csv"
+        },
+        {
+          "document_id": "questions_questions_qualitative_json",
+          "source_type": "json",
+          "title": "qualitative",
+          "byte_size": 32147,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\questions\\questions\\qualitative.json"
+        },
+        {
+          "document_id": "questions_questions_quantitative_json",
+          "source_type": "json",
+          "title": "quantitative",
+          "byte_size": 176674,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\questions\\questions\\quantitative.json"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_01_사업보고서_발췌_md",
+          "source_type": "markdown",
+          "title": "01_사업보고서_발췌",
+          "byte_size": 2968,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\01_사업보고서_발췌.md"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_02_온실가스_에너지_명세_md",
+          "source_type": "markdown",
+          "title": "02_온실가스_에너지_명세",
+          "byte_size": 3240,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\02_온실가스_에너지_명세.md"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_03_재생에너지_계약_md",
+          "source_type": "markdown",
+          "title": "03_재생에너지_계약",
+          "byte_size": 1949,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\03_재생에너지_계약.md"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_04_인사_안전_통계_md",
+          "source_type": "markdown",
+          "title": "04_인사_안전_통계",
+          "byte_size": 4666,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\04_인사_안전_통계.md"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_05_사회공헌_인권_md",
+          "source_type": "markdown",
+          "title": "05_사회공헌_인권",
+          "byte_size": 2132,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\05_사회공헌_인권.md"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_06_지배구조_운영_md",
+          "source_type": "markdown",
+          "title": "06_지배구조_운영",
+          "byte_size": 4201,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\06_지배구조_운영.md"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_07_인증_현황_md",
+          "source_type": "markdown",
+          "title": "07_인증_현황",
+          "byte_size": 1697,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\07_인증_현황.md"
+        },
+        {
+          "document_id": "rtx_7step_dataset_rtx_7step_dataset_README_md",
+          "source_type": "markdown",
+          "title": "README",
+          "byte_size": 2333,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\README.md"
+        },
+        {
+          "document_id": "RTX_References_References_2023_ESG_ESGAppendix_pdf",
+          "source_type": "pdf",
+          "title": "2023-ESG-ESGAppendix",
+          "byte_size": 1138338,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\RTX_References\\References\\2023-ESG-ESGAppendix.pdf"
+        },
+        {
+          "document_id": "RTX_References_References_2025_CDP_RTX_Corporation_Questionnaire_pdf",
+          "source_type": "pdf",
+          "title": "2025 CDP RTX Corporation Questionnaire",
+          "byte_size": 1131297,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\RTX_References\\References\\2025 CDP RTX Corporation Questionnaire.pdf"
+        },
+        {
+          "document_id": "RTX_References_References_RTX_Corp_2023_EEO_1_pdf",
+          "source_type": "pdf",
+          "title": "RTX Corp 2023 EEO-1",
+          "byte_size": 76108,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\RTX_References\\References\\RTX Corp 2023 EEO-1.pdf"
+        },
+        {
+          "document_id": "RTX_References_References_RTX_Performance_Data_Tables_and_Indexes_8125_pdf",
+          "source_type": "pdf",
+          "title": "RTX_Performance Data Tables and Indexes_8125",
+          "byte_size": 793069,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\RTX_References\\References\\RTX_Performance Data Tables and Indexes_8125.pdf"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_01_사업보고서_발췌_md",
+          "source_type": "markdown",
+          "title": "01_사업보고서_발췌",
+          "byte_size": 948,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\01_사업보고서_발췌.md"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_02_온실가스_에너지_명세_md",
+          "source_type": "markdown",
+          "title": "02_온실가스_에너지_명세",
+          "byte_size": 935,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\02_온실가스_에너지_명세.md"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_03_재생에너지_계약_md",
+          "source_type": "markdown",
+          "title": "03_재생에너지_계약",
+          "byte_size": 561,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\03_재생에너지_계약.md"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_04_인사_안전_통계_md",
+          "source_type": "markdown",
+          "title": "04_인사_안전_통계",
+          "byte_size": 655,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\04_인사_안전_통계.md"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_05_사회공헌_인권_md",
+          "source_type": "markdown",
+          "title": "05_사회공헌_인권",
+          "byte_size": 782,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\05_사회공헌_인권.md"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_06_지배구조_운영_md",
+          "source_type": "markdown",
+          "title": "06_지배구조_운영",
+          "byte_size": 797,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\06_지배구조_운영.md"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_07_인증_현황_md",
+          "source_type": "markdown",
+          "title": "07_인증_현황",
+          "byte_size": 486,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\07_인증_현황.md"
+        },
+        {
+          "document_id": "TalkFile_demo_company_A_zip_demo_company_A_README_md",
+          "source_type": "markdown",
+          "title": "README",
+          "byte_size": 857,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\TalkFile_demo_company_A.zip\\demo_company_A\\README.md"
+        }
+      ]
+    },
+    {
+      "label": "demo_company_rtx_7step",
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset",
+      "exists": true,
+      "document_count": 8,
+      "by_source_type": {
+        "markdown": 8
+      },
+      "documents": [
+        {
+          "document_id": "01_사업보고서_발췌_md",
+          "source_type": "markdown",
+          "title": "01_사업보고서_발췌",
+          "byte_size": 2968,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\01_사업보고서_발췌.md"
+        },
+        {
+          "document_id": "02_온실가스_에너지_명세_md",
+          "source_type": "markdown",
+          "title": "02_온실가스_에너지_명세",
+          "byte_size": 3240,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\02_온실가스_에너지_명세.md"
+        },
+        {
+          "document_id": "03_재생에너지_계약_md",
+          "source_type": "markdown",
+          "title": "03_재생에너지_계약",
+          "byte_size": 1949,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\03_재생에너지_계약.md"
+        },
+        {
+          "document_id": "04_인사_안전_통계_md",
+          "source_type": "markdown",
+          "title": "04_인사_안전_통계",
+          "byte_size": 4666,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\04_인사_안전_통계.md"
+        },
+        {
+          "document_id": "05_사회공헌_인권_md",
+          "source_type": "markdown",
+          "title": "05_사회공헌_인권",
+          "byte_size": 2132,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\05_사회공헌_인권.md"
+        },
+        {
+          "document_id": "06_지배구조_운영_md",
+          "source_type": "markdown",
+          "title": "06_지배구조_운영",
+          "byte_size": 4201,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\06_지배구조_운영.md"
+        },
+        {
+          "document_id": "07_인증_현황_md",
+          "source_type": "markdown",
+          "title": "07_인증_현황",
+          "byte_size": 1697,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\07_인증_현황.md"
+        },
+        {
+          "document_id": "README_md",
+          "source_type": "markdown",
+          "title": "README",
+          "byte_size": 2333,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset\\README.md"
+        }
+      ]
+    },
+    {
+      "label": "hanssem_mixed",
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430",
+      "exists": true,
+      "document_count": 170,
+      "by_source_type": {
+        "json": 11,
+        "xml": 78,
+        "html": 61,
+        "pdf": 15,
+        "markdown": 4,
+        "jsonl": 1
+      },
+      "documents": [
+        {
+          "document_id": "02_재무_신용_DART_corp_code_json",
+          "source_type": "json",
+          "title": "DART_corp_code",
+          "byte_size": 74,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_corp_code.json"
+        },
+        {
+          "document_id": "02_재무_신용_DART_공시목록_json",
+          "source_type": "json",
+          "title": "DART_공시목록",
+          "byte_size": 20378,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_공시목록.json"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240509000024_주식등의대량보유상황보고서_약식_20240509000024_xml",
+          "source_type": "xml",
+          "title": "20240509000024",
+          "byte_size": 55765,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240509000024_주식등의대량보유상황보고서(약식)\\20240509000024.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240509800565_현금_현물배당결정_20240509800565_xml",
+          "source_type": "xml",
+          "title": "20240509800565",
+          "byte_size": 8839,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240509800565_현금ㆍ현물배당결정\\20240509800565.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240509800624_연결재무제표기준영업_잠정_실적_공정공시_20240509800624_xml",
+          "source_type": "xml",
+          "title": "20240509800624",
+          "byte_size": 15660,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240509800624_연결재무제표기준영업(잠정)실적(공정공시)\\20240509800624.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240514001607_분기보고서_2024_03_20240514001607_xml",
+          "source_type": "xml",
+          "title": "20240514001607",
+          "byte_size": 1014766,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240514001607_분기보고서 (2024.03)\\20240514001607.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240516001086_주식등의대량보유상황보고서_약식_20240516001086_xml",
+          "source_type": "xml",
+          "title": "20240516001086",
+          "byte_size": 116755,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240516001086_주식등의대량보유상황보고서(약식)\\20240516001086.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240531801324_기업지배구조보고서공시_20240531801324_xml",
+          "source_type": "xml",
+          "title": "20240531801324",
+          "byte_size": 1633353,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240531801324_기업지배구조보고서공시\\20240531801324.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240628801115_지속가능경영보고서등관련사항_자율공시_20240628801115_xml",
+          "source_type": "xml",
+          "title": "20240628801115",
+          "byte_size": 11517,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240628801115_지속가능경영보고서등관련사항(자율공시)\\20240628801115.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240708000466_임원_주요주주특정증권등소유상황보고서_20240708000466_xml",
+          "source_type": "xml",
+          "title": "20240708000466",
+          "byte_size": 21243,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240708000466_임원ㆍ주요주주특정증권등소유상황보고서\\20240708000466.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240809800642_연결재무제표기준영업_잠정_실적_공정공시_20240809800642_xml",
+          "source_type": "xml",
+          "title": "20240809800642",
+          "byte_size": 15647,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240809800642_연결재무제표기준영업(잠정)실적(공정공시)\\20240809800642.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240809800711_현금_현물배당결정_20240809800711_xml",
+          "source_type": "xml",
+          "title": "20240809800711",
+          "byte_size": 8613,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240809800711_현금ㆍ현물배당결정\\20240809800711.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240814004190_반기보고서_2024_06_20240814004190_xml",
+          "source_type": "xml",
+          "title": "20240814004190",
+          "byte_size": 1057787,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240814004190_반기보고서 (2024.06)\\20240814004190.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240830002109_주요사항보고서_유형자산양도결정_20240830002109_xml",
+          "source_type": "xml",
+          "title": "20240830002109",
+          "byte_size": 13148,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240830002109_주요사항보고서(유형자산양도결정)\\20240830002109.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240830800744_타법인주식및출자증권취득결정_20240830800744_xml",
+          "source_type": "xml",
+          "title": "20240830800744",
+          "byte_size": 18183,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240830800744_타법인주식및출자증권취득결정\\20240830800744.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240919000305__기재정정_주요사항보고서_유형자산양도결정_20240919000305_xml",
+          "source_type": "xml",
+          "title": "20240919000305",
+          "byte_size": 16355,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240919000305_[기재정정]주요사항보고서(유형자산양도결정)\\20240919000305.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240919800442__기재정정_타법인주식및출자증권취득결정_20240919800442_xml",
+          "source_type": "xml",
+          "title": "20240919800442",
+          "byte_size": 21571,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240919800442_[기재정정]타법인주식및출자증권취득결정\\20240919800442.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20240923800433__기재정정_타법인주식및출자증권취득결정_20240923800433_xml",
+          "source_type": "xml",
+          "title": "20240923800433",
+          "byte_size": 23740,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20240923800433_[기재정정]타법인주식및출자증권취득결정\\20240923800433.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20241105800401_연결재무제표기준영업_잠정_실적_공정공시_20241105800401_xml",
+          "source_type": "xml",
+          "title": "20241105800401",
+          "byte_size": 15885,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20241105800401_연결재무제표기준영업(잠정)실적(공정공시)\\20241105800401.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20241105800455_현금_현물배당결정_20241105800455_xml",
+          "source_type": "xml",
+          "title": "20241105800455",
+          "byte_size": 8843,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20241105800455_현금ㆍ현물배당결정\\20241105800455.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20241113000754_분기보고서_2024_09_20241113000754_xml",
+          "source_type": "xml",
+          "title": "20241113000754",
+          "byte_size": 1124456,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20241113000754_분기보고서 (2024.09)\\20241113000754.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20241115000321_임원_주요주주특정증권등소유상황보고서_20241115000321_xml",
+          "source_type": "xml",
+          "title": "20241115000321",
+          "byte_size": 21958,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20241115000321_임원ㆍ주요주주특정증권등소유상황보고서\\20241115000321.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20241118000284_주식등의대량보유상황보고서_일반_20241118000284_xml",
+          "source_type": "xml",
+          "title": "20241118000284",
+          "byte_size": 136134,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20241118000284_주식등의대량보유상황보고서(일반)\\20241118000284.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20241118800409_최대주주등소유주식변동신고서_20241118800409_xml",
+          "source_type": "xml",
+          "title": "20241118800409",
+          "byte_size": 39712,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20241118800409_최대주주등소유주식변동신고서\\20241118800409.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20241230800994_기타경영사항_자율공시_20241230800994_xml",
+          "source_type": "xml",
+          "title": "20241230800994",
+          "byte_size": 6121,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20241230800994_기타경영사항(자율공시)\\20241230800994.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250203801321_매출액또는손익구조30_대규모법인은15_이상변경_20250203801321_xml",
+          "source_type": "xml",
+          "title": "20250203801321",
+          "byte_size": 14641,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250203801321_매출액또는손익구조30%(대규모법인은15%)이상변경\\20250203801321.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250205800880_연결재무제표기준영업_잠정_실적_공정공시_20250205800880_xml",
+          "source_type": "xml",
+          "title": "20250205800880",
+          "byte_size": 15654,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250205800880_연결재무제표기준영업(잠정)실적(공정공시)\\20250205800880.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250220800560_주주총회소집결의_20250220800560_xml",
+          "source_type": "xml",
+          "title": "20250220800560",
+          "byte_size": 19670,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250220800560_주주총회소집결의\\20250220800560.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250306000497_주주총회소집공고_20250306000497_xml",
+          "source_type": "xml",
+          "title": "20250306000497",
+          "byte_size": 235861,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250306000497_주주총회소집공고\\20250306000497.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250306000512_의결권대리행사권유참고서류_20250306000512_xml",
+          "source_type": "xml",
+          "title": "20250306000512",
+          "byte_size": 187279,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250306000512_의결권대리행사권유참고서류\\20250306000512.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250306800970_주주총회집중일개최사유신고_20250306800970_xml",
+          "source_type": "xml",
+          "title": "20250306800970",
+          "byte_size": 4597,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250306800970_주주총회집중일개최사유신고\\20250306800970.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250313001195_사업보고서_2024_12_20250313001195_xml",
+          "source_type": "xml",
+          "title": "20250313001195",
+          "byte_size": 3848162,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250313001195_사업보고서 (2024.12)\\20250313001195.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250313001195_사업보고서_2024_12_20250313001195_00760_xml",
+          "source_type": "xml",
+          "title": "20250313001195_00760",
+          "byte_size": 579697,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250313001195_사업보고서 (2024.12)\\20250313001195_00760.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250313001195_사업보고서_2024_12_20250313001195_00761_xml",
+          "source_type": "xml",
+          "title": "20250313001195_00761",
+          "byte_size": 646194,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250313001195_사업보고서 (2024.12)\\20250313001195_00761.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250313801733_감사보고서제출_20250313801733_xml",
+          "source_type": "xml",
+          "title": "20250313801733",
+          "byte_size": 21470,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250313801733_감사보고서제출\\20250313801733.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250321001285_사외이사의선임_해임또는중도퇴임에관한신고_20250321001285_xml",
+          "source_type": "xml",
+          "title": "20250321001285",
+          "byte_size": 11616,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250321001285_사외이사의선임ㆍ해임또는중도퇴임에관한신고\\20250321001285.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250321801226_정기주주총회결과_20250321801226_xml",
+          "source_type": "xml",
+          "title": "20250321801226",
+          "byte_size": 34030,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250321801226_정기주주총회결과\\20250321801226.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250512800566_연결재무제표기준영업_잠정_실적_공정공시_20250512800566_xml",
+          "source_type": "xml",
+          "title": "20250512800566",
+          "byte_size": 15613,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250512800566_연결재무제표기준영업(잠정)실적(공정공시)\\20250512800566.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250514001170_분기보고서_2025_03_20250514001170_xml",
+          "source_type": "xml",
+          "title": "20250514001170",
+          "byte_size": 1820771,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250514001170_분기보고서 (2025.03)\\20250514001170.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250530800612_기업지배구조보고서공시_20250530800612_xml",
+          "source_type": "xml",
+          "title": "20250530800612",
+          "byte_size": 1304808,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250530800612_기업지배구조보고서공시\\20250530800612.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250613000194_임원_주요주주특정증권등소유상황보고서_20250613000194_xml",
+          "source_type": "xml",
+          "title": "20250613000194",
+          "byte_size": 24597,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250613000194_임원ㆍ주요주주특정증권등소유상황보고서\\20250613000194.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250619800558_대표이사_대표집행임원_변경_안내공시_20250619800558_xml",
+          "source_type": "xml",
+          "title": "20250619800558",
+          "byte_size": 5624,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250619800558_대표이사(대표집행임원)변경(안내공시)\\20250619800558.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250630800846_지속가능경영보고서등관련사항_자율공시_20250630800846_xml",
+          "source_type": "xml",
+          "title": "20250630800846",
+          "byte_size": 11207,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250630800846_지속가능경영보고서등관련사항(자율공시)\\20250630800846.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250704000338_주식등의대량보유상황보고서_일반_20250704000338_xml",
+          "source_type": "xml",
+          "title": "20250704000338",
+          "byte_size": 147075,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250704000338_주식등의대량보유상황보고서(일반)\\20250704000338.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250724800329_주주총회소집결의_20250724800329_xml",
+          "source_type": "xml",
+          "title": "20250724800329",
+          "byte_size": 8624,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250724800329_주주총회소집결의\\20250724800329.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250724800333_주주명부폐쇄기간또는기준일설정_20250724800333_xml",
+          "source_type": "xml",
+          "title": "20250724800333",
+          "byte_size": 3900,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250724800333_주주명부폐쇄기간또는기준일설정\\20250724800333.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250811800484_연결재무제표기준영업_잠정_실적_공정공시_20250811800484_xml",
+          "source_type": "xml",
+          "title": "20250811800484",
+          "byte_size": 15590,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250811800484_연결재무제표기준영업(잠정)실적(공정공시)\\20250811800484.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250814002905_반기보고서_2025_06_20250814002905_xml",
+          "source_type": "xml",
+          "title": "20250814002905",
+          "byte_size": 2535126,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250814002905_반기보고서 (2025.06)\\20250814002905.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250825000187_주주총회소집공고_20250825000187_xml",
+          "source_type": "xml",
+          "title": "20250825000187",
+          "byte_size": 90278,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250825000187_주주총회소집공고\\20250825000187.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250825000190_의결권대리행사권유참고서류_20250825000190_xml",
+          "source_type": "xml",
+          "title": "20250825000190",
+          "byte_size": 40687,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250825000190_의결권대리행사권유참고서류\\20250825000190.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250903000183_임원_주요주주특정증권등소유상황보고서_20250903000183_xml",
+          "source_type": "xml",
+          "title": "20250903000183",
+          "byte_size": 24748,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250903000183_임원ㆍ주요주주특정증권등소유상황보고서\\20250903000183.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250903000188_주식등의대량보유상황보고서_일반_20250903000188_xml",
+          "source_type": "xml",
+          "title": "20250903000188",
+          "byte_size": 143799,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250903000188_주식등의대량보유상황보고서(일반)\\20250903000188.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250903800179_최대주주등소유주식변동신고서_20250903800179_xml",
+          "source_type": "xml",
+          "title": "20250903800179",
+          "byte_size": 33541,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250903800179_최대주주등소유주식변동신고서\\20250903800179.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250909800194_임시주주총회결과_20250909800194_xml",
+          "source_type": "xml",
+          "title": "20250909800194",
+          "byte_size": 8777,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250909800194_임시주주총회결과\\20250909800194.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251002000066_임원_주요주주특정증권등소유상황보고서_20251002000066_xml",
+          "source_type": "xml",
+          "title": "20251002000066",
+          "byte_size": 24674,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251002000066_임원ㆍ주요주주특정증권등소유상황보고서\\20251002000066.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251110800510_연결재무제표기준영업_잠정_실적_공정공시_20251110800510_xml",
+          "source_type": "xml",
+          "title": "20251110800510",
+          "byte_size": 21290,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251110800510_연결재무제표기준영업(잠정)실적(공정공시)\\20251110800510.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251113000766_분기보고서_2025_09_20251113000766_xml",
+          "source_type": "xml",
+          "title": "20251113000766",
+          "byte_size": 2657771,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251113000766_분기보고서 (2025.09)\\20251113000766.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251223000793_주식등의대량보유상황보고서_일반_20251223000793_xml",
+          "source_type": "xml",
+          "title": "20251223000793",
+          "byte_size": 140864,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251223000793_주식등의대량보유상황보고서(일반)\\20251223000793.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251223800161_풍문또는보도에대한해명_미확정_20251223800161_xml",
+          "source_type": "xml",
+          "title": "20251223800161",
+          "byte_size": 4603,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251223800161_풍문또는보도에대한해명(미확정)\\20251223800161.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251223800851_최대주주등소유주식변동신고서_20251223800851_xml",
+          "source_type": "xml",
+          "title": "20251223800851",
+          "byte_size": 31616,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251223800851_최대주주등소유주식변동신고서\\20251223800851.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260122800061_풍문또는보도에대한해명_미확정_20260122800061_xml",
+          "source_type": "xml",
+          "title": "20260122800061",
+          "byte_size": 5088,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260122800061_풍문또는보도에대한해명(미확정)\\20260122800061.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260202802147_매출액또는손익구조30_대규모법인은15_이상변경_20260202802147_xml",
+          "source_type": "xml",
+          "title": "20260202802147",
+          "byte_size": 16573,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260202802147_매출액또는손익구조30%(대규모법인은15%)이상변경\\20260202802147.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260212801571_연결재무제표기준영업_잠정_실적_공정공시_20260212801571_xml",
+          "source_type": "xml",
+          "title": "20260212801571",
+          "byte_size": 21300,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260212801571_연결재무제표기준영업(잠정)실적(공정공시)\\20260212801571.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260226801412_주주총회소집결의_20260226801412_xml",
+          "source_type": "xml",
+          "title": "20260226801412",
+          "byte_size": 20398,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260226801412_주주총회소집결의\\20260226801412.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260312001307_주주총회소집공고_20260312001307_xml",
+          "source_type": "xml",
+          "title": "20260312001307",
+          "byte_size": 248211,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260312001307_주주총회소집공고\\20260312001307.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260312001338_의결권대리행사권유참고서류_20260312001338_xml",
+          "source_type": "xml",
+          "title": "20260312001338",
+          "byte_size": 180819,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260312001338_의결권대리행사권유참고서류\\20260312001338.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260312802253_주주총회집중일개최사유신고_20260312802253_xml",
+          "source_type": "xml",
+          "title": "20260312802253",
+          "byte_size": 4597,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260312802253_주주총회집중일개최사유신고\\20260312802253.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260319001167_사업보고서_2025_12_20260319001167_xml",
+          "source_type": "xml",
+          "title": "20260319001167",
+          "byte_size": 5500992,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260319001167_사업보고서 (2025.12)\\20260319001167.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260319001167_사업보고서_2025_12_20260319001167_00760_xml",
+          "source_type": "xml",
+          "title": "20260319001167_00760",
+          "byte_size": 567932,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260319001167_사업보고서 (2025.12)\\20260319001167_00760.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260319001167_사업보고서_2025_12_20260319001167_00761_xml",
+          "source_type": "xml",
+          "title": "20260319001167_00761",
+          "byte_size": 633506,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260319001167_사업보고서 (2025.12)\\20260319001167_00761.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260319800733_감사보고서제출_20260319800733_xml",
+          "source_type": "xml",
+          "title": "20260319800733",
+          "byte_size": 22718,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260319800733_감사보고서제출\\20260319800733.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260327001815_사외이사의선임_해임또는중도퇴임에관한신고_20260327001815_xml",
+          "source_type": "xml",
+          "title": "20260327001815",
+          "byte_size": 11000,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260327001815_사외이사의선임ㆍ해임또는중도퇴임에관한신고\\20260327001815.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260327803100_정기주주총회결과_20260327803100_xml",
+          "source_type": "xml",
+          "title": "20260327803100",
+          "byte_size": 46864,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260327803100_정기주주총회결과\\20260327803100.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260409002206_주식등의대량보유상황보고서_약식_20260409002206_xml",
+          "source_type": "xml",
+          "title": "20260409002206",
+          "byte_size": 115062,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260409002206_주식등의대량보유상황보고서(약식)\\20260409002206.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260421800688_풍문또는보도에대한해명_미확정_20260421800688_xml",
+          "source_type": "xml",
+          "title": "20260421800688",
+          "byte_size": 5590,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260421800688_풍문또는보도에대한해명(미확정)\\20260421800688.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260423000450_임원_주요주주특정증권등소유상황보고서_20260423000450_xml",
+          "source_type": "xml",
+          "title": "20260423000450",
+          "byte_size": 25055,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260423000450_임원ㆍ주요주주특정증권등소유상황보고서\\20260423000450.xml"
+        },
+        {
+          "document_id": "02_재무_신용_네이버금융_기업개요_html",
+          "source_type": "html",
+          "title": "네이버금융_기업개요",
+          "byte_size": 130428,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\네이버금융_기업개요.html"
+        },
+        {
+          "document_id": "02_재무_신용_네이버금융_일별시세_xml",
+          "source_type": "xml",
+          "title": "네이버금융_일별시세",
+          "byte_size": 15965,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\네이버금융_일별시세.xml"
+        },
+        {
+          "document_id": "02_재무_신용_네이버금융_종목메인_html",
+          "source_type": "html",
+          "title": "네이버금융_종목메인",
+          "byte_size": 197631,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\02_재무_신용\\네이버금융_종목메인.html"
+        },
+        {
+          "document_id": "03_고용_인사_사람인_검색결과_html",
+          "source_type": "html",
+          "title": "사람인_검색결과",
+          "byte_size": 2207079,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\03_고용_인사\\사람인_검색결과.html"
+        },
+        {
+          "document_id": "03_고용_인사_원티드_검색결과_html",
+          "source_type": "html",
+          "title": "원티드_검색결과",
+          "byte_size": 92301,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\03_고용_인사\\원티드_검색결과.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡코리아_채용공고검색_html",
+          "source_type": "html",
+          "title": "잡코리아_채용공고검색",
+          "byte_size": 357205,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\03_고용_인사\\잡코리아_채용공고검색.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡플래닛_기업검색_html",
+          "source_type": "html",
+          "title": "잡플래닛_기업검색",
+          "byte_size": 267063,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\03_고용_인사\\잡플래닛_기업검색.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡플래닛_기업상세_html",
+          "source_type": "html",
+          "title": "잡플래닛_기업상세",
+          "byte_size": 293671,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\03_고용_인사\\잡플래닛_기업상세.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡플래닛_리뷰_html",
+          "source_type": "html",
+          "title": "잡플래닛_리뷰",
+          "byte_size": 435043,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\03_고용_인사\\잡플래닛_리뷰.html"
+        },
+        {
+          "document_id": "05_정부지원_투자이력_벤처확인시스템_검색결과_html",
+          "source_type": "html",
+          "title": "벤처확인시스템_검색결과",
+          "byte_size": 85644,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\05_정부지원_투자이력\\벤처확인시스템_검색결과.html"
+        },
+        {
+          "document_id": "06_지식재산_기술_KIPRIS_design_한샘_xml",
+          "source_type": "xml",
+          "title": "KIPRIS_design_한샘",
+          "byte_size": 227,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\06_지식재산_기술\\KIPRIS_design_한샘.xml"
+        },
+        {
+          "document_id": "06_지식재산_기술_KIPRIS_patent_한샘_xml",
+          "source_type": "xml",
+          "title": "KIPRIS_patent_한샘",
+          "byte_size": 227,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\06_지식재산_기술\\KIPRIS_patent_한샘.xml"
+        },
+        {
+          "document_id": "06_지식재산_기술_KIPRIS_trademark_한샘_xml",
+          "source_type": "xml",
+          "title": "KIPRIS_trademark_한샘",
+          "byte_size": 227,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\06_지식재산_기술\\KIPRIS_trademark_한샘.xml"
+        },
+        {
+          "document_id": "06_지식재산_기술_NTIS_통합검색_html",
+          "source_type": "html",
+          "title": "NTIS_통합검색",
+          "byte_size": 521145,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\06_지식재산_기술\\NTIS_통합검색.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_GoogleNews_json",
+          "source_type": "json",
+          "title": "GoogleNews",
+          "byte_size": 17317,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\GoogleNews.json"
+        },
+        {
+          "document_id": "07_뉴스_평판_NaverNews_json",
+          "source_type": "json",
+          "title": "NaverNews",
+          "byte_size": 20203,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\NaverNews.json"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_00__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_00_%ED%95%9C%EC%83%98",
+          "byte_size": 140200,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_00_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_01__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_01_%ED%95%9C%EC%83%98",
+          "byte_size": 156967,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_01_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_02__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_02_%ED%95%9C%EC%83%98",
+          "byte_size": 150231,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_02_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_03__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_03_%ED%95%9C%EC%83%98",
+          "byte_size": 156362,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_03_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_04__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_04_%ED%95%9C%EC%83%98",
+          "byte_size": 66189,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_04_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_05__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_05_%ED%95%9C%EC%83%98",
+          "byte_size": 179443,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_05_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_06__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_06_%ED%95%9C%EC%83%98",
+          "byte_size": 121275,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_06_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_07__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_07_%ED%95%9C%EC%83%98",
+          "byte_size": 77116,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_07_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_08__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_08_%ED%95%9C%EC%83%98",
+          "byte_size": 148295,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_08_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_09__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_09_%ED%95%9C%EC%83%98",
+          "byte_size": 56915,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_09_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_10__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_10_%ED%95%9C%EC%83%98",
+          "byte_size": 99509,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_10_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_11__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_11_%ED%95%9C%EC%83%98",
+          "byte_size": 107807,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_11_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_12__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_12_%ED%95%9C%EC%83%98",
+          "byte_size": 123471,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_12_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_13__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_13_%ED%95%9C%EC%83%98",
+          "byte_size": 153452,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_13_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_14__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_14_%ED%95%9C%EC%83%98",
+          "byte_size": 123348,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_14_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_15__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_15_%ED%95%9C%EC%83%98",
+          "byte_size": 227174,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_15_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_16__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_16_%ED%95%9C%EC%83%98",
+          "byte_size": 82156,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_16_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_17__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_17_%ED%95%9C%EC%83%98",
+          "byte_size": 104693,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_17_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_18__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_18_%ED%95%9C%EC%83%98",
+          "byte_size": 52663,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_18_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_19__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_19_%ED%95%9C%EC%83%98",
+          "byte_size": 135322,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_19_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_20__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_20_%ED%95%9C%EC%83%98",
+          "byte_size": 122534,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_20_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_21__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_21_%ED%95%9C%EC%83%98",
+          "byte_size": 111843,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_21_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_22__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_22_%ED%95%9C%EC%83%98",
+          "byte_size": 118520,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_22_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_23__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_23_%ED%95%9C%EC%83%98",
+          "byte_size": 147635,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_23_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_24__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_24_%ED%95%9C%EC%83%98",
+          "byte_size": 132160,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_24_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_25__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_25_%ED%95%9C%EC%83%98",
+          "byte_size": 160723,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_25_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_26__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_26_%ED%95%9C%EC%83%98",
+          "byte_size": 71865,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_26_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_27__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_27_%ED%95%9C%EC%83%98",
+          "byte_size": 294369,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_27_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_28__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_28_%ED%95%9C%EC%83%98",
+          "byte_size": 95207,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_28_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_29__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "news_29_%ED%95%9C%EC%83%98",
+          "byte_size": 129407,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_29_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버_blog_json",
+          "source_type": "json",
+          "title": "네이버_blog",
+          "byte_size": 12862,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\네이버_blog.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버_encyc_json",
+          "source_type": "json",
+          "title": "네이버_encyc",
+          "byte_size": 10785,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\네이버_encyc.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버_web_json",
+          "source_type": "json",
+          "title": "네이버_web",
+          "byte_size": 8023,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\네이버_web.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버검색_통합_json",
+          "source_type": "json",
+          "title": "네이버검색_통합",
+          "byte_size": 31666,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\네이버검색_통합.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_00_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_00_web_%ED%95%9C%EC%83%98",
+          "byte_size": 150,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_00_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_01_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_01_web_%ED%95%9C%EC%83%98",
+          "byte_size": 183658,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_01_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_02_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_02_web_%ED%95%9C%EC%83%98",
+          "byte_size": 1456382,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_02_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_03_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_03_web_%ED%95%9C%EC%83%98",
+          "byte_size": 7192,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_03_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_04_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_04_web_%ED%95%9C%EC%83%98",
+          "byte_size": 179648,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_04_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_05_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_05_web_%ED%95%9C%EC%83%98",
+          "byte_size": 62466,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_05_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_06_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_06_web_%ED%95%9C%EC%83%98",
+          "byte_size": 981,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_06_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_07_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_07_web_%ED%95%9C%EC%83%98",
+          "byte_size": 2552109,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_07_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_08_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_08_web_%ED%95%9C%EC%83%98",
+          "byte_size": 357314,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_08_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_09_web__ED_95_9C_EC_83_98_html",
+          "source_type": "html",
+          "title": "page_09_web_%ED%95%9C%EC%83%98",
+          "byte_size": 319149,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_09_web_%ED%95%9C%EC%83%98.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_00_main_do_html",
+          "source_type": "html",
+          "title": "홈페이지_00_main.do",
+          "byte_size": 401721,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_00_main.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_01_main_do_html",
+          "source_type": "html",
+          "title": "홈페이지_01_main.do",
+          "byte_size": 284701,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_01_main.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_02_category_goHsmLctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_02_category_goHsmLctgy.do",
+          "byte_size": 480569,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_02_category_goHsmLctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_03_category_goHsmMctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_03_category_goHsmMctgy.do",
+          "byte_size": 381238,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_03_category_goHsmMctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_04_category_goHsmSctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_04_category_goHsmSctgy.do",
+          "byte_size": 115793,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_04_category_goHsmSctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_05_category_goHsmSctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_05_category_goHsmSctgy.do",
+          "byte_size": 115729,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_05_category_goHsmSctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_06_category_goHsmSctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_06_category_goHsmSctgy.do",
+          "byte_size": 115727,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_06_category_goHsmSctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_07_category_goHsmSctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_07_category_goHsmSctgy.do",
+          "byte_size": 115633,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_07_category_goHsmSctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_08_category_goHsmSctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_08_category_goHsmSctgy.do",
+          "byte_size": 115861,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_08_category_goHsmSctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_09_category_goHsmMctgy_do_html",
+          "source_type": "html",
+          "title": "홈페이지_09_category_goHsmMctgy.do",
+          "byte_size": 316890,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_09_category_goHsmMctgy.do.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_메인_html",
+          "source_type": "html",
+          "title": "홈페이지_메인",
+          "byte_size": 157889,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_메인.html"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_IR자료_2014_annual_en_web_pdf",
+          "source_type": "pdf",
+          "title": "2014_annual_en_web",
+          "byte_size": 1780087,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\IR자료\\2014_annual_en_web.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf",
+          "source_type": "pdf",
+          "title": "2021_hanssem_sustain_kr_final_0728",
+          "byte_size": 46025764,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\IR자료\\2021_hanssem_sustain_kr_final_0728.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_IR자료_2126911_pdf",
+          "source_type": "pdf",
+          "title": "2126911",
+          "byte_size": 348270,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\IR자료\\2126911.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_IR자료_2135600_pdf",
+          "source_type": "pdf",
+          "title": "2135600",
+          "byte_size": 475445,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\IR자료\\2135600.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_IR자료_En_2022_hanssem_sustainability_report_pdf",
+          "source_type": "pdf",
+          "title": "En_2022_hanssem_sustainability_report",
+          "byte_size": 44964464,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\IR자료\\En_2022_hanssem_sustainability_report.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_기타_2022_hanssem_sustainability_report_kr_pdf",
+          "source_type": "pdf",
+          "title": "2022_hanssem_sustainability_report_kr",
+          "byte_size": 40331904,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\기타\\2022_hanssem_sustainability_report_kr.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_기타_2024_hanssem_sustainability_report_kr_pdf",
+          "source_type": "pdf",
+          "title": "2024_hanssem_sustainability_report_kr",
+          "byte_size": 9660218,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\기타\\2024_hanssem_sustainability_report_kr.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_기타_20250326124750113K_pdf",
+          "source_type": "pdf",
+          "title": "20250326124750113K",
+          "byte_size": 2115906,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\기타\\20250326124750113K.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_기타_hanssem_sustainability_report_kr_2025_pdf",
+          "source_type": "pdf",
+          "title": "hanssem_sustainability_report_kr_2025",
+          "byte_size": 8162118,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\기타\\hanssem_sustainability_report_kr_2025.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_다운로드목록_json",
+          "source_type": "json",
+          "title": "다운로드목록",
+          "byte_size": 5576,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\다운로드목록.json"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_실행요약_md",
+          "source_type": "markdown",
+          "title": "실행요약",
+          "byte_size": 3769,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\실행요약.md"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_입찰조달_downloadFile_do_pdf",
+          "source_type": "pdf",
+          "title": "downloadFile.do",
+          "byte_size": 249300,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\입찰조달\\downloadFile.do.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_재무보고서_download_run_pdf",
+          "source_type": "pdf",
+          "title": "download.run",
+          "byte_size": 1501547,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\재무보고서\\download.run.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_재무보고서_download_run_1_pdf",
+          "source_type": "pdf",
+          "title": "download.run_1",
+          "byte_size": 1375493,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\재무보고서\\download.run_1.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_재무보고서_download_run_2_pdf",
+          "source_type": "pdf",
+          "title": "download.run_2",
+          "byte_size": 1076808,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\재무보고서\\download.run_2.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_제품카탈로그_1649983743188_0_pdf",
+          "source_type": "pdf",
+          "title": "1649983743188_0",
+          "byte_size": 11514481,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\제품카탈로그\\1649983743188_0.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_제품카탈로그_1680495235703_0_pdf",
+          "source_type": "pdf",
+          "title": "1680495235703_0",
+          "byte_size": 15841962,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트다운로더\\제품카탈로그\\1680495235703_0.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트리서치_리포트_md",
+          "source_type": "markdown",
+          "title": "에이전트리서치_리포트",
+          "byte_size": 1609,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트리서치_리포트.md"
+        },
+        {
+          "document_id": "09_기타_에이전트리서치_실행기록_json",
+          "source_type": "json",
+          "title": "에이전트리서치_실행기록",
+          "byte_size": 56130,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트리서치_실행기록.json"
+        },
+        {
+          "document_id": "09_기타_에이전트리서치_증거로그_jsonl",
+          "source_type": "jsonl",
+          "title": "에이전트리서치_증거로그",
+          "byte_size": 4280,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\에이전트리서치_증거로그.jsonl"
+        },
+        {
+          "document_id": "09_기타_오케스트레이터_오케스트레이션로그_json",
+          "source_type": "json",
+          "title": "오케스트레이션로그",
+          "byte_size": 11615,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\오케스트레이터\\오케스트레이션로그.json"
+        },
+        {
+          "document_id": "09_기타_오케스트레이터_품질점수_md",
+          "source_type": "markdown",
+          "title": "품질점수",
+          "byte_size": 931,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\09_기타\\오케스트레이터\\품질점수.md"
+        },
+        {
+          "document_id": "MANIFEST_md",
+          "source_type": "markdown",
+          "title": "MANIFEST",
+          "byte_size": 39761,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\한샘_일반자료_20260430\\MANIFEST.md"
+        }
+      ]
+    },
+    {
+      "label": "musinsa_mixed",
+      "path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430",
+      "exists": true,
+      "document_count": 122,
+      "by_source_type": {
+        "json": 11,
+        "xml": 20,
+        "html": 79,
+        "pdf": 7,
+        "markdown": 4,
+        "jsonl": 1
+      },
+      "documents": [
+        {
+          "document_id": "02_재무_신용_DART_corp_code_json",
+          "source_type": "json",
+          "title": "DART_corp_code",
+          "byte_size": 73,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_corp_code.json"
+        },
+        {
+          "document_id": "02_재무_신용_DART_공시목록_json",
+          "source_type": "json",
+          "title": "DART_공시목록",
+          "byte_size": 3859,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_공시목록.json"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250331002442_사업보고서_2024_12_20250331002442_xml",
+          "source_type": "xml",
+          "title": "20250331002442",
+          "byte_size": 2590296,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250331002442_사업보고서 (2024.12)\\20250331002442.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250331002442_사업보고서_2024_12_20250331002442_00760_xml",
+          "source_type": "xml",
+          "title": "20250331002442_00760",
+          "byte_size": 678848,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250331002442_사업보고서 (2024.12)\\20250331002442_00760.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250331002442_사업보고서_2024_12_20250331002442_00761_xml",
+          "source_type": "xml",
+          "title": "20250331002442_00761",
+          "byte_size": 719406,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250331002442_사업보고서 (2024.12)\\20250331002442_00761.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250401004184_주요사항보고서_자기주식처분결정_20250401004184_xml",
+          "source_type": "xml",
+          "title": "20250401004184",
+          "byte_size": 31858,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250401004184_주요사항보고서(자기주식처분결정)\\20250401004184.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250522000155_분기보고서_2025_03_20250522000155_xml",
+          "source_type": "xml",
+          "title": "20250522000155",
+          "byte_size": 1466069,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250522000155_분기보고서 (2025.03)\\20250522000155.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250828000183_반기보고서_2025_06_20250828000183_xml",
+          "source_type": "xml",
+          "title": "20250828000183",
+          "byte_size": 2095681,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250828000183_반기보고서 (2025.06)\\20250828000183.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20250923000322_주요사항보고서_자기주식처분결정_20250923000322_xml",
+          "source_type": "xml",
+          "title": "20250923000322",
+          "byte_size": 29455,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20250923000322_주요사항보고서(자기주식처분결정)\\20250923000322.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251125000352_분기보고서_2025_09_20251125000352_xml",
+          "source_type": "xml",
+          "title": "20251125000352",
+          "byte_size": 1619178,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251125000352_분기보고서 (2025.09)\\20251125000352.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251216000378_주요사항보고서_자기주식처분결정_20251216000378_xml",
+          "source_type": "xml",
+          "title": "20251216000378",
+          "byte_size": 30307,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251216000378_주요사항보고서(자기주식처분결정)\\20251216000378.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20251216000514_주요사항보고서_회사합병결정_20251216000514_xml",
+          "source_type": "xml",
+          "title": "20251216000514",
+          "byte_size": 78271,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20251216000514_주요사항보고서(회사합병결정)\\20251216000514.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260107000725_주요사항보고서_회사합병결정_20260107000725_xml",
+          "source_type": "xml",
+          "title": "20260107000725",
+          "byte_size": 60210,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260107000725_주요사항보고서(회사합병결정)\\20260107000725.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260324000966_주요사항보고서_자기주식처분결정_20260324000966_xml",
+          "source_type": "xml",
+          "title": "20260324000966",
+          "byte_size": 31506,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260324000966_주요사항보고서(자기주식처분결정)\\20260324000966.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260324001028__기재정정_주요사항보고서_자기주식처분결정_20260324001028_xml",
+          "source_type": "xml",
+          "title": "20260324001028",
+          "byte_size": 36505,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260324001028_[기재정정]주요사항보고서(자기주식처분결정)\\20260324001028.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260331003116_사업보고서_2025_12_20260331003116_xml",
+          "source_type": "xml",
+          "title": "20260331003116",
+          "byte_size": 2814054,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260331003116_사업보고서 (2025.12)\\20260331003116.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260331003116_사업보고서_2025_12_20260331003116_00760_xml",
+          "source_type": "xml",
+          "title": "20260331003116_00760",
+          "byte_size": 743536,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260331003116_사업보고서 (2025.12)\\20260331003116_00760.xml"
+        },
+        {
+          "document_id": "02_재무_신용_DART_원본문서_20260331003116_사업보고서_2025_12_20260331003116_00761_xml",
+          "source_type": "xml",
+          "title": "20260331003116_00761",
+          "byte_size": 783742,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\02_재무_신용\\DART_원본문서\\20260331003116_사업보고서 (2025.12)\\20260331003116_00761.xml"
+        },
+        {
+          "document_id": "03_고용_인사_사람인_검색결과_html",
+          "source_type": "html",
+          "title": "사람인_검색결과",
+          "byte_size": 2187913,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\03_고용_인사\\사람인_검색결과.html"
+        },
+        {
+          "document_id": "03_고용_인사_원티드_검색결과_html",
+          "source_type": "html",
+          "title": "원티드_검색결과",
+          "byte_size": 92435,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\03_고용_인사\\원티드_검색결과.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡코리아_채용공고검색_html",
+          "source_type": "html",
+          "title": "잡코리아_채용공고검색",
+          "byte_size": 349574,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\03_고용_인사\\잡코리아_채용공고검색.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡플래닛_기업검색_html",
+          "source_type": "html",
+          "title": "잡플래닛_기업검색",
+          "byte_size": 264637,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\03_고용_인사\\잡플래닛_기업검색.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡플래닛_기업상세_html",
+          "source_type": "html",
+          "title": "잡플래닛_기업상세",
+          "byte_size": 294725,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\03_고용_인사\\잡플래닛_기업상세.html"
+        },
+        {
+          "document_id": "03_고용_인사_잡플래닛_리뷰_html",
+          "source_type": "html",
+          "title": "잡플래닛_리뷰",
+          "byte_size": 429323,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\03_고용_인사\\잡플래닛_리뷰.html"
+        },
+        {
+          "document_id": "05_정부지원_투자이력_벤처확인시스템_검색결과_html",
+          "source_type": "html",
+          "title": "벤처확인시스템_검색결과",
+          "byte_size": 85650,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\05_정부지원_투자이력\\벤처확인시스템_검색결과.html"
+        },
+        {
+          "document_id": "06_지식재산_기술_KIPRIS_design_무신사_xml",
+          "source_type": "xml",
+          "title": "KIPRIS_design_무신사",
+          "byte_size": 227,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\06_지식재산_기술\\KIPRIS_design_무신사.xml"
+        },
+        {
+          "document_id": "06_지식재산_기술_KIPRIS_patent_무신사_xml",
+          "source_type": "xml",
+          "title": "KIPRIS_patent_무신사",
+          "byte_size": 227,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\06_지식재산_기술\\KIPRIS_patent_무신사.xml"
+        },
+        {
+          "document_id": "06_지식재산_기술_KIPRIS_trademark_무신사_xml",
+          "source_type": "xml",
+          "title": "KIPRIS_trademark_무신사",
+          "byte_size": 227,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\06_지식재산_기술\\KIPRIS_trademark_무신사.xml"
+        },
+        {
+          "document_id": "06_지식재산_기술_KIPRIS_utility_무신사_xml",
+          "source_type": "xml",
+          "title": "KIPRIS_utility_무신사",
+          "byte_size": 227,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\06_지식재산_기술\\KIPRIS_utility_무신사.xml"
+        },
+        {
+          "document_id": "06_지식재산_기술_NTIS_통합검색_html",
+          "source_type": "html",
+          "title": "NTIS_통합검색",
+          "byte_size": 335741,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\06_지식재산_기술\\NTIS_통합검색.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_GoogleNews_json",
+          "source_type": "json",
+          "title": "GoogleNews",
+          "byte_size": 35400,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\GoogleNews.json"
+        },
+        {
+          "document_id": "07_뉴스_평판_NaverNews_json",
+          "source_type": "json",
+          "title": "NaverNews",
+          "byte_size": 61032,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\NaverNews.json"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_00__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_00_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 578082,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_00_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_00__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_00_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 247945,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_00_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_01__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_01_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576266,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_01_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_01__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_01_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 93422,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_01_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_02__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_02_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576079,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_02_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_02__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_02_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 139771,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_02_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_03__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_03_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 575229,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_03_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_03__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_03_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 99565,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_03_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_04__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_04_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 575992,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_04_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_04__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_04_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 71384,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_04_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_05__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_05_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576165,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_05_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_05__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_05_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 135549,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_05_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_06__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_06_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576745,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_06_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_06__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_06_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 132416,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_06_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_07__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_07_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 575331,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_07_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_07__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_07_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 99480,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_07_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_08__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_08_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576073,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_08_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_08__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_08_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 80022,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_08_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_09__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_09_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 575198,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_09_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_09__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_09_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 238388,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_09_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_10__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_10_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576184,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_10_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_10__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_10_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 43391,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_10_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_11__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_11_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 575418,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_11_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_11__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_11_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 187869,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_11_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_12__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_12_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576587,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_12_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_12__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_12_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 142710,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_12_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_13__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_13_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576277,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_13_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_13__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_13_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 106775,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_13_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_14__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_14_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 578112,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_14_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_14__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_14_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 173266,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_14_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_15__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_15_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576294,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_15_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_15__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_15_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 91524,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_15_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_16__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_16_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576278,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_16_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_16__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_16_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 76144,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_16_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_17__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_17_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576277,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_17_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_17__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_17_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 126254,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_17_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_18__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_18_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576266,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_18_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_18__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_18_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 123257,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_18_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_19__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html",
+          "source_type": "html",
+          "title": "news_19_%EB%AC%B4%EC%8B%A0%EC%82%AC%20",
+          "byte_size": 576264,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_19_%EB%AC%B4%EC%8B%A0%EC%82%AC%20.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_19__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_19_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 166982,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_19_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_20__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_20_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 78827,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_20_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_21__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_21_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 161680,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_21_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_22__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_22_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 183117,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_22_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_23__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_23_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 165416,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_23_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_24__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_24_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 156184,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_24_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_25__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_25_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 152827,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_25_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_26__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_26_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 138634,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_26_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_27__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_27_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 157685,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_27_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_28__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_28_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 100358,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_28_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "07_뉴스_평판_원문_HTML_news_29__EB_AC_B4_EC_8B_A0_EC_82_AC_html",
+          "source_type": "html",
+          "title": "news_29_%EB%AC%B4%EC%8B%A0%EC%82%AC",
+          "byte_size": 240745,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\07_뉴스_평판\\원문_HTML\\news_29_%EB%AC%B4%EC%8B%A0%EC%82%AC.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버_blog_json",
+          "source_type": "json",
+          "title": "네이버_blog",
+          "byte_size": 12941,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\네이버_blog.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버_encyc_json",
+          "source_type": "json",
+          "title": "네이버_encyc",
+          "byte_size": 1951,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\네이버_encyc.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버_web_json",
+          "source_type": "json",
+          "title": "네이버_web",
+          "byte_size": 7226,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\네이버_web.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_네이버검색_통합_json",
+          "source_type": "json",
+          "title": "네이버검색_통합",
+          "byte_size": 22114,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\네이버검색_통합.json"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_00_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_00_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 69993,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_00_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_02_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_02_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 15317,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_02_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_03_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_03_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 89564,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_03_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_04_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_04_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 34865,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_04_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_05_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_05_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 487807,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_05_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_06_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_06_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 192154,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_06_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_07_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_07_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 1278,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_07_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_08_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_08_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 65590,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_08_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_외부검색_네이버검색_원문_HTML_page_09_web__EB_AC_B4_EC_8B_A0_EC_82_html",
+          "source_type": "html",
+          "title": "page_09_web_%EB%AC%B4%EC%8B%A0%EC%82",
+          "byte_size": 14581,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_외부검색\\네이버검색\\원문_HTML\\page_09_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_00_main_musinsa_html",
+          "source_type": "html",
+          "title": "홈페이지_00_main_musinsa",
+          "byte_size": 69993,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_00_main_musinsa.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_01_main_beauty_html",
+          "source_type": "html",
+          "title": "홈페이지_01_main_beauty",
+          "byte_size": 68597,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_01_main_beauty.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_02_main_player_html",
+          "source_type": "html",
+          "title": "홈페이지_02_main_player",
+          "byte_size": 68603,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_02_main_player.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_03_main_outlet_html",
+          "source_type": "html",
+          "title": "홈페이지_03_main_outlet",
+          "byte_size": 68603,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_03_main_outlet.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_04_main_boutique_html",
+          "source_type": "html",
+          "title": "홈페이지_04_main_boutique",
+          "byte_size": 68615,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_04_main_boutique.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_05_main_sneaker_html",
+          "source_type": "html",
+          "title": "홈페이지_05_main_sneaker",
+          "byte_size": 68603,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_05_main_sneaker.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_06_main_kids_html",
+          "source_type": "html",
+          "title": "홈페이지_06_main_kids",
+          "byte_size": 68585,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_06_main_kids.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_07_main_used_html",
+          "source_type": "html",
+          "title": "홈페이지_07_main_used",
+          "byte_size": 68615,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_07_main_used.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_08_snap_html",
+          "source_type": "html",
+          "title": "홈페이지_08_snap",
+          "byte_size": 57547,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_08_snap.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_09_offline_html",
+          "source_type": "html",
+          "title": "홈페이지_09_offline",
+          "byte_size": 6164,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_09_offline.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_메인_html",
+          "source_type": "html",
+          "title": "홈페이지_메인",
+          "byte_size": 69993,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_메인.html"
+        },
+        {
+          "document_id": "08_웹사이트_캡처_홈페이지_메인_렌더_html",
+          "source_type": "html",
+          "title": "홈페이지_메인_렌더",
+          "byte_size": 679865,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\08_웹사이트_캡처\\홈페이지_메인_렌더.html"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_IR자료_common_do_pdf",
+          "source_type": "pdf",
+          "title": "common.do",
+          "byte_size": 976462,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\IR자료\\common.do.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_IR자료_K_20250714_30920_942_pdf",
+          "source_type": "pdf",
+          "title": "K_20250714_30920_942",
+          "byte_size": 771605,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\IR자료\\K_20250714_30920_942.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_기타_20211102083535653K_pdf",
+          "source_type": "pdf",
+          "title": "20211102083535653K",
+          "byte_size": 1243436,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\기타\\20211102083535653K.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_다운로드목록_json",
+          "source_type": "json",
+          "title": "다운로드목록",
+          "byte_size": 2675,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\다운로드목록.json"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_실행요약_md",
+          "source_type": "markdown",
+          "title": "실행요약",
+          "byte_size": 2062,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\실행요약.md"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_입찰조달_downloadFile_do_pdf",
+          "source_type": "pdf",
+          "title": "downloadFile.do",
+          "byte_size": 198345,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\입찰조달\\downloadFile.do.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_입찰조달_downloadFile_do_1_pdf",
+          "source_type": "pdf",
+          "title": "downloadFile.do_1",
+          "byte_size": 132827,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\입찰조달\\downloadFile.do_1.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_입찰조달_downloadFile_do_2_pdf",
+          "source_type": "pdf",
+          "title": "downloadFile.do_2",
+          "byte_size": 333505,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\입찰조달\\downloadFile.do_2.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트다운로더_입찰조달_downloadFile_do_3_pdf",
+          "source_type": "pdf",
+          "title": "downloadFile.do_3",
+          "byte_size": 364525,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트다운로더\\입찰조달\\downloadFile.do_3.pdf"
+        },
+        {
+          "document_id": "09_기타_에이전트리서치_리포트_md",
+          "source_type": "markdown",
+          "title": "에이전트리서치_리포트",
+          "byte_size": 2144,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트리서치_리포트.md"
+        },
+        {
+          "document_id": "09_기타_에이전트리서치_실행기록_json",
+          "source_type": "json",
+          "title": "에이전트리서치_실행기록",
+          "byte_size": 123027,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트리서치_실행기록.json"
+        },
+        {
+          "document_id": "09_기타_에이전트리서치_증거로그_jsonl",
+          "source_type": "jsonl",
+          "title": "에이전트리서치_증거로그",
+          "byte_size": 5487,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\에이전트리서치_증거로그.jsonl"
+        },
+        {
+          "document_id": "09_기타_오케스트레이터_오케스트레이션로그_json",
+          "source_type": "json",
+          "title": "오케스트레이션로그",
+          "byte_size": 9445,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\오케스트레이터\\오케스트레이션로그.json"
+        },
+        {
+          "document_id": "09_기타_오케스트레이터_품질점수_md",
+          "source_type": "markdown",
+          "title": "품질점수",
+          "byte_size": 906,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\09_기타\\오케스트레이터\\품질점수.md"
+        },
+        {
+          "document_id": "MANIFEST_md",
+          "source_type": "markdown",
+          "title": "MANIFEST",
+          "byte_size": 31460,
+          "source_path": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430\\MANIFEST.md"
+        }
+      ]
+    }
+  ]
+}

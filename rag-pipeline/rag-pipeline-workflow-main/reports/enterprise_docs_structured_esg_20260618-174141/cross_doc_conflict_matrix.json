@@ -1,0 +1,117 @@
+{
+  "taxonomy": {
+    "version": "1.0.0",
+    "statuses": [
+      "conflict_numeric",
+      "conflict_semantic",
+      "insufficient_cross_doc_support",
+      "metric_absent",
+      "multi_source_confirmed",
+      "none",
+      "not_disclosed",
+      "single_source_sufficient"
+    ],
+    "definitions": {
+      "metric_absent": "Corpus/role has no parseable metric candidate",
+      "not_disclosed": "Explicit not-disclosed or all candidates withheld",
+      "conflict_numeric": "Numeric mismatch across sources (may be resolved with priority)",
+      "conflict_semantic": "Same slot different semantic interpretation (future)",
+      "single_source_sufficient": "One authoritative source sufficient",
+      "multi_source_confirmed": "Multiple docs agree or complementary without conflict",
+      "insufficient_cross_doc_support": "Cross-doc question lacks required multi-role support",
+      "none": "Fallback / unclassified"
+    },
+    "resolution_rules": [
+      "primary_doc numeric preferred over conflicting supporting",
+      "not_disclosed candidates filtered before resolve",
+      "year alignment before value compare",
+      "5% numeric tolerance in _values_conflict"
+    ]
+  },
+  "cases": [
+    {
+      "question_id": "QUANT-0133",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "conflict_status": "single_source_sufficient",
+      "conflict_reason": "single_authoritative_source",
+      "value": "20.8",
+      "readiness_state": "single_source_sufficient",
+      "source_documents": [
+        "doc_01_business"
+      ]
+    },
+    {
+      "question_id": "QUANT-0134",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "conflict_status": "metric_absent",
+      "conflict_reason": "metric_absent_in_role_or_corpus",
+      "value": null,
+      "readiness_state": "retrieval_ready",
+      "source_documents": []
+    },
+    {
+      "question_id": "QUANT-0208",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "conflict_status": "single_source_sufficient",
+      "conflict_reason": "single_authoritative_source",
+      "value": "2,625",
+      "readiness_state": "single_source_sufficient",
+      "source_documents": [
+        "doc_06_governance"
+      ]
+    },
+    {
+      "question_id": "QUANT-0210",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "conflict_status": "single_source_sufficient",
+      "conflict_reason": "single_authoritative_source",
+      "value": "1.4",
+      "readiness_state": "single_source_sufficient",
+      "source_documents": [
+        "doc_06_governance"
+      ]
+    },
+    {
+      "question_id": "QUANT-0209",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "conflict_status": "single_source_sufficient",
+      "conflict_reason": "single_authoritative_source",
+      "value": "1,862",
+      "readiness_state": "single_source_sufficient",
+      "source_documents": [
+        "doc_06_governance"
+      ]
+    },
+    {
+      "question_id": "QUANT-0213",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "conflict_status": "single_source_sufficient",
+      "conflict_reason": "single_authoritative_source",
+      "value": "1,181",
+      "readiness_state": "single_source_sufficient",
+      "source_documents": [
+        "doc_06_governance"
+      ]
+    },
+    {
+      "question_id": "QUANT-0155",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "conflict_status": "single_source_sufficient",
+      "conflict_reason": "single_authoritative_source",
+      "value": "35.0",
+      "readiness_state": "single_source_sufficient",
+      "source_documents": [
+        "doc_03_renewable",
+        "doc_evidence_csv",
+        "doc_01_business"
+      ]
+    }
+  ]
+}

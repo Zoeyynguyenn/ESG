@@ -1,0 +1,35 @@
+{
+  "curation_version": "ref_curation_r1",
+  "generated_at": "2026-06-11T10:20:02",
+  "input_total": 17,
+  "keep_strong": 3,
+  "keep_but_needs_rewrite": 11,
+  "curated_total": 14,
+  "rejected_total": 3,
+  "usable_strong": 3,
+  "salvageable_rewrite": 11,
+  "rejected_by_decision": {
+    "drop_contact_or_navigation": 1,
+    "drop_listing_archive": 2
+  },
+  "curated_by_company": {
+    "한샘": 14
+  },
+  "input_by_company": {
+    "무신사": 1,
+    "한샘": 16
+  },
+  "companies_weak": [
+    "무신사"
+  ],
+  "working_workbook_ready": true,
+  "rebuild_v2_recommendation": "Chưa bắt buộc — curated R1 đủ review round 2; v2 khi mở rộng corpus Hansem/무신사 narrative sạch.",
+  "curated_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_curated_r1.jsonl",
+  "rejected_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_rejected_r1.jsonl",
+  "curated_xlsx": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_curated_r1.xlsx",
+  "promote_ready_seed_ids": [
+    "HS-G-T04",
+    "HS-G-Q06",
+    "HS-G-L06"
+  ]
+}

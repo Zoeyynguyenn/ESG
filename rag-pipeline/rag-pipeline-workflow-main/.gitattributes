@@ -1,0 +1,2 @@
+*.sh text eol=lf
+scripts/runpod/* text eol=lf

@@ -1,0 +1,65 @@
+name: Production Smoke CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - "src/**"
+      - "scripts/run_production_smoke_ci.py"
+      - "configs/production_openai_hybrid_qdrant_jina.yaml"
+      - "configs/production_openai_hybrid_qdrant_generative.yaml"
+      - ".github/workflows/production-smoke.yml"
+  schedule:
+    - cron: "0 6 * * 1"
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache production index
+        uses: actions/cache@v4
+        id: index-cache
+        with:
+          path: artifacts/benchmark_cache/index_cache
+          key: production-index-${{ hashFiles('configs/production_openai_hybrid_qdrant_jina.yaml') }}
+          restore-keys: |
+            production-index-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -q
+          pip install qdrant-client==1.12.1 pyyaml -q
+
+      - name: Build index if cache miss
+        if: steps.index-cache.outputs.cache-hit != 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/p0_1_reindex_full_lane.py
+
+      - name: Run production smoke CI
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          RAG_BENCHMARK_LLM_PROVIDER: openai_api
+          PYTHONIOENCODING: utf-8
+          PYTHONUTF8: "1"
+        run: |
+          python scripts/run_production_smoke_ci.py --require-index true
+
+      - name: Upload smoke report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-ci-report
+          path: artifacts/smoke_ci/
+          retention-days: 14

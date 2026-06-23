@@ -1,0 +1,51 @@
+{
+  "rebuild_version": "ref_workbook_v2",
+  "generated_at": "2026-06-11T10:39:26",
+  "hansem_frozen": 4,
+  "musinsa_new_seeds": 5,
+  "raysolution_new_seeds": 1,
+  "workbook_total": 10,
+  "unique_clusters": 9,
+  "seeds_by_company": {
+    "한샘": 4,
+    "무신사": 5,
+    "레이시온": 1
+  },
+  "clusters": {
+    "FC_MATERIAL_8": 1,
+    "FC_NET_ZERO_2050": 1,
+    "FC_KGCS_A": 1,
+    "FC_ESG_GOVERNANCE": 2,
+    "FC_IMPACT_REPORT": 1,
+    "FC_CLIMATE_GHG": 1,
+    "FC_EXTERNAL_DIRECTOR": 1,
+    "FC_COMMUNITY_DONATION": 1,
+    "FC_STAKEHOLDER_DISCLOSURE": 1
+  },
+  "musinsa_units_total": 38,
+  "raysolution_units_total": 40,
+  "musinsa_pool_eligible": 19,
+  "raysolution_pool_eligible": 6,
+  "musinsa_pool_drop": 19,
+  "raysolution_pool_drop": 34,
+  "coverage_gaps": [
+    "무신사: thiếu report body narrative sạch — phụ thuộc press release / headline salvage",
+    "레이시온: thiếu metric/governance narrative — chỉ có stakeholder disclosure sentence",
+    "Cả hai: cần ingest PDF sustainability report thật (Impact Report / 2024 SR) để mở rộng cluster"
+  ],
+  "review_ready_verdict": "**Chưa đủ** — có mặt 3 công ty nhưng Musinsa/Raysolution còn mỏng (press/headline salvage; RX chỉ 1 cluster)",
+  "missing_where": "무신사 (narrative report body), 레이시온 (ESG metric/governance body)",
+  "coverage_verdict": "partial 3-company workbook — đủ làm format anchor + pilot review, chưa đủ golden workbook đầy đủ",
+  "seed_ids": [
+    "HS-G-T04",
+    "HS-G-Q01",
+    "HS-G-Q06",
+    "HS-G-T01",
+    "MS-G-L01",
+    "MS-G-L02",
+    "MS-G-L03",
+    "MS-G-L04",
+    "MS-G-Q05",
+    "RX-G-L01"
+  ]
+}

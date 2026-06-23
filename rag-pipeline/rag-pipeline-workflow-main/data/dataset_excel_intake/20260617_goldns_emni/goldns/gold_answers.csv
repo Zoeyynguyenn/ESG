@@ -1,0 +1,252 @@
+﻿question_id,company_id,gold_answer_raw,gold_answer_normalized,answer_unit,disclosure_status,expert_verified,normalization_rule,scoring_rule,reporting_boundary,confidence,evidence_text
+goldns-0001,goldns,46,46,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,총원 46
+goldns-0002,goldns,26.1,26.1,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,남 12/46
+goldns-0003,goldns,73.9,73.9,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,여 34/46
+goldns-0004,goldns,12,12,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,정규직 남 12
+goldns-0005,goldns,34,34,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,정규직 여 34
+goldns-0006,goldns,100.0,100.0,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,정규직 46/46
+goldns-0007,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0008,goldns,1,1,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,계약직 여 1
+goldns-0009,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0010,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0011,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0012,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0013,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0014,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0015,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0016,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0017,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0018,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0019,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0020,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0021,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0022,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0023,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0024,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0025,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0026,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0027,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0028,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0029,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0030,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0031,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0032,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0033,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0034,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0035,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0036,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0037,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0038,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0039,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0040,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0041,goldns,0.0,0.0,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,임원 5명 중 여성 0명
+goldns-0042,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0043,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0044,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0045,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0046,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0047,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0048,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0049,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0050,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0051,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0052,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0053,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0054,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0055,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0056,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0057,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0058,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0059,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0060,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0061,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0062,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0063,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0064,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0065,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0066,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0067,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0068,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0069,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0070,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0071,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0072,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0073,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0074,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0075,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0076,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0077,goldns,Not disclosed,NOT_DISCLOSED,LTIFR,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0078,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0079,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0080,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0081,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0082,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0083,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0084,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0085,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0086,goldns,Not disclosed,NOT_DISCLOSED,회,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0087,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0088,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0089,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0090,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0091,goldns,Not disclosed,NOT_DISCLOSED,시간/명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0092,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0093,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0094,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0095,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0096,goldns,43,43,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,총급여 1997553000원 ÷ 46명
+goldns-0097,goldns,66.5,66.5,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,여 평균 38380794 ÷ 남 평균 57717167
+goldns-0098,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0099,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0100,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0101,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0102,goldns,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0103,goldns,Not disclosed,NOT_DISCLOSED,개,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0104,goldns,0,0,건,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,품질·안전 법규위반 회수/강제리콜 0건
+goldns-0105,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0106,goldns,0,0,건,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,비자발(명령·권고) 리콜 0건
+goldns-0107,goldns,0,0,건,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,자발적 리콜 0건
+goldns-0108,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0109,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0110,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0111,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0112,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0113,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0114,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0115,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0116,goldns,0,0,건,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,개인정보 보호법 행정처분(공표 별표) 0건
+goldns-0117,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0118,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0119,goldns,0,0,건,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,개인정보 유출 처분 0건
+goldns-0120,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0121,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0122,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0123,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0124,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0125,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0126,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0127,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0128,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0129,goldns,Not disclosed,NOT_DISCLOSED,인,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0130,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0131,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0132,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0133,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0134,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0135,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0136,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0137,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0138,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0139,goldns,Not disclosed,NOT_DISCLOSED,톤/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0140,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0141,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0142,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0143,goldns,Not disclosed,NOT_DISCLOSED,KRW,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0144,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0145,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0146,goldns,Not disclosed,NOT_DISCLOSED,tCO2-eq,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0147,goldns,Not disclosed,NOT_DISCLOSED,tCO2-eq,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0148,goldns,Not disclosed,NOT_DISCLOSED,tCO2-eq,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0149,goldns,Not disclosed,NOT_DISCLOSED,tCO2-eq/ 백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0150,goldns,Not disclosed,NOT_DISCLOSED,TJ/백만원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0151,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0152,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0153,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0154,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0155,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0156,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0157,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0158,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0159,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0160,goldns,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0161,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0162,goldns,Not disclosed,NOT_DISCLOSED,톤/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0163,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0164,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0165,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0166,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0167,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0168,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0169,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0170,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0171,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0172,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0173,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0174,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0175,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0176,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0177,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0178,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0179,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0180,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0181,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0182,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0183,goldns,Not disclosed,NOT_DISCLOSED,톤/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0184,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0185,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0186,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0187,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0188,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0189,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0190,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0191,goldns,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0192,goldns,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0193,goldns,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0194,goldns,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0195,goldns,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0196,goldns,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0197,goldns,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0198,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0199,goldns,Not disclosed,NOT_DISCLOSED,M3/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0200,goldns,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0201,goldns,Not disclosed,NOT_DISCLOSED,M3/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0202,goldns,Not disclosed,NOT_DISCLOSED,ha,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0203,goldns,Not disclosed,NOT_DISCLOSED,ha,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0204,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0205,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0206,goldns,2096270,2096270,원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,2025 최저임금 고시
+goldns-0207,goldns,9020,9020,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,매출액 9019704769원
+goldns-0208,goldns,963,963,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,유형자산 취득 962635945원
+goldns-0209,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0210,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0211,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0212,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0213,goldns,2,2,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,medium,법인세비용 1991820원
+goldns-0214,goldns,-1474,-1474,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,medium,당기순이익 -1474321263 − 배당 0원
+goldns-0215,goldns,Not disclosed,NOT_DISCLOSED,개,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0216,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0217,goldns,Not disclosed,NOT_DISCLOSED,회,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0218,goldns,Not disclosed,NOT_DISCLOSED,개,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0219,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0220,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0221,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0222,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0223,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0224,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0225,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0226,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0227,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0228,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0229,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0230,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0231,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0232,goldns,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0233,goldns,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0234,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0235,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0236,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0237,goldns,0,0,건,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,공정거래 법령 위반(제재) 0건
+goldns-0238,goldns,0,0,건,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,공정거래 과징금 부과 0건
+goldns-0239,goldns,2,2,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,이사 4 − 사외이사 2
+goldns-0240,goldns,2,2,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,사외이사 2
+goldns-0241,goldns,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0242,goldns,Not disclosed,NOT_DISCLOSED,배,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0243,goldns,Not disclosed,NOT_DISCLOSED,배,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0244,goldns,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0245,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0246,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0247,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0248,goldns,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0249,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0250,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+goldns-0251,goldns,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed

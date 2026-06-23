@@ -1,0 +1,179 @@
+{
+  "generated_at": "2026-06-12T16:08:36",
+  "input_count": 327,
+  "fact_mismatch_count": 23,
+  "unnatural_question_wording_count": 261,
+  "residue_led_question_count": 164,
+  "overlong_fact_phrase_count": 137,
+  "usable_without_rebuild_count": 10,
+  "needs_rebuild_count": 317,
+  "error_counts": {
+    "unnatural_question_wording": 261,
+    "residue_led_question": 164,
+    "overlong_fact_phrase": 137,
+    "fact_mismatch": 23
+  },
+  "example_rows": [
+    {
+      "seed_id": "RTX-V2-Q01",
+      "errors": [
+        "unnatural_question_wording",
+        "residue_led_question"
+      ],
+      "question": "What energy intensity (GJ per $M revenue) in 2022 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q02",
+      "errors": [
+        "residue_led_question",
+        "overlong_fact_phrase",
+        "unnatural_question_wording"
+      ],
+      "question": "What Reductions from the 2019 baseline with a new metric/goal in 2022 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q03",
+      "errors": [
+        "unnatural_question_wording",
+        "residue_led_question"
+      ],
+      "question": "What high and elevated ergonomic risks in 2020 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q04",
+      "errors": [
+        "unnatural_question_wording",
+        "fact_mismatch",
+        "residue_led_question"
+      ],
+      "question": "What high and elevated ergonomic risks in 2025 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q05",
+      "errors": [
+        "residue_led_question",
+        "unnatural_question_wording"
+      ],
+      "question": "What Certain 2022 and 2021 Scope 3 emission in 2023 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q06",
+      "errors": [
+        "residue_led_question",
+        "overlong_fact_phrase",
+        "unnatural_question_wording"
+      ],
+      "question": "What s Workforce 2030 Energy and GHGemissions reduction in 2030 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q07",
+      "errors": [
+        "residue_led_question",
+        "unnatural_question_wording"
+      ],
+      "question": "What Direct economic value generate in 2023 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q08",
+      "errors": [
+        "unnatural_question_wording"
+      ],
+      "question": "What Scope 1 and Scope 2 GHG emissions in 2024 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q09",
+      "errors": [
+        "unnatural_question_wording",
+        "residue_led_question"
+      ],
+      "question": "What renewable electricity/energy use in 2025 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q10",
+      "errors": [
+        "overlong_fact_phrase",
+        "unnatural_question_wording",
+        "residue_led_question"
+      ],
+      "question": "What energy consumption reduction since 2019 baseline in 2022 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q11",
+      "errors": [
+        "residue_led_question",
+        "unnatural_question_wording"
+      ],
+      "question": "What Direct economic value generate in 2024 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q13",
+      "errors": [
+        "unnatural_question_wording",
+        "residue_led_question"
+      ],
+      "question": "What billion net reduction in 2024 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q14",
+      "errors": [
+        "overlong_fact_phrase",
+        "unnatural_question_wording",
+        "residue_led_question"
+      ],
+      "question": "What llion in 2023 compared to 2022 was primarily driven by a net reduction in 2023 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q15",
+      "errors": [
+        "unnatural_question_wording",
+        "residue_led_question"
+      ],
+      "question": "What partially offset by a net reduction in 2023 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q16",
+      "errors": [
+        "unnatural_question_wording"
+      ],
+      "question": "What Total average interest expense rate in 2024 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q17",
+      "errors": [
+        "overlong_fact_phrase",
+        "unnatural_question_wording"
+      ],
+      "question": "What Income Taxes 2024 2023 2022 Effective income tax rate in 2024 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q18",
+      "errors": [
+        "overlong_fact_phrase",
+        "unnatural_question_wording"
+      ],
+      "question": "What We assess our liquidity in terms of our ability to generate in 2024 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q19",
+      "errors": [
+        "unnatural_question_wording"
+      ],
+      "question": "What Month Secured Overnight Financing Rate in 2025 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q20",
+      "errors": [
+        "unnatural_question_wording"
+      ],
+      "question": "What A 10% unfavorable exchange rate in 2024 does RTX report?"
+    },
+    {
+      "seed_id": "RTX-V2-Q21",
+      "errors": [
+        "overlong_fact_phrase",
+        "unnatural_question_wording"
+      ],
+      "question": "What Month term loan at 3 Month Secured Overnight Financing Rate in 2054 does RTX report?"
+    }
+  ]
+}

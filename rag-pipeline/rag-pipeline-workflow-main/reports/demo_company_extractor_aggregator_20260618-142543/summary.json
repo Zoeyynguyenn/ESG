@@ -1,0 +1,38 @@
+{
+  "timestamp": "20260618-142543",
+  "corpus_unit_count": 47,
+  "single": {
+    "count": 20,
+    "single_doc_ready_count": 10,
+    "single_extraction_success_rate_on_ready": 1.0,
+    "single_extraction_success_rate_all": 0.5,
+    "single_fail_breakdown": {
+      "ready": 10,
+      "retrieval_gap": 10
+    },
+    "note": "no gold answer in subset — success = parseable numeric from retrieved units"
+  },
+  "cross": {
+    "count": 15,
+    "quantitative_cross_count": 10,
+    "aggregation_success_rate": 0.3333,
+    "aggregation_partial_rate": 0.1333,
+    "aggregation_conflict_rate": 0.2,
+    "aggregation_missing_role_rate": 0.4667,
+    "cross_fail_breakdown": {
+      "synthesis_gap": 5,
+      "aggregation_gap": 5,
+      "ready": 5
+    },
+    "note": "qualitative rows marked synthesis_gap — quant aggregation measured separately",
+    "quant_aggregation_success_rate": 0.5
+  },
+  "primary_bottleneck_after_pilot": "aggregation (cross quant) + retrieval (single)",
+  "conclusion": "structured_extractor giải quyết đúng bottleneck unit-level cho nhóm ready; có thể mở rộng extractor pilot. aggregator tạo được mergeable evidence một phần — vẫn chưa đủ cho qualitative synthesis.",
+  "next_step": "Mở rộng extractor + conflict resolution trong aggregator; thêm role-aware subquery retrieval.",
+  "open_synthesis": false,
+  "metric_notes": {
+    "single_extraction_success": "proxy — parseable numeric, no gold match",
+    "aggregation_success": "real aggregator output status, not retrieval approximation"
+  }
+}

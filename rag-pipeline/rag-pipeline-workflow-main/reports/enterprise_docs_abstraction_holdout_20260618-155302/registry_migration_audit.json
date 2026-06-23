@@ -1,0 +1,171 @@
+{
+  "version": "1.0.0",
+  "description": "Registry migration audit for enterprise internal-doc lane",
+  "entries": [
+    {
+      "component": "registries.py",
+      "driver": "already_registry_driven",
+      "registry_source": [
+        "company_doc_registry",
+        "metric_family_registry",
+        "source_role_registry"
+      ],
+      "pilot_dependency": "none",
+      "migration_path": "source of truth — extend JSON only"
+    },
+    {
+      "component": "doc_mapping.py",
+      "driver": "partially_registry_driven",
+      "registry_source": [
+        "company_doc_registry"
+      ],
+      "pilot_dependency": "DEMO_DOCUMENTS fallback via LOGICAL_TO_PATH_HINT; CORPUS_DOC_PATTERNS hardcoded fallback",
+      "migration_path": "drop DEMO_DOCUMENTS import; derive LOGICAL_TO_PATH_HINT from registry only"
+    },
+    {
+      "component": "doc_router.py",
+      "driver": "partially_registry_driven",
+      "registry_source": [
+        "company_doc_registry"
+      ],
+      "pilot_dependency": "DEMO_DOCUMENTS dict; doc_evidence_csv roles; demo 7-step routing heuristics",
+      "migration_path": "route_documents(company_id) uses logical_documents(); role templates per company in registry"
+    },
+    {
+      "component": "structured_extractor.py",
+      "driver": "partially_registry_driven",
+      "registry_source": [
+        "metric_family_registry"
+      ],
+      "pilot_dependency": "ROW_ALIASES, SEMANTIC_BRIDGE, NARRATIVE_METRIC_PATTERNS merged as fallback",
+      "migration_path": "registry-first; shrink code constants to demo_company-only emergency fallback"
+    },
+    {
+      "component": "evidence_aggregator.py",
+      "driver": "partially_registry_driven",
+      "registry_source": [
+        "metric_family_registry",
+        "company_doc_registry"
+      ],
+      "pilot_dependency": "_GOVERNANCE_ANCHOR_* fallback; CORPUS_DOC_PATTERNS import",
+      "migration_path": "require registry entry per company; remove fallback frozensets when holdout passes"
+    },
+    {
+      "component": "cross_doc_retriever.py",
+      "driver": "partially_registry_driven",
+      "registry_source": [
+        "source_role_registry (retrieval_boosts)",
+        "company_doc_registry"
+      ],
+      "pilot_dependency": "doc_evidence_csv boost=2.0 hardcoded; build_index default demo_company",
+      "migration_path": "read boost from source_role_registry; pass company_id from plan_row"
+    },
+    {
+      "component": "holdout_harness.py",
+      "driver": "already_registry_driven",
+      "registry_source": [
+        "company_doc_registry"
+      ],
+      "pilot_dependency": "musinsa company filter hardcoded",
+      "migration_path": "move corpus_filter fully to company_doc_registry"
+    },
+    {
+      "component": "readiness_model.py",
+      "driver": "already_registry_driven",
+      "registry_source": [
+        "source_role_registry (via synthesis gate semantics)"
+      ],
+      "pilot_dependency": "none significant",
+      "migration_path": "wire assess_readiness to synthesis_gate config explicitly"
+    },
+    {
+      "component": "langgraph_handoff.py",
+      "driver": "already_registry_driven",
+      "registry_source": [
+        "source_role_registry"
+      ],
+      "pilot_dependency": "ALLOWED_HANDOFF_STATES duplicate in code",
+      "migration_path": "single source: source_role_registry.synthesis_gate"
+    },
+    {
+      "component": "rule_inventory.py",
+      "driver": "already_registry_driven",
+      "registry_source": [
+        "data/enterprise_docs/rule_inventory.json"
+      ],
+      "pilot_dependency": "documents pilot rules; does not execute them",
+      "migration_path": "keep as audit artifact; sync with registry changes"
+    },
+    {
+      "component": "reusability_audit.py",
+      "driver": "already_registry_driven",
+      "registry_source": [
+        "rule_inventory"
+      ],
+      "pilot_dependency": "none",
+      "migration_path": "extend with family-level coverage from holdout"
+    },
+    {
+      "component": "diagnostics.py",
+      "driver": "already_registry_driven",
+      "registry_source": [],
+      "pilot_dependency": "none — generic patterns",
+      "migration_path": "no change"
+    },
+    {
+      "component": "retrieval_index.py",
+      "driver": "already_registry_driven",
+      "registry_source": [],
+      "pilot_dependency": "none — generic BM25",
+      "migration_path": "no change"
+    },
+    {
+      "component": "parsers.py / ingest.py",
+      "driver": "still_code_driven",
+      "registry_source": [],
+      "pilot_dependency": "demo_company corpus layout assumptions",
+      "migration_path": "per-company ingest profile in company_doc_registry"
+    }
+  ],
+  "counts": {
+    "already_registry_driven": 8,
+    "partially_registry_driven": 5,
+    "still_code_driven": 1
+  },
+  "by_driver": {
+    "already_registry_driven": [
+      "registries.py",
+      "holdout_harness.py",
+      "readiness_model.py",
+      "langgraph_handoff.py",
+      "rule_inventory.py",
+      "reusability_audit.py",
+      "diagnostics.py",
+      "retrieval_index.py"
+    ],
+    "partially_registry_driven": [
+      "doc_mapping.py",
+      "doc_router.py",
+      "structured_extractor.py",
+      "evidence_aggregator.py",
+      "cross_doc_retriever.py"
+    ],
+    "still_code_driven": [
+      "parsers.py / ingest.py"
+    ]
+  },
+  "pilot_hotspots": [
+    "doc_mapping.py",
+    "doc_router.py",
+    "structured_extractor.py",
+    "evidence_aggregator.py",
+    "cross_doc_retriever.py",
+    "parsers.py / ingest.py"
+  ],
+  "migration_priority": [
+    "doc_router.py → company-scoped logical_documents",
+    "structured_extractor.py → registry-only aliases (drop code merge)",
+    "cross_doc_retriever.py → registry retrieval_boosts",
+    "parsers.py / ingest.py → company ingest profile"
+  ]
+}

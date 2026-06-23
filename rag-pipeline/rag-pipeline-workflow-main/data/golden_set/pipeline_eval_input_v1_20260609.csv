@@ -1,0 +1,7 @@
+﻿run_id,model_name,question_id,company,question_text_ko,pipeline_answer_ko,pipeline_evidence_record_id,pipeline_evidence_excerpt_ko,latency_ms,pipeline_notes
+,,QL-001,한샘,회사의 ESG 비전 및 중장기 전략은 무엇인가요?,,,,,
+,,QL-003,한샘,회사는 ESG 리스크를 어떻게 식별하고 관리하나요?,,,,,
+,,QL-004,한샘,안전보건 정책 및 목표는 무엇인가요?,,,,,
+,,QL-008,한샘,노동 및 인권 관리 체계는 어떻게 운영되나요?,,,,,
+,,QL-011,한샘,환경경영 정책 및 목표는 무엇인가요?,,,,,
+,,QL-012,한샘,환경 영향과 환경 리스크를 어떻게 평가하고 관리하나요?,,,,,

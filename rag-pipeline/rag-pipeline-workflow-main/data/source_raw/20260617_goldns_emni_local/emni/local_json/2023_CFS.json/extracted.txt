@@ -1,0 +1,177 @@
+company_id: emni
+company_name: 이엠앤아이
+doc_title: 2023_재무_CFS.json
+source_url: 
+file_url: colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_재무/2023_재무_CFS.json
+schema: dart_financial_statement
+local_path: C:\Users\nguye\Downloads\data-company\dataset-excel\output_restart_emni_20260617\output_restart_emni_20260617\이엠앤아이_일반자료_20260617\02_재무_신용\DART_재무\2023_재무_CFS.json
+
+# DART financial statement (2023_재무_CFS.json, year=2023)
+
+## 재무상태표
+- statement=재무상태표 | account=자산총계 | account_id=ifrs-full_Assets | 제 25 기=21,673,889,457 KRW | 제 24 기=19,598,113,800 KRW | 제 23 기=17,581,007,604 KRW
+- statement=재무상태표 | account=유동자산 | account_id=ifrs-full_CurrentAssets | 제 25 기=14,086,346,437 KRW | 제 24 기=13,734,051,994 KRW | 제 23 기=11,997,115,029 KRW
+- statement=재무상태표 | account=매출채권 | account_id=dart_ShortTermTradeReceivable | 제 25 기=3,023,473,224 KRW | 제 24 기=3,223,729,338 KRW | 제 23 기=4,140,074,309 KRW
+- statement=재무상태표 | account=매각예정비유동자산 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=219,697,324 KRW | 제 23 기=- KRW
+- statement=재무상태표 | account=파생상품자산 | account_id=-표준계정코드 미사용- | 제 25 기=299,259,416 KRW | 제 24 기=880,904 KRW | 제 23 기=56,404,454 KRW
+- statement=재무상태표 | account=현금및현금성자산 | account_id=ifrs-full_CashAndCashEquivalents | 제 25 기=7,190,247,828 KRW | 제 24 기=5,840,564,201 KRW | 제 23 기=4,173,426,067 KRW
+- statement=재무상태표 | account=계약자산 | account_id=ifrs-full_CurrentContractAssets | 제 25 기=76,964,467 KRW | 제 24 기=101,483,264 KRW | 제 23 기=64,384,800 KRW
+- statement=재무상태표 | account=당기손익인식금융자산 | account_id=ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue | 제 25 기=1,107,590,811 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=재무상태표 | account=당기법인세자산 | account_id=ifrs-full_CurrentTaxAssets | 제 25 기=28,696,550 KRW | 제 24 기=4,887,680 KRW | 제 23 기=163,290 KRW
+- statement=재무상태표 | account=재고자산 | account_id=ifrs-full_Inventories | 제 25 기=1,628,722,770 KRW | 제 24 기=611,500,577 KRW | 제 23 기=1,327,222,587 KRW
+- statement=재무상태표 | account=기타유동자산 | account_id=ifrs-full_OtherCurrentAssets | 제 25 기=66,929,694 KRW | 제 24 기=458,947,724 KRW | 제 23 기=205,771,482 KRW
+- statement=재무상태표 | account=단기금융상품 | account_id=ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents | 제 25 기=- KRW | 제 24 기=3,000,000,000 KRW | 제 23 기=2,000,000,000 KRW
+- statement=재무상태표 | account=기타유동채권 | account_id=ifrs-full_TradeAndOtherCurrentReceivables | 제 25 기=664,461,677 KRW | 제 24 기=272,360,982 KRW | 제 23 기=29,668,040 KRW
+- statement=재무상태표 | account=비유동자산 | account_id=ifrs-full_NoncurrentAssets | 제 25 기=7,587,543,020 KRW | 제 24 기=5,864,061,806 KRW | 제 23 기=5,583,892,575 KRW
+- statement=재무상태표 | account=기타비유동채권 | account_id=dart_LongTermTradeAndOtherNonCurrentReceivablesGross | 제 25 기=247,573,800 KRW | 제 24 기=294,757,990 KRW | 제 23 기=196,523,714 KRW
+- statement=재무상태표 | account=투자부동산 | account_id=-표준계정코드 미사용- | 제 25 기=1,894,581,979 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=재무상태표 | account=무형자산 | account_id=ifrs-full_IntangibleAssetsOtherThanGoodwill | 제 25 기=3,959,714,526 KRW | 제 24 기=4,254,920,160 KRW | 제 23 기=4,504,159,579 KRW
+- statement=재무상태표 | account=기타비유동자산 | account_id=ifrs-full_OtherNoncurrentAssets | 제 25 기=- KRW | 제 24 기=77,236,840 KRW | 제 23 기=- KRW
+- statement=재무상태표 | account=유형자산 | account_id=ifrs-full_PropertyPlantAndEquipment | 제 25 기=1,485,672,715 KRW | 제 24 기=1,237,146,816 KRW | 제 23 기=883,209,282 KRW
+- statement=재무상태표 | account=자본총계 | account_id=ifrs-full_Equity | 제 25 기=13,714,881,872 KRW | 제 24 기=12,484,625,728 KRW | 제 23 기=7,031,312,831 KRW
+- statement=재무상태표 | account=지배기업의 소유주에게 귀속되는 자본 | account_id=ifrs-full_EquityAttributableToOwnersOfParent | 제 25 기=13,714,881,872 KRW | 제 24 기=12,484,625,728 KRW | 제 23 기=7,031,312,831 KRW
+- statement=재무상태표 | account=자본잉여금 | account_id=dart_CapitalSurplus | 제 25 기=2,676,141,389 KRW | 제 24 기=4,187,110,424 KRW | 제 23 기=1,022,627,382 KRW
+- statement=재무상태표 | account=기타자본항목 | account_id=dart_ElementsOfOtherStockholdersEquity | 제 25 기=151,268,193 KRW | 제 24 기=20,291,776,010 KRW | 제 23 기=20,414,255,919 KRW
+- statement=재무상태표 | account=자본금 | account_id=ifrs-full_IssuedCapital | 제 25 기=10,670,164,500 KRW | 제 24 기=10,371,809,000 KRW | 제 23 기=7,856,128,500 KRW
+- statement=재무상태표 | account=이익잉여금(결손금) | account_id=ifrs-full_RetainedEarnings | 제 25 기=217,307,790 KRW | 제 24 기=-22366069706 KRW | 제 23 기=-22261698970 KRW
+- statement=재무상태표 | account=자본과부채총계 | account_id=ifrs-full_EquityAndLiabilities | 제 25 기=21,673,889,457 KRW | 제 24 기=19,598,113,800 KRW | 제 23 기=17,581,007,604 KRW
+- statement=재무상태표 | account=유동부채 | account_id=ifrs-full_CurrentLiabilities | 제 25 기=7,068,667,523 KRW | 제 24 기=6,616,562,609 KRW | 제 23 기=10,262,005,978 KRW
+- statement=재무상태표 | account=파생상품부채 | account_id=dart_CurrentDerivativeLiabilities | 제 25 기=1,561,947,907 KRW | 제 24 기=850,629,836 KRW | 제 23 기=754,878,901 KRW
+- statement=재무상태표 | account=유동성신주인수권부사채 | account_id=dart_CurrentPortionOfBondWithWarrant | 제 25 기=1,473,639,480 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=재무상태표 | account=유동성전환사채 | account_id=dart_CurrentPortionOfConvertibleBonds | 제 25 기=- KRW | 제 24 기=347,415,221 KRW | 제 23 기=3,198,730,338 KRW
+- statement=재무상태표 | account=매입채무 | account_id=dart_ShortTermTradePayables | 제 25 기=2,680,479,177 KRW | 제 24 기=3,330,970,855 KRW | 제 23 기=3,093,400,171 KRW
+- statement=재무상태표 | account=계약부채 | account_id=ifrs-full_CurrentContractLiabilities | 제 25 기=53,466,666 KRW | 제 24 기=41,000,000 KRW | 제 23 기=67,100,000 KRW
+- statement=재무상태표 | account=유동 리스부채 | account_id=ifrs-full_CurrentLeaseLiabilities | 제 25 기=298,280,436 KRW | 제 24 기=232,708,624 KRW | 제 23 기=294,407,596 KRW
+- statement=재무상태표 | account=충당부채 | account_id=ifrs-full_CurrentProvisions | 제 25 기=56,854,262 KRW | 제 24 기=620,173,043 KRW | 제 23 기=1,754,555,737 KRW
+- statement=재무상태표 | account=당기법인세부채 | account_id=ifrs-full_CurrentTaxLiabilities | 제 25 기=22,626,610 KRW | 제 24 기=74,176,152 KRW | 제 23 기=65,405,339 KRW
+- statement=재무상태표 | account=기타 유동부채 | account_id=ifrs-full_OtherCurrentLiabilities | 제 25 기=100,782,676 KRW | 제 24 기=127,890,968 KRW | 제 23 기=119,183,462 KRW
+- statement=재무상태표 | account=단기차입금 | account_id=ifrs-full_ShorttermBorrowings | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=93,130,000 KRW
+- statement=재무상태표 | account=기타유동채무 | account_id=ifrs-full_TradeAndOtherCurrentPayables | 제 25 기=820,590,309 KRW | 제 24 기=991,597,910 KRW | 제 23 기=821,214,434 KRW
+- statement=재무상태표 | account=부채총계 | account_id=ifrs-full_Liabilities | 제 25 기=7,959,007,585 KRW | 제 24 기=7,113,488,072 KRW | 제 23 기=10,549,694,773 KRW
+- statement=재무상태표 | account=비유동부채 | account_id=ifrs-full_NoncurrentLiabilities | 제 25 기=890,340,062 KRW | 제 24 기=496,925,463 KRW | 제 23 기=287,688,795 KRW
+- statement=재무상태표 | account=기타비유동채무 | account_id=dart_LongTermTradeAndOtherNonCurrentPayables | 제 25 기=295,044,530 KRW | 제 24 기=90,689,619 KRW | 제 23 기=35,545,091 KRW
+- statement=재무상태표 | account=확정급여부채 | account_id=dart_PostemploymentBenefitObligations | 제 25 기=447,876,561 KRW | 제 24 기=252,237,053 KRW | 제 23 기=199,398,834 KRW
+- statement=재무상태표 | account=이연법인세부채 | account_id=ifrs-full_DeferredTaxLiabilities | 제 25 기=1,115,310 KRW | 제 24 기=1,098,350 KRW | 제 23 기=4,053,634 KRW
+- statement=재무상태표 | account=비유동 리스부채 | account_id=ifrs-full_NoncurrentLeaseLiabilities | 제 25 기=146,303,661 KRW | 제 24 기=152,900,441 KRW | 제 23 기=48,691,236 KRW
+
+## 포괄손익계산서
+- statement=포괄손익계산서 | account=영업이익(손실) | account_id=dart_OperatingIncomeLoss | 제 25 기=-1290663885 KRW | 제 24 기=688,619,290 KRW | 제 23 기=-596354306 KRW
+- statement=포괄손익계산서 | account=판매비와관리비 | account_id=dart_TotalSellingGeneralAdministrativeExpenses | 제 25 기=5,040,882,945 KRW | 제 24 기=4,270,316,267 KRW | 제 23 기=3,539,592,161 KRW
+- statement=포괄손익계산서 | account=기타영업외수익 | account_id=-표준계정코드 미사용- | 제 25 기=831,555,426 KRW | 제 24 기=975,316,315 KRW | 제 23 기=1,388,686,829 KRW
+- statement=포괄손익계산서 | account=기타영업외비용 | account_id=-표준계정코드 미사용- | 제 25 기=564,648,551 KRW | 제 24 기=601,618,617 KRW | 제 23 기=1,501,027,808 KRW
+- statement=포괄손익계산서 | account=총포괄손익 | account_id=ifrs-full_ComprehensiveIncome | 제 25 기=-726188520 KRW | 제 24 기=-88439541 KRW | 제 23 기=-1207261517 KRW
+- statement=포괄손익계산서 | account=지배기업의소유주지분 | account_id=-표준계정코드 미사용- | 제 25 기=-726188520 KRW | 제 24 기=-88439541 KRW | 제 23 기=-1207261517 KRW
+- statement=포괄손익계산서 | account=매출원가 | account_id=ifrs-full_CostOfSales | 제 25 기=22,561,692,712 KRW | 제 24 기=29,514,044,103 KRW | 제 23 기=21,115,790,736 KRW
+- statement=포괄손익계산서 | account=기본및희석주당이익(손실) | account_id=ifrs-full_BasicEarningsLossPerShare | 제 25 기=-18 KRW | 제 24 기=-7 KRW | 제 23 기=-123 KRW
+- statement=포괄손익계산서 | account=계속영업기본및희석주당이익(손실) | account_id=-표준계정코드 미사용- | 제 25 기=-18 KRW | 제 24 기=-5 KRW | 제 23 기=-80 KRW
+- statement=포괄손익계산서 | account=중단영업기본및희석주당이익(손실) | account_id=ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations | 제 25 기=- KRW | 제 24 기=-2 KRW | 제 23 기=-43 KRW
+- statement=포괄손익계산서 | account=금융원가 | account_id=ifrs-full_FinanceCosts | 제 25 기=1,573,058,889 KRW | 제 24 기=3,116,357,376 KRW | 제 23 기=1,475,235,119 KRW
+- statement=포괄손익계산서 | account=이자비용 | account_id=dart_InterestExpenseFinanceExpense | 제 25 기=113,652,536 KRW | 제 24 기=401,371,746 KRW | 제 23 기=882,256,700 KRW
+- statement=포괄손익계산서 | account=사채상환손실 | account_id=dart_LossesFromRedemptionOfBondsFinancialExpense | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=355,656 KRW
+- statement=포괄손익계산서 | account=외환차손 | account_id=dart_LossesOnForeignCurrencyTransactionsFiancialExpense | 제 25 기=1,000,283,656 KRW | 제 24 기=1,130,594,084 KRW | 제 23 기=512,091,979 KRW
+- statement=포괄손익계산서 | account=외화환산손실 | account_id=dart_LossesOnForeignExchangeTranslationsFinancialExpense | 제 25 기=121,808,845 KRW | 제 24 기=223,458,369 KRW | 제 23 기=80,530,784 KRW
+- statement=포괄손익계산서 | account=파생상품평가손실 | account_id=dart_LossesOnValuationOfDerivativeFinancialInstrumentsFinancialExpense | 제 25 기=337,313,852 KRW | 제 24 기=1,360,933,177 KRW | 제 23 기=- KRW
+- statement=포괄손익계산서 | account=금융수익 | account_id=ifrs-full_FinanceIncome | 제 25 기=2,210,148,594 KRW | 제 24 기=1,959,121,420 KRW | 제 23 기=1,169,471,352 KRW
+- statement=포괄손익계산서 | account=사채상환이익 | account_id=dart_GainsFromRedemptionOfBondsFinancialIncome | 제 25 기=146,045,423 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=포괄손익계산서 | account=외환차익 | account_id=dart_GainsOnForeignCurrencyTransactionsFiancialIncome | 제 25 기=1,073,277,894 KRW | 제 24 기=1,159,951,875 KRW | 제 23 기=687,061,126 KRW
+- statement=포괄손익계산서 | account=외화환산이익 | account_id=dart_GainsOnForeignExchangeTranslationsFinancialIncome | 제 25 기=25,129,242 KRW | 제 24 기=263,583,858 KRW | 제 23 기=28,946,987 KRW
+- statement=포괄손익계산서 | account=파생상품평가이익 | account_id=dart_GainsOnValuationOfDerivativeFinancialInstrumentsFinancialIncome | 제 25 기=761,615,309 KRW | 제 24 기=464,814,348 KRW | 제 23 기=438,374,319 KRW
+- statement=포괄손익계산서 | account=이자수익 | account_id=dart_InterestIncomeFinanceIncome | 제 25 기=204,080,726 KRW | 제 24 기=70,771,339 KRW | 제 23 기=15,088,920 KRW
+- statement=포괄손익계산서 | account=매출총이익 | account_id=ifrs-full_GrossProfit | 제 25 기=3,750,219,060 KRW | 제 24 기=4,958,935,557 KRW | 제 23 기=2,943,237,855 KRW
+- statement=포괄손익계산서 | account=법인세비용(수익) | account_id=ifrs-full_IncomeTaxExpenseContinuingOperations | 제 25 기=- KRW | 제 24 기=-3026367 KRW | 제 23 기=5,735,317 KRW
+- statement=포괄손익계산서 | account=기타포괄손익 | account_id=ifrs-full_OtherComprehensiveIncome | 제 25 기=-339521215 KRW | 제 24 기=33,997,775 KRW | 제 23 기=361,124,907 KRW
+- statement=포괄손익계산서 | account=당기손익으로 재분류될 수 있는 항목(세후기타포괄손익) | account_id=ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax | 제 25 기=-86971143 KRW | 제 24 기=15,931,195 KRW | 제 23 기=319,134,991 KRW
+- statement=포괄손익계산서 | account=해외사업장환산외환차이(세후기타포괄손익) | account_id=ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax | 제 25 기=-86971143 KRW | 제 24 기=15,931,195 KRW | 제 23 기=319,134,991 KRW
+- statement=포괄손익계산서 | account=당기손익으로 재분류되지 않는항목(세후기타포괄손익) | account_id=ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax | 제 25 기=-252550072 KRW | 제 24 기=18,066,580 KRW | 제 23 기=41,989,916 KRW
+- statement=포괄손익계산서 | account=확정급여제도의 재측정손익(세후기타포괄손익) | account_id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans | 제 25 기=-252550072 KRW | 제 24 기=18,066,580 KRW | 제 23 기=41,989,916 KRW
+- statement=포괄손익계산서 | account=당기순이익(손실) | account_id=ifrs-full_ProfitLoss | 제 25 기=-386667305 KRW | 제 24 기=-122437316 KRW | 제 23 기=-1568386424 KRW
+- statement=포괄손익계산서 | account=지배기업의소유주지분 | account_id=-표준계정코드 미사용- | 제 25 기=-386667305 KRW | 제 24 기=-122437316 KRW | 제 23 기=-1568386424 KRW
+- statement=포괄손익계산서 | account=법인세비용차감전순이익(손실) | account_id=ifrs-full_ProfitLossBeforeTax | 제 25 기=-386667305 KRW | 제 24 기=-94918968 KRW | 제 23 기=-1014459052 KRW
+- statement=포괄손익계산서 | account=계속영업이익(손실) | account_id=ifrs-full_ProfitLossFromContinuingOperations | 제 25 기=-386667305 KRW | 제 24 기=-91892601 KRW | 제 23 기=-1020194369 KRW
+- statement=포괄손익계산서 | account=중단영업이익(손실) | account_id=ifrs-full_ProfitLossFromDiscontinuedOperations | 제 25 기=- KRW | 제 24 기=-30544715 KRW | 제 23 기=-548192055 KRW
+- statement=포괄손익계산서 | account=수익(매출액) | account_id=ifrs-full_Revenue | 제 25 기=26,311,911,772 KRW | 제 24 기=34,472,979,660 KRW | 제 23 기=24,059,028,591 KRW
+
+## 현금흐름표
+- statement=현금흐름표 | account=기초현금및현금성자산 | account_id=dart_CashAndCashEquivalentsAtBeginningOfPeriodCf | 제 25 기=5,840,564,201 KRW | 제 24 기=4,173,426,067 KRW | 제 23 기=1,646,369,673 KRW
+- statement=현금흐름표 | account=기말현금및현금성자산 | account_id=dart_CashAndCashEquivalentsAtEndOfPeriodCf | 제 25 기=7,190,247,828 KRW | 제 24 기=5,840,564,201 KRW | 제 23 기=4,173,426,067 KRW
+- statement=현금흐름표 | account=외화환산으로인한 현금의 변동 | account_id=-표준계정코드 미사용- | 제 25 기=19,746,419 KRW | 제 24 기=-232656680 KRW | 제 23 기=47,724,921 KRW
+- statement=현금흐름표 | account=재무활동현금흐름 | account_id=ifrs-full_CashFlowsFromUsedInFinancingActivities | 제 25 기=3,891,798,226 KRW | 제 24 기=1,069,451,543 KRW | 제 23 기=2,083,758,827 KRW
+- statement=현금흐름표 | account=자기주식의 취득으로 인한 현금의 유출 | account_id=dart_AcquisitionOfTreasuryShares | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=3,904,405 KRW
+- statement=현금흐름표 | account=임대보증금의 증가 | account_id=dart_IncreaseInGuaranteeDepositsAsFinancialActivities | 제 25 기=148,690,000 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=신주인수권부사채의 증가 | account_id=dart_ProceedsFromBondWithWarrant | 제 25 기=3,067,741,760 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=단기차입금의 증가 | account_id=dart_ProceedsFromShortTermBorrowings | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=88,715,000 KRW
+- statement=현금흐름표 | account=단기차입금의 상환 | account_id=dart_RepaymentsOfShortTermBorrowings | 제 25 기=- KRW | 제 24 기=95,785,000 KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=리스부채의 상환 | account_id=-표준계정코드 미사용- | 제 25 기=313,288,514 KRW | 제 24 기=376,205,087 KRW | 제 23 기=452,938,392 KRW
+- statement=현금흐름표 | account=유상증자 | account_id=-표준계정코드 미사용- | 제 25 기=999,988,500 KRW | 제 24 기=1,560,000,000 KRW | 제 23 기=2,500,000,000 KRW
+- statement=현금흐름표 | account=전환사채의상환 | account_id=-표준계정코드 미사용- | 제 25 기=11,333,520 KRW | 제 24 기=- KRW | 제 23 기=25,817,136 KRW
+- statement=현금흐름표 | account=주식발행비용 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=18,558,370 KRW | 제 23 기=22,296,240 KRW
+- statement=현금흐름표 | account=투자활동현금흐름 | account_id=ifrs-full_CashFlowsFromUsedInInvestingActivities | 제 25 기=-1168962494 KRW | 제 24 기=-1224451150 KRW | 제 23 기=-2007050008 KRW
+- statement=현금흐름표 | account=임차보증금의 감소 | account_id=dart_DecreaseInGuaranteeDeposits | 제 25 기=300,000 KRW | 제 24 기=21,000,000 KRW | 제 23 기=22,171,723 KRW
+- statement=현금흐름표 | account=매각예정자산의 처분 | account_id=dart_ProceedsFromSalesOfBuildings | 제 25 기=200,000,000 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=기계장치의 처분 | account_id=dart_ProceedsFromSalesOfMachinery | 제 25 기=- KRW | 제 24 기=326,335,300 KRW | 제 23 기=242,000,000 KRW
+- statement=현금흐름표 | account=건설중인자산의 취득 | account_id=dart_PurchaseOfConstructionInProgress | 제 25 기=415,870,820 KRW | 제 24 기=311,492,809 KRW | 제 23 기=126,750,000 KRW
+- statement=현금흐름표 | account=당기손익인식금융자산의 취득 | account_id=dart_PurchaseOfFairValueFinancialAsset | 제 25 기=1,100,000,000 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=기계장치의 취득 | account_id=dart_PurchaseOfMachinery | 제 25 기=615,652,233 KRW | 제 24 기=532,771,229 KRW | 제 23 기=107,156,882 KRW
+- statement=현금흐름표 | account=사무용비품의 취득 | account_id=dart_PurchaseOfOfficeEquipment | 제 25 기=42,221,090 KRW | 제 24 기=29,502,727 KRW | 제 23 기=66,291,229 KRW
+- statement=현금흐름표 | account=차량운반구의 취득 | account_id=dart_PurchaseOfVehicles | 제 25 기=63,178,498 KRW | 제 24 기=- KRW | 제 23 기=18,648,485 KRW
+- statement=현금흐름표 | account=단기대여금의증가 | account_id=-표준계정코드 미사용- | 제 25 기=-670000000 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=공구와기구의 취득 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=13,743,167 KRW | 제 23 기=1,065,366 KRW
+- statement=현금흐름표 | account=시설장치의 취득 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=13,728,000 KRW
+- statement=현금흐름표 | account=보증금 증가 | account_id=-표준계정코드 미사용- | 제 25 기=63,710,000 KRW | 제 24 기=124,871,865 KRW | 제 23 기=123,761,049 KRW
+- statement=현금흐름표 | account=단기금융상품의증가 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=1,000,000,000 KRW | 제 23 기=2,000,000,000 KRW
+- statement=현금흐름표 | account=산업재산권의취득 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=34,650,762 KRW
+- statement=현금흐름표 | account=단기금융상품의감소 | account_id=-표준계정코드 미사용- | 제 25 기=3,000,000,000 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=단기대여금의 회수 | account_id=-표준계정코드 미사용- | 제 25 기=134,685,024 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=공구와기구의 처분 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=5,871,452 KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=시설장치의 처분 | account_id=-표준계정코드 미사용- | 제 25 기=- KRW | 제 24 기=600,000 KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=투자부동산의 취득 | account_id=-표준계정코드 미사용- | 제 25 기=-1704124966 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=현금흐름표 | account=정부보조금의 수취 | account_id=ifrs-full_ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities | 제 25 기=170,810,089 KRW | 제 24 기=434,123,895 KRW | 제 23 기=220,830,042 KRW
+- statement=현금흐름표 | account=영업활동현금흐름 | account_id=ifrs-full_CashFlowsFromUsedInOperatingActivities | 제 25 기=-1392898524 KRW | 제 24 기=2,054,794,421 KRW | 제 23 기=2,402,622,654 KRW
+- statement=현금흐름표 | account=영업활동에서 창출된 현금흐름 | account_id=-표준계정코드 미사용- | 제 25 기=-1538171561 KRW | 제 24 기=2,032,019,593 KRW | 제 23 기=2,360,322,879 KRW
+- statement=현금흐름표 | account=당기순이익(손실) | account_id=-표준계정코드 미사용- | 제 25 기=-386667305 KRW | 제 24 기=-122437316 KRW | 제 23 기=-1568386424 KRW
+- statement=현금흐름표 | account=조정 | account_id=-표준계정코드 미사용- | 제 25 기=580,336,835 KRW | 제 24 기=1,479,576,083 KRW | 제 23 기=2,264,680,297 KRW
+- statement=현금흐름표 | account=순운전자본의 변동 | account_id=-표준계정코드 미사용- | 제 25 기=-1731841091 KRW | 제 24 기=674,880,826 KRW | 제 23 기=1,664,029,006 KRW
+- statement=현금흐름표 | account=법인세환급(납부) | account_id=ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities | 제 25 기=23,808,870 KRW | 제 24 기=2,671,049 KRW | 제 23 기=-454030 KRW
+- statement=현금흐름표 | account=이자지급 | account_id=ifrs-full_InterestPaidClassifiedAsOperatingActivities | 제 25 기=24,973,493 KRW | 제 24 기=6,843,254 KRW | 제 23 기=3,249,437 KRW
+- statement=현금흐름표 | account=이자수취 | account_id=ifrs-full_InterestReceivedClassifiedAsOperatingActivities | 제 25 기=194,055,400 KRW | 제 24 기=32,289,131 KRW | 제 23 기=45,095,182 KRW
+- statement=현금흐름표 | account=현금및현금성자산의순증가(감소) | account_id=ifrs-full_IncreaseDecreaseInCashAndCashEquivalents | 제 25 기=1,349,683,627 KRW | 제 24 기=1,667,138,134 KRW | 제 23 기=2,527,056,394 KRW
+
+## 자본변동표
+- statement=자본변동표 | account=기초자본 | account_id=dart_EquityAtBeginningOfPeriod | detail=연결재무제표 [member] | 제 25 기=12,484,625,728 KRW | 제 24 기=7,031,312,831 KRW | 제 23 기=3,741,678,491 KRW
+- statement=자본변동표 | account=기초자본 | account_id=dart_EquityAtBeginningOfPeriod | detail=자본 [구성요소]|결손금 | 제 25 기=-22366069706 KRW | 제 24 기=-22261698970 KRW | 제 23 기=-54847895565 KRW
+- statement=자본변동표 | account=기초자본 | account_id=dart_EquityAtBeginningOfPeriod | detail=자본 [구성요소]|기타자본항목 | 제 25 기=20,291,776,010 KRW | 제 24 기=20,414,255,919 KRW | 제 23 기=13,264,723,453 KRW
+- statement=자본변동표 | account=기초자본 | account_id=dart_EquityAtBeginningOfPeriod | detail=자본 [구성요소]|자본금 | 제 25 기=10,371,809,000 KRW | 제 24 기=7,856,128,500 KRW | 제 23 기=11,212,257,500 KRW
+- statement=자본변동표 | account=기초자본 | account_id=dart_EquityAtBeginningOfPeriod | detail=자본 [구성요소]|자본잉여금 | 제 25 기=4,187,110,424 KRW | 제 24 기=1,022,627,382 KRW | 제 23 기=34,112,593,103 KRW
+- statement=자본변동표 | account=무상감자 | account_id=dart_StockRedemptionWithoutRefund | detail=연결재무제표 [member] | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=-2870000 KRW
+- statement=자본변동표 | account=무상감자 | account_id=dart_StockRedemptionWithoutRefund | detail=자본 [구성요소]|기타자본항목 | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=6,853,259,000 KRW
+- statement=자본변동표 | account=무상감자 | account_id=dart_StockRedemptionWithoutRefund | detail=자본 [구성요소]|자본금 | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=-6856129000 KRW
+- statement=자본변동표 | account=순확정급여부채 재측정요소 | account_id=-표준계정코드 미사용- | detail=연결재무제표 [member] | 제 25 기=-252550072 KRW | 제 24 기=18,066,580 KRW | 제 23 기=41,989,916 KRW
+- statement=자본변동표 | account=순확정급여부채 재측정요소 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|결손금 | 제 25 기=-252550072 KRW | 제 24 기=18,066,580 KRW | 제 23 기=41,989,916 KRW
+- statement=자본변동표 | account=유상증자 | account_id=-표준계정코드 미사용- | detail=연결재무제표 [member] | 제 25 기=999,988,500 KRW | 제 24 기=1,554,553,200 KRW | 제 23 기=2,486,462,400 KRW
+- statement=자본변동표 | account=유상증자 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|기타자본항목 | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=-13537600 KRW
+- statement=자본변동표 | account=유상증자 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본금 | 제 25 기=142,855,500 KRW | 제 24 기=780,000,000 KRW | 제 23 기=2,500,000,000 KRW
+- statement=자본변동표 | account=유상증자 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본잉여금 | 제 25 기=857,133,000 KRW | 제 24 기=774,553,200 KRW | 제 23 기=- KRW
+- statement=자본변동표 | account=출자전환채무의감소 | account_id=-표준계정코드 미사용- | detail=연결재무제표 [member] | 제 25 기=-62803936 KRW | 제 24 기=-1835260 KRW | 제 23 기=-98693504 KRW
+- statement=자본변동표 | account=출자전환채무의감소 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|기타자본항목 | 제 25 기=-62803936 KRW | 제 24 기=-138411104 KRW | 제 23 기=-98693504 KRW
+- statement=자본변동표 | account=출자전환채무의감소 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본금 | 제 25 기=- KRW | 제 24 기=83,180,500 KRW | 제 23 기=- KRW
+- statement=자본변동표 | account=출자전환채무의감소 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본잉여금 | 제 25 기=- KRW | 제 24 기=53,395,344 KRW | 제 23 기=- KRW
+- statement=자본변동표 | account=전환사채의전환 | account_id=-표준계정코드 미사용- | detail=연결재무제표 [member] | 제 25 기=1,019,260,100 KRW | 제 24 기=3,989,034,498 KRW | 제 23 기=2,115,901,366 KRW
+- statement=자본변동표 | account=전환사채의전환 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본잉여금 | 제 25 기=863,760,100 KRW | 제 24 기=2,336,534,498 KRW | 제 23 기=1,022,627,382 KRW
+- statement=자본변동표 | account=전환사채의전환 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본금 | 제 25 기=155,500,000 KRW | 제 24 기=1,652,500,000 KRW | 제 23 기=1,000,000,000 KRW
+- statement=자본변동표 | account=전환사채의전환 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|기타자본항목 | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=93,273,984 KRW
+- statement=자본변동표 | account=주식발행초과금이입 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|결손금 | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=34,112,593,103 KRW
+- statement=자본변동표 | account=주식발행초과금이입 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본잉여금 | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=-34112593103 KRW
+- statement=자본변동표 | account=자기주식의매입 | account_id=-표준계정코드 미사용- | detail=연결재무제표 [member] | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=-3904405 KRW
+- statement=자본변동표 | account=자기주식의매입 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|기타자본항목 | 제 25 기=- KRW | 제 24 기=- KRW | 제 23 기=-3904405 KRW
+- statement=자본변동표 | account=해외사업환산손익 | account_id=-표준계정코드 미사용- | detail=연결재무제표 [member] | 제 25 기=-86971143 KRW | 제 24 기=15,931,195 KRW | 제 23 기=319,134,991 KRW
+- statement=자본변동표 | account=해외사업환산손익 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|기타자본항목 | 제 25 기=-86971143 KRW | 제 24 기=15,931,195 KRW | 제 23 기=319,134,991 KRW
+- statement=자본변동표 | account=결손금 보전 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|결손금 | 제 25 기=23,222,594,873 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=자본변동표 | account=결손금 보전 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|기타자본항목 | 제 25 기=-19990732738 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=자본변동표 | account=결손금 보전 | account_id=-표준계정코드 미사용- | detail=자본 [구성요소]|자본잉여금 | 제 25 기=-3231862135 KRW | 제 24 기=- KRW | 제 23 기=- KRW
+- statement=자본변동표 | account=자본총계 | account_id=ifrs-full_Equity | detail=연결재무제표 [member] | 제 25 기=13,714,881,872 KRW | 제 24 기=12,484,625,728 KRW | 제 23 기=7,031,312,831 KRW
+- statement=자본변동표 | account=자본총계 | account_id=ifrs-full_Equity | detail=자본 [구성요소]|결손금 | 제 25 기=217,307,790 KRW | 제 24 기=-22366069706 KRW | 제 23 기=-22261698970 KRW
+- statement=자본변동표 | account=자본총계 | account_id=ifrs-full_Equity | detail=자본 [구성요소]|기타자본항목 | 제 25 기=151,268,193 KRW | 제 24 기=20,291,776,010 KRW | 제 23 기=20,414,255,919 KRW
+- statement=자본변동표 | account=자본총계 | account_id=ifrs-full_Equity | detail=자본 [구성요소]|자본잉여금 | 제 25 기=2,676,141,389 KRW | 제 24 기=4,187,110,424 KRW | 제 23 기=1,022,627,382 KRW
+- statement=자본변동표 | account=자본총계 | account_id=ifrs-full_Equity | detail=자본 [구성요소]|자본금 | 제 25 기=10,670,164,500 KRW | 제 24 기=10,371,809,000 KRW | 제 23 기=7,856,128,500 KRW
+- statement=자본변동표 | account=당기순이익(손실) | account_id=ifrs-full_ProfitLoss | detail=연결재무제표 [member] | 제 25 기=-386667305 KRW | 제 24 기=-122437316 KRW | 제 23 기=-1568386424 KRW
+- statement=자본변동표 | account=당기순이익(손실) | account_id=ifrs-full_ProfitLoss | detail=자본 [구성요소]|결손금 | 제 25 기=-386667305 KRW | 제 24 기=-122437316 KRW | 제 23 기=-1568386424 KRW

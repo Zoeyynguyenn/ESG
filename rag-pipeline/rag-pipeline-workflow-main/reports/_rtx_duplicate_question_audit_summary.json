@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-06-12T15:58:38",
+  "exact_duplicate_question_count": 11,
+  "near_duplicate_question_count": 0,
+  "top_duplicate_templates": [
+    {
+      "question": "What ESG-related policies or performance does RTX disclose?",
+      "count": 1376
+    },
+    {
+      "question": "What quantitative ESG metrics does RTX disclose?",
+      "count": 1016
+    },
+    {
+      "question": "How is ESG governance structured at RTX?",
+      "count": 230
+    },
+    {
+      "question": "How have RTX's key ESG metrics changed over time?",
+      "count": 211
+    },
+    {
+      "question": "What ethics and compliance practices does RTX disclose?",
+      "count": 175
+    },
+    {
+      "question": "How does RTX address data security and privacy?",
+      "count": 78
+    },
+    {
+      "question": "What greenhouse gas emissions does RTX disclose?",
+      "count": 41
+    },
+    {
+      "question": "What compliance resolutions has RTX disclosed related to government contracts?",
+      "count": 21
+    },
+    {
+      "question": "How does RTX engage stakeholders on sustainability topics?",
+      "count": 10
+    },
+    {
+      "question": "What diversity and inclusion commitments does RTX report?",
+      "count": 8
+    }
+  ],
+  "affected_rows_count": 3170,
+  "banned_generic_hits": 3008,
+  "by_document_kind": {
+    "10k": 1523,
+    "proxy_statement": 815,
+    "appendix": 352,
+    "data_table": 243,
+    "questionnaire": 168,
+    "policy_page": 59,
+    "press_release": 10
+  },
+  "by_question_type": {
+    "qualitative": 1693,
+    "quantitative": 1220,
+    "trend": 257
+  },
+  "v1_unique_questions": 11,
+  "v1_total_rows": 3170,
+  "manual_round2": {
+    "label": "manual_round2",
+    "total_rows": 221,
+    "unique_questions": 27,
+    "exact_duplicate_question_count": 17,
+    "exact_duplicate_affected_rows": 211,
+    "near_duplicate_question_count": 0,
+    "near_duplicate_affected_rows": 0,
+    "banned_generic_hits": 165,
+    "top_duplicate_templates": [
+      {
+        "question": "What ESG metric or policy does RTX disclose?",
+        "count": 80
+      },
+      {
+        "question": "How has RTX's ESG metric or policy changed over reported years?",
+        "count": 44
+      },
+      {
+        "question": "What does RTX disclose about ESG metric or policy?",
+        "count": 40
+      },
+      {
+        "question": "How much has RTX reduced high and elevated ergonomic risks since 2015?",
+        "count": 6
+      },
+      {
+        "question": "What workforce diversity does RTX disclose?",
+        "count": 5
+      },
+      {
+        "question": "How does RTX engage stakeholders on sustainability topics?",
+        "count": 5
+      },
+      {
+        "question": "What stakeholder engagement does RTX disclose?",
+        "count": 4
+      },
+      {
+        "question": "How has RTX's data security and privacy changed over reported years?",
+        "count": 4
+      },
+      {
+        "question": "What reduction in energy consumption since 2019 does RTX report?",
+        "count": 3
+      },
+      {
+        "question": "What Scope 1 and Scope 2 GHG emissions does RTX report?",
+        "count": 3
+      },
+      {
+        "question": "What Scope 1 and Scope 2 GHG emissions does RTX disclose?",
+        "count": 3
+      },
+      {
+        "question": "What ethics and compliance program does RTX disclose?",
+        "count": 3
+      },
+      {
+        "question": "How has RTX's ethics and compliance program changed over reported years?",
+        "count": 3
+      },
+      {
+        "question": "How has RTX's scope ghg changed across reported years?",
+        "count": 2
+      },
+      {
+        "question": "How has RTX's board or committee governance changed over reported years?",
+        "count": 2
+      }
+    ],
+    "by_document_kind_affected": {
+      "10k": 136,
+      "appendix": 41,
+      "proxy_statement": 19,
+      "data_table": 13,
+      "questionnaire": 2
+    },
+    "by_question_type_affected": {
+      "quantitative": 106,
+      "trend": 60,
+      "qualitative": 45
+    }
+  },
+  "verdict": "rebuild_question_layer_required"
+}

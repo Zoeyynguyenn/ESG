@@ -1,0 +1,54 @@
+{
+  "timestamp": "20260618-141644",
+  "corpus_unit_count": 47,
+  "logical_to_corpus_map": {
+    "doc_01_business": "01_사업보고서_발췌_md",
+    "doc_02_ghg_energy": "02_온실가스_에너지_명세_md",
+    "doc_03_renewable": "03_재생에너지_계약_md",
+    "doc_04_hr_safety": "04_인사_안전_통계_md",
+    "doc_05_social": "05_사회공헌_인권_md",
+    "doc_06_governance": "06_지배구조_운영_md",
+    "doc_07_certification": "07_인증_현황_md",
+    "doc_evidence_csv": "26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv"
+  },
+  "single": {
+    "count": 20,
+    "doc_hit_at_1": 0.6,
+    "doc_hit_at_k": 0.9,
+    "unit_hit_at_k": 0.55,
+    "parser_fail_rate": 0.0,
+    "single_doc_ready_rate": 0.5,
+    "fail_stage_counts": {
+      "ready": 18,
+      "retrieval_gap": 2
+    }
+  },
+  "cross": {
+    "count": 15,
+    "multi_doc_recall": 0.8611,
+    "evidence_plan_coverage": 0.8611,
+    "required_doc_hit_rate": 1.0,
+    "aggregation_readiness": 1.0,
+    "missing_role_rate": 0.0722,
+    "conflict_detected_rate": 1.0,
+    "parser_fail_rate": 0.0,
+    "cross_doc_ready_rate": 0.7333,
+    "fail_stage_counts": {
+      "synthesis_gap": 2,
+      "coverage_gap": 2,
+      "ready": 9,
+      "retrieval_gap": 2
+    }
+  },
+  "single_doc_ready_rate": 0.5,
+  "cross_doc_ready_rate": 0.7333,
+  "primary_bottleneck": "mixed — retrieval mostly OK on single",
+  "bottleneck_note": "single_doc_ready_rate≈0.5, cross_doc_ready_rate≈0.7333",
+  "next_step": "Pilot answer extractor trên single subset; parallel improve aggregator cho cross.",
+  "metric_notes": {
+    "doc_hit_at_k": "approximation — top-3 docs vs planned primary",
+    "multi_doc_recall": "approximation — planned logical docs with >=1 unit in top-k",
+    "aggregation_readiness": "approximation — unique docs in units / min(required,2) when needs_merge",
+    "conflict_detected": "heuristic — Not disclosed vs numeric in same retrieval set"
+  }
+}

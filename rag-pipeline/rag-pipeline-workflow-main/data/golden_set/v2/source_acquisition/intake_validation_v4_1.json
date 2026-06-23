@@ -1,0 +1,49 @@
+{
+  "validation_version": "v4_1",
+  "generated_at": "2026-06-11T11:35:43",
+  "files": [
+    {
+      "file_name": "한샘_esg_export_20260608_043142.pdf",
+      "company": "한샘",
+      "import_destination": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/_sources/한샘_esg_export_20260608_043142.pdf",
+      "exists_after_import": true,
+      "readability_status": "readable",
+      "pages": 5,
+      "text_length": 9520,
+      "esg_signal_score": 8,
+      "company_signal_score": 6,
+      "wrong_document_signal": 0,
+      "is_coverage_export": true,
+      "preview": "Page 1 한샘 | 2026-06-08T04:31:42Z ESG Requirement Coverage 한샘 | generated 2026-06-08T04:31:42Z This compact report shows how many rows from each ESG workbook family were matched by public evidence. Only matched rows are listed in the detailed tables. Total guide rows 278 Matched rows 142 Coverage ratio 0.5108 Total matched evidence links 2083 Avg confidence per matched row 87.6547 26.03.27 ESG-정성 Total rows 27 Matched rows 26 Coverage ratio 0.963 Total matched evidence links 1349 Avg confidence p",
+      "validation_decision": "accept_with_warnings",
+      "validation_reason": "readable_esg_coverage_export_not_full_sustainability_report_body",
+      "recommended_next_action": "intake pass for pipeline readability; v4.2 re-ingest should treat as coverage/evidence export — still need actual SR PDF for report-body seeds",
+      "size_bytes": 20915
+    },
+    {
+      "file_name": "레이시온_esg_export_20260608_055704.pdf",
+      "company": "레이시온",
+      "import_destination": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/_sources/레이시온_esg_export_20260608_055704.pdf",
+      "exists_after_import": true,
+      "readability_status": "readable",
+      "pages": 5,
+      "text_length": 9793,
+      "esg_signal_score": 8,
+      "company_signal_score": 6,
+      "wrong_document_signal": 0,
+      "is_coverage_export": true,
+      "preview": "Page 1 레이시온 | 2026-06-08T05:57:04Z ESG Requirement Coverage 레이시온 | generated 2026-06-08T05:57:04Z This compact report shows how many rows from each ESG workbook family were matched by public evidence. Only matched rows are listed in the detailed tables. Total guide rows 278 Matched rows 142 Coverage ratio 0.5108 Total matched evidence links 2270 Avg confidence per matched row 87.1934 26.03.27 ESG-정성 Total rows 27 Matched rows 27 Coverage ratio 1.0 Total matched evidence links 1539 Avg confidence",
+      "validation_decision": "accept_with_warnings",
+      "validation_reason": "readable_esg_coverage_export_not_full_sustainability_report_body",
+      "recommended_next_action": "intake pass for pipeline readability; v4.2 re-ingest should treat as coverage/evidence export — still need actual SR PDF for report-body seeds",
+      "size_bytes": 21253
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "accept": 0,
+    "accept_with_warnings": 2,
+    "reject": 0,
+    "ready_for_reingest": true
+  }
+}

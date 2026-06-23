@@ -1,0 +1,34 @@
+{
+  "canonical_version": "ref_core_canonical_r3",
+  "generated_at": "2026-06-12T14:05:21",
+  "input_candidates": 60,
+  "canonical_keep_count": 30,
+  "canonical_keep_after_merge_count": 15,
+  "canonical_drop_duplicate_count": 8,
+  "canonical_drop_weak_count": 7,
+  "core_canonical_total": 45,
+  "by_company": {
+    "무신사": 9,
+    "한샘": 36
+  },
+  "by_question_type": {
+    "quantitative": 30,
+    "trend": 5,
+    "qualitative": 10
+  },
+  "by_cluster": {
+    "FC_ESG_GOVERNANCE": 15,
+    "FC_UNKNOWN": 15,
+    "FC_MATERIAL_8": 5,
+    "FC_HUMAN_RIGHTS": 5,
+    "FC_TCFD": 2,
+    "FC_KGCS_A": 3
+  },
+  "rx_backlog_count": 40,
+  "core_ready_for_gold_decision_flag": true,
+  "gold_decision_verdict": "Có — core đủ chặt để mở gold decision round (không promote trong task này)",
+  "rx_status": "backlog_source_acquisition — 1 survivor + lane C/reject; không trong core canonical",
+  "output_canonical_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_core_canonical_round3.jsonl",
+  "output_dropped_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_core_dropped_round3.jsonl",
+  "output_workbook": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_core_canonical_round3.xlsx"
+}

@@ -1,0 +1,17 @@
+langchain==0.3.26
+langchain-community==0.3.27
+langchain-ollama==0.3.3
+langchain-openai==0.3.28
+chromadb>=1.5.9
+sentence-transformers==3.0.1
+pypdf>=4.0.0
+rank-bm25>=0.2.2
+flashrank>=0.2.10
+PyYAML>=6.0.2
+# optional: better PDF parsing
+docling>=2.42.0
+# optional: qdrant vector backend benchmark track
+qdrant-client>=1.10.0
+# LangGraph Evidence API staging
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0

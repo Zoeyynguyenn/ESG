@@ -1,0 +1,447 @@
+{
+  "unit_count": 118,
+  "by_company": {
+    "한샘": 40,
+    "레이시온": 40,
+    "무신사": 38
+  },
+  "tag_counts": {
+    "risk_strategy_narrative": 51,
+    "primary_esg_narrative": 50,
+    "governance_or_policy_statement": 50,
+    "metric_disclosure": 40,
+    "nav_or_menu_noise": 35,
+    "cross_company_mismatch": 29,
+    "listing_or_index_noise": 24,
+    "vendor_or_training_content": 10,
+    "unclassified": 4
+  },
+  "by_company_tag": {
+    "한샘": {
+      "listing_or_index_noise": 12,
+      "primary_esg_narrative": 29,
+      "risk_strategy_narrative": 32,
+      "nav_or_menu_noise": 8,
+      "governance_or_policy_statement": 31,
+      "metric_disclosure": 13,
+      "unclassified": 1
+    },
+    "레이시온": {
+      "listing_or_index_noise": 7,
+      "governance_or_policy_statement": 5,
+      "nav_or_menu_noise": 11,
+      "cross_company_mismatch": 26,
+      "risk_strategy_narrative": 11,
+      "unclassified": 2,
+      "primary_esg_narrative": 15,
+      "metric_disclosure": 5,
+      "vendor_or_training_content": 10
+    },
+    "무신사": {
+      "metric_disclosure": 22,
+      "listing_or_index_noise": 5,
+      "governance_or_policy_statement": 14,
+      "primary_esg_narrative": 6,
+      "cross_company_mismatch": 3,
+      "nav_or_menu_noise": 16,
+      "risk_strategy_narrative": 8,
+      "unclassified": 1
+    }
+  },
+  "dirty_gold_reasons": {
+    "drop_date_only": 2,
+    "drop_nav_menu": 5,
+    "drop_company_mismatch": 10,
+    "drop_nav_menu_duplicate": 5,
+    "drop_company_mismatch_duplicate": 4,
+    "drop_generic_vendor_content": 5,
+    "drop_date_only_listing": 6,
+    "drop_nav_lookup": 1,
+    "drop_duplicate_same_fact": 6,
+    "drop_question_answer_mismatch": 2
+  },
+  "dirty_unit_tag_cross": {
+    "drop_company_mismatch|cross_company_mismatch": 9,
+    "drop_date_only_listing|primary_esg_narrative": 6,
+    "drop_nav_menu_duplicate|nav_or_menu_noise": 5,
+    "drop_nav_menu_duplicate|listing_or_index_noise": 5,
+    "drop_company_mismatch|primary_esg_narrative": 5,
+    "drop_generic_vendor_content|primary_esg_narrative": 5,
+    "drop_duplicate_same_fact|governance_or_policy_statement": 5,
+    "drop_company_mismatch|risk_strategy_narrative": 4,
+    "drop_nav_menu_duplicate|cross_company_mismatch": 4,
+    "drop_company_mismatch_duplicate|cross_company_mismatch": 4,
+    "drop_duplicate_same_fact|metric_disclosure": 4,
+    "drop_nav_menu|nav_or_menu_noise": 3,
+    "drop_generic_vendor_content|vendor_or_training_content": 3,
+    "drop_company_mismatch|vendor_or_training_content": 3,
+    "drop_date_only_listing|listing_or_index_noise": 3,
+    "drop_date_only_listing|cross_company_mismatch": 3,
+    "drop_date_only|listing_or_index_noise": 2,
+    "drop_date_only|governance_or_policy_statement": 2,
+    "drop_nav_menu|cross_company_mismatch": 2,
+    "drop_company_mismatch|metric_disclosure": 2,
+    "drop_company_mismatch_duplicate|primary_esg_narrative": 2,
+    "drop_company_mismatch_duplicate|risk_strategy_narrative": 2,
+    "drop_company_mismatch_duplicate|vendor_or_training_content": 2,
+    "drop_duplicate_same_fact|risk_strategy_narrative": 2,
+    "drop_duplicate_same_fact|nav_or_menu_noise": 2,
+    "drop_question_answer_mismatch|metric_disclosure": 2,
+    "drop_company_mismatch|nav_or_menu_noise": 1,
+    "drop_nav_menu|listing_or_index_noise": 1,
+    "drop_nav_menu|unclassified": 1,
+    "drop_company_mismatch_duplicate|metric_disclosure": 1
+  },
+  "duplicate_record_clusters": 0,
+  "top_dup_records": {},
+  "pre_filter_block": {
+    "한샘_dataset_package_20260608T042739::rec_fcab1197e3c245b6": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "한샘_dataset_package_20260608T042739::rec_38e861b93b09aaf1": [
+      "nav_or_menu_noise"
+    ],
+    "한샘_dataset_package_20260608T042739::rec_65c50bede5bb66da": [
+      "nav_or_menu_noise",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "한샘_dataset_package_20260608T042739::rec_adf521a49feec751": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "risk_strategy_narrative"
+    ],
+    "한샘_dataset_package_20260608T042739::rec_41a160ead0ae1be6": [
+      "nav_or_menu_noise",
+      "metric_disclosure",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "한샘_dataset_package_20260608T042739::rec_5edea297fe4ab1d8": [
+      "nav_or_menu_noise",
+      "metric_disclosure",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "한샘_dataset_package_20260608T042739::rec_80928c7327855bfa": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "한샘_dataset_package_20260608T042739::rec_770c772d010352ff": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "governance_or_policy_statement"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_8c1f92062aa72144": [
+      "listing_or_index_noise",
+      "governance_or_policy_statement"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_3e74cbf0392f892b": [
+      "nav_or_menu_noise"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_a0562eb6dcc8b62e": [
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_40b94d178a66babb": [
+      "nav_or_menu_noise",
+      "risk_strategy_narrative"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_3cad6b2bbd4ab446": [
+      "nav_or_menu_noise"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_61bc03594c440dcd": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_17348d0b03ca0375": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_29aa4eae07aa4eb5": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_dcb75421507d0e47": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_660868aebfafbdae": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_d67d0962f326596b": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise",
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_cc9527d6450c8c18": [
+      "cross_company_mismatch",
+      "vendor_or_training_content"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_067cebb1ea1b8256": [
+      "cross_company_mismatch",
+      "vendor_or_training_content"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_413a9165bfa43d5f": [
+      "cross_company_mismatch",
+      "vendor_or_training_content",
+      "governance_or_policy_statement"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_627e2c79b2f33118": [
+      "cross_company_mismatch",
+      "vendor_or_training_content"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_8a26441215f1ce13": [
+      "cross_company_mismatch",
+      "vendor_or_training_content"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_b139fe87645362df": [
+      "cross_company_mismatch",
+      "vendor_or_training_content"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_1fc4f49fda03a288": [
+      "cross_company_mismatch",
+      "vendor_or_training_content"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_9bbfcd3bedf0b3b5": [
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_922911292cdaf319": [
+      "cross_company_mismatch"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_4e38c38e7895e7f2": [
+      "nav_or_menu_noise"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_f01d9d8821508b9b": [
+      "cross_company_mismatch",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "레이시온_dataset_package_20260608T055801::rec_40f989751d9d0053": [
+      "nav_or_menu_noise",
+      "cross_company_mismatch",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_178e8f363d6da94a": [
+      "listing_or_index_noise",
+      "governance_or_policy_statement"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_7b958974a7b2b66b": [
+      "nav_or_menu_noise"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_cd469b0fcf513be5": [
+      "nav_or_menu_noise",
+      "listing_or_index_noise"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_ebd08e1afca6ebb3": [
+      "nav_or_menu_noise",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_7748ddc57e628c8e": [
+      "nav_or_menu_noise",
+      "governance_or_policy_statement",
+      "risk_strategy_narrative"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_b8977fd8e7adeb1b": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_efbb12742269f9ed": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_ba7fb6019ecb0fd9": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_c4ad0f54664dbf3c": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_e702b7d164cf2fad": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_0f148d12e3f024bc": [
+      "nav_or_menu_noise",
+      "metric_disclosure",
+      "governance_or_policy_statement"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_d8f7ef98d1c1f838": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_92b99f2ea4ef612e": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_5b8a9a2132404a3e": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_0153d182f9eb093a": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_99748dd63968780f": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ],
+    "무신사_dataset_package_20260608T092823::rec_d8fed8da46b91761": [
+      "nav_or_menu_noise",
+      "metric_disclosure"
+    ]
+  },
+  "conditional_units": [],
+  "priority_keep": [
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_ea632bae09735059",
+      "company": "한샘",
+      "tags": [
+        "listing_or_index_noise",
+        "primary_esg_narrative",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_24ea67414eabd179",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_5635cde14183931b",
+      "company": "한샘",
+      "tags": [
+        "metric_disclosure",
+        "governance_or_policy_statement"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_b54d398775fdb14b",
+      "company": "한샘",
+      "tags": [
+        "listing_or_index_noise",
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_89c6e8dd36c4db22",
+      "company": "한샘",
+      "tags": [
+        "listing_or_index_noise",
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_2ac36b6aa8233480",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_66100907c00656ec",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_86c98b945fc03e6d",
+      "company": "한샘",
+      "tags": [
+        "listing_or_index_noise",
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_ce1fb6e4651850d3",
+      "company": "한샘",
+      "tags": [
+        "listing_or_index_noise",
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_ba9d092227fde816",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "metric_disclosure",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_f01cb7ee8b222ec9",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_acac077bde904698",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_1739ded4980a9b9b",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_0f7c7247e048a21e",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    },
+    {
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_abdc38fe1d1a8be1",
+      "company": "한샘",
+      "tags": [
+        "primary_esg_narrative",
+        "metric_disclosure",
+        "governance_or_policy_statement",
+        "risk_strategy_narrative"
+      ]
+    }
+  ]
+}

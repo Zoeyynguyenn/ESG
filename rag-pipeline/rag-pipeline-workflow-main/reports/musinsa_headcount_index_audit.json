@@ -1,0 +1,12 @@
+{
+  "index_dir": "E:\\Documents\\rag-pipeline-workflow\\artifacts\\benchmark_cache\\index_cache\\p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07",
+  "cache_key": "p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07",
+  "bm25_path": "E:\\Documents\\rag-pipeline-workflow\\artifacts\\benchmark_cache\\index_cache\\p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07\\bm25_corpus.json",
+  "bm25_exists": true,
+  "qdrant_path": "E:\\Documents\\rag-pipeline-workflow\\artifacts\\benchmark_cache\\index_cache\\p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07\\qdrant_db",
+  "qdrant_exists": true,
+  "bm25_chunk_count": 2,
+  "bm25_hits": [],
+  "bm25_1891myeong_count": 0,
+  "bm25_1891_substring_count": 0
+}

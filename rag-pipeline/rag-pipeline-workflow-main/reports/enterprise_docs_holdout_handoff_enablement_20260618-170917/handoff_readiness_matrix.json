@@ -1,0 +1,187 @@
+{
+  "by_company": {
+    "demo_company": {
+      "case_count": 18,
+      "promoted_count": 6,
+      "handoff_candidate_count": 12,
+      "readiness_before": {
+        "extraction_ready": 3,
+        "retrieval_ready": 9,
+        "single_source_sufficient": 6
+      },
+      "readiness_after": {
+        "single_source_sufficient": 12,
+        "retrieval_ready": 6
+      },
+      "promotion_rate": 0.3333
+    },
+    "hanssem": {
+      "case_count": 16,
+      "promoted_count": 0,
+      "handoff_candidate_count": 0,
+      "readiness_before": {
+        "coverage_gap": 16
+      },
+      "readiness_after": {
+        "coverage_gap": 16
+      },
+      "promotion_rate": 0.0
+    },
+    "musinsa": {
+      "case_count": 11,
+      "promoted_count": 0,
+      "handoff_candidate_count": 0,
+      "readiness_before": {
+        "coverage_gap": 11
+      },
+      "readiness_after": {
+        "coverage_gap": 11
+      },
+      "promotion_rate": 0.0
+    }
+  },
+  "by_family": {
+    "employee": {
+      "case_count": 3,
+      "quantitative_count": 1,
+      "promoted_count": 0,
+      "single_source_count": 0,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 0,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 3,
+      "promotion_rate": 0.0,
+      "blocker_breakdown": {
+        "qualitative_kind": 2,
+        "handoff_blocked_state:coverage_gap": 3,
+        "missing_predicted_value": 3,
+        "evidence_bundle_insufficient": 3,
+        "primary_doc_missing": 3,
+        "confidence_below_min": 3
+      },
+      "companies": [
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "employee_headcount": {
+      "case_count": 4,
+      "quantitative_count": 4,
+      "promoted_count": 1,
+      "single_source_count": 1,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 1,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 3,
+      "promotion_rate": 0.25,
+      "blocker_breakdown": {
+        "handoff_blocked_state:coverage_gap": 3,
+        "missing_predicted_value": 3,
+        "evidence_bundle_insufficient": 3,
+        "primary_doc_missing": 3,
+        "confidence_below_min": 3
+      },
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "environment_ghg": {
+      "case_count": 14,
+      "quantitative_count": 12,
+      "promoted_count": 4,
+      "single_source_count": 6,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 6,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 8,
+      "promotion_rate": 0.2857,
+      "blocker_breakdown": {
+        "handoff_blocked_state:coverage_gap": 6,
+        "missing_predicted_value": 8,
+        "evidence_bundle_insufficient": 8,
+        "primary_doc_missing": 6,
+        "confidence_below_min": 8,
+        "qualitative_kind": 2
+      },
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "financial": {
+      "case_count": 1,
+      "quantitative_count": 1,
+      "promoted_count": 0,
+      "single_source_count": 0,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 0,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 1,
+      "promotion_rate": 0.0,
+      "blocker_breakdown": {
+        "handoff_blocked_state:coverage_gap": 1,
+        "missing_predicted_value": 1,
+        "evidence_bundle_insufficient": 1,
+        "primary_doc_missing": 1,
+        "confidence_below_min": 1
+      },
+      "companies": [
+        "musinsa"
+      ]
+    },
+    "governance": {
+      "case_count": 18,
+      "quantitative_count": 14,
+      "promoted_count": 1,
+      "single_source_count": 5,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 5,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 13,
+      "promotion_rate": 0.0556,
+      "blocker_breakdown": {
+        "qualitative_kind": 4,
+        "handoff_blocked_state:coverage_gap": 9,
+        "missing_predicted_value": 13,
+        "evidence_bundle_insufficient": 13,
+        "primary_doc_missing": 9,
+        "confidence_below_min": 13
+      },
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "other": {
+      "case_count": 5,
+      "quantitative_count": 0,
+      "promoted_count": 0,
+      "single_source_count": 0,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 0,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 5,
+      "promotion_rate": 0.0,
+      "blocker_breakdown": {
+        "qualitative_kind": 5,
+        "handoff_blocked_state:coverage_gap": 5,
+        "missing_predicted_value": 5,
+        "evidence_bundle_insufficient": 5,
+        "primary_doc_missing": 5,
+        "confidence_below_min": 5
+      },
+      "companies": [
+        "hanssem",
+        "musinsa"
+      ]
+    }
+  },
+  "by_promotion": {
+    "not_promoted": 39,
+    "promoted": 6
+  }
+}

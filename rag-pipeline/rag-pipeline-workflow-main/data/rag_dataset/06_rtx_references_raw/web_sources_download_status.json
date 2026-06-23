@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.sec.gov/Archives/edgar/data/101829/000130817925000067/rtx4383903-def14a.htm",
+    "local_html": "web_sources/rtx_proxy_2025.html",
+    "exists": true,
+    "size_bytes": 2223634,
+    "detected_title": "RTX Corporation - DEF 14A",
+    "download_status": "ok",
+    "snapshot_removed": true,
+    "snapshot": "rtx_proxy_2025.md"
+  },
+  {
+    "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000006/rtx-20251231.htm",
+    "local_html": "web_sources/rtx_10k_2025.html",
+    "exists": true,
+    "size_bytes": 3685659,
+    "detected_title": "rtx-20251231",
+    "download_status": "ok",
+    "snapshot_removed": true,
+    "snapshot": "rtx_10k_2025.md"
+  },
+  {
+    "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182925000005/rtx-20241231.htm",
+    "local_html": "web_sources/rtx_10k_2024.html",
+    "exists": true,
+    "size_bytes": 3861241,
+    "detected_title": "rtx-20241231",
+    "download_status": "ok",
+    "snapshot_removed": true,
+    "snapshot": "rtx_10k_2024.md"
+  },
+  {
+    "url": "https://www.rtx.com/our-responsibility/data-security-and-privacy",
+    "local_html": "web_sources/rtx_data_security_privacy.html",
+    "exists": true,
+    "size_bytes": 58399,
+    "detected_title": "Data security and privacy | RTX",
+    "download_status": "ok",
+    "snapshot_removed": true,
+    "snapshot": "rtx_data_security_privacy.md"
+  },
+  {
+    "url": "https://www.rtx.com/who-we-are/ethics-and-compliance",
+    "local_html": "web_sources/rtx_ethics_compliance.html",
+    "exists": true,
+    "size_bytes": 83230,
+    "detected_title": "Ethics and Compliance | RTX",
+    "download_status": "ok",
+    "snapshot_removed": true,
+    "snapshot": "rtx_ethics_compliance.md"
+  },
+  {
+    "url": "https://www.justice.gov/archives/opa/pr/raytheon-company-pay-over-950m-connection-defective-pricing-foreign-bribery-and-export",
+    "local_html": "web_sources/doj_rtx_resolution_press_release.html",
+    "exists": false,
+    "size_bytes": 0,
+    "detected_title": "",
+    "download_status": "fail",
+    "snapshot_removed": false,
+    "snapshot": "doj_rtx_resolution_press_release.md"
+  }
+]

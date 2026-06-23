@@ -1,0 +1,280 @@
+﻿question_id,company_id,gold_answer_raw,gold_answer_normalized,answer_unit,disclosure_status,expert_verified,normalization_rule,scoring_rule,reporting_boundary,confidence,evidence_text
+emni-0001,emni,20,20,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,총원 20
+emni-0002,emni,23,23,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,23 (2024)
+emni-0003,emni,29,29,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,29 (2023)
+emni-0004,emni,50.0,50.0,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,남 10/20
+emni-0005,emni,60.9,60.9,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,60.9 (2024)
+emni-0006,emni,51.7,51.7,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,51.7 (2023)
+emni-0007,emni,50.0,50.0,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,여 10/20
+emni-0008,emni,39.1,39.1,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,39.1 (2024)
+emni-0009,emni,48.3,48.3,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,48.3 (2023)
+emni-0010,emni,10,10,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,정규직 남 10
+emni-0011,emni,14,14,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,14 (2024)
+emni-0012,emni,15,15,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,15 (2023)
+emni-0013,emni,9,9,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,정규직 여 9
+emni-0014,emni,7,7,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,7 (2024)
+emni-0015,emni,12,12,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,12 (2023)
+emni-0016,emni,95.0,95.0,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,정규직 19/20
+emni-0017,emni,91.3,91.3,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,91.3 (2024)
+emni-0018,emni,93.1,93.1,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,93.1 (2023)
+emni-0019,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0020,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0021,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0022,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0023,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0024,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0025,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0026,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0027,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0028,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0029,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0030,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0031,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0032,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0033,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0034,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0035,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0036,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0037,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0038,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0039,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0040,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0041,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0042,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0043,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0044,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0045,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0046,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0047,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0048,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0049,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0050,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0051,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0052,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0053,emni,20.0,20.0,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,임원 10명 중 여성 2명
+emni-0054,emni,20.0,20.0,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,20.0 (2024)
+emni-0055,emni,16.7,16.7,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,16.7 (2023)
+emni-0056,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0057,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0058,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0059,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0060,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0061,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0062,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0063,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0064,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0065,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0066,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0067,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0068,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0069,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0070,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0071,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0072,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0073,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0074,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0075,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0076,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0077,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0078,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0079,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0080,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0081,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0082,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0083,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0084,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0085,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0086,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0087,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0088,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0089,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0090,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0091,emni,Not disclosed,NOT_DISCLOSED,LTIFR,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0092,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0093,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0094,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0095,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0096,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0097,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0098,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0099,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0100,emni,Not disclosed,NOT_DISCLOSED,회,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0101,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0102,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0103,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0104,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0105,emni,Not disclosed,NOT_DISCLOSED,시간/명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0106,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0107,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0108,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0109,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0110,emni,48,48,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,총급여 963864000원 ÷ 20명
+emni-0111,emni,49,49,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,49 (2024)
+emni-0112,emni,64,64,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,64 (2023)
+emni-0113,emni,112.3,112.3,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,여 평균 50990800 ÷ 남 평균 45395600
+emni-0114,emni,104.1,104.1,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,104.1 (2024)
+emni-0115,emni,47.3,47.3,%,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,47.3 (2023)
+emni-0116,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0117,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0118,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0119,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0120,emni,Not disclosed,NOT_DISCLOSED,점,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0121,emni,Not disclosed,NOT_DISCLOSED,개,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0122,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0123,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0124,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0125,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0126,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0127,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0128,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0129,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0130,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0131,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0132,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0133,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0134,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0135,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0136,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0137,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0138,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0139,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0140,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0141,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0142,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0143,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0144,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0145,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0146,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0147,emni,Not disclosed,NOT_DISCLOSED,인,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0148,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0149,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0150,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0151,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0152,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0153,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0154,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0155,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0156,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0157,emni,Not disclosed,NOT_DISCLOSED,톤/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0158,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0159,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0160,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0161,emni,Not disclosed,NOT_DISCLOSED,KRW,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0162,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0163,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0164,emni,Not disclosed,NOT_DISCLOSED,tCO2-eq,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0165,emni,Not disclosed,NOT_DISCLOSED,tCO2-eq,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0166,emni,Not disclosed,NOT_DISCLOSED,tCO2-eq,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0167,emni,Not disclosed,NOT_DISCLOSED,tCO2-eq/ 백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0168,emni,Not disclosed,NOT_DISCLOSED,TJ/백만원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0169,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0170,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0171,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0172,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0173,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0174,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0175,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0176,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0177,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0178,emni,Not disclosed,NOT_DISCLOSED,TJ,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0179,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0180,emni,Not disclosed,NOT_DISCLOSED,톤/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0181,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0182,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0183,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0184,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0185,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0186,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0187,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0188,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0189,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0190,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0191,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0192,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0193,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0194,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0195,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0196,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0197,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0198,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0199,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0200,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0201,emni,Not disclosed,NOT_DISCLOSED,톤/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0202,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0203,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0204,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0205,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0206,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0207,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0208,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0209,emni,Not disclosed,NOT_DISCLOSED,톤,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0210,emni,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0211,emni,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0212,emni,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0213,emni,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0214,emni,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0215,emni,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0216,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0217,emni,Not disclosed,NOT_DISCLOSED,M3/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0218,emni,Not disclosed,NOT_DISCLOSED,M3,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0219,emni,Not disclosed,NOT_DISCLOSED,M3/백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0220,emni,Not disclosed,NOT_DISCLOSED,ha,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0221,emni,Not disclosed,NOT_DISCLOSED,ha,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0222,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0223,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0224,emni,2096270,2096270,원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,2025 최저임금 고시
+emni-0225,emni,18380,18380,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,매출액 18380261067원
+emni-0226,emni,29699,29699,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,29699 (2024)
+emni-0227,emni,26312,26312,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,26312 (2023)
+emni-0228,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0229,emni,891,891,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,이자비용 890696540원
+emni-0230,emni,749,749,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,749 (2024)
+emni-0231,emni,114,114,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,114 (2023)
+emni-0232,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0233,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0234,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0235,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0236,emni,-4838,-4838,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,medium,당기순이익 -4838402395 − 배당 0원
+emni-0237,emni,1487,1487,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,medium,1487 (2024)
+emni-0238,emni,-387,-387,백만 원,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,medium,-387 (2023)
+emni-0239,emni,Not disclosed,NOT_DISCLOSED,개,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0240,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0241,emni,Not disclosed,NOT_DISCLOSED,회,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0242,emni,Not disclosed,NOT_DISCLOSED,개,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0243,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0244,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0245,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0246,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0247,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0248,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0249,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0250,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0251,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0252,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0253,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0254,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0255,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0256,emni,Not disclosed,NOT_DISCLOSED,시간,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0257,emni,Not disclosed,NOT_DISCLOSED,명,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0258,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0259,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0260,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0261,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0262,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0263,emni,4,4,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,이사 7 − 사외이사 3
+emni-0264,emni,4,4,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,4 (2024)
+emni-0265,emni,5,5,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,5 (2023)
+emni-0266,emni,3,3,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,사외이사 3
+emni-0267,emni,3,3,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,3 (2024)
+emni-0268,emni,3,3,명,matched,True,identity_numeric_if_possible,value_match_with_unit,Korea,high,3 (2023)
+emni-0269,emni,Not disclosed,NOT_DISCLOSED,백만 원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0270,emni,Not disclosed,NOT_DISCLOSED,배,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0271,emni,Not disclosed,NOT_DISCLOSED,배,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0272,emni,Not disclosed,NOT_DISCLOSED,%,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0273,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0274,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0275,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0276,emni,Not disclosed,NOT_DISCLOSED,원,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0277,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0278,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed
+emni-0279,emni,Not disclosed,NOT_DISCLOSED,건,Not disclosed,True,not_disclosed_to_canonical_token,abstain_expected,,,Not disclosed

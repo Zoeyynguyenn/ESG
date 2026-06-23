@@ -1,0 +1,569 @@
+{
+  "SRC-HANSSEM": {
+    "company": "한샘",
+    "package": "한샘_dataset_package_20260608T042739",
+    "company_evidence": {
+      "exists": true,
+      "rows": 605,
+      "source_type": {
+        "news": 175,
+        "other": 194,
+        "sustainability_report": 132,
+        "annual_report": 95,
+        "governance_report": 9
+      },
+      "record_role": {
+        "company_evidence": 605
+      },
+      "top_sections": [
+        [
+          "Company Evidence/General / Other",
+          379
+        ],
+        [
+          "Company Evidence/Business & Strategy",
+          167
+        ],
+        [
+          "Company Evidence/Environment (E)",
+          34
+        ],
+        [
+          "Company Evidence/Governance (G)",
+          22
+        ],
+        [
+          "Company Evidence/Social (S)",
+          3
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_218b7fe3e109a388",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 2056,
+          "text_head": "News snapshot\n  title: [브리프] <b>한샘</b> 바디프랜드 에이스침대 귀뚜라미 시몬스 교원\n  originallink: http://www.biztribune.co.kr/news/articleV"
+        },
+        {
+          "record_id": "rec_2ce8d4a8ec6349de",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 3489,
+          "text_head": "News snapshot\n  title: 한샘, '노원·분당'에 팝업스토어…신규 고객 브랜드 경험 강화 - 백세시대\n  link: https://news.google.com/rss/articles/CBMia0FVX3"
+        },
+        {
+          "record_id": "rec_ea632bae09735059",
+          "source_type": "other",
+          "title": "local_downloader",
+          "text_len": 2400,
+          "text_head": "Sustainability Report 2024\n\nAbout this Report 보고서 개요 해당 보고서는 ㈜한샘이 다섯 번째 발간하는 지속가능경영 보고서입니다. ㈜한샘은 회사의 지속가능경영 추진방향과 성과를 이해"
+        }
+      ]
+    },
+    "requirement_taxonomy": {
+      "exists": true,
+      "rows": 278,
+      "source_type": {
+        "policy": 278
+      },
+      "record_role": {
+        "requirement_taxonomy": 278
+      },
+      "top_sections": [
+        [
+          "Requirement Taxonomy/Governance (G)/boar",
+          44
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/human_ca",
+          28
+        ],
+        [
+          "Requirement Taxonomy/Environment (E)/cli",
+          27
+        ],
+        [
+          "Requirement Taxonomy/General / Other/hum",
+          22
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/board_st",
+          21
+        ],
+        [
+          "Requirement Taxonomy/General / Other/met",
+          21
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/disclosu",
+          21
+        ],
+        [
+          "Requirement Taxonomy/Environment (E)/met",
+          17
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_e0a861e9503d2d02",
+          "source_type": "policy",
+          "title": "구매비용+외주용역비",
+          "text_len": 924,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 구매비용+외주용역비\nboard_structure\n구매비용+외주용역비\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 구매비용+외주용역비]\n"
+        },
+        {
+          "record_id": "rec_2c2f29e6ad7abbe8",
+          "source_type": "policy",
+          "title": "급여+복리후생비+퇴직급여",
+          "text_len": 942,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 급여+복리후생비+퇴직급여\nboard_structure\n급여+복리후생비+퇴직급여\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 급여+복리후"
+        },
+        {
+          "record_id": "rec_999874364d8a70a7",
+          "source_type": "policy",
+          "title": "기부금 지역사회 투자비",
+          "text_len": 936,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 기부금 지역사회 투자비\nboard_structure\n기부금 지역사회 투자비\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 기부금 지역사회"
+        }
+      ]
+    },
+    "splits_full": {
+      "exists": true,
+      "rows": 605,
+      "source_type": {
+        "news": 175,
+        "other": 194,
+        "sustainability_report": 132,
+        "annual_report": 95,
+        "governance_report": 9
+      },
+      "record_role": {
+        "company_evidence": 605
+      },
+      "top_sections": [
+        [
+          "Company Evidence/General / Other",
+          379
+        ],
+        [
+          "Company Evidence/Business & Strategy",
+          167
+        ],
+        [
+          "Company Evidence/Environment (E)",
+          34
+        ],
+        [
+          "Company Evidence/Governance (G)",
+          22
+        ],
+        [
+          "Company Evidence/Social (S)",
+          3
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_218b7fe3e109a388",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 2056,
+          "text_head": "News snapshot\n  title: [브리프] <b>한샘</b> 바디프랜드 에이스침대 귀뚜라미 시몬스 교원\n  originallink: http://www.biztribune.co.kr/news/articleV"
+        },
+        {
+          "record_id": "rec_2ce8d4a8ec6349de",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 3489,
+          "text_head": "News snapshot\n  title: 한샘, '노원·분당'에 팝업스토어…신규 고객 브랜드 경험 강화 - 백세시대\n  link: https://news.google.com/rss/articles/CBMia0FVX3"
+        },
+        {
+          "record_id": "rec_ea632bae09735059",
+          "source_type": "other",
+          "title": "local_downloader",
+          "text_len": 2400,
+          "text_head": "Sustainability Report 2024\n\nAbout this Report 보고서 개요 해당 보고서는 ㈜한샘이 다섯 번째 발간하는 지속가능경영 보고서입니다. ㈜한샘은 회사의 지속가능경영 추진방향과 성과를 이해"
+        }
+      ]
+    }
+  },
+  "SRC-RAY": {
+    "company": "레이시온",
+    "package": "레이시온_dataset_package_20260608T055801",
+    "company_evidence": {
+      "exists": true,
+      "rows": 531,
+      "source_type": {
+        "news": 328,
+        "annual_report": 64,
+        "sustainability_report": 71,
+        "other": 38,
+        "governance_report": 30
+      },
+      "record_role": {
+        "company_evidence": 531
+      },
+      "top_sections": [
+        [
+          "Company Evidence/General / Other",
+          328
+        ],
+        [
+          "Company Evidence/Business & Strategy",
+          127
+        ],
+        [
+          "Company Evidence/Governance (G)",
+          40
+        ],
+        [
+          "Company Evidence/Environment (E)",
+          31
+        ],
+        [
+          "Company Evidence/Social (S)",
+          5
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_5203c89f57b20eb1",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 2023,
+          "text_head": "News snapshot\n  title: 탈레스·MBDA 합작사, 덴마크와 방공시스템 공급 계약 체결\n  originallink: https://www.theguru.co.kr/news/article.html?no="
+        },
+        {
+          "record_id": "rec_0e64527294b8910e",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 3605,
+          "text_head": "News snapshot\n  title: 레이시온, 우주군에 두 번째 미사일 경고 센서 공급 - Investing.com 한국어\n  link: https://news.google.com/rss/articles/CBM"
+        },
+        {
+          "record_id": "rec_8c1f92062aa72144",
+          "source_type": "annual_report",
+          "title": "local_dart",
+          "text_len": 175,
+          "text_head": "DART disclosure snapshot\ncorp_code: 01730366\ncorp_name: 레이시온\nstock_code: \ncorp_cls: E\nreport_nm: 감사보고서 (2025.12)\nrcept_n"
+        }
+      ]
+    },
+    "requirement_taxonomy": {
+      "exists": true,
+      "rows": 278,
+      "source_type": {
+        "policy": 278
+      },
+      "record_role": {
+        "requirement_taxonomy": 278
+      },
+      "top_sections": [
+        [
+          "Requirement Taxonomy/Governance (G)/boar",
+          44
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/human_ca",
+          28
+        ],
+        [
+          "Requirement Taxonomy/Environment (E)/cli",
+          27
+        ],
+        [
+          "Requirement Taxonomy/General / Other/hum",
+          22
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/board_st",
+          21
+        ],
+        [
+          "Requirement Taxonomy/General / Other/met",
+          21
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/disclosu",
+          21
+        ],
+        [
+          "Requirement Taxonomy/Environment (E)/met",
+          17
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_03fe42efa5cde534",
+          "source_type": "policy",
+          "title": "구매비용+외주용역비",
+          "text_len": 924,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 구매비용+외주용역비\nboard_structure\n구매비용+외주용역비\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 구매비용+외주용역비]\n"
+        },
+        {
+          "record_id": "rec_e3c5a58a300a983d",
+          "source_type": "policy",
+          "title": "급여+복리후생비+퇴직급여",
+          "text_len": 942,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 급여+복리후생비+퇴직급여\nboard_structure\n급여+복리후생비+퇴직급여\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 급여+복리후"
+        },
+        {
+          "record_id": "rec_0a1063208ebe2f46",
+          "source_type": "policy",
+          "title": "기부금 지역사회 투자비",
+          "text_len": 936,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 기부금 지역사회 투자비\nboard_structure\n기부금 지역사회 투자비\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 기부금 지역사회"
+        }
+      ]
+    },
+    "splits_full": {
+      "exists": true,
+      "rows": 531,
+      "source_type": {
+        "news": 328,
+        "annual_report": 64,
+        "sustainability_report": 71,
+        "other": 38,
+        "governance_report": 30
+      },
+      "record_role": {
+        "company_evidence": 531
+      },
+      "top_sections": [
+        [
+          "Company Evidence/General / Other",
+          328
+        ],
+        [
+          "Company Evidence/Business & Strategy",
+          127
+        ],
+        [
+          "Company Evidence/Governance (G)",
+          40
+        ],
+        [
+          "Company Evidence/Environment (E)",
+          31
+        ],
+        [
+          "Company Evidence/Social (S)",
+          5
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_5203c89f57b20eb1",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 2023,
+          "text_head": "News snapshot\n  title: 탈레스·MBDA 합작사, 덴마크와 방공시스템 공급 계약 체결\n  originallink: https://www.theguru.co.kr/news/article.html?no="
+        },
+        {
+          "record_id": "rec_0e64527294b8910e",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 3605,
+          "text_head": "News snapshot\n  title: 레이시온, 우주군에 두 번째 미사일 경고 센서 공급 - Investing.com 한국어\n  link: https://news.google.com/rss/articles/CBM"
+        },
+        {
+          "record_id": "rec_8c1f92062aa72144",
+          "source_type": "annual_report",
+          "title": "local_dart",
+          "text_len": 175,
+          "text_head": "DART disclosure snapshot\ncorp_code: 01730366\ncorp_name: 레이시온\nstock_code: \ncorp_cls: E\nreport_nm: 감사보고서 (2025.12)\nrcept_n"
+        }
+      ]
+    }
+  },
+  "SRC-MUSINSA": {
+    "company": "무신사",
+    "package": "무신사_dataset_package_20260608T092823",
+    "company_evidence": {
+      "exists": true,
+      "rows": 1604,
+      "source_type": {
+        "news": 226,
+        "other": 1324,
+        "annual_report": 29,
+        "sustainability_report": 8,
+        "governance_report": 17
+      },
+      "record_role": {
+        "company_evidence": 1604
+      },
+      "top_sections": [
+        [
+          "Company Evidence/Business & Strategy",
+          1228
+        ],
+        [
+          "Company Evidence/General / Other",
+          323
+        ],
+        [
+          "Company Evidence/Environment (E)",
+          26
+        ],
+        [
+          "Company Evidence/Governance (G)",
+          21
+        ],
+        [
+          "Company Evidence/Social (S)",
+          6
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_d03cbd67fe9f0116",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 1999,
+          "text_head": "News snapshot\n  title: 블랙핑크 무대의상이 23만원 청바지로… AI 에이전트 굴리며 38억 조달[...\n  originallink: https://www.donga.com/news/Economy/a"
+        },
+        {
+          "record_id": "rec_0fdbefc5953553a3",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 3449,
+          "text_head": "News snapshot\n  title: '꽃무늬 티셔츠'로 1100억 잭팟…코스닥 상장 나서는 'K패션' [이선아의 킬러콘텐츠] - 한국경제\n  link: https://news.google.com/rss/arti"
+        },
+        {
+          "record_id": "rec_4dfa12ce65216894",
+          "source_type": "other",
+          "title": "local_downloader",
+          "text_len": 2400,
+          "text_head": "2021년 11월 8일 비상장/스몰캡 Analyst 이수경 02-6114-2914 sukyung.lee@kbfg.com 비상장/스몰캡 Analyst 정동익 02-6114-2965\nnewday@kbfg.com 케이비 "
+        }
+      ]
+    },
+    "requirement_taxonomy": {
+      "exists": true,
+      "rows": 278,
+      "source_type": {
+        "policy": 278
+      },
+      "record_role": {
+        "requirement_taxonomy": 278
+      },
+      "top_sections": [
+        [
+          "Requirement Taxonomy/Governance (G)/boar",
+          44
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/human_ca",
+          28
+        ],
+        [
+          "Requirement Taxonomy/Environment (E)/cli",
+          27
+        ],
+        [
+          "Requirement Taxonomy/General / Other/hum",
+          22
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/board_st",
+          21
+        ],
+        [
+          "Requirement Taxonomy/General / Other/met",
+          21
+        ],
+        [
+          "Requirement Taxonomy/Social (S)/disclosu",
+          21
+        ],
+        [
+          "Requirement Taxonomy/Environment (E)/met",
+          17
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_abf007b07463eb57",
+          "source_type": "policy",
+          "title": "구매비용+외주용역비",
+          "text_len": 924,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 구매비용+외주용역비\nboard_structure\n구매비용+외주용역비\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 구매비용+외주용역비]\n"
+        },
+        {
+          "record_id": "rec_e54b8b43560ff64d",
+          "source_type": "policy",
+          "title": "급여+복리후생비+퇴직급여",
+          "text_len": 942,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 급여+복리후생비+퇴직급여\nboard_structure\n급여+복리후생비+퇴직급여\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 급여+복리후"
+        },
+        {
+          "record_id": "rec_b75980ab889bb860",
+          "source_type": "policy",
+          "title": "기부금 지역사회 투자비",
+          "text_len": 936,
+          "text_head": "경제적 가치 창출 및 분배 / 경제적 가치 배분 / 기부금 지역사회 투자비\nboard_structure\n기부금 지역사회 투자비\n[K-ESG 정량 | 경제적 가치 창출 및 분배 / 경제적 가치 배분 / 기부금 지역사회"
+        }
+      ]
+    },
+    "splits_full": {
+      "exists": true,
+      "rows": 1604,
+      "source_type": {
+        "news": 226,
+        "other": 1324,
+        "annual_report": 29,
+        "sustainability_report": 8,
+        "governance_report": 17
+      },
+      "record_role": {
+        "company_evidence": 1604
+      },
+      "top_sections": [
+        [
+          "Company Evidence/Business & Strategy",
+          1228
+        ],
+        [
+          "Company Evidence/General / Other",
+          323
+        ],
+        [
+          "Company Evidence/Environment (E)",
+          26
+        ],
+        [
+          "Company Evidence/Governance (G)",
+          21
+        ],
+        [
+          "Company Evidence/Social (S)",
+          6
+        ]
+      ],
+      "samples": [
+        {
+          "record_id": "rec_d03cbd67fe9f0116",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 1999,
+          "text_head": "News snapshot\n  title: 블랙핑크 무대의상이 23만원 청바지로… AI 에이전트 굴리며 38억 조달[...\n  originallink: https://www.donga.com/news/Economy/a"
+        },
+        {
+          "record_id": "rec_0fdbefc5953553a3",
+          "source_type": "news",
+          "title": "local_news",
+          "text_len": 3449,
+          "text_head": "News snapshot\n  title: '꽃무늬 티셔츠'로 1100억 잭팟…코스닥 상장 나서는 'K패션' [이선아의 킬러콘텐츠] - 한국경제\n  link: https://news.google.com/rss/arti"
+        },
+        {
+          "record_id": "rec_4dfa12ce65216894",
+          "source_type": "other",
+          "title": "local_downloader",
+          "text_len": 2400,
+          "text_head": "2021년 11월 8일 비상장/스몰캡 Analyst 이수경 02-6114-2914 sukyung.lee@kbfg.com 비상장/스몰캡 Analyst 정동익 02-6114-2965\nnewday@kbfg.com 케이비 "
+        }
+      ]
+    }
+  }
+}

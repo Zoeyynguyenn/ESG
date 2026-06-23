@@ -1,0 +1,43 @@
+{
+  "input_units": 15,
+  "output_rows": 15,
+  "keep_count": 3,
+  "drop_count": 12,
+  "usable_count": 3,
+  "by_question_type": {
+    "qualitative_governance": 1,
+    "qualitative_strategy": 1,
+    "quantitative_fact": 1
+  },
+  "by_difficulty": {
+    "easy": 3
+  },
+  "by_drop_reason": {
+    "insufficient_substance / unanswerable_from_unit": 8,
+    "unanswerable_from_unit": 1,
+    "nav_or_menu_noise": 2,
+    "duplicate_same_fact": 1
+  },
+  "missing_ground_truth_answer": 0,
+  "missing_evidence_span": 0,
+  "missing_why_grounded": 0,
+  "weak_or_generic_keep": 0,
+  "good_grounding_keep": 3,
+  "duplicate_same_fact_drops": 1,
+  "usable_silver_ids": [
+    "SV2-P21-0001",
+    "SV2-P21-0008",
+    "SV2-P21-0012"
+  ],
+  "distillation_version": "2.1.0",
+  "model": "gpt-4o-mini",
+  "input_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\pilot_hanssem_15_eligible.jsonl",
+  "output_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step2_silver\\pilot_hanssem_15_distilled.jsonl",
+  "errors": 0,
+  "error_patterns": [
+    "rec_6d11be8f9ba7006c: generic_paraphrase",
+    "rec_41a160ead0ae1be6: duplicate_evidence_span_in_batch",
+    "news_mixed_unit_kept_by_llm: 3 row(s) — cân nhắc siết prefilter R6"
+  ],
+  "news_mixed_keep_count": 3
+}

@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "description": "Family/metric-level logical-doc overlap bridges and pair expectations (system-level, not question_id)",
+  "logical_doc_pairs": {
+    "environment_ghg": [
+      {
+        "pair_id": "sr_pdf__dart_esg_xml",
+        "logical_docs": ["doc_sr_narrative", "doc_impact_report"],
+        "secondary_logical_docs": ["doc_sr_narrative"],
+        "pool_refs": ["sr_pdf", "dart_esg_sustainability_xml"],
+        "label": "SR PDF ↔ DART ESG voluntary disclosure",
+        "overlap_potential": "high_when_both_pools_present"
+      }
+    ],
+    "governance": [
+      {
+        "pair_id": "sr_narrative__dart_governance_xml",
+        "logical_docs": ["doc_sr_narrative", "doc_governance_disclosure"],
+        "pool_refs": ["sr_pdf", "dart_governance_xml"],
+        "label": "SR narrative ↔ DART governance disclosure",
+        "overlap_potential": "medium_narrative_vs_checklist"
+      },
+      {
+        "pair_id": "sr_narrative__dart_esg_xml",
+        "logical_docs": ["doc_sr_narrative", "doc_impact_report"],
+        "pool_refs": ["sr_pdf", "dart_esg_sustainability_xml"],
+        "label": "SR ↔ DART ESG xml (rating/materiality)",
+        "overlap_potential": "medium"
+      }
+    ],
+    "employee_headcount": [
+      {
+        "pair_id": "sr_pdf__annual_report_xml",
+        "logical_docs": ["doc_sr_narrative", "doc_impact_report"],
+        "pool_refs": ["sr_pdf", "annual_report_workforce_xml"],
+        "label": "SR PDF ↔ annual report workforce xml",
+        "overlap_potential": "company_dependent"
+      }
+    ]
+  },
+  "metric_canonical_keys": {
+    "environment_ghg": {
+      "탄소중립": ["2050", "net zero", "carbon neutral", "넷제로", "탄소중립"],
+      "스코프 3": ["scope 3", "scope3", "스코프 3", "스코프(Scope) 3", "value chain"],
+      "온실가스": ["ghg", "greenhouse gas", "온실가스"],
+      "환경 ESG 등급": ["b+", "b", "a", "environment rating", "환경은"]
+    },
+    "governance": {
+      "ESG 평가 등급": ["a", "a+", "kgcs", "esg rating", "esg grade", "등급"],
+      "이사회 개최": ["board meeting", "directors meeting", "이사회 개최", "이사회 활동"],
+      "이사회 안건": ["board agenda", "안건", "의안", "건"],
+      "중대성 평가": ["materiality", "double materiality", "중대성", "중대 이슈", "8개"]
+    },
+    "employee_headcount": {
+      "구성원": ["임직원", "구성원", "직원", "total employees", "employee"],
+      "MAU": ["mau", "월간 활성", "monthly active"]
+    }
+  },
+  "cross_doc_value_equivalence": {
+    "scope_3": ["scope 3", "scope3", "스코프 3", "스코프(Scope) 3"],
+    "net_zero_year": ["2050", "2030"],
+    "esg_grade_a": ["a", "a+", "a등급", "a+등급"],
+    "materiality_presence": ["중대성", "materiality", "double materiality", "8개"]
+  },
+  "pair_bridge_aliases": {
+    "environment_ghg": {
+      "doc_sr_narrative": {
+        "탄소중립": ["2050 탄소중립", "net zero", "carbon neutral", "넷제로"],
+        "스코프 3": ["scope 3", "scope3", "value chain emissions", "Expand to Scope 3"],
+        "온실가스": ["ghg", "greenhouse gas", "greenhouse gas emissions"]
+      },
+      "doc_impact_report": {
+        "탄소중립": ["지속가능경영", "sustainability report", "탄소중립"],
+        "중대성 평가": ["중대성평가", "materiality", "핵심이슈"]
+      }
+    },
+    "governance": {
+      "doc_sr_narrative": {
+        "ESG 평가 등급": ["KGCS", "KCGS", "ESG 평가", "A등급", "ESG rating"],
+        "이사회 개최": ["이사회", "board", "directors meeting"],
+        "중대성 평가": ["중대성", "Double Materiality", "이중 중대성", "materiality"]
+      },
+      "doc_governance_disclosure": {
+        "이사회 개최": ["이사회", "board", "기업지배구조"],
+        "ESG 평가 등급": ["ESG", "지배구조", "공시"]
+      }
+    }
+  },
+  "xml_concept_patterns": [
+    {
+      "family_id": "governance",
+      "items": ["중대성 평가"],
+      "concept_hint": "중대성",
+      "presence_value": "present",
+      "qualitative_only": true
+    },
+    {
+      "family_id": "environment_ghg",
+      "items": ["임팩트 리포트", "지속가능경영보고서"],
+      "concept_hint": "지속가능|sustainability|impact report",
+      "presence_value": "present"
+    }
+  ],
+  "source_limitations": {
+    "musinsa": {
+      "environment_ghg": {
+        "status": "source_limited",
+        "reason": "missing_sr_pdf_and_dart_esg_xml_in_package",
+        "multi_source_viable": false
+      },
+      "governance": {
+        "status": "source_limited",
+        "reason": "only_annual_report_xml_no_dart_governance",
+        "multi_source_viable": false
+      },
+      "employee_headcount": {
+        "status": "partial",
+        "reason": "annual_report_xml_only",
+        "multi_source_viable": false
+      }
+    },
+    "hanssem": {
+      "environment_ghg": {
+        "status": "partial_overlap_viable",
+        "reason": "sr_pdf_strong; dart_esg_xml_toc_only_for_some_metrics",
+        "multi_source_viable": true
+      },
+      "governance": {
+        "status": "partial_overlap_viable",
+        "reason": "sr_narrative_rich; dart_governance_xml_checklist_format",
+        "multi_source_viable": true
+      }
+    }
+  }
+}

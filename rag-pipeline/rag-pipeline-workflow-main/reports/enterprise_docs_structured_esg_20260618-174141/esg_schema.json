@@ -1,0 +1,160 @@
+{
+  "version": "1.0.0",
+  "description": "Target schema for structured ESG output from enterprise internal-doc lane",
+  "record_fields": {
+    "company_id": {
+      "type": "string",
+      "required": true
+    },
+    "question_id": {
+      "type": "string",
+      "required": false,
+      "note": "eval probe or plan item_id"
+    },
+    "field_id": {
+      "type": "string",
+      "required": false,
+      "note": "stable ESG field key when no question_id"
+    },
+    "esg_domain": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "Environment",
+        "Social",
+        "Governance",
+        "Economic",
+        "General"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "subcategory": {
+      "type": "string",
+      "required": false
+    },
+    "metric_name": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "integer|null",
+      "required": false
+    },
+    "value": {
+      "type": "string|null",
+      "required": true
+    },
+    "unit": {
+      "type": "string|null",
+      "required": false
+    },
+    "value_type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "numeric",
+        "boolean",
+        "text",
+        "not_disclosed",
+        "unknown"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "required": true
+    },
+    "confidence_source": {
+      "type": "string",
+      "required": true
+    },
+    "primary_evidence": {
+      "type": "object",
+      "required": false
+    },
+    "supporting_evidence": {
+      "type": "array[object]",
+      "required": true
+    },
+    "source_documents": {
+      "type": "array[string]",
+      "required": true
+    },
+    "source_format": {
+      "type": "string",
+      "required": false
+    },
+    "readiness_state": {
+      "type": "string",
+      "required": true
+    },
+    "conflict_status": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "metric_absent",
+        "not_disclosed",
+        "conflict_numeric",
+        "conflict_semantic",
+        "single_source_sufficient",
+        "multi_source_confirmed",
+        "insufficient_cross_doc_support",
+        "none"
+      ]
+    },
+    "review_owner": {
+      "type": "string|null",
+      "enum": [
+        "RAG",
+        "SME",
+        "Dataset",
+        "None",
+        null
+      ]
+    },
+    "family_id": {
+      "type": "string",
+      "required": false
+    },
+    "answer_mode": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "family_esg_mapping": {
+    "employee_headcount": {
+      "esg_domain": "Social",
+      "category": "Labor Practices",
+      "subcategory": "Workforce / Headcount"
+    },
+    "environment_ghg": {
+      "esg_domain": "Environment",
+      "category": "Climate & Energy",
+      "subcategory": "GHG / Climate metrics"
+    },
+    "governance": {
+      "esg_domain": "Governance",
+      "category": "Corporate Governance",
+      "subcategory": "Board / ESG governance"
+    }
+  },
+  "metric_types": {
+    "exact": [
+      "value",
+      "unit",
+      "year when parsed",
+      "conflict_status when rules match"
+    ],
+    "heuristic": [
+      "esg_domain/category from family mapping",
+      "confidence",
+      "value_type inference"
+    ],
+    "proxy": [
+      "format_parse_coverage on inventory",
+      "structured_record_coverage without gold GT"
+    ]
+  }
+}

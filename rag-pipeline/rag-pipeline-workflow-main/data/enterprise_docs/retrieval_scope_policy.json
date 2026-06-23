@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "description": "Holdout retrieval scope narrowing — system-level document inclusion (not per-question)",
+  "default_scope": "structured_esg_retrieval_ready",
+  "noise_exclude_tokens": [
+    "외부검색",
+    "네이버",
+    "사람인",
+    "웹사이트_캡처",
+    "web__",
+    "HTML_page",
+    "원티드",
+    "잡코리아",
+    "잡플래닛"
+  ],
+  "broad_financial_xml_tokens": [
+    "분기보고서",
+    "반기보고서",
+    "주요사항보고서",
+    "주식등의대량보유",
+    "자기주식"
+  ],
+  "esg_dart_xml_tokens": [
+    "지속가능경영",
+    "기업지배구조",
+    "지배구조"
+  ],
+  "sr_document_tokens": [
+    "sustain",
+    "sustainability",
+    "지속가능",
+    "impact",
+    "임팩트"
+  ],
+  "governance_document_tokens": [
+    "지배구조",
+    "기업지배구조",
+    "governance",
+    "board"
+  ],
+  "scopes": {
+    "sr_pdf_only": {
+      "label": "SR / impact PDF slice",
+      "include_source_types": ["pdf"],
+      "include_document_id_any": ["sustain", "sustainability", "지속가능", "impact", "임팩트"],
+      "max_units_per_document": 200
+    },
+    "governance_dart_xml": {
+      "label": "Governance / SR DART XML slice",
+      "include_source_types": ["xml"],
+      "include_document_id_any": ["지속가능경영", "기업지배구조", "지배구조"],
+      "max_units_per_document": 150
+    },
+    "no_web_crawl": {
+      "label": "Full reingested minus web crawl noise",
+      "exclude_document_id_any": ["외부검색", "네이버", "사람인", "웹사이트_캡처", "web__", "원티드", "잡코리아", "잡플래닛"],
+      "max_units_per_document": 80
+    },
+    "structured_esg_retrieval_ready": {
+      "label": "Combined ESG retrieval-ready slice",
+      "include_rules_any": [
+        {"source_types": ["pdf"], "document_id_any": ["sustain", "sustainability", "지속가능", "impact", "임팩트"]},
+        {"source_types": ["xml"], "document_id_any": ["지속가능경영", "기업지배구조"]},
+        {"source_types": ["html"], "document_id_any": ["impact", "임팩트", "esg", "지속가능"]}
+      ],
+      "exclude_document_id_any": ["외부검색", "네이버", "사람인", "웹사이트_캡처", "web__", "원티드", "잡코리아", "잡플래닛"],
+      "exclude_broad_financial_xml_unless_esg": true,
+      "max_units_per_document": 120
+    }
+  },
+  "company_overrides": {
+    "musinsa": {
+      "structured_esg_retrieval_ready": {
+        "include_rules_any": [
+          {"source_types": ["xml"], "document_id_any": ["사업보고서"]},
+          {"source_types": ["pdf"], "document_id_any": ["impact", "임팩트", "esg", "sustain"]},
+          {"source_types": ["html"], "document_id_any": ["impact", "임팩트", "esg", "지속가능", "musinsa", "무신사"]}
+        ],
+        "exclude_broad_financial_xml_unless_esg": false,
+        "max_units_per_document": 80
+      }
+    }
+  }
+}

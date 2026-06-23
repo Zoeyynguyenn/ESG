@@ -1,0 +1,636 @@
+{
+  "extraction": [
+    {
+      "case_id": "CONSTRUCT-ALIAS-SCOPE3",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-ALIAS-NETZERO-YEAR",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-GRADE",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-NUMERIC-COMMA",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-002",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-003",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-013",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-014",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-015",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-016",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M009",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M010",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M011",
+      "origin": "natural",
+      "ok": null
+    }
+  ],
+  "equivalence_collapse": [
+    {
+      "case_id": "CONSTRUCT-ALIAS-SCOPE3",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-ALIAS-NETZERO-YEAR",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-GRADE",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-NUMERIC-COMMA",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "origin": "constructed",
+      "ok": false
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-002",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-003",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-013",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-014",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-015",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-016",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M009",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M010",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M011",
+      "origin": "natural",
+      "ok": null
+    }
+  ],
+  "fusion": [
+    {
+      "case_id": "CONSTRUCT-ALIAS-SCOPE3",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-ALIAS-NETZERO-YEAR",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-GRADE",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-NUMERIC-COMMA",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-002",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-003",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-013",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-014",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-015",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-016",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M009",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M010",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M011",
+      "origin": "natural",
+      "ok": null
+    }
+  ],
+  "conflict_classification": [
+    {
+      "case_id": "CONSTRUCT-ALIAS-SCOPE3",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-ALIAS-NETZERO-YEAR",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-GRADE",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-NUMERIC-COMMA",
+      "origin": "constructed",
+      "ok": null
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "origin": "constructed",
+      "ok": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-002",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-003",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-013",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-014",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-015",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-016",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M004",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M007",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M009",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M010",
+      "origin": "natural",
+      "ok": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M011",
+      "origin": "natural",
+      "ok": null
+    }
+  ],
+  "readiness_promotion": [
+    {
+      "case_id": "CONSTRUCT-ALIAS-SCOPE3",
+      "origin": "constructed",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "CONSTRUCT-ALIAS-NETZERO-YEAR",
+      "origin": "constructed",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-GRADE",
+      "origin": "constructed",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-NUMERIC-COMMA",
+      "origin": "constructed",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+      "origin": "constructed",
+      "ok": true,
+      "promoted": true
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "origin": "constructed",
+      "ok": true,
+      "promoted": true
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "origin": "constructed",
+      "ok": true,
+      "promoted": true
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "origin": "constructed",
+      "ok": true,
+      "promoted": true
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "origin": "constructed",
+      "ok": true,
+      "promoted": true
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "origin": "constructed",
+      "ok": true,
+      "promoted": true
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "origin": "constructed",
+      "ok": true,
+      "promoted": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-002",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-003",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-004",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-007",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-013",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-014",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-015",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-016",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M004",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M007",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M009",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M010",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M011",
+      "origin": "natural",
+      "ok": null,
+      "promoted": null
+    }
+  ]
+}

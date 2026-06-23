@@ -1,0 +1,103 @@
+# Golden Set — Pre-filter Round 2.1 Report
+
+Generated: 2026-06-10T18:01:32
+
+## Mục tiêu
+
+Lọc deterministic corpus unit trước Distillation R2.1; tách `keep` / `drop` / `conditional`.
+
+## Rule set đã implement
+
+| Rule ID | Hành vi |
+|---------|---------|
+| `R1_cross_company_mismatch` | drop |
+| `R2_nav_or_menu_noise` | drop |
+| `R3_listing_or_index_noise` | drop |
+| `R4_date_only_disclosure` | drop |
+| `R5_vendor_or_training_content` | drop |
+| `R6_secondary_news_rewrite_ui_noise` | drop |
+| `R7_non_esg_financial_or_annual_irrelevant` | drop |
+| `R8_primary_esg_narrative_keep` | keep |
+| `R9_metric_or_policy_keep` | keep |
+| `R10_conditional_intro_or_mixed_section` | conditional |
+
+## Tổng số unit đầu vào
+
+- **total:** 118
+- **keep:** 40
+- **drop:** 74
+- **conditional:** 4
+
+## Breakdown theo `prefilter_rule_id`
+
+| rule_id | count |
+|---------|------:|
+| `R10_conditional_intro_or_mixed_section` | 4 |
+| `R1_cross_company_mismatch` | 29 |
+| `R2_nav_or_menu_noise` | 3 |
+| `R3_listing_or_index_noise` | 2 |
+| `R5_vendor_or_training_content` | 3 |
+| `R6_secondary_news_rewrite_ui_noise` | 25 |
+| `R7_non_esg_financial_or_annual_irrelevant` | 12 |
+| `R8_primary_esg_narrative_keep` | 26 |
+| `R9_metric_or_policy_keep` | 14 |
+
+## Breakdown theo công ty
+
+| company | keep | drop | conditional |
+|---------|-----:|-----:|------------:|
+| 레이시온 | 1 | 39 | 0 |
+| 무신사 | 16 | 21 | 1 |
+| 한샘 | 23 | 14 | 3 |
+
+## Breakdown theo pattern (unit_taxonomy)
+
+| pattern | count |
+|---------|------:|
+| `governance_or_policy_statement` | 75 |
+| `risk_strategy_narrative` | 69 |
+| `primary_esg_narrative` | 65 |
+| `metric_disclosure` | 40 |
+| `secondary_news_rewrite` | 33 |
+| `cross_company_mismatch` | 29 |
+| `nav_or_menu_noise` | 16 |
+| `vendor_or_training_content` | 3 |
+| `listing_or_index_noise` | 2 |
+| `non_esg_annual_report` | 1 |
+| `non_esg_financial_research` | 1 |
+
+## Ví dụ tiêu biểu — keep
+
+- **한샘_dataset_package_20260608T042739::rec_adf521a49feec751** (`R8_primary_esg_narrative_keep`): 2022 HANSSEM SUSTAINABILITY REPORT 2022 한샘 지속가능경영보고서 2022 HANSSEM SUSTAINABILITY REPORT 2022 한샘 지속가능경영보고서  About this report ESG경영 내재화로 한샘만의 지속가능경영 체계를 구축합니다. 한샘이 지향하는 지속가능경영체계를 확립하고 사회적 책임의 성과를 이해관계자와 공유하기 위해 세 번째 보고서를 …
+- **한샘_dataset_package_20260608T042739::rec_2ac36b6aa8233480** (`R8_primary_esg_narrative_keep`): ‘2022년 지속가능경영보고서’ 발간 종합 홈 인테리어 전문기업 ㈜한샘이 지난 ESG 경영의 현황 및 성과를 담은 ‘2022 한샘 지속가능경영보고서’를 발간했다. 한샘은 지난 2020년부터 3년 연속으로 지속가능경영보고서를 발간하면서 ESG 경영 활동을 이어가고 있다. 이번 보고서에는 지난해 한샘의 ESG 경영 성과와 올해 전략 과제 추진 사항 등의 내용이 담겼다. 한샘은 지난 2021년 이…
+- **한샘_dataset_package_20260608T042739::rec_66100907c00656ec** (`R8_primary_esg_narrative_keep`): ‘2022년 지속가능경영보고서’ 발간 종합 홈 인테리어 전문기업 ㈜한샘이 지난 ESG 경영의 현황 및 성과를 담은 ‘2022 한샘 지속가능경영보고서’를 발간했다. 한샘은 지난 2020년부터 3년 연속으로 지속가능경영보고서를 발간하면서 ESG 경영 활동을 이어가고 있다. 이번 보고서에는 지난해 한샘의 ESG 경영 성과와 올해 전략 과제 추진 사항 등의 내용이 담겼다. 한샘은 지난 2021년 이…
+- **한샘_dataset_package_20260608T042739::rec_86c98b945fc03e6d** (`R8_primary_esg_narrative_keep`): 이전 기사보기 다음 기사보기 한샘, ESG 경영 성과‧청사진 담은 ‘지속가능경영보고서’ 발간 가 가 기사의 본문 내용은 이 글자크기로 변경됩니다. 스크롤 이동 상태바 가 가 기사의 본문 내용은 이 글자크기로 변경됩니다. 이 기사를 공유합니다 한샘이 발간한 2025 지속가능경영보고서 표지(사진=한샘) [백세경제=김인하 기자] 한샘이 글로벌 기준에 맞춰 ESG 경영 성과를 정리한 보고서를 내놨다…
+- **한샘_dataset_package_20260608T042739::rec_ce1fb6e4651850d3** (`R8_primary_esg_narrative_keep`): 이전 기사보기 다음 기사보기 한샘, ESG 경영 성과‧청사진 담은 ‘지속가능경영보고서’ 발간 가 가 기사의 본문 내용은 이 글자크기로 변경됩니다. 스크롤 이동 상태바 이전 기사보기 다음 기사보기 한샘, ESG 경영 성과‧청사진 담은 ‘지속가능경영보고서’ 발간 가 가 기사의 본문 내용은 이 글자크기로 변경됩니다. 한샘, ESG 경영 성과‧청사진 담은 ‘지속가능경영보고서’ 발간 한샘, ESG 경…
+
+## Ví dụ tiêu biểu — drop
+
+- **한샘_dataset_package_20260608T042739::rec_38e861b93b09aaf1** (`R7_non_esg_financial_or_annual_irrelevant`): ANNUAL REPORT 2014  PROLOGUE 01 PLACE TO GO, PLACE TO STAY 04 CEO MESSAGE 06 VISION & STRATEGY BUSINESS REVIEW 08 INTERIOR FURNITURE DEPARTMENT 10 KITCHEN FURNITURE DEPARTMENT 12 CONSTRUCTION PROJECT SALES DEPARTMENT 15 …
+- **한샘_dataset_package_20260608T042739::rec_24ea67414eabd179** (`R7_non_esg_financial_or_annual_irrelevant`): 2022 HANSSEM SUSTAINABILITY REPORT 2022 HANSSEM SUSTAINABILITY REPORT  About this report By internalizing ESG management Hanssem builds its own sustainable management system. The third report has been published to establ…
+- **한샘_dataset_package_20260608T042739::rec_5635cde14183931b** (`R7_non_esg_financial_or_annual_irrelevant`): Analysts who prepared this report are registered as research analysts in Korea but not in any other jurisdiction, including the US. Please see analyst certifications and important disclosures & disclaimers in Appendix 1 …
+- **한샘_dataset_package_20260608T042739::rec_aed5e8dc6d6699d8** (`R7_non_esg_financial_or_annual_irrelevant`): KRX company metadata name: 한샘 market: KOSPI market_cap: 748378910400 sector: None industry_raw: 생활용품 도매업 industry_group: 소비재 size_tier: 중형 ticker: 009240…
+- **한샘_dataset_package_20260608T042739::rec_b54d398775fdb14b** (`R6_secondary_news_rewrite_ui_noise`): 인물 사회 일반 문화/생활 건강정보 자동차/시승기 도로/교통 여행/레저 음식/맛집 패션/뷰티 공연/전시 책 종교 날씨 생활문화 일반 건강정보 자동차/시승기 도로/교통 여행/레저 음식/맛집 패션/뷰티 공연/전시 책 종교 날씨 생활문화 일반 IT/과학 모바일 인터넷/SNS 사회적책임투자 컴퓨터 게임/리뷰 과학 일반 모바일 인터넷/SNS 사회적책임투자 사회적책임투자 컴퓨터 게임/리뷰 과학 일반 지…
+
+## Ví dụ tiêu biểu — conditional
+
+- **한샘_dataset_package_20260608T042739::rec_ea632bae09735059** (`R10_conditional_intro_or_mixed_section`): Sustainability Report 2024  About this Report 보고서 개요 해당 보고서는 ㈜한샘이 다섯 번째 발간하는 지속가능경영 보고서입니다. ㈜한샘은 회사의 지속가능경영 추진방향과 성과를 이해관계자들에게 투명하게 공개하고, 이를 기반으로 이해관계자와 활발히 소통하기 위하여 2024년 다섯 번째 지속가능경영보고서를 발간하고자 합니다. 본 보고서는 국문 및 영문으로 발간됩…
+- **한샘_dataset_package_20260608T042739::rec_fcab1197e3c245b6** (`R10_conditional_intro_or_mixed_section`): HANSSEM SUSTAINABILITY REPORT 2025  HANSSEM SUSTAINABILITY REPORT 2025 002 고양열 권미순 김기영 김동영 김세진 김소현 김소희 김신흥 김연의 김용태 김차연 Introduction Business Fundamental Sustainability Performance Appendix Business Review About this Repo…
+- **한샘_dataset_package_20260608T042739::rec_65c50bede5bb66da** (`R10_conditional_intro_or_mixed_section`): SUSTAINAB ILITY REPORT 2021 HANSSEM  2021 HANSSEM SUSTAINABILITY REPORT 2021 한샘 지속가능경영보고서  TABLE OF CONTENTS 1 INTRODUCTION · CEO Message · 2020 Highlights · HANSSEM at a Glance · Business Portfolio 2 MATERIAL FOCUS ISSU…
+- **무신사_dataset_package_20260608T092823::rec_cd469b0fcf513be5** (`R10_conditional_intro_or_mixed_section`): ENG ESG 소개 ESG 개념 ESG 중요성 ESG 경영/정보공개 ESG 기업정보 기업 ESG 조회 지속가능경영보고서 기업지배구조보고서 ESG 평가 ESG 통계 국내 ESG현황 ESG 펀드 ESG 채권현황 ESG 지수/증권상품 자료실 ESG 최신동향/기준 참고사이트 ESG 강의실 FAQ FAQ ESG 소개 ESG 기업정보 ESG 통계 자료실 FAQ ENGLISH ENG ESG 개념 ESG …
+
+## Đánh giá pilot
+
+- **한샘** eligible keep: **23** — pilot 15 unit: **ĐỦ**
+- **레이시온** eligible keep: **1**
+- **무신사** eligible keep: **16**
+- Pilot file: `E:\Documents\rag-pipeline-workflow\data\golden_set\v2\step1_corpus_units\pilot_hanssem_15_eligible.jsonl` (15 rows)
+
+## Kết luận và bước kế tiếp
+
+1. Dùng `corpus_units_eligible.jsonl` làm input Distillation R2.1 pilot (15 unit `한샘`).
+2. `corpus_units_conditional_r2_1.jsonl` chỉ dùng khi review/pilot có cờ strict.
+3. Chưa chạy step 2 full; chưa mở Evol/Judge/benchmark.

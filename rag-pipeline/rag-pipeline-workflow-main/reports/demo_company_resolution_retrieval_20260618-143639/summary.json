@@ -1,0 +1,172 @@
+{
+  "timestamp": "20260618-143639",
+  "corpus_unit_count": 47,
+  "single": {
+    "count": 20,
+    "single_doc_ready_count": 10,
+    "single_extraction_success_rate_on_ready": 0.8,
+    "single_extraction_success_rate_all": 0.4,
+    "wrong_row_risk_count": 0,
+    "wrong_row_risk_rate_on_ready": 0.0,
+    "single_fail_breakdown": {
+      "ready": 8,
+      "retrieval_gap": 10,
+      "extraction_gap": 2
+    },
+    "metric_type": {
+      "single_extraction_success": "proxy — parseable numeric, NOT gold accuracy",
+      "wrong_row_risk": "heuristic — weak row_match or extra label tokens vs question"
+    }
+  },
+  "cross": {
+    "count": 15,
+    "quantitative_cross_count": 10,
+    "aggregation_success_rate": 0.1333,
+    "aggregation_partial_rate": 0.0667,
+    "aggregation_conflict_rate": 0.0,
+    "aggregation_missing_role_rate": 1.0,
+    "quant_aggregation_success_rate": 0.2,
+    "quant_resolution_rate": 0.3,
+    "cross_fail_breakdown": {
+      "synthesis_gap": 5,
+      "ready": 2,
+      "extraction_gap": 7,
+      "aggregation_gap": 1
+    },
+    "metric_type": {
+      "aggregation_success": "exact — aggregator legacy status success",
+      "quant_resolution_rate": "exact — resolution_status resolved* on quant rows"
+    }
+  },
+  "retrieval": {
+    "role_coverage_rate": 1.0,
+    "csv_role_hit_rate": 1.0,
+    "missing_role_rate": 0.0,
+    "metric_type": {
+      "role_coverage_rate": "heuristic — fraction of planned roles with unit hit",
+      "csv_role_hit_rate": "exact — doc_evidence_csv in role_hits",
+      "missing_role_rate": "exact — quant rows with missing_roles_after_retrieval"
+    }
+  },
+  "delta_vs_142543": {
+    "baseline_label": "demo_company_extractor_aggregator_20260618-142543",
+    "single_doc_ready_count": {
+      "new": 10,
+      "old": 10,
+      "delta": 0.0
+    },
+    "single_extraction_success_rate_on_ready": {
+      "new": 0.8,
+      "old": 1.0,
+      "delta": -0.2
+    },
+    "single_extraction_success_rate_all": {
+      "new": 0.4,
+      "old": 0.5,
+      "delta": -0.1
+    },
+    "wrong_row_risk_count": {
+      "new": 0,
+      "old": null,
+      "delta": null
+    },
+    "quant_aggregation_success_rate": {
+      "new": 0.2,
+      "old": 0.5,
+      "delta": -0.3
+    },
+    "aggregation_success_rate": {
+      "new": 0.1333,
+      "old": 0.3333,
+      "delta": -0.2
+    },
+    "aggregation_conflict_rate": {
+      "new": 0.0,
+      "old": 0.2,
+      "delta": -0.2
+    },
+    "aggregation_partial_rate": {
+      "new": 0.0667,
+      "old": 0.1333,
+      "delta": -0.0666
+    },
+    "aggregation_missing_role_rate": {
+      "new": 1.0,
+      "old": 0.4667,
+      "delta": 0.5333
+    },
+    "role_coverage_rate": {
+      "new": 1.0,
+      "old": null,
+      "delta": null
+    },
+    "csv_role_hit_rate": {
+      "new": 1.0,
+      "old": null,
+      "delta": null
+    },
+    "missing_role_rate": {
+      "new": 0.0,
+      "old": null,
+      "delta": null
+    }
+  },
+  "delta_vs_141731_note": "diagnostic baseline is retrieval-only approximation — compare role metrics qualitatively",
+  "improved_cases": [
+    {
+      "item_id": "QUANT-0001",
+      "note": "wrong-row fixed: matched_row:구성원 총 교육 시간 → 총 임직원"
+    },
+    {
+      "item_id": "QUANT-0042",
+      "note": "conflict → success (primary_doc_best_row_match)"
+    }
+  ],
+  "still_failing_cases": [
+    {
+      "item_id": "QUANT-0044",
+      "note": "status=failed reason=no_numeric_candidates_from_units"
+    },
+    {
+      "item_id": "QUANT-0133",
+      "note": "status=failed reason=no_numeric_candidates_from_units"
+    },
+    {
+      "item_id": "QUANT-0134",
+      "note": "status=partial reason=missing_roles:doc_02_ghg_energy,doc_03_renewable,doc_07_certification,doc_evidence_csv"
+    },
+    {
+      "item_id": "QUANT-0208",
+      "note": "status=failed reason=no_numeric_candidates_from_units"
+    },
+    {
+      "item_id": "QUANT-0210",
+      "note": "status=failed reason=no_numeric_candidates_from_units"
+    },
+    {
+      "item_id": "QUANT-0209",
+      "note": "status=failed reason=no_numeric_candidates_from_units"
+    },
+    {
+      "item_id": "QUANT-0213",
+      "note": "status=failed reason=no_numeric_candidates_from_units"
+    },
+    {
+      "item_id": "QUANT-0046",
+      "note": "status=failed reason=no_numeric_candidates_from_units"
+    }
+  ],
+  "primary_bottleneck_after_round": "extraction",
+  "conclusion": "row disambiguation giảm wrong-row risk so với vòng 142543. conflict resolution chưa tăng quant success đáng kể. role-aware retrieval giảm missing role một phần. Chưa mở qualitative synthesis — bottleneck extraction/aggregation vẫn còn.",
+  "next_step": "Tiếp tục siết row scoring cho HR/GHG tables; mở rộng metric-key normalization; tăng CSV unit floor cho cross-doc partial cases.",
+  "open_synthesis": false,
+  "expand_to_hanssem_musinsa": false,
+  "answers": {
+    "row_disambiguation_reduced_wrong_row": true,
+    "conflict_resolution_cases_moved_to_resolved": 0.3,
+    "role_aware_retrieval_reduced_missing_role": true,
+    "biggest_bottleneck": "extraction",
+    "open_qualitative_synthesis": false,
+    "stay_on_demo_company": true
+  }
+}

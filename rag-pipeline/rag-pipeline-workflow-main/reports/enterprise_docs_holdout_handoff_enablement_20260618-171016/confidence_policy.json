@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "description": "Family/source-type confidence resolution for handoff promotion",
+  "floors": {
+    "narrative_extraction": 0.25,
+    "table_extraction": 0.85,
+    "holdout_narrative_source": 0.3
+  },
+  "rules": [
+    {
+      "id": "narrative_max_row_and_narrative_conf",
+      "applies_when": "narrative_metric_parse_used",
+      "resolution": "max(extraction_confidence, narrative_confidence), then narrative_floor_min"
+    },
+    {
+      "id": "holdout_sustainability_narrative_floor",
+      "applies_when": "holdout_company AND narrative AND source_type in sustainability/governance/dart",
+      "resolution": "floor >= 0.3"
+    },
+    {
+      "id": "table_strong",
+      "applies_when": "NOT narrative AND extraction_confidence >= 0.85",
+      "resolution": "table_extraction_strong"
+    }
+  ],
+  "metric_types": {
+    "exact": [
+      "promoted",
+      "handoff_candidate when rules pass"
+    ],
+    "heuristic": [
+      "evidence_bundle_quality"
+    ],
+    "proxy": [
+      "holdout feasibility vs full pipeline alignment rate"
+    ]
+  }
+}

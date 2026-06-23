@@ -1,0 +1,35 @@
+baseline_id: config_baseline_v6
+description: Baseline dong bang tu V6 de benchmark cong bang theo matrix.
+
+chunking:
+  profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+
+retrieval:
+  mode: hybrid_dense_bm25_rerank
+  candidate_pool: 24
+  top_k: 4
+  hybrid_alpha: 0.55
+  reranker_model: cross-encoder/ms-marco-MiniLM-L-6-v2
+
+extraction:
+  mode: heuristic_v4
+
+verification:
+  mode: v6_loop_policy_boost_mixed
+
+evaluation:
+  eval_set: .rag/rag-pipeline-practice/eval_set.md
+  primary_metrics:
+    - retrieval_hit_rate
+    - citation_correctness
+    - field_coverage
+    - verified_rate
+    - insufficient_rate
+    - conflict_rate
+    - priority_field_completion
+    - latency

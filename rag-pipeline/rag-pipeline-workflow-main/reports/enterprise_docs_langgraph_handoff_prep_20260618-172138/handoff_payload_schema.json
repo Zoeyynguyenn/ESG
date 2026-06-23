@@ -1,0 +1,184 @@
+{
+  "prep_schema_version": "1.0.0",
+  "handoff_schema_version": "1.0.0",
+  "description": "Standardized downstream payload for LangGraph handoff (preparation contract)",
+  "field_groups": {
+    "identity": {
+      "question_id": {
+        "type": "string",
+        "required": true
+      },
+      "company_id": {
+        "type": "string",
+        "required": true
+      },
+      "family_id": {
+        "type": "string",
+        "required": true
+      },
+      "question_type": {
+        "type": "string",
+        "required": true
+      },
+      "kind": {
+        "type": "string",
+        "required": true,
+        "enum": [
+          "quantitative",
+          "qualitative"
+        ]
+      },
+      "answer_mode": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "readiness": {
+      "readiness_state": {
+        "type": "string",
+        "required": true
+      },
+      "handoff_allowed": {
+        "type": "boolean",
+        "required": true
+      },
+      "handoff_allowed_for_preparation": {
+        "type": "boolean",
+        "required": true
+      },
+      "prep_status": {
+        "type": "string",
+        "required": true,
+        "enum": [
+          "handoff_allowed_for_preparation",
+          "handoff_blocked",
+          "needs_manual_review_before_handoff"
+        ]
+      },
+      "handoff_blockers": {
+        "type": "array[string]",
+        "required": true
+      },
+      "needs_review_by": {
+        "type": "string|null",
+        "enum": [
+          "RAG",
+          "SME",
+          "Dataset",
+          "None",
+          null
+        ]
+      }
+    },
+    "answer": {
+      "predicted_value": {
+        "type": "string|null",
+        "required": true
+      },
+      "predicted_unit": {
+        "type": "string|null",
+        "required": false
+      },
+      "confidence": {
+        "type": "number",
+        "required": true
+      },
+      "confidence_source": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "evidence": {
+      "primary_doc": {
+        "type": "string|null",
+        "required": false
+      },
+      "supporting_docs": {
+        "type": "array[string]",
+        "required": true
+      },
+      "evidence_bundle": {
+        "type": "array[object]",
+        "required": true
+      },
+      "logical_document_ids": {
+        "type": "array[string]",
+        "required": true
+      }
+    },
+    "review_control": {
+      "review_owner_rule": {
+        "type": "object",
+        "required": true
+      },
+      "review_owner_rule_id": {
+        "type": "string",
+        "required": true
+      },
+      "review_owner_reason": {
+        "type": "string",
+        "required": true
+      },
+      "sufficiency_reason": {
+        "type": "string|null",
+        "required": false
+      },
+      "coverage_or_abstain_flag": {
+        "type": "boolean",
+        "required": true
+      }
+    }
+  },
+  "inherited_handoff_schema": {
+    "schema_version": "1.0.0",
+    "description": "Handoff contract from enterprise internal-doc lane to LangGraph synthesis",
+    "required_fields": [
+      "question_id",
+      "company_id",
+      "answer_mode",
+      "readiness_state",
+      "predicted_value",
+      "evidence_bundle",
+      "handoff_allowed"
+    ],
+    "readiness_states": {
+      "handoff_allowed": [
+        "aggregation_ready",
+        "multi_source_sufficient",
+        "single_source_sufficient"
+      ],
+      "handoff_blocked": [
+        "coverage_gap",
+        "extraction_ready",
+        "honest_abstain",
+        "needs_sme_review",
+        "not_ready_for_synthesis",
+        "retrieval_ready"
+      ]
+    },
+    "synthesis_gate": {
+      "allowed_readiness_states": [
+        "single_source_sufficient",
+        "multi_source_sufficient",
+        "aggregation_ready"
+      ],
+      "min_quant_rate": 0.6,
+      "qualitative_requires_synthesis": true
+    },
+    "evidence_bundle_item": {
+      "logical_document_id": "string",
+      "unit_id": "string",
+      "metric_label": "string",
+      "value": "string",
+      "unit": "string|null",
+      "role": "string|null",
+      "snippet": "string"
+    },
+    "needs_review_by_values": [
+      "sme",
+      "dataset",
+      "none",
+      null
+    ]
+  }
+}

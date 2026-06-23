@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+      "fusion_ok": true,
+      "promotion_ok": true,
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "ghost_pass": false
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "fusion_ok": true,
+      "promotion_ok": true,
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "ghost_pass": false
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "fusion_ok": true,
+      "promotion_ok": true,
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "ghost_pass": false
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "fusion_ok": true,
+      "promotion_ok": true,
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "ghost_pass": false
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "fusion_ok": true,
+      "promotion_ok": true,
+      "promoted": true,
+      "promotion_target": "single_source_sufficient",
+      "ghost_pass": false
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "fusion_ok": true,
+      "promotion_ok": true,
+      "promoted": true,
+      "promotion_target": "single_source_sufficient",
+      "ghost_pass": false
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "fusion_ok": true,
+      "promotion_ok": true,
+      "promoted": true,
+      "promotion_target": "multi_source_sufficient",
+      "ghost_pass": false
+    }
+  ],
+  "ghost_pass_count": 0
+}

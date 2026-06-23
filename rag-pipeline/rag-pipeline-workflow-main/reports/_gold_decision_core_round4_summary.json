@@ -1,0 +1,41 @@
+{
+  "gold_version": "ref_gold_decision_r4",
+  "generated_at": "2026-06-12T14:14:24",
+  "input_core_count": 45,
+  "gold_approve_count": 26,
+  "gold_revise_hold_count": 17,
+  "gold_reject_count": 2,
+  "core_gold_ready_count": 26,
+  "hs_gold_ready": 21,
+  "ms_gold_ready": 5,
+  "by_company": {
+    "무신사": {
+      "gold_approve": 5,
+      "gold_revise_hold": 2,
+      "gold_reject": 2
+    },
+    "한샘": {
+      "gold_approve": 21,
+      "gold_revise_hold": 15
+    }
+  },
+  "by_cluster": {
+    "FC_ESG_GOVERNANCE": 13,
+    "FC_UNKNOWN": 1,
+    "FC_MATERIAL_8": 5,
+    "FC_HUMAN_RIGHTS": 3,
+    "FC_TCFD": 2,
+    "FC_KGCS_A": 2
+  },
+  "fc_unknown_breakdown": {
+    "gold_approve": 1,
+    "gold_reject": 2,
+    "gold_revise_hold": 12,
+    "unresolved": 14
+  },
+  "rx_backlog_status": "source-acquisition dependent — 1 survivor + 22 lane C + reject rows; không trong gold core",
+  "output_approved": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_round4_approved.jsonl",
+  "output_hold": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_round4_hold.jsonl",
+  "output_rejected": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_round4_rejected.jsonl",
+  "output_workbook": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_round4_decision.xlsx"
+}

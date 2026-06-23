@@ -1,0 +1,24 @@
+{
+  "path": "data/enterprise_docs/metric_equivalence_registry.json",
+  "version": "1.0.0",
+  "family_buckets": [
+    "environment_ghg",
+    "governance",
+    "employee_headcount"
+  ],
+  "value_equivalence_keys": [
+    "scope_3",
+    "net_zero_year_2050",
+    "net_zero_year_2030",
+    "esg_grade_a",
+    "esg_grade_a_plus",
+    "ghg_emissions_12500",
+    "net_zero_year",
+    "materiality_presence"
+  ],
+  "cross_role_pattern_families": [
+    "environment_ghg",
+    "governance",
+    "employee_headcount"
+  ]
+}

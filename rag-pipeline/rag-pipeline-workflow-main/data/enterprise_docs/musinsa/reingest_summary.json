@@ -1,0 +1,31 @@
+{
+  "company_id": "musinsa",
+  "status": "ok",
+  "parser_version": "1.1.0",
+  "source_root": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430",
+  "output": "data/enterprise_docs/musinsa/corpus_units_reingested.jsonl",
+  "unit_count": 36082,
+  "document_count": 122,
+  "by_source_type": {
+    "json": 247,
+    "xml": 13406,
+    "html": 22258,
+    "pdf": 123,
+    "markdown": 43,
+    "jsonl": 5
+  },
+  "by_document_sample": {
+    "02_재무_신용_DART_원본문서_20260331003116_사업보고서_2025_12_20260331003116_xml": 3425,
+    "02_재무_신용_DART_원본문서_20250331002442_사업보고서_2024_12_20250331002442_xml": 3159,
+    "02_재무_신용_DART_원본문서_20250828000183_반기보고서_2025_06_20250828000183_xml": 2596,
+    "03_고용_인사_사람인_검색결과_html": 2544,
+    "02_재무_신용_DART_원본문서_20251125000352_분기보고서_2025_09_20251125000352_xml": 2014,
+    "02_재무_신용_DART_원본문서_20250522000155_분기보고서_2025_03_20250522000155_xml": 1824,
+    "07_뉴스_평판_원문_HTML_news_00__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html": 755,
+    "07_뉴스_평판_원문_HTML_news_14__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html": 755,
+    "07_뉴스_평판_원문_HTML_news_06__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html": 754,
+    "07_뉴스_평판_원문_HTML_news_01__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html": 753,
+    "07_뉴스_평판_원문_HTML_news_02__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html": 753,
+    "07_뉴스_평판_원문_HTML_news_04__EB_AC_B4_EC_8B_A0_EC_82_AC_20_html": 753
+  }
+}

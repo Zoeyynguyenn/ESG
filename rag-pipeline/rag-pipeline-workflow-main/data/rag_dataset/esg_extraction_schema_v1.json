@@ -1,0 +1,211 @@
+{
+  "schema_version": "v1",
+  "entity": "GreenRiver Manufacturing JSC ESG Profile",
+  "description": "Schema trich xuat co cau truc V4 — evidence-based, khong phu thuoc LLM.",
+  "groups": {
+    "Environmental": [
+      {
+        "id": "energy_reduction_target",
+        "description": "Muc giam tieu thu dien hang nam",
+        "expected_type": "string",
+        "extraction_hint": "giam tieu thu dien 3% moi nam environment policy",
+        "required": true
+      },
+      {
+        "id": "waste_recycling_target_2026",
+        "description": "Muc tieu ty le tai che chat thai nam 2026",
+        "expected_type": "number",
+        "extraction_hint": "ty le tai che chat thai >= 72% 2026",
+        "required": true
+      },
+      {
+        "id": "wastewater_treatment_policy",
+        "description": "Yeu cau xu ly nuoc thai truoc khi xa thai",
+        "expected_type": "boolean",
+        "extraction_hint": "100% nuoc thai xu ly truoc xa thai",
+        "required": true
+      },
+      {
+        "id": "waste_classification_groups",
+        "description": "So nhom phan loai chat thai tai nguon",
+        "expected_type": "number",
+        "extraction_hint": "phan loai chat thai 4 nhom tai che huu co",
+        "required": false
+      },
+      {
+        "id": "scope12_reduction_target",
+        "description": "Muc tieu giam phat thai Scope 1+2 den 2028",
+        "expected_type": "string",
+        "extraction_hint": "giam 25% Scope 1+2 2023 2028 company overview",
+        "required": true
+      },
+      {
+        "id": "water_reuse_target",
+        "description": "Ty le tai su dung nuoc sau xu ly",
+        "expected_type": "number",
+        "extraction_hint": "tai su dung nuoc 15% environment policy",
+        "required": false
+      },
+      {
+        "id": "energy_intensity_unit",
+        "description": "Don vi cuong do dien nang",
+        "expected_type": "string",
+        "extraction_hint": "cuong do dien nang kWh/san pham",
+        "required": false
+      },
+      {
+        "id": "third_party_audit_frequency",
+        "description": "Tan suat danh gia ben thu ba moi truong",
+        "expected_type": "string",
+        "extraction_hint": "danh gia ben thu ba moi nam environment",
+        "required": false
+      }
+    ],
+    "Social": [
+      {
+        "id": "female_ratio_2025",
+        "description": "Ty le nu toan cong ty nam 2025",
+        "expected_type": "number",
+        "extraction_hint": "ty le nu toan cong ty 47% social policy DEI",
+        "required": true
+      },
+      {
+        "id": "women_mid_management_target",
+        "description": "Muc tieu ty le nu cap quan ly trung 2027",
+        "expected_type": "number",
+        "extraction_hint": "nu cap quan ly trung 40% 2027",
+        "required": true
+      },
+      {
+        "id": "child_labor_policy_flag",
+        "description": "Cam lao dong duoi 18 tuoi vi tri san xuat",
+        "expected_type": "boolean",
+        "extraction_hint": "khong su dung lao dong duoi 18 tuoi san xuat",
+        "required": true
+      },
+      {
+        "id": "wage_premium_ratio",
+        "description": "Muc luong toi thieu noi bo cao hon vung",
+        "expected_type": "number",
+        "extraction_hint": "luong toi thieu cao hon 12% vung",
+        "required": false
+      },
+      {
+        "id": "ltifr_target_2026",
+        "description": "Muc tieu LTIFR nam 2026",
+        "expected_type": "number",
+        "extraction_hint": "LTIFR muc tieu 0.35 2026",
+        "required": true
+      },
+      {
+        "id": "fire_drill_frequency",
+        "description": "Tan suat dien tap PCCC",
+        "expected_type": "string",
+        "extraction_hint": "dien tap PCCC 2 lan nam",
+        "required": false
+      },
+      {
+        "id": "whistleblowing_response_sla",
+        "description": "SLA phan hoi khieu nai ban dau",
+        "expected_type": "string",
+        "extraction_hint": "phan hoi ban dau 5 ngay lam viec to cao",
+        "required": false
+      },
+      {
+        "id": "overtime_limit",
+        "description": "Gio lam them toi da moi thang",
+        "expected_type": "number",
+        "extraction_hint": "lam them 30 gio thang",
+        "required": false
+      }
+    ],
+    "Governance": [
+      {
+        "id": "board_size",
+        "description": "Tong so thanh vien HDQT",
+        "expected_type": "number",
+        "extraction_hint": "Hoi dong quan tri tong cong 5 thanh vien",
+        "required": true
+      },
+      {
+        "id": "independent_board_members",
+        "description": "So thanh vien doc lap HDQT",
+        "expected_type": "number",
+        "extraction_hint": "thanh vien doc lap 2 nguoi HDQT",
+        "required": true
+      },
+      {
+        "id": "gift_threshold",
+        "description": "Nguong qua tang phai khai bao (USD)",
+        "expected_type": "number",
+        "extraction_hint": "qua tang 100 USD khai bao governance",
+        "required": false
+      },
+      {
+        "id": "risk_register_frequency",
+        "description": "Chu ky cap nhat risk register",
+        "expected_type": "string",
+        "extraction_hint": "nhan dien rui ro hang quy risk register",
+        "required": false
+      },
+      {
+        "id": "governance_incident_sla",
+        "description": "SLA bao cao incident governance",
+        "expected_type": "string",
+        "extraction_hint": "incident report 48 gio governance",
+        "required": false
+      },
+      {
+        "id": "board_committee_count",
+        "description": "So uy ban truc thuoc HDQT",
+        "expected_type": "number",
+        "extraction_hint": "uy ban truc thuoc HDQT kiem toan luong thuong phat trien ben vung",
+        "required": false
+      },
+      {
+        "id": "ethics_policy_present",
+        "description": "Co chinh sach dao duc/anti-bribery ro rang",
+        "expected_type": "boolean",
+        "extraction_hint": "cam hoi lo chi tra khong minh bach dao duc",
+        "required": true
+      }
+    ],
+    "Metadata": [
+      {
+        "id": "primary_reporting_entity",
+        "description": "Ten thuc the bao cao chinh trong corpus synthetic",
+        "expected_type": "string",
+        "extraction_hint": "GreenRiver Manufacturing JSC company overview",
+        "required": true
+      },
+      {
+        "id": "reporting_year_baseline",
+        "description": "Nam baseline KPI chinh (neu co trong tai lieu)",
+        "expected_type": "number",
+        "extraction_hint": "KPI nam 2025 company overview",
+        "required": false
+      },
+      {
+        "id": "synthetic_controlled_doc_count",
+        "description": "So file markdown trong bucket 01_synthetic_controlled",
+        "expected_type": "number",
+        "extraction_hint": "01_synthetic_controlled corpus file count",
+        "required": false
+      },
+      {
+        "id": "environment_policy_present",
+        "description": "Co tai lieu chinh sach moi truong trong corpus",
+        "expected_type": "boolean",
+        "extraction_hint": "environment_policy.md chinh sach moi truong",
+        "required": true
+      },
+      {
+        "id": "public_esg_source_catalog_present",
+        "description": "Co catalog nguon ESG public (sources.md)",
+        "expected_type": "boolean",
+        "extraction_hint": "sources.md ESG public download status catalog",
+        "required": false
+      }
+    ]
+  }
+}

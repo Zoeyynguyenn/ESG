@@ -1,0 +1,13 @@
+company_id: emni
+company_name: 이엠앤아이
+doc_title: 2024_empSttus.json
+source_url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001534
+file_url: colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_주요정보/2024_empSttus.json
+schema: dart_employee_status
+local_path: C:\Users\nguye\Downloads\data-company\dataset-excel\output_restart_emni_20260617\output_restart_emni_20260617\이엠앤아이_일반자료_20260617\02_재무_신용\DART_주요정보\2024_empSttus.json
+
+# DART structured source (2024_empSttus.json, schema=dart_employee_status)
+- corp=이엠앤아이 | division=경영관리부문 | sex=남 | regular=4 | contract=- | total=4 | avg_tenure=1년3개월 | annual_salary=209,891,000 | monthly_salary=52,473,000 | stlm_dt=2024-12-31
+- corp=이엠앤아이 | division=경영관리부문 | sex=여 | regular=4 | contract=- | total=4 | avg_tenure=4년3개월 | annual_salary=292,984,000 | monthly_salary=73,244,000 | stlm_dt=2024-12-31
+- corp=이엠앤아이 | division=OLED 사업부 | sex=남 | regular=10 | contract=- | total=10 | avg_tenure=2년8개월 | annual_salary=459,810,000 | monthly_salary=45,981,000 | stlm_dt=2024-12-31
+- corp=이엠앤아이 | division=OLED 사업부 | sex=여 | regular=3 | contract=- | total=5 | avg_tenure=2년4개월 | annual_salary=155,169,000 | monthly_salary=31,034,000 | stlm_dt=2024-12-31

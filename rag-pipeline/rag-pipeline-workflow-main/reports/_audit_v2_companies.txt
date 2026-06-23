@@ -1,0 +1,28 @@
+=== 무신사 units 38 ===
+source_types {'other': 29, 'annual_report': 1, 'sustainability_report': 8}
+rec_4dfa12ce65216894 other sub=None 2021년 11월 8일 비상장/스몰캡 Analyst 이수경 02-6114-2914 sukyung.lee@kbfg.com 비상장/스몰캡 Analyst 정동익 02-6114-2965 newday@kbfg.com 케이비 비상장 어벤져스 #1 무신사 | The Game Changer - 국내 
+rec_178e8f363d6da94a annual_report sub=None DART disclosure snapshot corp_code: 01137727 corp_name: 무신사 stock_code:  corp_cls: E report_nm: 주요사항보고서(자기주식처분결정) rcept_no: 20260605000598 flr_nm: 무신사 rcept_dt:
+rec_93859ee4d0b90c4b sustainability_report sub=None 회원기업 회원기업 지역ERT 지역ERT 영상자료 영상자료 지속가능경영보고서 지속가능경영보고서 ERT 사무국 활동 ERT 뉴스레터 보도자료 ERT 카드뉴스 행사·이벤트 ERT 사무국 활동 ERT 뉴스레터 ERT 뉴스레터 보도자료 보도자료 ERT 카드뉴스 ERT 카드뉴스 행사·이벤트 행사·
+rec_dc18be3272f4012f sustainability_report sub=None 2025 무신사 임팩트 리포트 공시기업명 : 무신사 관리자 0 48 0 0 Print 상태: 노출 글주소 02-11 2025_무신사_임팩트_리포트.pdf(68.1 MB) 02-11 10:45 78 https://share.google/eba4b07yLyYwxJQBS 43 2025 무신사
+rec_e629a394a7ccc338 sustainability_report sub=None 2025 무신사 임팩트 리포트 공시기업명 : 무신사 관리자 0 48 0 0 Print 상태: 노출 글주소 02-11 2025_무신사_임팩트_리포트.pdf(68.1 MB) 02-11 10:45 78 https://share.google/eba4b07yLyYwxJQBS 43 2025 무신사
+rec_7b958974a7b2b66b sustainability_report sub=None 자료실 ESG 최신동향/기준 참고사이트 ESG 강의실 자료실 ESG 최신동향/기준 참고사이트 ESG 강의실 ESG 최신동향/기준 참고사이트 ESG 강의실 FAQ FAQ FAQ FAQ FAQ FAQ FAQ ESG 소개 ESG 기업정보 ESG 통계 자료실 FAQ ENGLISH ENG ESG
+rec_3ee4b3161961b0cd sustainability_report sub=None [지속가능보고서] 2025-12-10 2025-12-10 2025-12-10 2025-12-10 2025 무신사 임팩트 리포트.pdf 69180KB 작성 LG헬로비전 지속가능경영보고서 2024-2025 코스맥스 2024 지속가능경영보고서 목록 글쓰기 2025 무신사 임팩트 리포트.pdf
+rec_ee1596734ad3d6bc sustainability_report sub=None 공시기업명 : 무신사 관리자 0 48 0 0 0 0 Print Print 상태: 노출 글주소 글주소 02-11 2025_무신사_임팩트_리포트.pdf(68.1 MB) 02-11 10:45 78 https://share.google/eba4b07yLyYwxJQBS 43 02-11 10:45
+rec_660f7d466f6a678a sustainability_report sub=None PROJECT 무신사 임팩트 리포트 Date 2024. 08 Area ESG보고서 Client 무신사 무신사 ESG 임팩트 리포트 Tag ESG, 보고서, 지속가능경영보고서, 임팩트 리포트
+rec_cd469b0fcf513be5 sustainability_report sub=None ENG ESG 소개 ESG 개념 ESG 중요성 ESG 경영/정보공개 ESG 기업정보 기업 ESG 조회 지속가능경영보고서 기업지배구조보고서 ESG 평가 ESG 통계 국내 ESG현황 ESG 펀드 ESG 채권현황 ESG 지수/증권상품 자료실 ESG 최신동향/기준 참고사이트 ESG 강의실 FA
+rec_753b38dd437e46d0 other sub=None 전성훈 기자 구독 구독중 전성훈 기자 구독 구독중 이전 다음 (서울=연합뉴스) 전성훈 기자 = 무신사는 지난해 ESG(환경·사회·지배구조) 경영 성과를 담은 '2024 무신사 임팩트 리포트'를 발간했다고 19일 밝혔다. 무신사가 임직원 외에 외부 이해관계자를 대상으로 발간한 첫 ESG 
+rec_609ec5bf54523097 other sub=None 전성훈 기자 구독 구독중 이전 다음 (서울=연합뉴스) 전성훈 기자 = 무신사는 지난해 ESG(환경·사회·지배구조) 경영 성과를 담은 '2024 무신사 임팩트 리포트'를 발간했다고 19일 밝혔다. 무신사가 임직원 외에 외부 이해관계자를 대상으로 발간한 첫 ESG 리포트다. 환경 부문은 온
+=== 레이시온 units 40 ===
+source_types {'annual_report': 1, 'sustainability_report': 39}
+rec_8c1f92062aa72144 annual_report sub=None DART disclosure snapshot corp_code: 01730366 corp_name: 레이시온 stock_code:  corp_cls: E report_nm: 감사보고서 (2025.12) rcept_no: 20260408003328 flr_nm: 미래회계법인 rcept_d
+rec_3e74cbf0392f892b sustainability_report sub=None 민원서비스 각종 정보를 신청하고 결과를 조회하세요 민원서비스 온라인민원신청 민원신청안내 사진촬영신청 항만시설견학신청 민원서식자료실 실적증명서 발급 증명서발급절차안내 실적증명서 발급신청 증명서사실확인 신문고 국민신문고 국민신문고 나의 민원 안전신문고 Port-MIS 항만시설 이용안내 Po
+rec_a0562eb6dcc8b62e sustainability_report sub=None 항만운영과 개발의 모든 정보를 제공합니다 여수항 여수항 일반현황 개발현황 시설현황 연혁 여수세계박람회장 일반현황 시설현황 광양항 광양항 일반현황 개발현황 시설현황 연혁 항만관련부지/철송장 광양항 운영정보 항만운영정보 컨테이너 서비스 현황 광양선석배정표 여천선석배정표 광양항 인센티브 제도
+rec_40b94d178a66babb sustainability_report sub=None 공사의 ESG경영 활동에 대한 이해관계자의 관심 사항을 파악하여 매년 ESG경영활동과 성과를 투명하게 공개하고 있습니다. 공사의 ESG경영 활동에 대한 이해관계자의 관심 사항을 파악하여 매년 ESG경영활동과 성과를 투명하게 공개하고 있습니다. 바로읽기 다운로드 바로읽기 다운로드 2024
+rec_3cad6b2bbd4ab446 sustainability_report sub=None 각종 정보를 신청하고 결과를 조회하세요 민원서비스 온라인민원신청 민원신청안내 사진촬영신청 항만시설견학신청 민원서식자료실 실적증명서 발급 증명서발급절차안내 실적증명서 발급신청 증명서사실확인 신문고 국민신문고 국민신문고 나의 민원 안전신문고 Port-MIS 항만시설 이용안내 Port-MIS
+rec_61bc03594c440dcd sustainability_report sub=None 모든 정보를 투명하게 공개합니다 정보공개제도 정보공개제도 정보공개제도 안내 정보공개청구 절차 정보공개청구 정보공개방법 법령·지침·서식 정보공개 정보공개 정보공개 목록 부서별 주요계획 계약정보공개 사전정보공표 공공데이터 개방 공공데이터 개방 목록 선박·화물실적통계 월별물동량처리실적 그래프
+rec_17348d0b03ca0375 sustainability_report sub=None 열린경영 모든 정보를 투명하게 공개합니다 정보공개제도 정보공개제도 정보공개제도 안내 정보공개청구 절차 정보공개청구 정보공개방법 법령·지침·서식 정보공개 정보공개 정보공개 목록 부서별 주요계획 계약정보공개 사전정보공표 공공데이터 개방 공공데이터 개방 목록 선박·화물실적통계 월별물동량처리실
+rec_b1a592a86018457e sustainability_report sub=None 직무 소개 채용프로세스 채용 Tips 회사생활 복리후생 인재육성 복리후생 인재육성 채용문의 채용 FAQ 문의하기 채용 FAQ 문의하기 삼성 통합 인재채용 뉴스룸 뉴스 메인 최신 기사 뉴스레터 뉴스레터 보기 뉴스레터 신청 뉴스 메인 최신 기사 뉴스레터 뉴스레터 보기 뉴스레터 신청 뉴스 메
+rec_29aa4eae07aa4eb5 sustainability_report sub=None 여수광양항만공사 대표 홈페이지 열린경영 열린경영 모든 정보를 투명하게 공개합니다 정보공개제도 정보공개제도 정보공개제도 안내 정보공개청구 절차 정보공개청구 정보공개방법 법령·지침·서식 정보공개 정보공개 정보공개 목록 부서별 주요계획 계약정보공개 사전정보공표 공공데이터 개방 공공데이터 개방
+rec_a94dfee9e98416f6 sustainability_report sub=None 최고경영자 인사말 CEO와의 대화 최고경영자 인사말 CEO와의 대화 미션과 비전 미션과 비전 항만위원회 항만위원회 조직 및 직원검색 조직도 부서 상세 목록 조직 및 직원검색 조직도 부서 상세 목록 홍보자료 CI/캐릭터 홍보영상 발간물 홍보자료 CI/캐릭터 홍보영상 발간물 오시는 길 본사
+rec_dcb75421507d0e47 sustainability_report sub=None 여수광양항만공사 대표 홈페이지 열린경영 열린경영 모든 정보를 투명하게 공개합니다 정보공개제도 정보공개제도 정보공개제도 안내 정보공개청구 절차 정보공개청구 정보공개방법 법령·지침·서식 정보공개 정보공개 정보공개 목록 부서별 주요계획 계약정보공개 사전정보공표 공공데이터 개방 공공데이터 개방
+rec_660868aebfafbdae sustainability_report sub=None 본문 내용으로 바로가기 여수광양항만공사 대표 홈페이지 열린경영 열린경영 모든 정보를 투명하게 공개합니다 정보공개제도 정보공개제도 정보공개제도 안내 정보공개청구 절차 정보공개청구 정보공개방법 법령·지침·서식 정보공개 정보공개 정보공개 목록 부서별 주요계획 계약정보공개 사전정보공표 공공데이

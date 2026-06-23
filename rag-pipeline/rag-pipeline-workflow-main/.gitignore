@@ -1,0 +1,66 @@
+# Secrets
+.env
+.env.local
+.env.c2
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# RAG indexes & benchmark outputs (regenerate via ingest / scripts)
+artifacts/chroma_db/
+artifacts/qdrant_db/
+artifacts/benchmark_cache/
+artifacts/benchmark_cache_debug/
+artifacts/benchmark_indexes/
+artifacts/smoke_ci/
+artifacts/.index_complete
+artifacts/*.zip
+artifacts/bm25_corpus.json
+artifacts/lexical_index.json
+artifacts/openai_benchmark_bias_audit.json
+
+# Company export packages (large — sync to pod via zip/rsync, not git)
+data/rag_dataset/05_company_export_json/*/
+!data/rag_dataset/05_company_export_json/.gitkeep
+!data/rag_dataset/05_company_export_json/**/README.md
+!data/rag_dataset/05_company_export_json/**/manifest.json
+!data/rag_dataset/05_company_export_json/**/schema.json
+!data/rag_dataset/05_company_export_json/**/known_issues.md
+
+# Legacy ESG practice corpora (V1–V3; không dùng lane export-json OpenAI/C2)
+data/rag_dataset/02_esg_public_core/
+data/rag_dataset/03_esg_public_complex/
+data/rag_dataset/03_noisy_or_complex/
+data/rag_dataset/02_public_reports/
+
+# Large optional corpora (not in default export-json lane)
+data/rag_dataset/04_company_public_curated/
+
+# Enterprise internal-doc generated corpora (large, rebuild via scripts)
+data/enterprise_docs/*/corpus_units_reingested.jsonl
+data/enterprise_docs/*/corpus_units_filtered.jsonl
+data/enterprise_docs/*/corpus_units_family_scoped.jsonl
+data/enterprise_docs/*/corpus_units_overlap_ready.jsonl
+
+# Report archives & generated exports
+reports/archive_exportjson_*/
+reports/*.log
+reports/*.html
+reports/*.pdf
+reports/_tmp_*
+reports/openai_connectivity_preflight_retry*
+reports/_archive/
+
+# IDE / OS
+.cursor/
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Local chrome profile for PDF export
+artifacts/chrome-pdf-profile/
+.tmp_chrome_headless/

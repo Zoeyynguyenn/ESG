@@ -1,0 +1,223 @@
+benchmark_id: benchmark_exportjson_phase1
+description: Phase 1 - fixed chroma and no reranker, sweep chunking x embedding x retrieval mode on Nexteye ESG package dev split.
+lane: company_export_json_dev
+eval_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_dev_ko.md
+corpus_version: nexteye_esg_v1_1_1_dev
+parser_version: jsonl_v1
+cache_root: artifacts/benchmark_cache
+
+lane_config:
+  corpus_ratio: 1.0
+  company_filter: 넥스트아이_dataset_package_20260528T091409
+  pdf_parser: pypdf
+  eval_questions: 20
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  top_k: 4
+
+timeouts:
+  default_sec: 1200
+  embedding_heavy_sec: 1800
+
+scoring:
+  retrieval_hit_rate: 0.30
+  citation_correctness: 0.20
+  answer_correctness: 0.15
+  insufficient_information_handling: 0.10
+  groundedness: 0.10
+  latency_normalized: 0.10
+  stability_penalty: 0.05
+
+candidates:
+  - config_id: p1_rec800_minilm_dense_chroma
+    chunking_profile: recursive_800_120
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+
+  - config_id: p1_rec800_minilm_hybrid_chroma
+    chunking_profile: recursive_800_120
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+
+  - config_id: p1_rec512_minilm_dense_chroma
+    chunking_profile: recursive_512_80
+    chunk_size: 512
+    chunk_overlap: 80
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+
+  - config_id: p1_rec512_minilm_hybrid_chroma
+    chunking_profile: recursive_512_80
+    chunk_size: 512
+    chunk_overlap: 80
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+
+  - config_id: p1_section_minilm_dense_chroma
+    chunking_profile: section_based
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+
+  - config_id: p1_section_minilm_hybrid_chroma
+    chunking_profile: section_based
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: sentence-transformers/all-MiniLM-L6-v2
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+
+  - config_id: p1_rec800_bge_dense_chroma
+    chunking_profile: recursive_800_120
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: BAAI/bge-m3
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_rec800_bge_hybrid_chroma
+    chunking_profile: recursive_800_120
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: BAAI/bge-m3
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_rec512_bge_dense_chroma
+    chunking_profile: recursive_512_80
+    chunk_size: 512
+    chunk_overlap: 80
+    embedding_model: BAAI/bge-m3
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_rec512_bge_hybrid_chroma
+    chunking_profile: recursive_512_80
+    chunk_size: 512
+    chunk_overlap: 80
+    embedding_model: BAAI/bge-m3
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_section_bge_dense_chroma
+    chunking_profile: section_based
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: BAAI/bge-m3
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_section_bge_hybrid_chroma
+    chunking_profile: section_based
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: BAAI/bge-m3
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_rec800_e5_dense_chroma
+    chunking_profile: recursive_800_120
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: intfloat/multilingual-e5-base
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_rec800_e5_hybrid_chroma
+    chunking_profile: recursive_800_120
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: intfloat/multilingual-e5-base
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_rec512_e5_dense_chroma
+    chunking_profile: recursive_512_80
+    chunk_size: 512
+    chunk_overlap: 80
+    embedding_model: intfloat/multilingual-e5-base
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_rec512_e5_hybrid_chroma
+    chunking_profile: recursive_512_80
+    chunk_size: 512
+    chunk_overlap: 80
+    embedding_model: intfloat/multilingual-e5-base
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_section_e5_dense_chroma
+    chunking_profile: section_based
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: intfloat/multilingual-e5-base
+    retrieval_mode: semantic_dense
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true
+
+  - config_id: p1_section_e5_hybrid_chroma
+    chunking_profile: section_based
+    chunk_size: 800
+    chunk_overlap: 120
+    embedding_model: intfloat/multilingual-e5-base
+    retrieval_mode: hybrid_dense_bm25
+    reranker: none
+    vector_store: chroma
+    candidate_pool: 24
+    embedding_heavy: true

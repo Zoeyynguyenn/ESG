@@ -1,0 +1,104 @@
+{
+  "version": "1.1.0",
+  "description": "Review owner assignment for LangGraph handoff preparation (not runtime trial)",
+  "owners": [
+    "RAG",
+    "SME",
+    "Dataset",
+    "None"
+  ],
+  "priority_order": [
+    "terminal_readiness_state",
+    "kind_qualitative",
+    "coverage_gap",
+    "needs_sme_review",
+    "wrong_row_risk",
+    "confidence_calibration",
+    "promoted_clean"
+  ],
+  "rules": [
+    {
+      "id": "qualitative_blocked",
+      "condition": "kind == qualitative",
+      "owner": null,
+      "prep_status": "handoff_blocked",
+      "reason": "qualitative_requires_synthesis_not_extractive_handoff"
+    },
+    {
+      "id": "not_ready_for_synthesis",
+      "condition": "readiness_state == not_ready_for_synthesis",
+      "owner": null,
+      "prep_status": "handoff_blocked",
+      "reason": "synthesis_blocker"
+    },
+    {
+      "id": "coverage_gap",
+      "condition": "readiness_state == coverage_gap OR blocker coverage",
+      "owner": "Dataset",
+      "prep_status": "needs_manual_review_before_handoff",
+      "reason": "corpus_or_logical_doc_gap"
+    },
+    {
+      "id": "needs_sme_review",
+      "condition": "readiness_state == needs_sme_review OR wrong_row_risk",
+      "owner": "SME",
+      "prep_status": "needs_manual_review_before_handoff",
+      "reason": "sme_validation_required"
+    },
+    {
+      "id": "confidence_below_family_min",
+      "condition": "promoted AND confidence < family_min AND NOT wrong_row_risk",
+      "owner": "RAG",
+      "prep_status": "needs_manual_review_before_handoff",
+      "reason": "confidence_policy_calibration"
+    },
+    {
+      "id": "retrieval_or_extraction_not_promoted",
+      "condition": "readiness_state in (retrieval_ready, extraction_ready) AND NOT promoted",
+      "owner": "RAG",
+      "prep_status": "handoff_blocked",
+      "reason": "extraction_or_retrieval_incomplete"
+    },
+    {
+      "id": "promoted_adequate_confidence",
+      "condition": "promoted AND single_source_sufficient AND confidence >= family_min",
+      "owner": "None",
+      "prep_status": "handoff_allowed_for_preparation",
+      "reason": "family_contract_met"
+    },
+    {
+      "id": "promoted_multi_source",
+      "condition": "promoted AND multi_source_sufficient",
+      "owner": "None",
+      "prep_status": "handoff_allowed_for_preparation",
+      "reason": "multi_source_contract_met"
+    },
+    {
+      "id": "default_blocked",
+      "condition": "fallback",
+      "owner": "RAG",
+      "prep_status": "handoff_blocked",
+      "reason": "prep_conditions_not_met"
+    }
+  ],
+  "family_overrides": {
+    "governance": {
+      "narrative_promoted_borderline_conf": "SME",
+      "note": "Governance narrative metrics default SME when confidence < 0.35 on holdout"
+    },
+    "environment_ghg": {
+      "unresolved_conflict": "SME"
+    },
+    "employee_headcount": {
+      "wrong_row_risk": "SME"
+    }
+  },
+  "metric_types": {
+    "exact": [
+      "needs_review_by when rule matches"
+    ],
+    "heuristic": [
+      "governance borderline SME override"
+    ]
+  }
+}

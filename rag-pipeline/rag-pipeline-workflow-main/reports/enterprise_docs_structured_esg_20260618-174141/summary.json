@@ -1,0 +1,297 @@
+{
+  "artifact": "enterprise_docs_structured_esg",
+  "timestamp": "20260618-174141",
+  "phase": "structured_esg_output",
+  "focus": "document_to_structured_esg_data",
+  "langgraph_handoff_priority": false,
+  "pilot_families": [
+    "employee_headcount",
+    "environment_ghg",
+    "governance"
+  ],
+  "by_company": {
+    "demo_company": {
+      "case_count": 18,
+      "structured_record_coverage": 0.6667,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 0.6667,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.7222,
+      "metric_absent_rate": 0.3333,
+      "conflict_status_distribution": {
+        "single_source_sufficient": 12,
+        "metric_absent": 6
+      },
+      "readiness_distribution": {
+        "extraction_ready": 3,
+        "retrieval_ready": 9,
+        "single_source_sufficient": 6
+      },
+      "family_distribution": {
+        "employee_headcount": 1,
+        "environment_ghg": 8,
+        "governance": 9
+      }
+    },
+    "hanssem": {
+      "case_count": 11,
+      "structured_record_coverage": 0.5455,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 0.5455,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.1818,
+      "metric_absent_rate": 0.4545,
+      "conflict_status_distribution": {
+        "metric_absent": 5,
+        "single_source_sufficient": 6
+      },
+      "readiness_distribution": {
+        "not_ready_for_synthesis": 3,
+        "multi_source_sufficient": 6,
+        "retrieval_ready": 2
+      },
+      "family_distribution": {
+        "governance": 6,
+        "environment_ghg": 4,
+        "employee_headcount": 1
+      }
+    },
+    "musinsa": {
+      "case_count": 7,
+      "structured_record_coverage": 0.2857,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 0.2857,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.2857,
+      "metric_absent_rate": 0.7143,
+      "conflict_status_distribution": {
+        "metric_absent": 5,
+        "single_source_sufficient": 2
+      },
+      "readiness_distribution": {
+        "not_ready_for_synthesis": 3,
+        "retrieval_ready": 2,
+        "multi_source_sufficient": 2
+      },
+      "family_distribution": {
+        "governance": 3,
+        "environment_ghg": 2,
+        "employee_headcount": 2
+      }
+    }
+  },
+  "by_family": {
+    "employee_headcount": {
+      "case_count": 4,
+      "structured_record_coverage": 0.5,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 0.5,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.75,
+      "metric_absent_rate": 0.5,
+      "conflict_status_distribution": {
+        "metric_absent": 2,
+        "single_source_sufficient": 2
+      },
+      "readiness_distribution": {
+        "retrieval_ready": 2,
+        "multi_source_sufficient": 1,
+        "extraction_ready": 1
+      },
+      "family_distribution": {
+        "employee_headcount": 4
+      }
+    },
+    "environment_ghg": {
+      "case_count": 14,
+      "structured_record_coverage": 0.7143,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 0.7143,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.5,
+      "metric_absent_rate": 0.2857,
+      "conflict_status_distribution": {
+        "single_source_sufficient": 10,
+        "metric_absent": 4
+      },
+      "readiness_distribution": {
+        "multi_source_sufficient": 4,
+        "not_ready_for_synthesis": 2,
+        "retrieval_ready": 4,
+        "extraction_ready": 2,
+        "single_source_sufficient": 2
+      },
+      "family_distribution": {
+        "environment_ghg": 14
+      }
+    },
+    "governance": {
+      "case_count": 18,
+      "structured_record_coverage": 0.4444,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 0.4444,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.3889,
+      "metric_absent_rate": 0.5556,
+      "conflict_status_distribution": {
+        "metric_absent": 10,
+        "single_source_sufficient": 8
+      },
+      "readiness_distribution": {
+        "not_ready_for_synthesis": 4,
+        "retrieval_ready": 7,
+        "multi_source_sufficient": 3,
+        "single_source_sufficient": 4
+      },
+      "family_distribution": {
+        "governance": 18
+      }
+    }
+  },
+  "by_format": {
+    "narrative_holdout": {
+      "case_count": 22,
+      "structured_record_coverage": 0.2727,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 0.2727,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.5,
+      "metric_absent_rate": 0.7273,
+      "conflict_status_distribution": {
+        "metric_absent": 16,
+        "single_source_sufficient": 6
+      },
+      "readiness_distribution": {
+        "not_ready_for_synthesis": 6,
+        "retrieval_ready": 10,
+        "single_source_sufficient": 6
+      },
+      "family_distribution": {
+        "governance": 14,
+        "environment_ghg": 6,
+        "employee_headcount": 2
+      }
+    },
+    "sustainability_report": {
+      "case_count": 7,
+      "structured_record_coverage": 1.0,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 1.0,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.0,
+      "metric_absent_rate": 0.0,
+      "conflict_status_distribution": {
+        "single_source_sufficient": 7
+      },
+      "readiness_distribution": {
+        "multi_source_sufficient": 7
+      },
+      "family_distribution": {
+        "environment_ghg": 4,
+        "governance": 3
+      }
+    },
+    "other": {
+      "case_count": 1,
+      "structured_record_coverage": 1.0,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 1.0,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 0.0,
+      "metric_absent_rate": 0.0,
+      "conflict_status_distribution": {
+        "single_source_sufficient": 1
+      },
+      "readiness_distribution": {
+        "multi_source_sufficient": 1
+      },
+      "family_distribution": {
+        "employee_headcount": 1
+      }
+    },
+    "markdown": {
+      "case_count": 6,
+      "structured_record_coverage": 1.0,
+      "esg_field_mapping_rate": 1.0,
+      "single_source_sufficient_rate": 1.0,
+      "multi_source_confirmed_rate": 0.0,
+      "conflict_rate": 0.0,
+      "not_disclosed_detection_rate": 0.0,
+      "review_required_rate": 1.0,
+      "metric_absent_rate": 0.0,
+      "conflict_status_distribution": {
+        "single_source_sufficient": 6
+      },
+      "readiness_distribution": {
+        "extraction_ready": 3,
+        "retrieval_ready": 3
+      },
+      "family_distribution": {
+        "employee_headcount": 1,
+        "environment_ghg": 4,
+        "governance": 1
+      }
+    }
+  },
+  "format_parse_coverage": 0.7143,
+  "cross_doc_cases": 7,
+  "total_records": 36,
+  "format_priority": {
+    "strengthen_next": [
+      "html",
+      "xml",
+      "pdf"
+    ],
+    "maintain": [
+      "markdown",
+      "csv",
+      "json",
+      "jsonl"
+    ],
+    "planned_not_in_corpus": [
+      "word",
+      "ppt",
+      "image_ocr"
+    ]
+  },
+  "metric_types": {
+    "exact": [
+      "case_count",
+      "conflict_status per record",
+      "value when extracted"
+    ],
+    "heuristic": [
+      "structured_record_coverage",
+      "esg_field_mapping_rate",
+      "format_parse_coverage"
+    ],
+    "proxy": [
+      "confidence",
+      "review_required_rate without SME validation"
+    ]
+  },
+  "constraints": {
+    "no_synthesis": true,
+    "no_langgraph_trial": true,
+    "no_case_tuning": true,
+    "no_goldns_emni": true
+  }
+}

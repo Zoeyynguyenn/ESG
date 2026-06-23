@@ -1,0 +1,163 @@
+{
+  "artifact": "enterprise_docs_holdout_handoff_enablement",
+  "timestamp": "20260618-170917",
+  "pilot_families": [
+    "employee_headcount",
+    "environment_ghg",
+    "governance"
+  ],
+  "by_company": {
+    "demo_company": {
+      "case_count": 18,
+      "promoted_count": 6,
+      "handoff_candidate_count": 12,
+      "readiness_before": {
+        "extraction_ready": 3,
+        "retrieval_ready": 9,
+        "single_source_sufficient": 6
+      },
+      "readiness_after": {
+        "single_source_sufficient": 12,
+        "retrieval_ready": 6
+      },
+      "promotion_rate": 0.3333
+    },
+    "hanssem": {
+      "case_count": 16,
+      "promoted_count": 0,
+      "handoff_candidate_count": 0,
+      "readiness_before": {
+        "coverage_gap": 16
+      },
+      "readiness_after": {
+        "coverage_gap": 16
+      },
+      "promotion_rate": 0.0
+    },
+    "musinsa": {
+      "case_count": 11,
+      "promoted_count": 0,
+      "handoff_candidate_count": 0,
+      "readiness_before": {
+        "coverage_gap": 11
+      },
+      "readiness_after": {
+        "coverage_gap": 11
+      },
+      "promotion_rate": 0.0
+    }
+  },
+  "by_family": {
+    "employee_headcount": {
+      "case_count": 4,
+      "quantitative_count": 4,
+      "promoted_count": 1,
+      "single_source_count": 1,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 1,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 3,
+      "promotion_rate": 0.25,
+      "blocker_breakdown": {
+        "handoff_blocked_state:coverage_gap": 3,
+        "missing_predicted_value": 3,
+        "evidence_bundle_insufficient": 3,
+        "primary_doc_missing": 3,
+        "confidence_below_min": 3
+      },
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "environment_ghg": {
+      "case_count": 14,
+      "quantitative_count": 12,
+      "promoted_count": 4,
+      "single_source_count": 6,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 6,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 8,
+      "promotion_rate": 0.2857,
+      "blocker_breakdown": {
+        "handoff_blocked_state:coverage_gap": 6,
+        "missing_predicted_value": 8,
+        "evidence_bundle_insufficient": 8,
+        "primary_doc_missing": 6,
+        "confidence_below_min": 8,
+        "qualitative_kind": 2
+      },
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "governance": {
+      "case_count": 18,
+      "quantitative_count": 14,
+      "promoted_count": 1,
+      "single_source_count": 5,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 5,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 13,
+      "promotion_rate": 0.0556,
+      "blocker_breakdown": {
+        "qualitative_kind": 4,
+        "handoff_blocked_state:coverage_gap": 9,
+        "missing_predicted_value": 13,
+        "evidence_bundle_insufficient": 13,
+        "primary_doc_missing": 9,
+        "confidence_below_min": 13
+      },
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    }
+  },
+  "by_promotion": {
+    "not_promoted": 39,
+    "promoted": 6
+  },
+  "system_decision": {
+    "phase": "holdout_handoff_enablement",
+    "ready_for_limited_langgraph_handoff": false,
+    "ready_for_limited_langgraph_handoff_preparation": false,
+    "not_ready_for_synthesis": true,
+    "not_ready_for_langgraph_trial": true,
+    "holdout_promoted_families": [],
+    "holdout_promoted_by_family": {},
+    "holdout_promotion_rate": 0.0,
+    "holdout_promotion_delta_vs_prior": 0.0,
+    "holdout_promoted_family_count": 0,
+    "demo_promoted_count": 6,
+    "gaps_before_trial": [
+      "holdout_promotion_zero",
+      "musinsa_environment_corpus_gap",
+      "confidence_policy_calibration",
+      "review_owner_rule_enforcement"
+    ]
+  },
+  "metric_types": {
+    "exact": [
+      "promoted",
+      "handoff_candidate when rules pass"
+    ],
+    "heuristic": [
+      "evidence_bundle_quality"
+    ],
+    "proxy": [
+      "holdout feasibility vs full pipeline alignment rate"
+    ]
+  },
+  "constraints": {
+    "no_synthesis": true,
+    "no_langgraph_trial": true,
+    "no_case_tuning": true
+  }
+}

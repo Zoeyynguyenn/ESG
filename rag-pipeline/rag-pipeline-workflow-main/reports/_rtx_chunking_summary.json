@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-06-12T15:21:28",
+  "origin_lane": "06_rtx_references_raw",
+  "input_file_count": 10,
+  "pdf_count": 4,
+  "html_count": 5,
+  "fallback_md_count": 1,
+  "chunk_count": 2762,
+  "corpus_unit_count": 2761,
+  "by_source_type": {
+    "pdf": 508,
+    "html": 2252,
+    "md_fallback": 2
+  },
+  "by_document_kind": {
+    "appendix": 240,
+    "questionnaire": 63,
+    "data_table": 205,
+    "10k": 1684,
+    "policy_page": 24,
+    "proxy_statement": 544,
+    "press_release": 2
+  },
+  "parse_warnings": [],
+  "ready_for_rag": true,
+  "ready_for_golden_set": true,
+  "doj_source": "md_fallback",
+  "chunk_size": 900,
+  "chunk_overlap": 150,
+  "output_chunks": "E:\\Documents\\rag-pipeline-workflow\\data\\rag_dataset\\06_rtx_references_raw\\chunks\\rtx_chunked_corpus.jsonl",
+  "output_units": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\rtx_step1_corpus_units\\corpus_units_rtx.jsonl"
+}

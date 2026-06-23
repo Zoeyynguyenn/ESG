@@ -1,0 +1,31 @@
+{
+  "run_id": "demo_v5_default",
+  "entity_name": "GreenRiver Manufacturing JSC",
+  "target_framework": "ESG baseline",
+  "required_fields": [
+    "energy_reduction_target",
+    "waste_recycling_target_2026",
+    "wastewater_treatment_policy",
+    "scope12_reduction_target",
+    "female_ratio_2025",
+    "women_mid_management_target",
+    "child_labor_policy_flag",
+    "board_size",
+    "independent_board_members",
+    "ethics_policy_present",
+    "primary_reporting_entity",
+    "environment_policy_present"
+  ],
+  "priority_fields": [
+    "wastewater_treatment_policy",
+    "water_reuse_target",
+    "third_party_audit_frequency",
+    "whistleblowing_response_sla",
+    "ltifr_target_2026",
+    "board_committee_count",
+    "ethics_policy_present"
+  ],
+  "retrieval_mode": "hybrid_dense_bm25_rerank",
+  "top_k": 4,
+  "notes": "Intake mac dinh V5 — danh gia ESG profile tu corpus hien tai (V4 extraction engine)."
+}

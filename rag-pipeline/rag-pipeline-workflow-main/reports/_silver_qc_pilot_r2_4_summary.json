@@ -1,0 +1,65 @@
+{
+  "qc_version": "2.4.0-pilot",
+  "generated_at": "2026-06-11T09:53:53",
+  "input_count": 5,
+  "pass_count": 1,
+  "revise_count": 4,
+  "reject_count": 0,
+  "promotion_candidate_count": 1,
+  "duplicate_flag_count": 2,
+  "qc_input_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step4_silver_qc\\pilot_hanssem_5_usable_for_qc_r2_4.jsonl",
+  "qc_output_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step4_silver_qc\\pilot_hanssem_5_qc_result_r2_4.jsonl",
+  "csv_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step4_silver_qc\\pilot_hanssem_5_qc_review.csv",
+  "rows": [
+    {
+      "silver_id": "SV2-P24-0001",
+      "record_id": "rec_3adad134db5cb9c2",
+      "qc_decision": "revise",
+      "promotion_candidate": "no",
+      "duplicate_flag": true,
+      "faithfulness_status": "pass",
+      "answer_relevancy_status": "pass",
+      "groundedness_status": "pass"
+    },
+    {
+      "silver_id": "SV2-P24-0002",
+      "record_id": "rec_41a160ead0ae1be6",
+      "qc_decision": "revise",
+      "promotion_candidate": "no",
+      "duplicate_flag": false,
+      "faithfulness_status": "pass",
+      "answer_relevancy_status": "pass",
+      "groundedness_status": "partial"
+    },
+    {
+      "silver_id": "SV2-P24-0003",
+      "record_id": "rec_5edea297fe4ab1d8",
+      "qc_decision": "pass",
+      "promotion_candidate": "yes",
+      "duplicate_flag": false,
+      "faithfulness_status": "pass",
+      "answer_relevancy_status": "pass",
+      "groundedness_status": "pass"
+    },
+    {
+      "silver_id": "SV2-P24-0004",
+      "record_id": "rec_2d0cf95b00a0fefc",
+      "qc_decision": "revise",
+      "promotion_candidate": "no",
+      "duplicate_flag": true,
+      "faithfulness_status": "pass",
+      "answer_relevancy_status": "pass",
+      "groundedness_status": "partial"
+    },
+    {
+      "silver_id": "SV2-P24-0005",
+      "record_id": "rec_ba9d092227fde816",
+      "qc_decision": "revise",
+      "promotion_candidate": "no",
+      "duplicate_flag": false,
+      "faithfulness_status": "pass",
+      "answer_relevancy_status": "pass",
+      "groundedness_status": "partial"
+    }
+  ]
+}

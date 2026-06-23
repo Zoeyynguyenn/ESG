@@ -1,0 +1,23 @@
+{
+  "demo_promoted_delta": 0,
+  "hanssem_promoted_delta": 0,
+  "musinsa_promoted_delta": 0,
+  "holdout_readiness_after_before": {
+    "hanssem": {
+      "before": {
+        "coverage_gap": 16
+      },
+      "after": {
+        "coverage_gap": 16
+      }
+    },
+    "musinsa": {
+      "before": {
+        "coverage_gap": 11
+      },
+      "after": {
+        "coverage_gap": 11
+      }
+    }
+  }
+}

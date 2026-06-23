@@ -1,0 +1,8 @@
+{
+  "company_id": "hanssem",
+  "input_units": 864,
+  "output_units": 864,
+  "document_count": 9,
+  "output": "data/enterprise_docs/hanssem/corpus_units_overlap_ready.jsonl",
+  "status": "ok"
+}

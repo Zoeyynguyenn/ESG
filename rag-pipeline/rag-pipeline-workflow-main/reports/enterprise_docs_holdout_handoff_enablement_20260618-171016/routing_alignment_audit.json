@@ -1,0 +1,467 @@
+{
+  "mismatches_found": [
+    {
+      "category": "path_hint_vs_corpus_document_id",
+      "description": "Holdout logical path_hint did not match corpus IDs (Company_Evidence_*)",
+      "status": "fixed",
+      "fix": "corpus_match_tokens in company_doc_registry v1.3.0"
+    },
+    {
+      "category": "multi_primary_cross_doc_on_holdout",
+      "description": "Multi-domain routing triggered cross_document_answer on narrative SR corpus",
+      "status": "fixed",
+      "fix": "holdout_routing.force_single_doc_quant + max_primary_docs=1"
+    },
+    {
+      "category": "supporting_doc_unmapped_coverage_gap",
+      "description": "Unmapped supporting logical docs forced coverage_gap",
+      "status": "fixed",
+      "fix": "diagnostics require_primary_logical_map_only for holdout"
+    },
+    {
+      "category": "build_index_company_id_not_passed_to_logical_map",
+      "description": "build_index_from_units used demo_company for logical_to_corpus_map on all holdout runs",
+      "status": "fixed",
+      "fix": "cross_doc_retriever.build_logical_to_corpus_map(..., company_id=company_id)"
+    }
+  ],
+  "still_open": [
+    "feasibility_vs_full_pipeline_readiness_gap"
+  ],
+  "probe_alignment": [
+    {
+      "probe_id": "HOLDOUT-001",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-002",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-003",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-004",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-005",
+      "company_id": "hanssem",
+      "family_id": "employee",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-006",
+      "company_id": "hanssem",
+      "family_id": "other",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-007",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-008",
+      "company_id": "hanssem",
+      "family_id": "other",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-009",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-010",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-011",
+      "company_id": "hanssem",
+      "family_id": "employee",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-012",
+      "company_id": "hanssem",
+      "family_id": "other",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-013",
+      "company_id": "hanssem",
+      "family_id": "employee_headcount",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "retrieval_ready",
+      "full_pipeline_after": "retrieval_ready",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": true,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-014",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-015",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "retrieval_ready",
+      "full_pipeline_after": "retrieval_ready",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": true,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-016",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_sr_narrative": "Company_Evidence_Environment_E_",
+        "doc_governance_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-M001",
+      "company_id": "musinsa",
+      "family_id": "other",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-M002",
+      "company_id": "musinsa",
+      "family_id": "governance",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-M003",
+      "company_id": "musinsa",
+      "family_id": "financial",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-M004",
+      "company_id": "musinsa",
+      "family_id": "employee",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-M005",
+      "company_id": "musinsa",
+      "family_id": "other",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-M006",
+      "company_id": "musinsa",
+      "family_id": "environment_ghg",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-M007",
+      "company_id": "musinsa",
+      "family_id": "employee_headcount",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "retrieval_ready",
+      "full_pipeline_after": "retrieval_ready",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": true,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-M008",
+      "company_id": "musinsa",
+      "family_id": "governance",
+      "feasibility_extraction": false,
+      "feasibility_readiness": "not_ready_for_synthesis",
+      "full_pipeline_before": "not_ready_for_synthesis",
+      "full_pipeline_after": "not_ready_for_synthesis",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-M009",
+      "company_id": "musinsa",
+      "family_id": "environment_ghg",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    },
+    {
+      "probe_id": "HOLDOUT-M010",
+      "company_id": "musinsa",
+      "family_id": "governance",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "retrieval_ready",
+      "full_pipeline_after": "retrieval_ready",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": true,
+      "promoted": false,
+      "handoff_candidate": false
+    },
+    {
+      "probe_id": "HOLDOUT-M011",
+      "company_id": "musinsa",
+      "family_id": "employee_headcount",
+      "feasibility_extraction": true,
+      "feasibility_readiness": "extraction_ready",
+      "full_pipeline_before": "extraction_ready",
+      "full_pipeline_after": "single_source_sufficient",
+      "logical_map": {
+        "doc_impact_report": "Company_Evidence_Business_Strategy",
+        "doc_dart_disclosure": "Company_Evidence_Governance_G_"
+      },
+      "alignment_gap": false,
+      "promoted": true,
+      "handoff_candidate": true
+    }
+  ],
+  "alignment_gap_count": 4,
+  "alignment_gap_rate": 0.1481
+}

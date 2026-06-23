@@ -1,0 +1,87 @@
+benchmark_id: benchmark_exportjson_embedding_compare
+description: >
+  Fair embedding model comparison — section_based hybrid Qdrant pool 64 generative gpt-4o-mini.
+  Prerequisite: openai_benchmark_bias_audit PASS.
+lane: company_export_json_full
+eval_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_dev_ko.md
+smoke_eval_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_smoke_ci_ko.md
+corpus_version: nexteye_esg_embedding_compare_v1
+parser_version: jsonl_v1
+cache_root: artifacts/benchmark_cache
+lane_config:
+  corpus_ratio: 1.0
+  company_filter: 넥스트아이_dataset_package_20260528T091409
+  pdf_parser: pypdf
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  top_k: 4
+  candidate_pool: 64
+timeouts:
+  default_sec: 3600
+  embedding_heavy_sec: 3600
+scoring:
+  retrieval_hit_rate: 0.3
+  citation_correctness: 0.2
+  answer_correctness: 0.15
+  insufficient_information_handling: 0.1
+  groundedness: 0.1
+  latency_normalized: 0.05
+  stability_penalty: 0.05
+fair_setup:
+  chunking: section_based_800_120
+  retrieval: hybrid_dense_bm25
+  pool: 64
+  reranker: none
+  vector_store: qdrant
+  answer_mode: generative
+  llm: gpt-4o-mini
+candidates:
+- config_id: emb_openai_text_embedding_3_small
+  embedding_model: openai:text-embedding-3-small
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+  answer_mode: generative
+  screening_status: selected
+  screening_reason: "Baseline bat buoc production hien tai"
+- config_id: emb_openai_text_embedding_3_large
+  embedding_model: openai:text-embedding-3-large
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+  answer_mode: generative
+  screening_status: selected
+  screening_reason: "OpenAI flagship multilingual; cung provider voi baseline (fair API)"
+- config_id: emb_or_openai_text_embedding_3_large
+  embedding_model: openrouter:openai/text-embedding-3-large
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+  answer_mode: generative
+  screening_status: selected
+  screening_reason: "OpenRouter route — doi chieu gia/latency; can OPENROUTER_API_KEY"
+  requires_openrouter: true
+- config_id: emb_or_intfloat_multilingual_e5_large
+  embedding_model: openrouter:intfloat/multilingual-e5-large
+  requires_openrouter: true
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+  answer_mode: generative
+  screening_status: selected
+  screening_reason: "Multilingual adoption cao, gia re, doi chieu voi local e5 trong repo"
+- config_id: emb_or_qwen3_embedding_8b
+  embedding_model: openrouter:qwen/qwen3-embedding-8b
+  requires_openrouter: true
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+  answer_mode: generative
+  screening_status: selected
+  screening_reason: "MTEB multilingual/code #1; Korean + long context 32k"

@@ -1,0 +1,16 @@
+# Golden Set v2 - company subset
+
+| ID | Question | Expected Evidence Source | Expected Answer Notes | Record ID | Difficulty | Category | Status |
+|---|---|---|---|---|---|---|---|
+| GV2-076 | 무신사는 어떤 ESG 리포트를 발간했나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | '2024 무신사 임팩트 리포트'를 발간했습니다. | rec_753b38dd437e46d0 | easy | simple | approved |
+| GV2-077 | 무신사가 발간한 2024 무신사 임팩트 리포트에는 어떤 내용이 포함되어 있나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 2024 무신사 임팩트 리포트는 ESG 경영 성과를 담고 있으며, 환경 부문은 온실가스 관리 체계, 자원 순환, 친환경 오피스 구축, 친환경 소통 활동에 중점을 두고 있고, 사회 부문은 다양한 이해관계자를 중심으로 한 활동 성과를 포함하며, 지배구조 부문은 이사회의 독립적인 운영 및 기업 윤리와 준법 경영 성과를 수록하고 있습니다. | rec_609ec5bf54523097 | medium | multi_context | approved |
+| GV2-079 | 무신사가 발간한 '2024 무신사 임팩트 리포트'는 어떤 주요 내용을 포함하고 있으며, 이 리포트가 외부 이해관계자를 대상으로 발간된 이유는 무엇인가요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | '2024 무신사 임팩트 리포트'는 환경, 사회, 지배구조 부문에서의 성과를 담고 있으며, 외부 이해관계자를 대상으로 발간된 이유는 다양한 이해관계자와의 소통과 투명성을 높이기 위함입니다. | rec_fdca0e685d50348d | hard | reasoning | approved |
+| GV2-082 | 무신사의 1분기 매출은 얼마였나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 2929억원입니다. | rec_7f0bb9cde5507746 | easy | simple | approved |
+| GV2-083 | 무신사가 산불 피해 이재민에게 기부한 의류의 가치는 무엇을 나타내며, 이 기부가 무신사의 사회적 책임에 어떤 의미를 가질까요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 2억5000만원 상당 의류 기부 | rec_0f148d12e3f024bc | medium | reasoning | approved |
+| GV2-084 | 무신사가 지난해에 달성한 매출액은 얼마인가요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 1조 원을 돌파했습니다. | rec_d8f7ef98d1c1f838 | easy | simple | approved |
+| GV2-087 | 무신사가 지난해 매출을 기록하면서 어떤 성장을 이루었고, 그 매출은 얼마였나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 1조2천427억원입니다. | rec_2fb8c1b23c004a41 | medium | multi_context | approved |
+| GV2-089 | 무신사의 지난해 영업이익은 얼마였나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 1405억원입니다. | rec_5b8a9a2132404a3e | easy | simple | approved |
+| GV2-091 | 무신사의 2025년 연간 매출은 얼마인가요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 1조4679억 원입니다. | rec_657d4f1f59b5ecec | easy | simple | approved |
+| GV2-093 | 무신사의 지난해 영업이익은 얼마였으며, 이는 전년 대비 몇 퍼센트 증가했나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 1405억원이며, 전년 대비 36.7% 증가했습니다. | rec_99748dd63968780f | medium | multi_context | approved |
+| GV2-094 | 무신사의 지난해 매출은 얼마였나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 1조2천427억원 | rec_24980288275eaf1a | easy | simple | approved |
+| GV2-095 | 무신사가 언제 사업보고서를 제출했나요? | data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl | 지난달 31일 창사 이래 처음으로 사업보고서를 전자공시시스템(DART)에 제출했습니다. | rec_d8fed8da46b91761 | easy | simple | approved |

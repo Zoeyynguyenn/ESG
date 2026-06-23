@@ -1,0 +1,179 @@
+{
+  "artifact": "enterprise_docs_handoff_readiness",
+  "timestamp": "20260618-165702",
+  "pilot_families": [
+    "employee_headcount",
+    "environment_ghg",
+    "governance"
+  ],
+  "by_company": {
+    "demo_company": {
+      "case_count": 18,
+      "promoted_count": 6,
+      "handoff_candidate_count": 12,
+      "readiness_before": {
+        "extraction_ready": 3,
+        "retrieval_ready": 9,
+        "single_source_sufficient": 6
+      },
+      "readiness_after": {
+        "single_source_sufficient": 12,
+        "retrieval_ready": 6
+      },
+      "promotion_rate": 0.3333
+    },
+    "hanssem": {
+      "case_count": 16,
+      "promoted_count": 0,
+      "handoff_candidate_count": 0,
+      "readiness_before": {
+        "coverage_gap": 16
+      },
+      "readiness_after": {
+        "coverage_gap": 16
+      },
+      "promotion_rate": 0.0
+    },
+    "musinsa": {
+      "case_count": 11,
+      "promoted_count": 0,
+      "handoff_candidate_count": 0,
+      "readiness_before": {
+        "coverage_gap": 11
+      },
+      "readiness_after": {
+        "coverage_gap": 11
+      },
+      "promotion_rate": 0.0
+    }
+  },
+  "by_family": {
+    "employee": {
+      "case_count": 3,
+      "quantitative_count": 1,
+      "promoted_count": 0,
+      "single_source_count": 0,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 0,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 3,
+      "promotion_rate": 0.0,
+      "companies": [
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "employee_headcount": {
+      "case_count": 4,
+      "quantitative_count": 4,
+      "promoted_count": 1,
+      "single_source_count": 1,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 1,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 3,
+      "promotion_rate": 0.25,
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "environment_ghg": {
+      "case_count": 14,
+      "quantitative_count": 12,
+      "promoted_count": 4,
+      "single_source_count": 6,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 6,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 8,
+      "promotion_rate": 0.2857,
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "financial": {
+      "case_count": 1,
+      "quantitative_count": 1,
+      "promoted_count": 0,
+      "single_source_count": 0,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 0,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 1,
+      "promotion_rate": 0.0,
+      "companies": [
+        "musinsa"
+      ]
+    },
+    "governance": {
+      "case_count": 18,
+      "quantitative_count": 14,
+      "promoted_count": 1,
+      "single_source_count": 5,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 5,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 13,
+      "promotion_rate": 0.0556,
+      "companies": [
+        "demo_company",
+        "hanssem",
+        "musinsa"
+      ]
+    },
+    "other": {
+      "case_count": 5,
+      "quantitative_count": 0,
+      "promoted_count": 0,
+      "single_source_count": 0,
+      "multi_source_count": 0,
+      "handoff_candidate_count": 0,
+      "still_extraction_ready": 0,
+      "not_handoff_ready": 5,
+      "promotion_rate": 0.0,
+      "companies": [
+        "hanssem",
+        "musinsa"
+      ]
+    }
+  },
+  "by_promotion": {
+    "not_promoted": 39,
+    "promoted": 6
+  },
+  "system_decision": {
+    "phase": "handoff_preparation",
+    "ready_for_limited_langgraph_handoff": false,
+    "ready_for_limited_langgraph_handoff_preparation": false,
+    "not_ready_for_synthesis": true,
+    "not_ready_for_langgraph_trial": true,
+    "single_source_sufficient_families": [
+      "employee_headcount",
+      "environment_ghg",
+      "governance"
+    ],
+    "extraction_ready_only_families": [],
+    "handoff_prep_candidate_families": [],
+    "not_handoff_ready_families": [],
+    "holdout_promotion_rate": 0.0,
+    "holdout_promoted_by_family": {},
+    "prior_holdout_extraction_avg": 0.5995,
+    "gaps_before_trial": [
+      "evidence_packaging_on_holdout",
+      "confidence_policy_calibration",
+      "review_owner_rule_enforcement",
+      "formal_single_source_sufficient_on_holdout"
+    ]
+  },
+  "constraints": {
+    "no_synthesis": true,
+    "no_langgraph_trial": true,
+    "no_case_tuning": true,
+    "demo_company_role": "dev",
+    "holdout_role": "gate"
+  }
+}

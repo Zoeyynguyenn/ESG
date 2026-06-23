@@ -1,0 +1,53 @@
+{
+  "single_count": 20,
+  "cross_count": 15,
+  "single_item_ids": [
+    "QUANT-0001",
+    "QUANT-0006",
+    "QUANT-0013",
+    "QUANT-0019",
+    "QUANT-0028",
+    "QUANT-0146",
+    "QUANT-0147",
+    "QUANT-0151",
+    "QUANT-0200",
+    "QUANT-0215",
+    "QUANT-0219",
+    "QUANT-0224",
+    "QUANT-0207",
+    "QUANT-0083",
+    "QUANT-0086",
+    "QUANT-0126",
+    "QUANT-0144",
+    "QUANT-0017",
+    "QUANT-0031",
+    "QUANT-0220"
+  ],
+  "cross_item_ids": [
+    "QUAL-0001",
+    "QUAL-0002",
+    "QUAL-0005",
+    "QUAL-0008",
+    "QUAL-0020",
+    "QUANT-0042",
+    "QUANT-0044",
+    "QUANT-0133",
+    "QUANT-0134",
+    "QUANT-0208",
+    "QUANT-0210",
+    "QUANT-0209",
+    "QUANT-0213",
+    "QUANT-0155",
+    "QUANT-0046"
+  ],
+  "single_by_domain": {
+    "사회": 10,
+    "환경": 5,
+    "거버넌스": 5
+  },
+  "cross_by_kind": {
+    "quantitative": 10,
+    "qualitative": 5
+  },
+  "criteria_note_path": "data\\enterprise_docs\\demo_company\\eval_subset_criteria.md"
+}

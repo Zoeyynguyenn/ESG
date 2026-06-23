@@ -1,0 +1,12 @@
+{
+  "company_id": "emni",
+  "company_name": "이엠앤아이",
+  "input_workbook": "C:\\Users\\nguye\\Downloads\\data-company\\dataset-excel\\이엠앤아이_Final_ESG_Data.xlsx",
+  "row_count": 279,
+  "question_count": 279,
+  "gold_answer_count": 279,
+  "source_row_count": 279,
+  "source_registry_count": 4,
+  "matched_count": 43,
+  "not_disclosed_count": 236
+}

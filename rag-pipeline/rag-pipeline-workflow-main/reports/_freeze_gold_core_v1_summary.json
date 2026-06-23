@@ -1,0 +1,30 @@
+{
+  "gold_version": "gold_core_v1",
+  "generated_at": "2026-06-12T14:20:28",
+  "input_approved_count": 26,
+  "gold_core_v1_count": 26,
+  "by_company": {
+    "무신사": 5,
+    "한샘": 21
+  },
+  "by_question_type": {
+    "qualitative": 7,
+    "quantitative": 18,
+    "trend": 1
+  },
+  "by_cluster": {
+    "FC_ESG_GOVERNANCE": 13,
+    "FC_OFFLINE_RETAIL": 1,
+    "FC_MATERIAL_8": 5,
+    "FC_TCFD": 2,
+    "FC_HUMAN_RIGHTS": 3,
+    "FC_KGCS_A": 2
+  },
+  "hold_backlog_count": 17,
+  "rx_backlog_status": "source-acquisition dependent — excluded from gold_core_v1",
+  "artifact_ready_verdict": "Có — gold_core_v1 frozen, usable làm artifact chính thức core",
+  "next_step_recommendation": "Refine hold round 5 (17 rows) song song eval mapping từ eval_gold_core_v1_ko.md — không benchmark trong round freeze",
+  "output_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_v1.jsonl",
+  "output_workbook": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_v1.xlsx",
+  "output_eval_md": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\eval_gold_core_v1_ko.md"
+}

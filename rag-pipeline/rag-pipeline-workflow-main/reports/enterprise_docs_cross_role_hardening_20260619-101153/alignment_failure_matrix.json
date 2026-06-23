@@ -1,0 +1,101 @@
+{
+  "cases": [
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "family_id": "environment_ghg",
+      "item": null,
+      "extract_per_doc": {
+        "doc_sr_narrative": true,
+        "doc_governance_disclosure": true
+      },
+      "extract_alignment_ok": true,
+      "fusion_ok": true,
+      "mismatch_type": "none",
+      "capability_tags": [
+        "cross_role_extraction",
+        "semantic_bridge"
+      ]
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "family_id": "governance",
+      "item": null,
+      "extract_per_doc": {
+        "doc_sr_narrative": true,
+        "doc_governance_disclosure": true
+      },
+      "extract_alignment_ok": true,
+      "fusion_ok": true,
+      "mismatch_type": "none",
+      "capability_tags": [
+        "evidence_fusion",
+        "cross_doc_equivalence",
+        "readiness_promotion"
+      ]
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "family_id": "governance",
+      "item": null,
+      "extract_per_doc": {
+        "doc_sr_narrative": true,
+        "doc_governance_disclosure": true
+      },
+      "extract_alignment_ok": true,
+      "fusion_ok": true,
+      "mismatch_type": "none",
+      "capability_tags": [
+        "conflict_classification",
+        "conflict_resolution",
+        "evidence_fusion"
+      ]
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "family_id": "employee_headcount",
+      "item": null,
+      "extract_per_doc": {
+        "doc_sr_narrative": false,
+        "doc_governance_disclosure": true
+      },
+      "extract_alignment_ok": true,
+      "fusion_ok": true,
+      "mismatch_type": "none",
+      "capability_tags": [
+        "conflict_classification"
+      ]
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "family_id": "environment_ghg",
+      "item": null,
+      "extract_per_doc": {
+        "doc_sr_narrative": true,
+        "doc_governance_disclosure": false
+      },
+      "extract_alignment_ok": true,
+      "fusion_ok": true,
+      "mismatch_type": "none",
+      "capability_tags": [
+        "readiness_promotion",
+        "evidence_fusion"
+      ]
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "family_id": "environment_ghg",
+      "item": null,
+      "extract_per_doc": {
+        "doc_sr_narrative": true,
+        "doc_evidence_csv": true
+      },
+      "extract_alignment_ok": true,
+      "fusion_ok": false,
+      "mismatch_type": "none",
+      "capability_tags": [
+        "cross_role_extraction"
+      ]
+    }
+  ],
+  "by_mismatch_type": {}
+}

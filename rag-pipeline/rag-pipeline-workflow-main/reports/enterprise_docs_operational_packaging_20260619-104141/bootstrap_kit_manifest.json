@@ -1,0 +1,226 @@
+{
+  "kit_version": "operational_bootstrap_v1",
+  "lane_status": "done_until_real_data",
+  "prior_onboarding_artifact": "reports/enterprise_docs_natural_onboarding_gate_20260619-103432",
+  "prior_gate_status": "ready_for_natural_plug_in",
+  "constructed_regression_baseline": "PASS 100% — CI gate",
+  "natural_onboarding_path": "ready_for_natural_plug_in",
+  "files": [
+    {
+      "key": "runbook",
+      "path": "docs/ENTERPRISE_INTERNAL_DOC_OPERATIONAL_RUNBOOK.md",
+      "exists": true,
+      "size_bytes": 5050
+    },
+    {
+      "key": "bootstrap_guide",
+      "path": "docs/ENTERPRISE_INTERNAL_DOC_NEW_COMPANY_BOOTSTRAP.md",
+      "exists": true,
+      "size_bytes": 4165
+    },
+    {
+      "key": "onboarding_doc",
+      "path": "docs/ENTERPRISE_INTERNAL_DOC_NATURAL_CASE_ONBOARDING.md",
+      "exists": true,
+      "size_bytes": 3691
+    },
+    {
+      "key": "schema",
+      "path": "data/enterprise_docs/natural_capability_case_schema.json",
+      "exists": true,
+      "size_bytes": 4746
+    },
+    {
+      "key": "probe_template",
+      "path": "data/enterprise_docs/templates/holdout_probes_template.jsonl",
+      "exists": true,
+      "size_bytes": 993
+    },
+    {
+      "key": "natural_case_template",
+      "path": "data/enterprise_docs/templates/natural_capability_cases_template.jsonl",
+      "exists": true,
+      "size_bytes": 1041
+    },
+    {
+      "key": "review_template",
+      "path": "data/enterprise_docs/templates/onboarding_review_template.md",
+      "exists": true,
+      "size_bytes": 1085
+    },
+    {
+      "key": "bootstrap_script",
+      "path": "scripts/bootstrap_enterprise_company.py",
+      "exists": true,
+      "size_bytes": 6901
+    },
+    {
+      "key": "onboarding_gate_script",
+      "path": "scripts/run_enterprise_docs_natural_onboarding_gate.py",
+      "exists": true,
+      "size_bytes": 6261
+    },
+    {
+      "key": "company_registry",
+      "path": "data/enterprise_docs/company_doc_registry.json",
+      "exists": true,
+      "size_bytes": 9177
+    },
+    {
+      "key": "capability_cases",
+      "path": "data/enterprise_docs/crossdoc_capability_cases.jsonl",
+      "exists": true,
+      "size_bytes": 19102
+    }
+  ],
+  "all_required_present": true,
+  "checklist_sections": [
+    {
+      "id": "data_intake",
+      "title": "Checklist tiếp nhận dữ liệu doanh nghiệp",
+      "items": [
+        "Xác nhận company_id (slug ASCII, ví dụ `acme_corp`)",
+        "Thu thập SR/ESG report, DART/XML, bảng Excel/CSV hỗ trợ",
+        "Liệt kê logical documents (SR narrative, evidence table, governance, HR, …)",
+        "Ghi nhận format file (.pdf/.html/.xml/.json/.csv) và năm báo cáo",
+        "Không bắt đầu tune pipeline trước khi ingest xong"
+      ]
+    },
+    {
+      "id": "ingest",
+      "title": "Checklist ingest",
+      "items": [
+        "Tạo thư mục `data/enterprise_docs/{company_id}/`",
+        "Chạy ingest theo profile trong `company_doc_registry.json`",
+        "Sinh `corpus_units.jsonl` (hoặc reingested/filtered artifact theo policy)",
+        "Kiểm tra parser: mỗi unit có `evidence_text` hoặc `text` không rỗng",
+        "Ghi `reingest_summary.json` nếu dùng structured ESG re-ingest path"
+      ]
+    },
+    {
+      "id": "logical_doc_mapping",
+      "title": "Checklist logical-doc mapping",
+      "items": [
+        "Thêm company block vào `company_doc_registry.json`",
+        "Khai báo `logical_documents` với path_hint, domains, role_labels",
+        "Gán `corpus_artifact` trỏ tới corpus JSONL đã ingest",
+        "Xác nhận ít nhất 2 logical docs có metric overlap cho cross-doc (nếu cần fusion)",
+        "Review routing: holdout_routing / primary_document_ids cho quant probes"
+      ]
+    },
+    {
+      "id": "probes",
+      "title": "Checklist tạo probes",
+      "items": [
+        "Copy template → `holdout_probes_{company_id}.jsonl`",
+        "Ưu tiên `kind=quantitative` trong 3 pilot families",
+        "Mỗi probe: probe_id, pattern_family, item, question, expected_signal",
+        "Đăng ký path trong `PROBE_PATHS` (`crossdoc_case_builder.py`) hoặc dùng bootstrap manifest",
+        "Không dùng constructed cases để đo corpus thật"
+      ]
+    },
+    {
+      "id": "gate",
+      "title": "Checklist chạy gate",
+      "items": [
+        "Refresh natural cases: `write_capability_cases_jsonl` hoặc bootstrap merge",
+        "Chạy `python scripts/run_enterprise_docs_natural_onboarding_gate.py`",
+        "Constructed regression **phải PASS** (5 layers, ghost_pass=0)",
+        "Natural metrics là diagnostic — không fail CI vì corpus_limited cao",
+        "Lưu artifact timestamp vào onboarding review"
+      ]
+    },
+    {
+      "id": "review",
+      "title": "Checklist review corpus_limited vs system_gap",
+      "items": [
+        "Đọc `natural_metrics.by_failure_mode` trong summary.json",
+        "corpus_limited_* → thiếu overlap tài liệu → bổ sung source, không harden lõi",
+        "system_gap → registry/extraction/equivalence theo family_id",
+        "parser empty text → parser lane, không nhầm với system_gap",
+        "Điền `onboarding_review_{company_id}.md` từ template"
+      ]
+    }
+  ],
+  "decision_rules": [
+    {
+      "signal": "corpus_limited",
+      "meaning": "Corpus thiếu metric ở >=2 logical docs hoặc không tìm thấy candidate",
+      "action": "Bổ sung tài liệu / logical-doc map; **không** mở workstream hardening pipeline lõi",
+      "do_not": [
+        "rebuild parser",
+        "rebuild retrieval",
+        "tune constructed cases"
+      ]
+    },
+    {
+      "signal": "system_gap",
+      "meaning": "Corpus đủ nhưng extraction/equivalence/fusion fail trên natural case",
+      "action": "Mở rộng `metric_equivalence_registry` / cross_role patterns đúng family_id",
+      "do_not": [
+        "chase demo score",
+        "inflate multi_source metric"
+      ]
+    },
+    {
+      "signal": "parser_fail",
+      "meaning": "Unit rỗng, format không parse được, evidence_text trống",
+      "action": "Quay lại parser lane (html/xml/pdf) cho format cụ thể",
+      "do_not": [
+        "đổi fusion contract",
+        "mở LangGraph"
+      ]
+    },
+    {
+      "signal": "natural_pass",
+      "meaning": "Natural probes pass capability layers; fusion/promotion integrity OK",
+      "action": "Chuyển structured ESG output sang bước báo cáo / handoff prep (không mở synthesis trial)",
+      "do_not": [
+        "rebuild core pipeline"
+      ]
+    }
+  ],
+  "runbook_steps": [
+    {
+      "step": 1,
+      "name": "ingest",
+      "command_hint": "ingest + corpus_units.jsonl"
+    },
+    {
+      "step": 2,
+      "name": "map_logical_docs",
+      "command_hint": "company_doc_registry.json"
+    },
+    {
+      "step": 3,
+      "name": "create_probes",
+      "command_hint": "holdout_probes_{company_id}.jsonl"
+    },
+    {
+      "step": 4,
+      "name": "build_natural_cases",
+      "command_hint": "natural_case_from_probe / crossdoc_capability_cases.jsonl"
+    },
+    {
+      "step": 5,
+      "name": "run_onboarding_gate",
+      "command_hint": "python scripts/run_enterprise_docs_natural_onboarding_gate.py"
+    },
+    {
+      "step": 6,
+      "name": "classify_failure",
+      "command_hint": "corpus_limited vs system_gap in summary.json"
+    },
+    {
+      "step": 7,
+      "name": "decide_next_action",
+      "command_hint": "onboarding_review template + DECISION_RULES"
+    }
+  ],
+  "constraints": {
+    "no_langgraph_runtime": true,
+    "no_synthesis": true,
+    "no_core_pipeline_rebuild": true,
+    "no_demo_score_tuning": true
+  }
+}

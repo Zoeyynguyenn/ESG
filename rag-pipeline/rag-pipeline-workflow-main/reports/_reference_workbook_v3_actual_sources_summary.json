@@ -1,0 +1,83 @@
+{
+  "ingest_version": "ref_workbook_v3",
+  "generated_at": "2026-06-11T11:19:58",
+  "hansem_frozen": 4,
+  "musinsa_actual_report_body_seeds": 0,
+  "raysolution_actual_report_body_seeds": 0,
+  "musinsa_company_primary_narrative_seeds": 4,
+  "raysolution_company_primary_narrative_seeds": 0,
+  "musinsa_body_seeds": 0,
+  "raysolution_body_seeds": 0,
+  "salvage_seeds": 1,
+  "musinsa_new_seeds": 4,
+  "raysolution_new_seeds": 1,
+  "workbook_total": 9,
+  "unique_clusters": 9,
+  "seeds_by_company": {
+    "한샘": 4,
+    "무신사": 4,
+    "레이시온": 1
+  },
+  "clusters": {
+    "FC_MATERIAL_8": 1,
+    "FC_NET_ZERO_2050": 1,
+    "FC_KGCS_A": 1,
+    "FC_ESG_GOVERNANCE": 1,
+    "FC_CLIMATE_GHG": 1,
+    "FC_IMPACT_REPORT": 1,
+    "FC_UNKNOWN": 1,
+    "FC_GRI_FRAMEWORK": 1,
+    "FC_STAKEHOLDER_DISCLOSURE": 1
+  },
+  "seed_origin_breakdown": {
+    "company_primary_narrative_seed": 4,
+    "portal_salvage_seed": 1
+  },
+  "ingested_sources": [
+    "Musinsa company newsroom (not full PDF): https://newsroom.musinsa.com/newsroom-menu/2024-0719",
+    "Musinsa company newsroom (not full PDF): https://newsroom.musinsa.com/newsroom-menu/2025-0724"
+  ],
+  "audit": {
+    "musinsa": {
+      "pdf_paths": [
+        "_sources/519596ec18257c3d2b14d707.pdf",
+        "_sources/89eff9bbf6c2110fb722fbb3.pdf",
+        "_sources/adcbee6c60651179073c3494.pdf"
+      ],
+      "has_usable_pdf": false,
+      "has_company_newsroom": true,
+      "newsroom_urls": [
+        "https://newsroom.musinsa.com/newsroom-menu/2024-0719",
+        "https://newsroom.musinsa.com/newsroom-menu/2025-0724"
+      ],
+      "ingest_usable": true,
+      "conclusion": "Không có PDF report body usable; có company newsroom summary (newsroom.musinsa.com)"
+    },
+    "raysolution": {
+      "pdf_paths": [],
+      "has_usable_pdf": false,
+      "portal_salvage_only": true,
+      "ingest_usable": true,
+      "conclusion": "Không có report body; chỉ portal salvage hoặc thiếu hoàn toàn"
+    },
+    "gaps": [
+      "Musinsa: thiếu Impact Report PDF usable trong package _sources/",
+      "레이시온: không có _sources/ PDF; corpus = YGPA portal + cross-company noise"
+    ]
+  },
+  "less_press_dependent": "Có — Musinsa dùng newsroom.musinsa.com thay Yonhap/headline v2",
+  "review_ready_verdict": "Gần hơn v2 về provenance, nhưng chưa đủ review-ready",
+  "conclusion": "V3 cải thiện provenance (company newsroom) nhưng chưa có full report PDF cho cả hai công ty.",
+  "next_step": "Source acquisition: Musinsa Impact Report PDF + 레이시온 2024 SR PDF vào package _sources/",
+  "seed_ids": [
+    "HS-G-T04",
+    "HS-G-Q01",
+    "HS-G-Q06",
+    "HS-G-T01",
+    "MS-G-Q01",
+    "MS-G-Q02",
+    "MS-G-L03",
+    "MS-G-L04",
+    "RX-G-L01"
+  ]
+}

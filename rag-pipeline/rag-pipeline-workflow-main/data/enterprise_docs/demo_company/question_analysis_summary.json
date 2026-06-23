@@ -1,0 +1,487 @@
+{
+  "total_questions": 278,
+  "quantitative": 251,
+  "qualitative": 27,
+  "answer_mode_counts": {
+    "single_document_answer": 151,
+    "cross_document_answer": 127
+  },
+  "by_kind_and_mode": {
+    "quantitative:single_document_answer": 151,
+    "quantitative:cross_document_answer": 100,
+    "qualitative:cross_document_answer": 27
+  },
+  "cross_document_examples": [
+    {
+      "item_id": "QUANT-0042",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "다양성",
+      "subcategory": "매출발생 부서 내 여성 비율",
+      "item": "매출발생 부서 내 여성 비율",
+      "question": "해당 기업의 매출발생 부서 내 여성 비율은 몇 %인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [
+        "doc_evidence_csv"
+      ],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_evidence_csv": "aggregated performance summary / year series"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0044",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "복리후생비",
+      "item": "복리후생비",
+      "question": "해당 기업의 복리후생비는 몇 백만 원인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0046",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "육아휴직 대상자 수",
+      "item": "육아휴직 대상자 수",
+      "question": "해당 기업의 육아휴직 대상자 수는 몇 명인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0047",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "육아휴직 대상자 수",
+      "item": "남성",
+      "question": "해당 기업의 육아휴직 대상자 중 남성 인원은 몇 명인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0048",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "육아휴직 대상자 수",
+      "item": "여성",
+      "question": "해당 기업의 육아휴직 대상자 중 여성 인원은 몇 명인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0049",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "육아휴직 사용자 수",
+      "item": "육아휴직 사용자 수",
+      "question": "해당 기업의 육아휴직 사용자 수는 몇 명인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0050",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "육아휴직 사용자 수",
+      "item": "남성",
+      "question": "해당 기업에서 육아휴직을 사용한 남성 인원은 몇 명인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0051",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "육아휴직 사용자 수",
+      "item": "여성",
+      "question": "해당 기업에서 육아휴직을 사용한 여성 인원은 몇 명인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0055",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "육아휴직제도 사용 후 복귀율",
+      "item": "육아휴직제도 사용 후 복귀율",
+      "question": "해당 기업의 육아휴직제도 사용 후 복귀율은 몇 %인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0058",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "성별",
+      "item": "남성",
+      "question": "해당 기업의 남성 비율은 몇 %인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0059",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "성별",
+      "item": "여성",
+      "question": "해당 기업의 여성 비율은 몇 %인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    },
+    {
+      "item_id": "QUANT-0061",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "일과 삶의 균형 지원",
+      "subcategory": "직급별",
+      "item": "팀장",
+      "question": "해당 기업의 팀장 점수는 몇 점인가요?",
+      "answer_mode": "cross_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "workforce / safety statistics",
+        "doc_05_social": "numeric table evidence",
+        "doc_07_certification": "numeric table evidence",
+        "doc_evidence_csv": "numeric table evidence"
+      },
+      "needs_merge": true,
+      "needs_conflict_resolution": false,
+      "notes": "Multi-table or multi-domain metric — may need merge across docs."
+    }
+  ],
+  "single_document_examples": [
+    {
+      "item_id": "QUANT-0001",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "총 구성원 수",
+      "item": "총 구성원 수",
+      "question": "해당 기업의 총 구성원 수는 몇 명인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    },
+    {
+      "item_id": "QUANT-0002",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "성별",
+      "item": "남성",
+      "question": "해당 기업의 남성 비율은 몇 %인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    },
+    {
+      "item_id": "QUANT-0003",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "성별",
+      "item": "여성",
+      "question": "해당 기업의 여성 비율은 몇 %인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    },
+    {
+      "item_id": "QUANT-0004",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "정규직",
+      "item": "남성",
+      "question": "해당 기업의 정규직 중 남성 인원은 몇 명인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    },
+    {
+      "item_id": "QUANT-0005",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "정규직",
+      "item": "여성",
+      "question": "해당 기업의 정규직 중 여성 인원은 몇 명인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    },
+    {
+      "item_id": "QUANT-0006",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "정규직 직원 비율",
+      "item": "정규직 직원 비율",
+      "question": "해당 기업의 정규직 직원 비율은 몇 %인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    },
+    {
+      "item_id": "QUANT-0007",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "계약직",
+      "item": "남성",
+      "question": "해당 기업의 계약직 중 남성 인원은 몇 명인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    },
+    {
+      "item_id": "QUANT-0008",
+      "kind": "quantitative",
+      "domain": "사회",
+      "category": "구성원 현황",
+      "subcategory": "계약직",
+      "item": "여성",
+      "question": "해당 기업의 계약직 중 여성 인원은 몇 명인가요?",
+      "answer_mode": "single_document_answer",
+      "primary_document_ids": [
+        "doc_04_hr_safety"
+      ],
+      "supporting_document_ids": [],
+      "roles": {
+        "doc_04_hr_safety": "primary numeric table"
+      },
+      "needs_merge": false,
+      "needs_conflict_resolution": false,
+      "notes": "Heuristic: one primary markdown table likely sufficient."
+    }
+  ]
+}

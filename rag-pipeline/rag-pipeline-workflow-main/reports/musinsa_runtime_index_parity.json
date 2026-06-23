@@ -1,0 +1,54 @@
+{
+  "before_fix": {
+    "cached_bm25": {
+      "chunk_count": 739,
+      "has_1891": false,
+      "has_1891myeong": false,
+      "has_gt_record_id": false
+    },
+    "expected_build_chunks": {
+      "chunk_count": 3501,
+      "has_1891myeong": true,
+      "has_gt_record_id": true
+    },
+    "root_cause": "load_file_text jsonl [:500000] truncation + ingest section_based vs build_chunks per-record"
+  },
+  "after_fix": {
+  "company_id": "musinsa",
+  "package": "무신사_dataset_package_20260608T092823",
+  "package_full_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\rag_dataset\\05_company_export_json\\무신사_dataset_package_20260608T092823\\splits\\full.jsonl",
+  "manifest_path": "E:\\Documents\\rag-pipeline-workflow\\artifacts\\benchmark_cache\\manifests\\corpus_company_export_json_full_company_efb99cde07.json",
+  "cache_key": "p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07",
+  "index_dir": "E:\\Documents\\rag-pipeline-workflow\\artifacts\\benchmark_cache\\index_cache\\p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07",
+  "bm25_path": "E:\\Documents\\rag-pipeline-workflow\\artifacts\\benchmark_cache\\index_cache\\p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07\\bm25_corpus.json",
+  "qdrant_path": "E:\\Documents\\rag-pipeline-workflow\\artifacts\\benchmark_cache\\index_cache\\p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=langgraph_staging_20260608__lane=company_export_json_full__vs=qdrant__company=efb99cde07\\qdrant_db",
+  "index_marker": "chunks=3501\nmodel=openai:text-embedding-3-small\nvector_store=qdrant",
+  "cached_bm25": {
+    "chunk_count": 3501,
+    "has_1891": true,
+    "has_1891myeong": true,
+    "has_gt_record_id": true,
+    "anchor_snippet": "도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준\n직원 수는 1604명이다."
+  },
+  "expected_build_chunks": {
+    "chunk_count": 3501,
+    "has_1891": true,
+    "has_1891myeong": true,
+    "has_gt_record_id": true,
+    "anchor_snippet": "도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준\n직원 수는 1604명이다."
+  },
+  "cached_bm25_chunk_count_fn": 3501
+  },
+  "retrieve_after_parity": {
+    "해당 기업의 총 구성원 수는 몇 명인가요?": {
+      "top1_has_1891myeong": true,
+      "top1_has_mss_go_kr": false,
+      "score": 1.3798
+    },
+    "무신사의 직원 수는 몇 명인가요?": {
+      "top1_has_1891myeong": true,
+      "top1_has_mss_go_kr": false,
+      "score": 1.45
+    }
+  }
+}

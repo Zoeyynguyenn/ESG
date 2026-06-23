@@ -1,0 +1,13 @@
+{
+  "company_id": "musinsa",
+  "input_units": 348,
+  "output_units": 308,
+  "document_count": 6,
+  "by_family_pool_units": {
+    "employee_headcount": 308,
+    "environment_ghg": 308,
+    "governance": 308
+  },
+  "output": "data/enterprise_docs/musinsa/corpus_units_family_scoped.jsonl",
+  "status": "ok"
+}

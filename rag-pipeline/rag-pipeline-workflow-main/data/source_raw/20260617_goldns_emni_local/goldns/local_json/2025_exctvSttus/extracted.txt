@@ -1,0 +1,18 @@
+company_id: goldns
+company_name: 골드앤에스
+doc_title: 2025_exctvSttus.json
+source_url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000991
+file_url: colletor-ai/output_restart_goldns_20260616/골드앤에스_일반자료_20260616/02_재무_신용/DART_주요정보/2025_exctvSttus.json
+schema: dart_executive_status
+local_path: C:\Users\nguye\Downloads\data-company\dataset-excel\output_restart_goldns_20260616\output_restart_goldns_20260616\골드앤에스_일반자료_20260616\02_재무_신용\DART_주요정보\2025_exctvSttus.json
+
+# DART structured source (2025_exctvSttus.json, schema=dart_executive_status)
+- corp=골드앤에스 | name=신승호 | sex=남 | position=대표이사 | registered_exec=사내이사 | full_time=상근 | role=사업총괄 | tenure=2020년 12월 22일
+~ | stlm_dt=2025-12-31
+- corp=골드앤에스 | name=양홍걸 | sex=남 | position=사내이사 | registered_exec=사내이사 | full_time=상근 | role=교육 / 사업부문 / 사업총괄 | tenure=2020년 12월 22일
+~ | stlm_dt=2025-12-31
+- corp=골드앤에스 | name=이경빈 | sex=남 | position=사외이사 | registered_exec=사외이사 | full_time=비상근 | role= 경영전반에 / 대한 업무 | tenure=2020년 12월 22일
+~ | stlm_dt=2025-12-31
+- corp=골드앤에스 | name=엄태섭 | sex=남 | position=사외이사 | registered_exec=사외이사 | full_time=비상근 | role= 경영전반에 / 대한 업무 | tenure=2020년 12월 22일
+~ | stlm_dt=2025-12-31
+- corp=골드앤에스 | name=배준형 | sex=남 | position=상무이사 | registered_exec=미등기 | full_time=상근 | role=CFO | tenure=2023년 6월 19일~ | stlm_dt=2025-12-31

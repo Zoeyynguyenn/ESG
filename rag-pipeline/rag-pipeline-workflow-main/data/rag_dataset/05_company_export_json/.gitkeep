@@ -1,0 +1,2 @@
+# Dataset export JSON (theo company) — không commit qua Git (xem .gitignore).
+# Đồng bộ lên RunPod: zip/rsync thư mục package hoặc dùng build_c2_pod_bundle.ps1 / build_c2_index_cache_zip.ps1.

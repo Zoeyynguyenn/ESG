@@ -1,0 +1,66 @@
+{
+  "natural_overlap_cases": {
+    "count": 13,
+    "metrics": {
+      "case_count": 13,
+      "candidate_found_rate": 0.3077,
+      "corpus_limited_rate": 1.0,
+      "system_gap_rate": 0.0,
+      "by_failure_mode": {
+        "corpus_limited_single_logical_doc": 4,
+        "corpus_limited_no_candidate": 9
+      }
+    }
+  },
+  "constructed_overlap_cases": {
+    "count": 9,
+    "metrics": {
+      "alias_normalization_success_rate": 0.5,
+      "cross_doc_equivalence_match_rate": 0.3333,
+      "cross_role_extraction_alignment_rate": 0.0,
+      "evidence_fusion_success_rate": 0.5,
+      "conflict_classification_accuracy": 0.3333,
+      "conflict_resolution_readiness_rate": 0.1667,
+      "single_source_to_multi_source_promotion_rate": 1.0,
+      "counts": {
+        "alias": {
+          "ok": 1,
+          "total": 2
+        },
+        "equivalence": {
+          "ok": 1,
+          "total": 3
+        },
+        "extraction": {
+          "ok": 0,
+          "total": 6
+        },
+        "fusion": {
+          "ok": 3,
+          "total": 6
+        },
+        "classification": {
+          "ok": 2,
+          "total": 6
+        },
+        "resolution": {
+          "ok": 1,
+          "total": 6
+        },
+        "promotion": {
+          "ok": 6,
+          "total": 6
+        }
+      },
+      "metric_notes": {
+        "alias_normalization_success_rate": "constructed value_pair cases",
+        "cross_doc_equivalence_match_rate": "constructed canonical/equiv cases",
+        "cross_role_extraction_alignment_rate": "constructed multi-source extract per logical doc",
+        "evidence_fusion_success_rate": "constructed multi_source_confirmed expectation",
+        "conflict_classification_accuracy": "constructed expected_conflict_status match",
+        "conflict_resolution_readiness_rate": "proxy: aggregation resolution_status resolved*",
+        "single_source_to_multi_source_promotion_rate": "constructed promotion_ok heuristic"
+      }
+    }
+  }
+}

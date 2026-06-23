@@ -1,0 +1,183 @@
+{
+  "artifact": "enterprise_docs_langgraph_handoff_prep",
+  "timestamp": "20260618-172138",
+  "phase": "langgraph_handoff_preparation",
+  "gate_type": "preparation_gate_not_integration_gate_not_runtime_trial",
+  "pilot_families": [
+    "employee_headcount",
+    "environment_ghg",
+    "governance"
+  ],
+  "by_company": {
+    "demo_company": {
+      "total_cases": 18,
+      "promoted_count": 6,
+      "handoff_allowed_for_preparation": 6,
+      "blocked_count": 12,
+      "review_required_count": 0,
+      "prep_status_distribution": {
+        "handoff_allowed_for_preparation": 6,
+        "handoff_blocked": 12
+      },
+      "review_owner_distribution": {
+        "None": 6,
+        "RAG": 12
+      }
+    },
+    "hanssem": {
+      "total_cases": 16,
+      "promoted_count": 6,
+      "handoff_allowed_for_preparation": 6,
+      "blocked_count": 10,
+      "review_required_count": 0,
+      "prep_status_distribution": {
+        "handoff_blocked": 10,
+        "handoff_allowed_for_preparation": 6
+      },
+      "review_owner_distribution": {
+        "unset": 8,
+        "None": 6,
+        "RAG": 2
+      }
+    },
+    "musinsa": {
+      "total_cases": 11,
+      "promoted_count": 4,
+      "handoff_allowed_for_preparation": 4,
+      "blocked_count": 7,
+      "review_required_count": 0,
+      "prep_status_distribution": {
+        "handoff_blocked": 7,
+        "handoff_allowed_for_preparation": 4
+      },
+      "review_owner_distribution": {
+        "unset": 5,
+        "None": 4,
+        "RAG": 2
+      }
+    }
+  },
+  "by_family": {
+    "employee_headcount": {
+      "preparation_ready_count": 2,
+      "blocked_count": 2,
+      "review_required_count": 0,
+      "promoted_count": 2,
+      "dominant_blocker": "missing_predicted_value",
+      "dominant_review_owner": "RAG",
+      "blocker_breakdown": {
+        "missing_predicted_value": 2,
+        "evidence_bundle_insufficient": 2,
+        "confidence_below_min": 2
+      },
+      "review_owner_breakdown": {
+        "RAG": 2,
+        "None": 2
+      }
+    },
+    "environment_ghg": {
+      "preparation_ready_count": 7,
+      "blocked_count": 7,
+      "review_required_count": 0,
+      "promoted_count": 7,
+      "dominant_blocker": "missing_predicted_value",
+      "dominant_review_owner": "None",
+      "blocker_breakdown": {
+        "qualitative_kind": 2,
+        "handoff_blocked_state:not_ready_for_synthesis": 2,
+        "missing_predicted_value": 5,
+        "evidence_bundle_insufficient": 5,
+        "confidence_below_min": 5
+      },
+      "review_owner_breakdown": {
+        "None": 7,
+        "unset": 2,
+        "RAG": 5
+      }
+    },
+    "governance": {
+      "preparation_ready_count": 5,
+      "blocked_count": 13,
+      "review_required_count": 0,
+      "promoted_count": 5,
+      "dominant_blocker": "missing_predicted_value",
+      "dominant_review_owner": "RAG",
+      "blocker_breakdown": {
+        "qualitative_kind": 4,
+        "handoff_blocked_state:not_ready_for_synthesis": 4,
+        "missing_predicted_value": 9,
+        "evidence_bundle_insufficient": 9,
+        "confidence_below_min": 9
+      },
+      "review_owner_breakdown": {
+        "unset": 4,
+        "None": 5,
+        "RAG": 9
+      }
+    }
+  },
+  "by_blocker_category": {
+    "synthesis_blocker": 26,
+    "package_blocker": 46,
+    "confidence_blocker": 23
+  },
+  "by_prep_status": {
+    "handoff_blocked": 29,
+    "handoff_allowed_for_preparation": 16
+  },
+  "system_decision": {
+    "phase": "langgraph_handoff_preparation",
+    "gate_type": "preparation_gate_not_integration_gate_not_runtime_trial",
+    "ready_for_limited_langgraph_handoff_preparation": true,
+    "ready_for_limited_langgraph_handoff_trial": false,
+    "not_ready_for_synthesis": true,
+    "holdout_prep_allowed_count": 10,
+    "holdout_prep_allowed_families": [
+      "employee",
+      "employee_headcount",
+      "environment_ghg",
+      "financial",
+      "governance"
+    ],
+    "total_prep_allowed": 16,
+    "total_blocked": 29,
+    "total_review_required": 0,
+    "dominant_blocker_category": "package_blocker",
+    "recommend_trial": false,
+    "trial_blockers": [
+      "preparation_contract_signoff_pending",
+      "confidence_policy_calibration",
+      "holdout_review_owner_clearance",
+      "no_runtime_integration_yet"
+    ],
+    "trial_readiness_note": "Prep payload contract sufficient for limited trial design review; runtime trial still blocked until explicit sign-off"
+  },
+  "prior_enablement": {
+    "holdout_promotion_rate": 0.3704,
+    "ready_for_limited_langgraph_handoff_preparation": true
+  },
+  "metric_types": {
+    "exact": [
+      "promoted_count",
+      "handoff_allowed_for_preparation",
+      "blocked_count",
+      "review_required_count",
+      "prep_status"
+    ],
+    "heuristic": [
+      "dominant_blocker",
+      "dominant_review_owner",
+      "by_blocker_category"
+    ],
+    "proxy": [
+      "recommend_trial",
+      "trial_readiness_note"
+    ]
+  },
+  "constraints": {
+    "no_synthesis": true,
+    "no_langgraph_runtime_trial": true,
+    "no_case_tuning": true,
+    "no_loosening_promotion_rules": true
+  }
+}

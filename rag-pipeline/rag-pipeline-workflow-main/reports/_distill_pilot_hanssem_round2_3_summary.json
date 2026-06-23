@@ -1,0 +1,135 @@
+{
+  "input_units": 15,
+  "output_rows": 15,
+  "keep_count": 6,
+  "drop_count": 9,
+  "usable_count": 6,
+  "by_question_type": {
+    "qualitative_strategy": 3,
+    "qualitative_narrative": 2,
+    "quantitative_fact": 1
+  },
+  "by_difficulty": {
+    "easy": 4,
+    "medium": 2
+  },
+  "by_drop_reason": {
+    "ambiguous_grounding": 1,
+    "insufficient_substance / unanswerable_from_unit": 4,
+    "duplicate_same_fact": 3,
+    "nav_or_menu_noise": 1
+  },
+  "missing_ground_truth_answer": 0,
+  "missing_evidence_span": 0,
+  "missing_why_grounded": 0,
+  "weak_or_generic_keep": 0,
+  "good_grounding_keep": 6,
+  "duplicate_same_fact_drops": 3,
+  "usable_silver_ids": [
+    "SV2-P23-0001",
+    "SV2-P23-0003",
+    "SV2-P23-0004",
+    "SV2-P23-0009",
+    "SV2-P23-0011",
+    "SV2-P23-0015"
+  ],
+  "distillation_version": "2.1.0",
+  "model": "gpt-4o-mini",
+  "input_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\pilot_hanssem_15_eligible_r2_3.jsonl",
+  "output_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step2_silver\\pilot_hanssem_15_distilled_r2_3.jsonl",
+  "errors": 0,
+  "pilot_version": "2.3",
+  "proven_anchor_count": 4,
+  "corpus_fill_count": 11,
+  "ambiguous_grounding_drops": 1,
+  "comparison_r22": {
+    "r22_keep": 6,
+    "r22_drop": 9,
+    "r22_usable": 6,
+    "keep_delta": 0,
+    "drop_delta": 0,
+    "usable_delta": 0
+  },
+  "improved_patterns": [
+    "keep usable: R2.2=6 → R2.3=6 (Δ+0)",
+    "duplicate_same_fact: R2.2=2 → R2.3=3",
+    "ambiguous_grounding: R2.2=3 → R2.3=1",
+    "insufficient_substance: R2.2=2 → R2.3=4"
+  ],
+  "remaining_patterns": [
+    "duplicate_same_fact: 3",
+    "ambiguous_grounding: 1"
+  ],
+  "error_patterns": [
+    "rec_66100907c00656ec: evidence_span_not_in_unit",
+    "rec_abdc38fe1d1a8be1: duplicate_evidence_span_in_batch",
+    "rec_86c98b945fc03e6d: duplicate_evidence_span_in_batch",
+    "rec_f01cb7ee8b222ec9: duplicate_evidence_span_in_batch"
+  ],
+  "silver_qc_candidates": [
+    {
+      "silver_id": "SV2-P23-0001",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_3adad134db5cb9c2",
+      "record_id": "rec_3adad134db5cb9c2",
+      "question_type": "qualitative_strategy",
+      "difficulty": "easy",
+      "pilot_source": "proven_usable_r2_2",
+      "grounding_risk": "low",
+      "why_usable": "evidence_span grounded; overlap validation pass; type=qualitative_strategy; difficulty=easy"
+    },
+    {
+      "silver_id": "SV2-P23-0003",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_41a160ead0ae1be6",
+      "record_id": "rec_41a160ead0ae1be6",
+      "question_type": "qualitative_strategy",
+      "difficulty": "easy",
+      "pilot_source": "proven_usable_r2_2",
+      "grounding_risk": "medium",
+      "why_usable": "evidence_span grounded; overlap validation pass; type=qualitative_strategy; difficulty=easy"
+    },
+    {
+      "silver_id": "SV2-P23-0004",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_5edea297fe4ab1d8",
+      "record_id": "rec_5edea297fe4ab1d8",
+      "question_type": "qualitative_narrative",
+      "difficulty": "easy",
+      "pilot_source": "proven_usable_r2_2",
+      "grounding_risk": "low",
+      "why_usable": "evidence_span grounded; overlap validation pass; type=qualitative_narrative; difficulty=easy"
+    },
+    {
+      "silver_id": "SV2-P23-0009",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_2d0cf95b00a0fefc",
+      "record_id": "rec_2d0cf95b00a0fefc",
+      "question_type": "qualitative_strategy",
+      "difficulty": "medium",
+      "pilot_source": "corpus_fill_r2_3",
+      "grounding_risk": "medium",
+      "why_usable": "evidence_span grounded; overlap validation pass; type=qualitative_strategy; difficulty=medium"
+    },
+    {
+      "silver_id": "SV2-P23-0011",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_ba9d092227fde816",
+      "record_id": "rec_ba9d092227fde816",
+      "question_type": "quantitative_fact",
+      "difficulty": "easy",
+      "pilot_source": "corpus_fill_r2_3",
+      "grounding_risk": "medium",
+      "why_usable": "evidence_span grounded; overlap validation pass; type=quantitative_fact; difficulty=easy"
+    },
+    {
+      "silver_id": "SV2-P23-0015",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_147089a328626757",
+      "record_id": "rec_147089a328626757",
+      "question_type": "qualitative_narrative",
+      "difficulty": "medium",
+      "pilot_source": "corpus_fill_r2_3",
+      "grounding_risk": "medium",
+      "why_usable": "evidence_span grounded; overlap validation pass; type=qualitative_narrative; difficulty=medium"
+    }
+  ],
+  "silver_qc_ready_count": 6,
+  "pass_threshold_8_usable": false,
+  "silver_qc_recommended": false,
+  "root_cause_hint": "selector — tail corpus-fill units vẫn noisy; có thể thu pilot xuống ~10 anchor+unique"
+}

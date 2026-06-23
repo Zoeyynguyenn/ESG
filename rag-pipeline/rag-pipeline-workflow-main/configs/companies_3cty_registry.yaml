@@ -1,0 +1,36 @@
+# Registry — 3 công ty (2026-06-08 packages)
+# Dùng cho prebuild index + benchmark batch (configs/benchmark_exportjson_3cty_c2_e2e.yaml)
+
+registry_id: companies_3cty_20260608
+schema_version: "1.1"
+exported_at: "2026-06-08"
+
+companies:
+  raysolution:
+    display_name: 레이시온
+    package: 레이시온_dataset_package_20260608T055801
+    corpus_version: raysolution_esg_v1_1_1_openai_full_e2e
+    eval_set_path: .rag/rag-pipeline-practice/eval_set_3cty_raysolution_ko.md
+    facts:
+      company_name: 레이시온
+      dart_corp_code: "01730366"
+
+  hanssem:
+    display_name: 한샘
+    package: 한샘_dataset_package_20260608T042739
+    corpus_version: hanssem_esg_v1_1_1_openai_full_e2e
+    eval_set_path: .rag/rag-pipeline-practice/eval_set_3cty_hanssem_ko.md
+    facts:
+      company_name: 한샘
+      ticker: "009240"
+      krx_market: KOSPI
+      size_tier: 중형
+
+  musinsa:
+    display_name: 무신사
+    package: 무신사_dataset_package_20260608T092823
+    corpus_version: musinsa_esg_v1_1_1_openai_full_e2e
+    eval_set_path: .rag/rag-pipeline-practice/eval_set_3cty_musinsa_ko.md
+    facts:
+      company_name: 무신사
+      dart_corp_code: "01137727"

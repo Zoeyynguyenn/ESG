@@ -1,0 +1,52 @@
+{
+  "canonical_version": "ref_canonical_r2",
+  "generated_at": "2026-06-11T10:29:55",
+  "input_total": 14,
+  "canonical_keep": 0,
+  "canonical_keep_after_rewrite": 4,
+  "canonical_usable_total": 4,
+  "independent_fact_clusters": 4,
+  "dropped_total": 10,
+  "dropped_by_decision": {
+    "drop_still_too_noisy": 3,
+    "drop_truncated_unsalvageable": 1,
+    "drop_duplicate_fact_cluster": 6
+  },
+  "cluster_collapse": {
+    "FC_ESG_GOVERNANCE": "input 3 → canonical 1",
+    "FC_KGCS_A": "input 2 → canonical 1",
+    "FC_MATERIAL_8": "input 3 → canonical 1",
+    "FC_NET_ZERO_2050": "input 3 → canonical 1",
+    "FC_TCFD": "input 3 → canonical 0"
+  },
+  "canonical_by_company": {
+    "한샘": 4
+  },
+  "canonical_seed_ids": [
+    "HS-G-T04",
+    "HS-G-Q01",
+    "HS-G-Q06",
+    "HS-G-T01"
+  ],
+  "semantic_drift_dropped": [],
+  "answer_target_mismatch_dropped": [],
+  "r1_drift_detected_in_input": [
+    "HS-G-Q01",
+    "HS-G-T02",
+    "HS-G-T03",
+    "HS-G-L01",
+    "HS-G-Q03",
+    "HS-G-Q04",
+    "HS-G-L03",
+    "HS-G-L04"
+  ],
+  "r1_drift_fixed_in_canonical": [
+    "HS-G-Q01"
+  ],
+  "coverage_note": "**Hansem-only canonical workbook** — chưa có multi-company coverage.",
+  "content_review_ready": "Chưa — Hansem-only skeleton (4 cluster); đủ pilot format, chưa đủ review nội dung 3 công ty",
+  "next_step": "**Chưa** đủ cho review nội dung đầy đủ 3 công ty. Ưu tiên: (a) review nội dung round 3 trên Hansem canonical nếu cần validate format; (b) **rebuild seed workbook v2** cho 무신사/레이시온 từ corpus sạch.",
+  "canonical_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_canonical_r2.jsonl",
+  "dropped_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_dropped_r2.jsonl",
+  "canonical_xlsx": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_canonical_r2.xlsx"
+}

@@ -1,0 +1,35 @@
+{
+  "prep_version": "ref_manual_round2_prep",
+  "generated_at": "2026-06-11T13:41:15",
+  "input_reviewable": 107,
+  "lane_a_count": 14,
+  "lane_b_count": 66,
+  "lane_c_count": 22,
+  "reject_recommended_count": 5,
+  "by_company": {
+    "레이시온": {
+      "lane_b_rewrite_light": 13,
+      "reject_recommended": 1
+    },
+    "무신사": {
+      "lane_b_rewrite_light": 14,
+      "lane_a_ready_keep": 3,
+      "lane_c_rewrite_heavy": 5
+    },
+    "한샘": {
+      "lane_c_rewrite_heavy": 17,
+      "reject_recommended": 4,
+      "lane_a_ready_keep": 11,
+      "lane_b_rewrite_light": 39
+    }
+  },
+  "by_question_type": {
+    "trend": 8,
+    "quantitative": 59,
+    "qualitative": 35
+  },
+  "likely_survivors_estimate": 72,
+  "reviewer_order_recommendation": "Lane_A_ReadyKeep → Lane_B_RewriteLight → Lane_C_RewriteHeavy; bỏ qua Reject_Recommended trừ audit",
+  "output_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_v4_manual_round2.jsonl",
+  "output_workbook": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_v4_manual_round2.xlsx"
+}

@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "description": "Family-scoped retrieval pools mapped to logical documents (system-level)",
+  "base_corpus": "filtered",
+  "pools": {
+    "sr_pdf": {
+      "label": "SR / impact PDF pool",
+      "scope_ref": "sr_pdf_only",
+      "logical_documents": ["doc_sr_narrative", "doc_impact_report"]
+    },
+    "dart_governance_xml": {
+      "label": "DART governance disclosure XML pool",
+      "scope_ref": "governance_dart_xml",
+      "logical_documents": ["doc_governance_disclosure", "doc_dart_disclosure"]
+    },
+    "dart_esg_sustainability_xml": {
+      "label": "DART sustainability / ESG voluntary disclosure XML",
+      "include_source_types": ["xml"],
+      "include_document_id_any": ["지속가능경영"],
+      "max_units_per_document": 80,
+      "logical_documents": ["doc_sr_narrative", "doc_impact_report"]
+    },
+    "annual_report_workforce_xml": {
+      "label": "Annual report XML pool (workforce / general ESG narrative)",
+      "include_source_types": ["xml"],
+      "include_document_id_any": ["사업보고서"],
+      "max_units_per_document": 60,
+      "logical_documents": ["doc_impact_report", "doc_sr_narrative"],
+      "companies": ["musinsa"]
+    },
+    "impact_html": {
+      "label": "Impact / ESG HTML pool",
+      "include_source_types": ["html"],
+      "include_document_id_any": ["impact", "임팩트", "esg", "지속가능", "musinsa", "무신사"],
+      "max_units_per_document": 40,
+      "logical_documents": ["doc_impact_report", "doc_sr_narrative"],
+      "companies": ["musinsa"]
+    }
+  },
+  "families": {
+    "environment_ghg": {
+      "pool_ids": ["sr_pdf", "dart_esg_sustainability_xml", "impact_html"],
+      "logical_doc_priority": ["doc_sr_narrative", "doc_impact_report"],
+      "cross_doc_overlap_probe_pattern_families": [
+        "climate_narrative",
+        "scope_expansion",
+        "environment_esg_grade"
+      ]
+    },
+    "governance": {
+      "pool_ids": ["sr_pdf", "dart_governance_xml", "dart_esg_sustainability_xml"],
+      "logical_doc_priority": [
+        "doc_governance_disclosure",
+        "doc_dart_disclosure",
+        "doc_sr_narrative"
+      ],
+      "cross_doc_overlap_probe_pattern_families": [
+        "governance_numeric_narrative",
+        "governance_materiality",
+        "esg_rating_narrative"
+      ]
+    },
+    "employee_headcount": {
+      "pool_ids": ["sr_pdf", "annual_report_workforce_xml", "impact_html"],
+      "logical_doc_priority": ["doc_sr_narrative", "doc_impact_report"],
+      "cross_doc_overlap_probe_pattern_families": ["employee_headcount"]
+    }
+  },
+  "company_pool_overrides": {
+    "musinsa": {
+      "environment_ghg": {
+        "pool_ids": ["annual_report_workforce_xml", "impact_html"]
+      },
+      "governance": {
+        "pool_ids": ["annual_report_workforce_xml", "dart_governance_xml", "impact_html"]
+      },
+      "employee_headcount": {
+        "pool_ids": ["annual_report_workforce_xml", "impact_html"]
+      }
+    }
+  }
+}

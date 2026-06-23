@@ -1,0 +1,252 @@
+{
+  "prefilter_version": "2.2.0",
+  "generated_at": "2026-06-10T18:42:04",
+  "input_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\corpus_units.jsonl",
+  "total": 118,
+  "keep_count": 23,
+  "drop_count": 89,
+  "conditional_count": 6,
+  "pilot_candidate_pool": 25,
+  "pilot_selected": 15,
+  "by_rule_id": {
+    "R8_primary_esg_narrative_keep": 23,
+    "R7_non_esg_financial_or_annual_irrelevant": 21,
+    "R6_secondary_news_rewrite_ui_noise": 31,
+    "R10_conditional_intro_or_mixed_section": 6,
+    "R2_nav_or_menu_noise": 5,
+    "R1_cross_company_mismatch": 29,
+    "R5_vendor_or_training_content": 3
+  },
+  "by_company": {
+    "한샘": {
+      "keep": 10,
+      "drop": 24,
+      "conditional": 6
+    },
+    "레이시온": {
+      "drop": 40
+    },
+    "무신사": {
+      "keep": 13,
+      "drop": 25
+    }
+  },
+  "by_pattern": {
+    "governance_or_policy_statement": 75,
+    "primary_esg_narrative": 71,
+    "risk_strategy_narrative": 69,
+    "secondary_news_rewrite": 52,
+    "metric_disclosure": 40,
+    "cross_company_mismatch": 29,
+    "listing_or_index_noise": 13,
+    "nav_or_menu_noise": 8
+  },
+  "company_keep_totals": {
+    "한샘": 10,
+    "레이시온": 0,
+    "무신사": 13
+  },
+  "hanssem_keep_r21": 23,
+  "hanssem_keep_r22": 10,
+  "old_pilot_record_ids": [
+    "rec_2ac36b6aa8233480",
+    "rec_2d0cf95b00a0fefc",
+    "rec_6d11be8f9ba7006c",
+    "rec_80928c7327855bfa",
+    "rec_80472635b427982e",
+    "rec_86c98b945fc03e6d",
+    "rec_adf521a49feec751",
+    "rec_abdc38fe1d1a8be1",
+    "rec_0f7c7247e048a21e",
+    "rec_770c772d010352ff",
+    "rec_ce1fb6e4651850d3",
+    "rec_39fe9a810a0d6923",
+    "rec_cece4f8f062194a3",
+    "rec_030916ba7f52fe4d",
+    "rec_41a160ead0ae1be6"
+  ],
+  "new_pilot_record_ids": [
+    "rec_3adad134db5cb9c2",
+    "rec_6d11be8f9ba7006c",
+    "rec_41a160ead0ae1be6",
+    "rec_fcab1197e3c245b6",
+    "rec_66100907c00656ec",
+    "rec_acac077bde904698",
+    "rec_0f7c7247e048a21e",
+    "rec_b1e5d2fd63103966",
+    "rec_39fe9a810a0d6923",
+    "rec_5edea297fe4ab1d8",
+    "rec_adf521a49feec751",
+    "rec_102f3d47a149ed3d",
+    "rec_65c50bede5bb66da",
+    "rec_89c6e8dd36c4db22",
+    "rec_ea632bae09735059"
+  ],
+  "pilot_overlap_count": 5,
+  "pilot_overlap_ids": [
+    "rec_0f7c7247e048a21e",
+    "rec_39fe9a810a0d6923",
+    "rec_41a160ead0ae1be6",
+    "rec_6d11be8f9ba7006c",
+    "rec_adf521a49feec751"
+  ],
+  "output_files": {
+    "eligible_r2_2": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\corpus_units_eligible_r2_2.jsonl",
+    "rejected_r2_2": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\corpus_units_rejected_r2_2.jsonl",
+    "conditional_r2_2": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\corpus_units_conditional_r2_2.jsonl",
+    "pilot_r2_2": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\pilot_hanssem_15_eligible_r2_2.jsonl"
+  },
+  "pilot_supplement_count": 0,
+  "pilot_selection": [
+    {
+      "record_id": "rec_3adad134db5cb9c2",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 23,
+      "noise_score": 0,
+      "selection_priority": 250.0,
+      "duplicate_cluster_id": "fact_8_material_issues|fact_board_esg_2021|fact_net_zero_2050",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_6d11be8f9ba7006c",
+      "prefilter_decision": "conditional",
+      "pilot_source": "conditional_r2_2",
+      "substance_score": 23,
+      "noise_score": 8,
+      "selection_priority": 195.0,
+      "duplicate_cluster_id": "fact_8_material_issues|fact_board_esg_2021|fact_net_zero_2050",
+      "pilot_candidate_notes": "conditional with strong fact — pilot allowed"
+    },
+    {
+      "record_id": "rec_41a160ead0ae1be6",
+      "prefilter_decision": "conditional",
+      "pilot_source": "conditional_r2_2",
+      "substance_score": 22,
+      "noise_score": 6,
+      "selection_priority": 195.0,
+      "duplicate_cluster_id": "fact_board_esg_2021|fact_consecutive_publish_years|fact_net_zero_2050",
+      "pilot_candidate_notes": "conditional with strong fact — pilot allowed"
+    },
+    {
+      "record_id": "rec_fcab1197e3c245b6",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 16,
+      "noise_score": 0,
+      "selection_priority": 180.0,
+      "duplicate_cluster_id": "fact_report_edition",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_66100907c00656ec",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 16,
+      "noise_score": 0,
+      "selection_priority": 180.0,
+      "duplicate_cluster_id": "fact_board_esg_2021|fact_consecutive_publish_years",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_acac077bde904698",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 16,
+      "noise_score": 0,
+      "selection_priority": 180.0,
+      "duplicate_cluster_id": "fact_board_esg_2021|fact_consecutive_publish_years",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_0f7c7247e048a21e",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 16,
+      "noise_score": 4,
+      "selection_priority": 160.0,
+      "duplicate_cluster_id": "fact_board_esg_2021|fact_consecutive_publish_years",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_b1e5d2fd63103966",
+      "prefilter_decision": "conditional",
+      "pilot_source": "conditional_r2_2",
+      "substance_score": 18,
+      "noise_score": 5,
+      "selection_priority": 160.0,
+      "duplicate_cluster_id": "fact_8_material_issues|fact_net_zero_2050",
+      "pilot_candidate_notes": "conditional with strong fact — pilot allowed"
+    },
+    {
+      "record_id": "rec_39fe9a810a0d6923",
+      "prefilter_decision": "conditional",
+      "pilot_source": "conditional_r2_2",
+      "substance_score": 16,
+      "noise_score": 2,
+      "selection_priority": 155.0,
+      "duplicate_cluster_id": "fact_8_material_issues|fact_net_zero_2050",
+      "pilot_candidate_notes": "conditional with strong fact — pilot allowed"
+    },
+    {
+      "record_id": "rec_5edea297fe4ab1d8",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 13,
+      "noise_score": 0,
+      "selection_priority": 150.0,
+      "duplicate_cluster_id": "fact_board_esg_2021",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_adf521a49feec751",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 12,
+      "noise_score": 0,
+      "selection_priority": 140.0,
+      "duplicate_cluster_id": "cccfcd495071",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_102f3d47a149ed3d",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 13,
+      "noise_score": 2,
+      "selection_priority": 140.0,
+      "duplicate_cluster_id": "fact_board_esg_2021|fact_consecutive_publish_years",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_65c50bede5bb66da",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 11,
+      "noise_score": 0,
+      "selection_priority": 130.0,
+      "duplicate_cluster_id": "fact_net_zero_2050",
+      "pilot_candidate_notes": "eligible keep"
+    },
+    {
+      "record_id": "rec_89c6e8dd36c4db22",
+      "prefilter_decision": "conditional",
+      "pilot_source": "conditional_r2_2",
+      "substance_score": 16,
+      "noise_score": 7,
+      "selection_priority": 130.0,
+      "duplicate_cluster_id": "fact_board_esg_2021|fact_consecutive_publish_years",
+      "pilot_candidate_notes": "conditional with strong fact — pilot allowed"
+    },
+    {
+      "record_id": "rec_ea632bae09735059",
+      "prefilter_decision": "keep",
+      "pilot_source": "eligible_keep_r2_2",
+      "substance_score": 10,
+      "noise_score": 0,
+      "selection_priority": 120.0,
+      "duplicate_cluster_id": "fact_report_edition",
+      "pilot_candidate_notes": "eligible keep"
+    }
+  ]
+}

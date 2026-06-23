@@ -1,0 +1,359 @@
+{
+  "selector_version": "2.3.0",
+  "generated_at": "2026-06-11T09:28:23",
+  "pool_hanssem_count": 40,
+  "pilot_selected": 15,
+  "old_pilot_record_ids": [
+    "rec_3adad134db5cb9c2",
+    "rec_6d11be8f9ba7006c",
+    "rec_41a160ead0ae1be6",
+    "rec_fcab1197e3c245b6",
+    "rec_66100907c00656ec",
+    "rec_acac077bde904698",
+    "rec_0f7c7247e048a21e",
+    "rec_b1e5d2fd63103966",
+    "rec_39fe9a810a0d6923",
+    "rec_5edea297fe4ab1d8",
+    "rec_adf521a49feec751",
+    "rec_102f3d47a149ed3d",
+    "rec_65c50bede5bb66da",
+    "rec_89c6e8dd36c4db22",
+    "rec_ea632bae09735059"
+  ],
+  "new_pilot_record_ids": [
+    "rec_3adad134db5cb9c2",
+    "rec_66100907c00656ec",
+    "rec_41a160ead0ae1be6",
+    "rec_5edea297fe4ab1d8",
+    "rec_b54d398775fdb14b",
+    "rec_abdc38fe1d1a8be1",
+    "rec_fd59eb6b40389294",
+    "rec_cece4f8f062194a3",
+    "rec_2d0cf95b00a0fefc",
+    "rec_6012503bc8a4e28d",
+    "rec_ba9d092227fde816",
+    "rec_86c98b945fc03e6d",
+    "rec_ce1fb6e4651850d3",
+    "rec_f01cb7ee8b222ec9",
+    "rec_147089a328626757"
+  ],
+  "overlap_count": 4,
+  "overlap_ids": [
+    "rec_3adad134db5cb9c2",
+    "rec_41a160ead0ae1be6",
+    "rec_5edea297fe4ab1d8",
+    "rec_66100907c00656ec"
+  ],
+  "removed_from_r22": [
+    "rec_0f7c7247e048a21e",
+    "rec_102f3d47a149ed3d",
+    "rec_39fe9a810a0d6923",
+    "rec_65c50bede5bb66da",
+    "rec_6d11be8f9ba7006c",
+    "rec_89c6e8dd36c4db22",
+    "rec_acac077bde904698",
+    "rec_adf521a49feec751",
+    "rec_b1e5d2fd63103966",
+    "rec_ea632bae09735059",
+    "rec_fcab1197e3c245b6"
+  ],
+  "added_in_r23": [
+    "rec_147089a328626757",
+    "rec_2d0cf95b00a0fefc",
+    "rec_6012503bc8a4e28d",
+    "rec_86c98b945fc03e6d",
+    "rec_abdc38fe1d1a8be1",
+    "rec_b54d398775fdb14b",
+    "rec_ba9d092227fde816",
+    "rec_ce1fb6e4651850d3",
+    "rec_cece4f8f062194a3",
+    "rec_f01cb7ee8b222ec9",
+    "rec_fd59eb6b40389294"
+  ],
+  "replacement_count": 11,
+  "blocked_reason_counts": {
+    "distill_r22_hard_block": 7,
+    "near_dup_proven_body": 2,
+    "distill_r22_soft_dup": 2,
+    "insufficient_substance_score": 4,
+    "toc_intro_about_report": 6,
+    "noise_too_high": 12
+  },
+  "pilot_risk_breakdown": {
+    "low": 4,
+    "medium": 11,
+    "high": 0
+  },
+  "distill_failed_in_pilot": 0,
+  "proven_usable_in_pilot": 4,
+  "forecast_usable_min": 9,
+  "forecast_usable_max": 13,
+  "forecast_pass_8_usable": true,
+  "output_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\pilot_hanssem_15_eligible_r2_3.jsonl",
+  "pilot_selection": [
+    {
+      "record_id": "rec_3adad134db5cb9c2",
+      "prefilter_decision": "keep",
+      "pilot_source": "proven_usable_r2_2",
+      "selector_rank": 375.0,
+      "grounding_risk": "low",
+      "fact_tags": [
+        "fact_8_material_issues",
+        "fact_net_zero_2050",
+        "fact_double_materiality",
+        "fact_esrs_issb",
+        "fact_housing_social",
+        "fact_gov_compliance_pct",
+        "fact_board_esg_2021"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 23,
+      "noise_score": 0
+    },
+    {
+      "record_id": "rec_66100907c00656ec",
+      "prefilter_decision": "keep",
+      "pilot_source": "proven_usable_r2_2",
+      "selector_rank": 305.0,
+      "grounding_risk": "low",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_scope3_cdp",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish",
+        "fact_sustinvest_aa",
+        "fact_un_global_compact"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 16,
+      "noise_score": 0
+    },
+    {
+      "record_id": "rec_41a160ead0ae1be6",
+      "prefilter_decision": "conditional",
+      "pilot_source": "proven_usable_r2_2",
+      "selector_rank": 287.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_12_material_issues",
+        "fact_net_zero_2050",
+        "fact_scope3_cdp",
+        "fact_double_materiality",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 22,
+      "noise_score": 6
+    },
+    {
+      "record_id": "rec_5edea297fe4ab1d8",
+      "prefilter_decision": "keep",
+      "pilot_source": "proven_usable_r2_2",
+      "selector_rank": 275.0,
+      "grounding_risk": "low",
+      "fact_tags": [
+        "fact_12_material_issues",
+        "fact_double_materiality",
+        "fact_iso45001",
+        "fact_board_esg_2021"
+      ],
+      "fact_cluster_strength": 7,
+      "substance_score": 13,
+      "noise_score": 0
+    },
+    {
+      "record_id": "rec_b54d398775fdb14b",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 136.0,
+      "grounding_risk": "low",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_scope3_cdp",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish",
+        "fact_sustinvest_aa",
+        "fact_un_global_compact"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 16,
+      "noise_score": 4
+    },
+    {
+      "record_id": "rec_abdc38fe1d1a8be1",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 111.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_12_material_issues",
+        "fact_net_zero_2050",
+        "fact_scope3_cdp",
+        "fact_double_materiality",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 22,
+      "noise_score": 14
+    },
+    {
+      "record_id": "rec_fd59eb6b40389294",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 93.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_scope3_cdp",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish",
+        "fact_sustinvest_aa",
+        "fact_un_global_compact"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 16,
+      "noise_score": 7
+    },
+    {
+      "record_id": "rec_cece4f8f062194a3",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 63.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_12_material_issues",
+        "fact_net_zero_2050",
+        "fact_scope3_cdp",
+        "fact_double_materiality",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 22,
+      "noise_score": 17
+    },
+    {
+      "record_id": "rec_2d0cf95b00a0fefc",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 59.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_8_material_issues",
+        "fact_net_zero_2050",
+        "fact_double_materiality",
+        "fact_esrs_issb"
+      ],
+      "fact_cluster_strength": 8,
+      "substance_score": 18,
+      "noise_score": 11
+    },
+    {
+      "record_id": "rec_6012503bc8a4e28d",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 57.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish"
+      ],
+      "fact_cluster_strength": 7,
+      "substance_score": 16,
+      "noise_score": 13
+    },
+    {
+      "record_id": "rec_ba9d092227fde816",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 39.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_scope3_cdp",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_sustinvest_aa",
+        "fact_un_global_compact"
+      ],
+      "fact_cluster_strength": 10,
+      "substance_score": 19,
+      "noise_score": 16
+    },
+    {
+      "record_id": "rec_86c98b945fc03e6d",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 23.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_8_material_issues",
+        "fact_net_zero_2050",
+        "fact_double_materiality",
+        "fact_esrs_issb"
+      ],
+      "fact_cluster_strength": 8,
+      "substance_score": 18,
+      "noise_score": 17
+    },
+    {
+      "record_id": "rec_ce1fb6e4651850d3",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 23.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_8_material_issues",
+        "fact_net_zero_2050",
+        "fact_double_materiality",
+        "fact_esrs_issb"
+      ],
+      "fact_cluster_strength": 8,
+      "substance_score": 18,
+      "noise_score": 17
+    },
+    {
+      "record_id": "rec_f01cb7ee8b222ec9",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 9.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_scope3_cdp",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish",
+        "fact_sustinvest_aa",
+        "fact_un_global_compact"
+      ],
+      "fact_cluster_strength": 11,
+      "substance_score": 16,
+      "noise_score": 16
+    },
+    {
+      "record_id": "rec_147089a328626757",
+      "prefilter_decision": null,
+      "pilot_source": "corpus_fill_r2_3",
+      "selector_rank": 9.0,
+      "grounding_risk": "medium",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish"
+      ],
+      "fact_cluster_strength": 7,
+      "substance_score": 16,
+      "noise_score": 16
+    }
+  ]
+}

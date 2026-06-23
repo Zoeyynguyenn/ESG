@@ -1,0 +1,58 @@
+{
+  "audit_version": "v4_2",
+  "generated_at": "2026-06-11T11:50:45",
+  "musinsa": {
+    "folder": "C:\\Users\\nguye\\Downloads\\data-company\\무신사_일반자료_20260430",
+    "best_candidates": [],
+    "likely_actual_report_count": 0,
+    "likely_financial_only_count": 27,
+    "needs_manual_check": [
+      "03_고용_인사/사람인_검색결과.html",
+      "03_고용_인사/원티드_검색결과.html",
+      "03_고용_인사/잡코리아_채용공고검색.html",
+      "03_고용_인사/잡플래닛_기업검색.html",
+      "03_고용_인사/잡플래닛_기업상세.html",
+      "03_고용_인사/잡플래닛_리뷰.html",
+      "06_지식재산_기술/NTIS_통합검색.html",
+      "08_외부검색/네이버검색/원문_HTML/page_00_web_%EB%AC%B4%EC%8B%A0%EC%82.html",
+      "08_외부검색/네이버검색/원문_HTML/page_02_web_%EB%AC%B4%EC%8B%A0%EC%82.html",
+      "08_외부검색/네이버검색/원문_HTML/page_03_web_%EB%AC%B4%EC%8B%A0%EC%82.html",
+      "08_외부검색/네이버검색/원문_HTML/page_04_web_%EB%AC%B4%EC%8B%A0%EC%82.html",
+      "08_외부검색/네이버검색/원문_HTML/page_05_web_%EB%AC%B4%EC%8B%A0%EC%82.html",
+      "08_외부검색/네이버검색/원문_HTML/page_06_web_%EB%AC%B4%EC%8B%A0%EC%82.html",
+      "08_외부검색/네이버검색/원문_HTML/page_07_web_%EB%AC%B4%EC%8B%A0%EC%82.html",
+      "08_외부검색/네이버검색/원문_HTML/page_08_web_%EB%AC%B4%EC%8B%A0%EC%82.html"
+    ],
+    "has_actual_esg_report_pdf": false
+  },
+  "raysolution": {
+    "folder": "C:\\Users\\nguye\\Downloads\\data-company\\레이시온_일반자료_20260502",
+    "best_candidates": [],
+    "likely_actual_report_count": 0,
+    "likely_financial_only_count": 9,
+    "needs_manual_check": [
+      "03_고용_인사/사람인_검색결과.html",
+      "03_고용_인사/원티드_검색결과.html",
+      "03_고용_인사/잡코리아_채용공고검색.html",
+      "03_고용_인사/잡플래닛_기업검색.html",
+      "03_고용_인사/잡플래닛_기업상세.html",
+      "03_고용_인사/잡플래닛_리뷰.html",
+      "06_지식재산_기술/NTIS_통합검색.html",
+      "08_외부검색/네이버검색/원문_HTML/page_00_web_%EB%A0%88%EC%9D%B4%EC%8B.html",
+      "08_외부검색/네이버검색/원문_HTML/page_02_web_%EB%A0%88%EC%9D%B4%EC%8B.html",
+      "08_외부검색/네이버검색/원문_HTML/page_03_web_%EB%A0%88%EC%9D%B4%EC%8B.html",
+      "08_외부검색/네이버검색/원문_HTML/page_04_web_%EB%A0%88%EC%9D%B4%EC%8B.html",
+      "08_외부검색/네이버검색/원문_HTML/page_05_web_%EB%A0%88%EC%9D%B4%EC%8B.html",
+      "08_외부검색/네이버검색/원문_HTML/page_06_web_%EB%A0%88%EC%9D%B4%EC%8B.html",
+      "08_외부검색/네이버검색/원문_HTML/page_07_web_%EB%A0%88%EC%9D%B4%EC%8B.html",
+      "08_외부검색/네이버검색/원문_HTML/page_08_web_%EB%A0%88%EC%9D%B4%EC%8B.html"
+    ],
+    "cross_company_contamination": "US RTX/Raytheon conflated with Korean 레이시온",
+    "has_actual_esg_report_pdf": false
+  },
+  "import_recommendations": [
+    "무신사: **không import** PDF analyst/입찰 từ raw folder cho Golden Set ESG; cần acquire `2024/2025 Musinsa Impact Report` PDF trực tiếp từ newsroom.musinsa.com hoặc corp site.",
+    "무신사 (secondary): `08_외부검색/네이버검색/원문_HTML/page_04_web_%EB%AC%B4%EC%8B%A0%EC%82.html` — newsroom listing capture only; dùng để trace URL, không thay report PDF.",
+    "레이시온: **không import** rtx-20251231.htm.html / rtx-20241231.htm.html — đây là RTX Corporation (Mỹ), không phải Korean 레이시온; cần source acquisition riêng (SR PDF / company site)."
+  ]
+}

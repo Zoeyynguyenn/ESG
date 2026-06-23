@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-05-29T10:14:12",
+  "timeout_sec": 8.0,
+  "api_key_present": true,
+  "targets": [
+    {
+      "host": "api.openai.com",
+      "port": 443,
+      "dns_ok": true,
+      "dns_msg": "ok",
+      "ips": [
+        "162.159.140.245",
+        "172.66.0.243"
+      ],
+      "tcp_ok": true,
+      "tcp_msg": "ok",
+      "tcp_ms": 21.2,
+      "tls_ok": true,
+      "tls_msg": "ok",
+      "https_url": "https://api.openai.com/v1/models",
+      "https_ok": true,
+      "https_msg": "http_status:200",
+      "http_status": 200
+    },
+    {
+      "host": "openaipublic.blob.core.windows.net",
+      "port": 443,
+      "dns_ok": true,
+      "dns_msg": "ok",
+      "ips": [
+        "57.150.105.67"
+      ],
+      "tcp_ok": true,
+      "tcp_msg": "ok",
+      "tcp_ms": 236.8,
+      "tls_ok": true,
+      "tls_msg": "ok",
+      "https_url": "https://openaipublic.blob.core.windows.net",
+      "https_ok": true,
+      "https_msg": "http_status:400",
+      "http_status": 400
+    }
+  ]
+}

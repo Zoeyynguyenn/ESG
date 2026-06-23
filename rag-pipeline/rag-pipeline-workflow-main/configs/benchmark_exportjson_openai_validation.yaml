@@ -1,0 +1,64 @@
+benchmark_id: benchmark_exportjson_openai_validation
+description: benchmark_exportjson_openai_validation
+lane: company_export_json_validation
+eval_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_dev_ko.md
+corpus_version: nexteye_esg_v1_1_1_openai_validation
+parser_version: jsonl_v1
+cache_root: artifacts/benchmark_cache
+lane_config:
+  corpus_ratio: 1.0
+  company_filter: 넥스트아이_dataset_package_20260528T091409
+  pdf_parser: pypdf
+  eval_questions: 20
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  top_k: 4
+timeouts:
+  default_sec: 1800
+  embedding_heavy_sec: 1800
+scoring:
+  retrieval_hit_rate: 0.3
+  citation_correctness: 0.2
+  answer_correctness: 0.15
+  insufficient_information_handling: 0.1
+  groundedness: 0.1
+  latency_normalized: 0.1
+  stability_penalty: 0.05
+candidates:
+- config_id: val_openai_rec800_dense_chroma
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: openai:text-embedding-3-small
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: chroma
+  candidate_pool: 64
+- config_id: val_openai_rec800_hybrid_chroma
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: openai:text-embedding-3-small
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: chroma
+  candidate_pool: 64
+- config_id: val_openai_section_dense_chroma
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: openai:text-embedding-3-small
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: chroma
+  candidate_pool: 64
+- config_id: val_openai_section_hybrid_chroma
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: openai:text-embedding-3-small
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: chroma
+  candidate_pool: 64

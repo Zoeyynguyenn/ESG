@@ -1,0 +1,10 @@
+{"record_id": "2025_exctvSttus::1", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=고창훈 | sex=남 | position=대표이사 | registered_exec=사내이사 | full_time=상근 | role=대표이사 | tenure=14년 2개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::2", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=김화수 | sex=남 | position=상무 | registered_exec=미등기 | full_time=상근 | role=연구 | tenure=1년 7개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::3", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=김   신 | sex=남 | position=부사장 | registered_exec=사내이사 | full_time=상근 | role=해외영업 총괄 | tenure=5년 5개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::4", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=박경성 | sex=남 | position=부사장 | registered_exec=사내이사 | full_time=상근 | role=지원본부 총괄 | tenure=4년 3개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::5", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=김혜민 | sex=여 | position=이사 | registered_exec=사내이사 | full_time=상근 | role=사업부총괄 | tenure=8년 3개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::6", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=김동규 | sex=남 | position=사외이사 | registered_exec=사외이사 | full_time=비상근 | role=해외사업 자문 | tenure=1년 9개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::7", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=권장혁 | sex=남 | position=사외이사 | registered_exec=사외이사 | full_time=비상근 | role=사외이사 | tenure=2년 2개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::8", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=진병두 | sex=남 | position=사외이사 | registered_exec=사외이사 | full_time=비상근 | role=사외이사 | tenure=2년 2개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::9", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=이   현 | sex=남 | position=감사 | registered_exec=감사 | full_time=비상근 | role=감사 | tenure=2년 2개월 | stlm_dt=2025-12-31"}
+{"record_id": "2025_exctvSttus::10", "schema": "dart_executive_status", "text": "corp=이엠앤아이 | name=고계영 | sex=여 | position=부사장 | registered_exec=미등기 | full_time=상근 | role=재무 총괄 | tenure=12년 11개월 | stlm_dt=2025-12-31"}

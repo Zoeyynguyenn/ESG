@@ -1,0 +1,82 @@
+benchmark_id: benchmark_exportjson_phase3
+description: Phase 3 - compare Chroma and Qdrant on top configs from Phase 2.
+lane: company_export_json_full
+eval_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_dev_ko.md
+corpus_version: nexteye_esg_v1_1_1_full
+parser_version: jsonl_v1
+cache_root: artifacts/benchmark_cache
+lane_config:
+  corpus_ratio: 1.0
+  company_filter: 넥스트아이_dataset_package_20260528T091409
+  pdf_parser: pypdf
+  eval_questions: 20
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  top_k: 4
+timeouts:
+  default_sec: 1200
+  embedding_heavy_sec: 1800
+scoring:
+  retrieval_hit_rate: 0.3
+  citation_correctness: 0.2
+  answer_correctness: 0.15
+  insufficient_information_handling: 0.1
+  groundedness: 0.1
+  latency_normalized: 0.1
+  stability_penalty: 0.05
+candidates:
+- config_id: p3_top1_top3_section_minilm_dense_chroma_none_chroma
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: chroma
+  candidate_pool: 64
+- config_id: p3_top1_top3_section_minilm_dense_chroma_none_qdrant
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+- config_id: p3_top2_top3_top2_rec512_minilm_dense_chroma_none_chroma
+  chunking_profile: recursive_512_80
+  chunk_size: 512
+  chunk_overlap: 80
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: chroma
+  candidate_pool: 64
+- config_id: p3_top2_top3_top2_rec512_minilm_dense_chroma_none_qdrant
+  chunking_profile: recursive_512_80
+  chunk_size: 512
+  chunk_overlap: 80
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+- config_id: p3_top3_top1_rec800_minilm_dense_chroma_none_chroma
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: chroma
+  candidate_pool: 64
+- config_id: p3_top3_top1_rec800_minilm_dense_chroma_none_qdrant
+  chunking_profile: recursive_800_120
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  retrieval_mode: semantic_dense
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64

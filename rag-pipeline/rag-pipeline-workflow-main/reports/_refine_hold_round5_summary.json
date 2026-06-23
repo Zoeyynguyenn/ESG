@@ -1,0 +1,45 @@
+{
+  "refine_version": "ref_hold_refine_r5",
+  "generated_at": "2026-06-12T14:34:18",
+  "input_hold_count": 17,
+  "promote_candidate_count": 3,
+  "keep_hold_count": 9,
+  "drop_after_refine_count": 5,
+  "lane_breakdown": {
+    "lane_1_known_cluster_cleanup": {
+      "drop_after_refine": 2,
+      "promote_candidate": 2,
+      "keep_hold": 1
+    },
+    "lane_2_fc_unknown_resolution": {
+      "promote_candidate": 1,
+      "drop_after_refine": 3,
+      "keep_hold": 8
+    }
+  },
+  "by_company": {
+    "무신사": 2,
+    "한샘": 15
+  },
+  "by_cluster": {
+    "FC_ESG_GOVERNANCE": 3,
+    "FC_REPORT_FRAMEWORK": 5,
+    "FC_UNKNOWN": 3,
+    "FC_HUMAN_RIGHTS": 2,
+    "FC_MATERIAL_8": 1,
+    "FC_CLIMATE_GHG": 1,
+    "FC_QUAL_POLICY": 1,
+    "FC_KGCS_A": 1
+  },
+  "fc_unknown_input_count": 12,
+  "fc_unknown_resolved_count": 9,
+  "fc_unknown_unresolved_count": 3,
+  "potential_gold_core_v1_1_additions": 3,
+  "rx_status": "source-acquisition dependent — excluded from refine round 5",
+  "example_lane1_promote": "MS-V4-Q09",
+  "example_lane2_promote": "HS-V4-T03",
+  "example_drop": "MS-V4-Q08",
+  "output_refined": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_round5_refined.jsonl",
+  "output_unresolved": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_round5_unresolved.jsonl",
+  "output_workbook": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step6_gold\\golden_set_core_round5_refine.xlsx"
+}

@@ -1,0 +1,204 @@
+--- page 1 ---
+[NIPA] GPU 사용자의  Workflow
+AI Nexus GPU 사용  가이드
+제공  GPU 종류  및  서비스  특성
+GPU 사용  워크플로우
+STEP 0. 시작하기
+STEP 1. 데이터  및  모델  업로드
+STEP 2. GPU 개발  환경  구성
+STEP 3. GPU 학습  수행  및  모델  저장
+STEP 4. 모델  및  데이터  백업
+AI Nexus GPU 사용  가이드
+제공  GPU 종류  및  서비스  특성
+AI Nexus 서비스의  GPU 는  Nvidia 사의  GPU 를  제공하고  있으며 , 대표적으로  H200 / H100 / A100
+을  지원하고  있습니다 .
+GPU Memory HBM3e 141GB HBM3 80GB HBM2e 80GB
+GPU Memory
+Bandwidth
+4.8TB/s 3.35TB/s 2.04 TB/s
+FP16 / BF16
+Tensor
+1,979 TFLOPS 1,979 TFLOPS 624 TFLOPS
+FP8 Tensor 3,958 TFLOPS 3,958 TFLOPS 미지원
+INT8 Tensor 3,958 TOPS 3,958 TOPS 1,248 TOPS
+최대  소비전력 700W 700W 400W
+냉각  방식 수랭 / 공랭 수랭 / 공랭 공랭
+호스트  인터페이스SXM5 / NVLink SXM5 / NVLink SXM4 / NVLink
+NVLink 대역폭 900GB/s 900GB/s 600GB/s
+From Factor SXM SXM PCIe Gen4
+GPU H200 SXM H100 SXM A100 SXM
+
+--- page 2 ---
+GPU 사용  워크플로우
+주요  특징 초대형  LLM 학습 / 추
+론  최적화
+생성형  AI· 학습  범용 HPC/AI 범용  가속
+AI Nexus 서비스는  도커  컨테이너  기반의  GPU 세션을  제공하고  있으며 , 아래와  같은  제약  사
+항이  존재합니다 .
+Docker In Docker 지원  불가 : AI Nexus 는  이미  Docker 기반  컨테이너  환경으로  동작하고
+있으며 , 세션  내부에서  추가  Docker Daemon 실행 (Docker In Docker) 시  권한 (privileged),
+네트워크 , 스토리지  및  보안  이슈가  발생할  수  있어  지원하고  있지  않습니다 .
+Nvidia Driver 커스텀  버전  지원  불가 : NVIDIA Driver 는  호스트  GPU 노드  단위로  안정화된
+PB 라인으로  설치  및  운영되며 , 특정  사용자만  별도  Driver 버전으로  변경할  경우  다른  사용
+자  세션  및  CUDA 호환성에  영향을  줄  수  있어  사용자  개별  Driver 재구성은  지원하지  않습
+니다 . ( 제공  Nvidia Driver version : 580.126.20)
+Kubernetes 지원  불가 : AI Nexus 는  자체  GPU 스케줄링 / 오케스트레이션  구조로  운영되고
+있습니다 . 따라서  사용자  세션  내부에서  별도의  Kubernetes Cluster(Control Plane/Worker)
+구성  및  K8S 기반  GPU 오케스트레이션  기능은  지원하지  않습니다 .
+Kubernetes 환경  대체  기능  제공  : 사용  목적에  따라  컨테이너  활용  가이드 , 커스텀  이미
+지  지원 , 멀티노드  기능 , Batch 세션 , FastTrack 기능  등을  통해  Kubernetes 및  VM 환경에
+서  주로  요구되는  분산  학습 , 다중  GPU 활용 , Job Scheduling, 장시간  학습  자동화  등의
+기능을  유사하게  제공  가능합니다 .
+Host Level 시스템  권한  지원  불가 : AI Nexus 는  다중  사용자가  공유하는  GPU 자원  환경으
+로  운영되므로 , Host OS 수준의  root 권한 , Kernel Module 제어 , PCI Device 직접  제어  등의
+기능은  제공하지  않습니다 . 따라서  커널  모듈  설치 , GPU/NIC 저수준  설정  변경  등의  작업은
+제한됩니다 .
+커널  및  OS 구조  변경  제한 : 사용자  임의의  Kernel 변경 , OS 재설치 , Systemd 기반  서비스
+구성  등  Host Kernel 에  영향을  주는  작업은  지원하지  않습니다 .
+(1) 데이터  및  모델
+업로드
+기본  제공  NAS( 데이터  폴더 ) 환경에  SFTP/File Browser 등을  통해  학습  데이
+터  및  모델  업로드  진행
+단계 내용
+
+--- page 3 ---
+STEP 0. 시작하기
+NIPA 사업에서  제공  중인  AI Nexus 서비스에  접속하여 , 할당  받은  사용자  계정으로  로그인  합니다 .
+( 접속  계정을  전달  받지  못하였다면  별도  문의  부탁  드립니다 .)
+접속  URL : AI Nexus | kt cloud
+(2) GPU 개발  환경
+구성
+AI Nexus 서비스에서  제공하는  NGC GPU 이미지  기반으로  GPU 세션
+(Container) 환경  구성
+(2-A) 기본  제공  이
+미지  활용
+AI Nexus 서비스에서  기본  제공하는  NGC 기반  GPU 이미지  사용  ( 검증된  버
+전  호환성  제공 ) → 즉시  개발  환경  구성  가능
+(2-B) 사용자  커스텀
+이미지  활용
+기본  제공  이미지  외  사용자  개발  이미지를  활용  가능  (Docker Hub URL 또는
+별도  이미지  저장소  URL 공유  시  운영  검토  후  지원  가능 )
+(3) 학습  수행 GPU 자원을  사용하여  모델  학습  수행  ( 단일  GPU / Multi-GPU 지원 )
+(4) 모델 / 환경  저장
+및  백업
+학습을  완료한  모델을  사용자  NAS 영역에  저장하고 , GPU 학습  환경을  이미지
+커밋  기능을  통해  저장이  가능
+로그인  후 , 첫  화면입니다 . 이곳에서  퀵  메뉴  확인  및  현재  로그인한  내  정보  확인이  가능합니다 .
+
+--- page 4 ---
+STEP 1. 데이터  및  모델  업로드
+대시보드  화면에서는  나에게  할당된  정책과  자원  그룹의  현황을  볼  수  있으며 , 내가  생성한  세션에  대한  정보를  리스트  형태로  확인  가능합
+니다 .
+데이터  페이지에서  나에게  할당된  NAS 스토리지  정보  및  사용량  확인이  가능하며 , 제한된  개수  내에서  여러  개의  데이터  폴더를  생성할  수 
+있습니다 .
+
+--- page 5 ---
+생성한  데이터  폴더에서  여러가지  방식으로  데이터  업로드가  가능합니다 . (Drag&Drop 방식 )
+생성한  데이터  폴더에서  여러가지  방식으로  데이터  업로드가  가능합니다 . (FileBrowser 방식 )
+
+--- page 6 ---
+STEP 2. GPU 개발  환경  구성
+ㅇ  기본  제공  컨테이너  이미지  
+kt cloud 는  기본적으로  Nvidia 공식  NGC 이미지 (PyTorch 기반 ) 를  제공하고  있으며 , 사용자는  별도
+환경  설정  없이  즉시  사용  가능합니다 .
+생성한  데이터  폴더에서  여러가지  방식으로  데이터  업로드가  가능합니다 . (SFTP 방식 )
+자동마운트  폴더  기능을  통해  사용자가  구성한  패키지  등을  저장하고 , 세션을  생성할  때  자동으로  구성할  수  있습니다 .
+
+--- page 7 ---
+범용적으로  사용하는  PyTorch 기반  이미지만  제공하고  있지만  Tensorflow 등  특정  환경이  필요하시
+다면  별도  문의  후  이미지  배포가  가능합니다 .
+포함  구성요소  : PyTorch, CUDA, Python 등
+OS 정보  : Linux Ubuntu 24.04 LTS 등  (Window 환경은  제공 X)
+ㅇ  GPU 별  지원하는  최소 / 권장  CUDA
+※ kt cloud 는  NVIDIA 공식  NGC 기반  이미지를  기본  제공하며 , GPU·CUDA·PyTorch 간  호환성이  사
+전  검증된  환경을  제공하며 , 사용자는  CUDA/PyTorch 버전  충돌이나  별도  의존성  구성  없이  즉시  AI
+개발  및  학습  환경을  사용할  수  있습니다 .
+A100 CUDA 11.x ~
+12.x
+CUDA 11 부터  Ampere 최적  지원
+H100 CUDA 12.x 권
+장
+Hopper 아키텍처  최적화
+H200 CUDA 12.4+
+권장
+HBM3e 및  최신  Hopper 기능  반영
+GPU 권장  CUDA 버
+전
+비고
+기존  CUDA 애플리케이션이  Hopper(H100/H200) 아키텍처에서  정상  동작하는지  확인하기
+위한  NVIDIA 공식  가이드  : 
+https://docs.nvidia.com/cuda/pdf/Hopper_Compatibility_Guide.pdf
+
+--- page 8 ---
+ㅇ  커스텀  이미지  지원
+기본적으로  제공되는  nvidia ngc 이미지  외에  별도  다른  도커  이미지를  활용하고자  하신다면  아래
+내용  참고해주세요 .
+외부에서  빌드한  도커이미지를  docker hub 에  push 한신  뒤 , 이미지  정보를  기술  지원  게시판이
+나  관리자에게  문의  주시면  검토  후  AI Nexus 전용  Harbor 에  업로드  해드립니다 . 
+또는 , 도커이미지  URL 정보를  기술  지원  게시판이나  관리자에게  문의  주시면  검토  후  AI Nexus
+전용  Harbor 에  업로드  해드립니다 .
+사용자는  전달  받은  이미지 : 태그  정보로  세션 ( 컨테이너 ) 생성이  가능합니다 .
+ㅇ  사용자  세션  생성
+기존에  A100(Ampere) 기반에서  개발  및  검증된  CUDA/PyTorch 환경은
+H100/H200(Hopper) 환경으로  전환  시  일부  CUDA Extension, Custom CUDA Kernel,
+NCCL, PyTorch Binary 및  서드파티  라이브러리에서  호환성  이슈가  발생할  수  있습니다 .
+특히  Hopper 아키텍처는  기존  Ampere 대비  NVLink/NVSwitch 구조 , SM 구조  및  CUDA
+Runtime 요구사항이  변경되어 , 기존  환경  그대로는  CUDA 초기화  실패 , Extension Import
+오류 , 학습  비정상  종료  등의  문제가  발생할  수  있습니다 .
+따라서  Hopper 환경에서는  CUDA 12 이상  및  최신  PyTorch 환경  기반으로  애플리케이션  및
+CUDA Extension 을  재빌드하여  사용하는  것을  권장합니다 .
+사용자  환경 ( 세션 ) 생성  단계  (1. 세션  타입  설정 )
+
+--- page 9 ---
+사용자  환경 ( 세션 ) 생성  단계  (2. 실행  환경  & 자원  할당 )
+사용자  환경 ( 세션 ) 생성  단계  (3. 데이터  & 폴더  설정 )
+
+--- page 10 ---
+Putty 와  같은  툴을  사용하여  외부에서  ssh 프로토콜로  세션에  접속하는  방법은  다음  링크에서  참
+고하세요 . 연산  세션에  SSH/SFTP 접속하기  (Linux/Mac/Visual Studio Code) — Backend.AI
+WebUI User Guide 25.15 문서
+STEP 3. GPU 학습  수행  및  모델  저장
+ㅇ  생성한  세션  검증
+사용자  환경 ( 세션 ) 생성  단계  (4. 네트워크  설정 )
+사용자  환경 ( 세션 ) 생성  단계  (5. 환경  검증  및  실행 )
+
+--- page 11 ---
+생성한  세션에서  본인에게  익숙한  환경으로  접속해봅니다 . 여기서는  Tmux 콘솔을  통해  생성된
+세션으로  접속하도록  하겠습니다 .
+접속한  환경에서  본인이  설정한  GPU 세션  자원  정보가  맞는지  검증합니다 . 위에서는  GPU 2 장짜
+리  H200 세션을  만들었으므로  기본적인  Cuda 동작 , Nvidia-smi 명령어를  검증한  결과  정상적으
+로  할당  받은  부분  확인이  가능합니다 .
+ㅇ  모델  실행
+간단한  예제로  H200 2 장을  활용해서  transformer 모델을  학습  해보도록  하겠습니다 . 
+사전  학습된  BERT 모델 (bert-base-uncased) 을  더미  데이터 (dummy dataset) 로  추가  학습
+(fine-tuning) 을  진행해보도록  하겠습니다 .
+먼저  git 에  등록된  모델을  clone 해옵니다 .
+
+--- page 12 ---
+추가로  필요한  pip 패키지들을  설치하여  모델  학습에  필요한  환경을  구성합니다 .
+단 , 패키지  설치  시  이미지  커밋  여부  및  저장  경로에  따라  데이터  유지  여부가  달라질  수  있으므로
+주의가  필요합니다 .
+clone 한  transformers 모델  파일로  이동하여  GPU 2 장을  활용한  학습  코드를  작성합니다 .
+예제  코드는  아래와  같습니다 .
+1pip install transformers datasets accelerate evaluate
+1 import torch2 import torch.nn as nn3 from transformers import AutoModelForSequenceClassification4 from transformers import AutoTokenizer5 from torch.utils.data import Dataset, DataLoader6 from torch.optim import AdamW7 import time8 import os910# CUDA 및  GPU 개수  확인11 print("CUDA:", torch.cuda.is_available())12 print("GPU COUNT:", torch.cuda.device_count())1314# HuggingFace 사전학습  모델  선택15model_name ="bert-base-uncased"1617# Tokenizer 및  모델  다운로드18tokenizer = AutoTokenizer.from_pretrained(model_name)1920model = AutoModelForSequenceClassification.from_pretrained(21    model_name,22    num_labels=223)2425# Multi-GPU(H200 2GPU) 사용26model = nn.DataParallel(model)27model = model.cuda()28
+
+--- page 13 ---
+29# 간단한  더미  데이터셋  생성30 classDummyDataset(Dataset):3132 def__len__(self):33 return50003435 def__getitem__(self, idx):3637        text =(38 "kt cloud AI Train provides GPU infrastructure "39 "for large scale AI training workloads."40 )4142 # 텍스트를  Tensor 형태로  변환43        encoded = tokenizer(44            text,45            padding="max_length",46            truncation=True,47            max_length=256,48            return_tensors="pt"49 )5051 return{52 "input_ids": encoded["input_ids"].squeeze(),53 "attention_mask": encoded["attention_mask"].squeeze(),54 "labels": torch.tensor(1)55 }5657dataset = DummyDataset()5859# DataLoader 구성60loader = DataLoader(61    dataset,62    batch_size=64,63    shuffle=True64)6566# Optimizer 설정67optimizer = AdamW(model.parameters(), lr=1e-5)6869 print("START TRAINING")7071# 학습  시작72 for epoch inrange(5):7374    total_loss =07576 for step, batch inenumerate(loader):7778 # GPU 메모리로  데이터  이동79        input_ids = batch["input_ids"].cuda()80        attention_mask = batch["attention_mask"].cuda()81        labels = batch["labels"].cuda()8283 # Forward84        outputs = model(85            input_ids=input_ids,86            attention_mask=attention_mask,87            labels=labels88 )8990 # Multi-GPU 환경에서  loss 평균  처리91        loss = outputs.loss.mean()9293 # Backward 및  Weight Update94        optimizer.zero_grad()95        loss.backward()
+
+--- page 14 ---
+예제  코드  작성  후 , 실제  모델을  학습해보면  아래와  같이  결과  확인이  가능합니다 .
+python test.py 실행  결과  첨부
+nvidia-smi 를  통해  H200 GPU 2 장의  Memory 및  GPU Utilization 증가  여부를  확인할  수  있
+습니다 .
+모델  학습이  완료되면  설정된  경로에서  학습된  모델  파일  및  tokenizer 정보를  확인할  수  있습니
+다 .
+96        optimizer.step()9798        total_loss += loss.item()99100 # 학습  로그  출력101 if step %10==0:102103 print(104 f"Epoch={epoch} "105 f"Step={step} "106 f"Loss={loss.item():.4f}"107 )108109            time.sleep(1)110111 print(f"Epoch {epoch} DONE")112113 print("TRAINING COMPLETE")114115# 학습  완료  모델  저장116SAVE_PATH ="./saved_model"117118os.makedirs(SAVE_PATH, exist_ok=True)119120model.module.save_pretrained(SAVE_PATH)121tokenizer.save_pretrained(SAVE_PATH)122123 print(f"MODEL SAVED: {SAVE_PATH}")
+
+--- page 15 ---
+STEP 4. 모델  및  데이터  백업
+학습  완료  후  생성된  모델  파일 (saved_model) 을  NAS 또는  영구  저장소에  백업합니다 .
+실제  운영  환경에서는  학습  코드 , 데이터셋 , checkpoint 등을  함께  관리합니다 .
+저장된  모델은  이후  추론 (Inference) 또는  추가  Fine-tuning 용도로  재사용  가능합니다 .
+만약  할당  받으신  데이터  폴더 (NAS) 의  쿼터가  부족하시다면 , 기술  지원  게시판을  통해서  스토리
+지  증설  요청주시면  검토  후  증설  가능합니다 .

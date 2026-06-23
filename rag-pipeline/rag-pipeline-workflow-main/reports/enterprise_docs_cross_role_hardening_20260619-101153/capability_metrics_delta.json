@@ -1,0 +1,37 @@
+{
+  "alias_normalization_success_rate": {
+    "before": 0.5,
+    "after": 1.0,
+    "delta": 0.5
+  },
+  "cross_doc_equivalence_match_rate": {
+    "before": 0.3333,
+    "after": 0.6667,
+    "delta": 0.3334
+  },
+  "cross_role_extraction_alignment_rate": {
+    "before": 0.0,
+    "after": 1.0,
+    "delta": 1.0
+  },
+  "evidence_fusion_success_rate": {
+    "before": 0.5,
+    "after": 0.8333,
+    "delta": 0.3333
+  },
+  "conflict_classification_accuracy": {
+    "before": 0.3333,
+    "after": 0.8333,
+    "delta": 0.5
+  },
+  "conflict_resolution_readiness_rate": {
+    "before": 0.1667,
+    "after": 1.0,
+    "delta": 0.8333
+  },
+  "single_source_to_multi_source_promotion_rate": {
+    "before": 1.0,
+    "after": 0.8333,
+    "delta": -0.1667
+  }
+}

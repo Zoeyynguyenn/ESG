@@ -1,0 +1,2613 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="_csrf" data-th-content="" content="" />
+		<meta name="_csrf_header" data-th-content="" content="" />
+		<title>main | 최저임금위원회</title>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="/css/content.css" />
+<link rel="stylesheet" type="text/css" href="/css/sub.css" />
+<link rel="stylesheet" type="text/css" href="/css/lib/slick.css?ver=0.2"/>
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 공통 스크립트 파일 -->
+<script src="/js/lib/jquery-3.6.0.min.js"></script>
+<script src="/js/lib/html5shiv.min.js"></script>
+<script src="/js/lib/slick.min.js"></script>
+<script src="/js/layoutUI.js"></script>
+<script src="/js/commonUI.js"></script>
+<script src="/js/xtractor.js"></script>
+	</head>
+
+	<body>
+		<!-- skip menu : S -->
+		<div id="skip">
+			<dl>
+				<dt class="hide">바로가기 메뉴</dt>
+				<dd class="skip__menu">
+					<a tabindex="1" class="skip__link" href="#container">본문 바로가기</a>
+				</dd>
+			</dl>
+		</div>
+		<!-- skip menu : E -->
+		<div id="wrap">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		let ac = "active1";
+
+		$(".toggle_btn").on("click", function () {
+
+			const t = $(this);
+			if (!t.closest(".gov_top").hasClass(ac)) {
+				$(this).attr("title", "접기").closest(".gov_top").addClass(ac);
+			} else {
+				$(this).attr("title", "펼치기").closest(".gov_top").removeClass(ac);
+			}
+		});
+
+	});
+
+</script>
+
+<style type="text/css">
+	#header {position:relative;}
+	.inner_top{position:relative;width:100%;max-width:1580px;margin:0 auto;font-size:1rem;}
+	.gov_top{position:relative;min-height:1.2rem;padding:0.4rem 0 0;font-size:1rem}
+
+
+	.gov_top .inner_top{line-height:0.8rem}
+	.gov_top .gov_desc{margin:0.1rem 1.6rem .5rem 0;font-size:1rem;}
+	.gov_top .gov_desc img{position:relative;top:-.1rem;margin-right:.8rem;box-shadow:0 0 .2rem rgba(0,0,0,.1)}
+	.gov_top .toggle_btn{display:inline-flex;align-items:center;color:#0d3175;font-size:1rem;}
+	.gov_top .toggle_btn:after{content:"";display:block;margin-left:.2rem;width:1rem;height:1rem;background:url(/images/common/icon/icon_arrow_bot.png) center no-repeat;background-size:0.8rem auto;transition:all .5s}
+	.gov_top.active1 .toggle_btn:after{transform:rotate(180deg)}
+	.gov_top.active1:after{opacity:1}
+
+	.toggle_target{visibility:hidden;overflow:hidden;height:0;padding:0;position:relative;margin-top:.6rem;transition:all .3s}
+	.gov_top.active1 .toggle_target{visibility:visible;height:auto;padding:2.4rem 0 3.2rem}
+	.toggle_target .lst{display:flex;line-height:150%}
+	.toggle_target .lst > li{position:relative;padding-left:2.8rem;width:50%;max-width:47rem;margin-right:6rem}
+	.toggle_target .lst > li:before{content:"";position:absolute;left:1rem;top:.2rem;width:1rem;height:1rem;border-radius:50%;background-color:#fff;background-position:center;background-repeat:no-repeat;}
+	.toggle_target .lst > li.icon1:before{background-image:url(/images/common/icon/icon_govt_1.png)}
+	.toggle_target .lst > li.icon2:before{background-image:url(/images/common/icon/icon_govt_2.png)}
+	.toggle_target .lst > li .title{display:block;margin-bottom:1.3rem;font-weight:700;font-size:1rem}
+	.toggle_target .lst > li .desc{font-size:1rem;color:#555}
+	.toggle_target .lst > li .link_area{margin-top:1.5rem}
+	.toggle_target .lst > li .link_area a{display:inline-block}
+
+	@media screen and (min-width:680px){
+		.gov_top:before{content:"";position:absolute;width:500%;height:100%;top:0;left:50%;background-color:#eee;transform:translateX(-50%);z-index:-1}
+		.gov_top:after{opacity:0;content:"";position:absolute;left:50%;top:2.2rem;width:500%;transform:translateX(-50%);border-top:1px solid ;transition:all .3s}
+	}
+
+	@media screen and (max-width:1280px){
+		.gov_top{padding:.6rem 1.6rem 0;transition:padding .2s}
+		.header_top .inner_top{padding:4.4rem 1.6rem 1.6rem;transition:padding .2s}
+	}
+
+	@media screen and (max-width:600px) {
+		.gov_top:before{content:"";position:none;width:;height:;top:0;left:50%;background-color:#eee;transform:translateX(-50%);z-index:-1}
+		.gov_top:after{opacity:0;content:"";position:none;left:50%;top:3.2rem;width:0;transform:translateX(-50%);border-top:1px solid ;transition:all .3s}
+		#header {position: static}
+		.gov_top .gov_desc {
+			margin-right: 0;
+			font-size: 12px;
+		}
+
+		.gov_top .toggle_btn,
+		.header_util {
+			display: none
+		}
+	}
+</style>
+<!-- 탑 전자정부 누리집 확인방법 -->
+<div class="gov_top">
+	<div class="inner_top">
+	    <span class="gov_desc">
+        <img src="/images/common/icon/img_taegeukgi.png" alt="태극기">이 누리집은 대한민국 공식 전자정부 누리집입니다.
+        </span>
+		<!-- <button type="button" class="toggle_btn" title="펼치기">공식 누리집 확인방법</button> -->
+		<div class="toggle_target">
+			<ul class="lst">
+				<li class="icon1">
+					<strong class="title">공식 누리집 주소 확인하기</strong>
+					<p class="desc">
+						go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다. 이 밖에 or.kr 또는 .kr등 다른 도메인 주소를 사용하고 있다면 아래 URL에서 도메인 주소를 확인해 보세요.
+					</p>
+					<div class="link_area">
+						<a href="https://uiux.egovframe.go.kr/search.do" target="_blank" title="새창 열림">운영중인 공식 누리집보기</a>
+					</div>
+				</li>
+				<li class="icon2">
+					<strong class="title">아이콘 또는 HTTPS 확인하기</strong>
+					<p class="desc">
+						웹 브라우저의 주소 입력창에 표시된 자물쇠 아이콘과 주소 앞 https://가 있는지 체크하여 보안적용이 되어 있는지 확인하세요.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 탑 전자정부 누리집 확인방법 -->
+<header id="header">
+	<div class="inner">
+		<h1 class="header-top__logo">
+			<a href="/" class="home" title="최저임금위원회 메인 페이지로 이동하기"><span class="blind">최저임금위원회</span></a>
+		</h1>
+		<div id="gnbPC" class="gnb">
+			
+				<div class="menu-list__box ">
+					
+					<a href="/committee/greeting/main.do" class="depth1-title" title="위원회 소개 페이지 이동하기">위원회 소개</a>
+					<ul class="depth2">
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/committee/greeting/main.do" title="인사말 이동하기">인사말</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/committee/introduce/about.do" title="위원회 정보 이동하기">위원회 정보</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/committee/config/secretariat.do" title="위원회 구성 이동하기">위원회 구성</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/committee/contactUs/main.do" title="연락처 및 약도 이동하기">연락처 및 약도</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</ul>
+				</div>
+			
+				<div class="menu-list__box _on">
+					
+					<a href="/minWage/about/main.do" class="depth1-title" title="최저임금제도 페이지 이동하기">최저임금제도</a>
+					<ul class="depth2">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/minWage/about/main.do" title="최저임금제도 이동하기">최저임금제도</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/minWage/process/main.do" title="심의 및 결정과정 이동하기">심의 및 결정과정</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/minWage/policy/decisionMain.do" title="최저임금 현황 이동하기">최저임금 현황</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</ul>
+				</div>
+			
+				<div class="menu-list__box ">
+					
+					<a href="/activity/activity/main.do" class="depth1-title" title="위원회 활동 페이지 이동하기">위원회 활동</a>
+					<ul class="depth2">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/activity/activity/main.do" title="위원회 활동 이동하기">위원회 활동</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/activity/meeting/result.do" title="전원회의 이동하기">전원회의</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/activity/living/result.do" title="생계비전문위원회 이동하기">생계비전문위원회</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/activity/wage/result.do" title="임금수준전문위원회 이동하기">임금수준전문위원회</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/activity/research/result.do" title="연구위원회 이동하기">연구위원회</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</ul>
+				</div>
+			
+				<div class="menu-list__box ">
+					
+					<a href="/open/administration/main.do" class="depth1-title" title="정보공개 페이지 이동하기">정보공개</a>
+					<ul class="depth2">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/open/administration/main.do" title="행정정보공개 이동하기">행정정보공개</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/open/information/main.do" title="정보목록 이동하기">정보목록</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/open/business/list.do" title="업무추진비 공개 이동하기">업무추진비 공개</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/open/giftcard/list.do" title="상품권 구매 및 사용내역 이동하기">상품권 구매 및 사용내역</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/open/research/list.do" title="발간자료 이동하기">발간자료</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/open/statute/list.do" title="법령정보 이동하기">법령정보</a></li>
+									
+								
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</ul>
+				</div>
+			
+				<div class="menu-list__box ">
+					
+					<a href="/customer/notice/list.do" class="depth1-title" title="고객마당 페이지 이동하기">고객마당</a>
+					<ul class="depth2">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									
+									
+										<li><a href="/customer/notice/list.do" title="알림 이동하기">알림</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/customer/news/list.do" title="보도·해명자료 이동하기">보도·해명자료</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/customer/promotion/list.do" title="안내자료 이동하기">안내자료</a></li>
+									
+								
+							
+						
+							
+								
+									
+									
+										<li><a href="/customer/faq/list.do" title="자주하는질문 이동하기">자주하는질문</a></li>
+									
+								
+							
+						
+					</ul>
+				</div>
+			
+		</div>
+		<div class="utill-menu__box">
+			<a href="/english/main.do" class="btn-site__box" title="최저임금위원회 영문 사이트로 이동하기">ENG</a>
+			<a href="javascript:;" class="btn-menu__layer" title="전체 메뉴 열기"><span class="blind">전체 메뉴 열기</span></a>
+		</div>
+	</div>
+</header>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+* 전체 메뉴 열기 (#menuLayerWrap 공통사용)
+* PC :사이트맵(.sitemap-layer)
+* MOBILE :햄버거메뉴(.hamburger-menu)
+-->
+<div id="menuLayerWrap">
+	<h2 class="hide"><!--반응형에 따라 타이틀 변경--></h2>
+	<div class="inner">
+		
+			<div class="menu-list__box">
+				<a href="javascript:;" class="depth1-title" title="위원회 소개 페이지 이동하기">
+					<span class="num">01</span>
+					<strong class="text">위원회 소개</strong>
+				</a>
+				
+				<ul class="depth2">
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/committee/greeting/main.do" onclick="location.href='/committee/greeting/main.do'" title="인사말 이동하기">인사말</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/committee/introduce/about.do" onclick="location.href='/committee/introduce/about.do'" title="위원회 정보 이동하기">위원회 정보</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/committee/config/secretariat.do" onclick="location.href='/committee/config/secretariat.do'" title="위원회 구성 이동하기">위원회 구성</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/committee/contactUs/main.do" onclick="location.href='/committee/contactUs/main.do'" title="연락처 및 약도 이동하기">연락처 및 약도</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+				</ul>
+			</div>
+		
+			<div class="menu-list__box">
+				<a href="javascript:;" class="depth1-title" title="최저임금제도 페이지 이동하기">
+					<span class="num">02</span>
+					<strong class="text">최저임금제도</strong>
+				</a>
+				
+				<ul class="depth2">
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/minWage/about/main.do" onclick="location.href='/minWage/about/main.do'" title="최저임금제도 이동하기">최저임금제도</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/minWage/process/main.do" onclick="location.href='/minWage/process/main.do'" title="심의 및 결정과정 이동하기">심의 및 결정과정</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/minWage/policy/decisionMain.do" onclick="location.href='/minWage/policy/decisionMain.do'" title="최저임금 현황 이동하기">최저임금 현황</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+				</ul>
+			</div>
+		
+			<div class="menu-list__box">
+				<a href="javascript:;" class="depth1-title" title="위원회 활동 페이지 이동하기">
+					<span class="num">03</span>
+					<strong class="text">위원회 활동</strong>
+				</a>
+				
+				<ul class="depth2">
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/activity/activity/main.do" onclick="location.href='/activity/activity/main.do'" title="위원회 활동 이동하기">위원회 활동</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/activity/meeting/result.do" onclick="location.href='/activity/meeting/result.do'" title="전원회의 이동하기">전원회의</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/activity/living/result.do" onclick="location.href='/activity/living/result.do'" title="생계비전문위원회 이동하기">생계비전문위원회</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/activity/wage/result.do" onclick="location.href='/activity/wage/result.do'" title="임금수준전문위원회 이동하기">임금수준전문위원회</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/activity/research/result.do" onclick="location.href='/activity/research/result.do'" title="연구위원회 이동하기">연구위원회</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+				</ul>
+			</div>
+		
+			<div class="menu-list__box">
+				<a href="javascript:;" class="depth1-title" title="정보공개 페이지 이동하기">
+					<span class="num">04</span>
+					<strong class="text">정보공개</strong>
+				</a>
+				
+				<ul class="depth2">
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/open/administration/main.do" onclick="location.href='/open/administration/main.do'" title="행정정보공개 이동하기">행정정보공개</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/open/information/main.do" onclick="location.href='/open/information/main.do'" title="정보목록 이동하기">정보목록</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/open/business/list.do" onclick="location.href='/open/business/list.do'" title="업무추진비 공개 이동하기">업무추진비 공개</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/open/giftcard/list.do" onclick="location.href='/open/giftcard/list.do'" title="상품권 구매 및 사용내역 이동하기">상품권 구매 및 사용내역</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/open/research/list.do" onclick="location.href='/open/research/list.do'" title="발간자료 이동하기">발간자료</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/open/statute/list.do" onclick="location.href='/open/statute/list.do'" title="법령정보 이동하기">법령정보</a></li>
+									
+								
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+				</ul>
+			</div>
+		
+			<div class="menu-list__box">
+				<a href="javascript:;" class="depth1-title" title="고객마당 페이지 이동하기">
+					<span class="num">05</span>
+					<strong class="text">고객마당</strong>
+				</a>
+				
+				<ul class="depth2">
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/customer/notice/list.do" onclick="location.href='/customer/notice/list.do'" title="알림 이동하기">알림</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/customer/news/list.do" onclick="location.href='/customer/news/list.do'" title="보도·해명자료 이동하기">보도·해명자료</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/customer/promotion/list.do" onclick="location.href='/customer/promotion/list.do'" title="안내자료 이동하기">안내자료</a></li>
+									
+								
+							
+						
+					
+						
+							
+								
+									
+									
+										<li><a href="/customer/faq/list.do" onclick="location.href='/customer/faq/list.do'" title="자주하는질문 이동하기">자주하는질문</a></li>
+									
+								
+							
+						
+					
+				</ul>
+			</div>
+		
+		<a href="javascript:;" class="btn-layer_close" title="전체 메뉴 닫기"><span class="hide">전체 메뉴 닫기</span></a>
+	</div>
+</div>
+
+			<div class="sub-container">
+				<div class="inner">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+* 전체 메뉴 열기 (#menuLayerWrap 공통사용)
+* PC :사이트맵(.sitemap-layer)
+* MOBILE :햄버거메뉴(.hamburger-menu)
+-->
+<div id="lnbSection">
+	<div class="lnb-list">
+		<strong class="lnb-title">
+			최저임금제도
+		</strong>
+		<ul>
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					<li class="lnb-item__li " title="최저임금제도 페이지로 이동하기"><a href="/minWage/about/main.do">최저임금제도</a></li>
+				
+			
+				
+					<li class="lnb-item__li " title="심의 및 결정과정 페이지로 이동하기"><a href="/minWage/process/main.do">심의 및 결정과정</a></li>
+				
+			
+				
+					<li class="lnb-item__li on" title="최저임금 현황 페이지로 이동하기"><a href="/minWage/policy/decisionMain.do">최저임금 현황</a></li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		</ul>
+	</div>
+</div>
+					<div id="content">
+						<div class="location-box">
+							<a href="/minWage/about/main.do"><span>최저임금제도</span></a>
+							<a href="/minWage/policy/decisionMain.do"><strong>최저임금 현황</strong></a>
+						</div>
+
+						<div class="tit-top type2">
+							<h3 class="tit-h3">최저임금 현황</h3>
+							<p class="explanation_box">최저임금 결정 및 제시 현황, 영향률, 미만율에 대해 확인하실 수 있습니다.</p>
+
+							<div class="page-zoom__box">
+								<strong class="blind">기능 버튼 모음</strong>
+								<ul>
+									<li><a href="javascript:;" title="화면 확대" class="zoom zoomin" onclick="zoomIn();"><span class="blind">화면 확대</span></a></li>
+									<li><a href="javascript:;" title="화면크기 원래대로" class="zoom zoomremove" onclick="zoomRemove();"><span class="blind">화면크기 원래대로</span></a></li>
+									<li><a href="javascript:;" title="화면 축소" class="zoom zoomout" onclick="zoomOut();"><span class="blind">화면 축소</span></a></li>
+									<li><a href="javascript:;" title="현재 페이지 프린트" class="print" onclick="window.print();" target="_blank"><span class="blind">현재 페이지 프린트</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="container">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-body">
+    <div class="sub__tab">
+        <ul>
+            <li class="on"><a href="/minWage/policy/decisionMain.do;jsessionid=ai-OCCtV+G9DsJPJ6n4sqipG.node10" title="연도별 최저임금 결정 현황 페이지 이동하기">연도별 최저임금 결정 현황</a></li>
+            <li><a href="/minWage/policy/proposalMain.do;jsessionid=ai-OCCtV+G9DsJPJ6n4sqipG.node10" title="최저임금 제시 현황 페이지 이동하기">최저임금 제시 현황</a></li>
+            
+                <li><a href="/minWage/policy/influenceMain.do;jsessionid=ai-OCCtV+G9DsJPJ6n4sqipG.node10?division=S" title="영향률 페이지 이동하기">영향률</a></li>
+            
+            
+                <li><a href="/minWage/policy/underMain.do;jsessionid=ai-OCCtV+G9DsJPJ6n4sqipG.node10?division=S" title="미만율 선택됨">미만율</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="chart-cont">
+        <h4 class="tit-h4">연도별 최저임금 결정현황</h4>
+        <div class="line__tab-type2">
+            <a href="javascript:;" class="btn_select">2021-2009</a>
+            <ul class="line-tab__cont">
+                
+                    
+                        
+                            <li class='on'><a href="javascript:;" class="year2011">2011 ~ 2026</a></li>
+                        
+                            <li ><a href="javascript:;" class="year2001">2001 ~ 2010</a></li>
+                        
+                            <li ><a href="javascript:;" class="year1988">1988 ~ 2000</a></li>
+                        
+                    
+                
+            </ul>
+            <button type="button" id="btn_search" class="btn_basic navy" title=""><span class="button-txt">검색</span></button>
+        </div>
+        <div class="chart-graphic">
+            <div class="img">
+                
+                    
+                        
+                            <h4 class="hide"><span class=" year2011" style="display:block; ">연도별 최저임금 결정현황 (2011~2026)</span></h4>
+                            <span class="year2011" style="display:block; "><img src="/file/downloadThumbnail.do?fileRef=125.128.69.130_20250805090936" alt="연도별 최저임금 결정현황 (2011~2026) 그래프 하단 표 참고 부탁드립니다."></span>
+                        
+                            <h4 class="hide"><span class=" year2001" style="display:none; ">연도별 최저임금 결정현황 (2001~2010)</span></h4>
+                            <span class="year2001" style="display:none; "><img src="/file/downloadThumbnail.do?fileRef=125.128.69.130_20220818104722" alt="연도별 최저임금 결정현황 (2001~2010) 그래프 하단 표 참고 부탁드립니다."></span>
+                        
+                            <h4 class="hide"><span class=" year1988" style="display:none; ">연도별 최저임금 결정현황 (1988~2000)</span></h4>
+                            <span class="year1988" style="display:none; "><img src="/file/downloadThumbnail.do?fileRef=125.128.69.130_20221103132715" alt="연도별 최저임금 결정현황 (1988~2000) 그래프 하단 표 참고 부탁드립니다."></span>
+                        
+                    
+                
+            </div>
+        </div>
+
+        <div class="data-table__box">
+            <h4 class="tit-h4">연도별 최저임금 결정현황</h4>
+            <span class="unit_txt">(단위:원, %)</span>
+            <div class="table">
+                <table class="table-board">
+                    <caption>
+                        <p>연도별 최저임금 결정현황</p>
+                        적용연도, 시간급, 일급(8시간 기준), 월급(209시간 기준,고시기준), 인상률(인상액), 심의 의결일, 결정고시일을 포함한 표입니다.
+                    </caption>
+                    <colgroup>
+                        <col style="width:14%;" />
+                        <col style="width:14%;" />
+                        <col style="width:14%;" />
+                        <col style="width:auto;" />
+                        <col style="width:14%;" />
+                        <col style="width:14%;" />
+                        <col style="width:14%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">적용연도</th>
+                            <th scope="col">시간급</th>
+                            <th scope="col">일급 <span>(8시간 기준)</span></th>
+                            <th scope="col">월급 <span>(209시간 <br>기준,고시기준)</span></th>
+                            <th scope="col">인상률 <span>(인상액)</span></th>
+                            <th scope="col">심의 <br>의결일</th>
+                            <th scope="col">결정 <br>고시일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                        
+                            
+                                <tr>
+                                    <td>'26.01.01 <br>~'26.12.31</td>
+                                    <td>10,320</td>
+                                    <td>82,560</td>
+                                    <td>2,156,880</td>
+                                    <td>2.9
+                                        
+                                            (290)
+                                        
+                                    </td>
+                                    <td>25.07.10</td>
+                                    <td>25.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'25.01.01 <br>~'25.12.31</td>
+                                    <td>10,030</td>
+                                    <td>80,240</td>
+                                    <td>2,096,270</td>
+                                    <td>1.7
+                                        
+                                            (170)
+                                        
+                                    </td>
+                                    <td>24.07.12</td>
+                                    <td>24.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'24.01.01 <br>~'24.12.31</td>
+                                    <td>9,860</td>
+                                    <td>78,880</td>
+                                    <td>2,060,740</td>
+                                    <td>2.5
+                                        
+                                            (240)
+                                        
+                                    </td>
+                                    <td>23.07.19</td>
+                                    <td>23.08.04</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'23.01.01 <br>~'23.12.31</td>
+                                    <td>9,620</td>
+                                    <td>76,960</td>
+                                    <td>2,010,580</td>
+                                    <td>5.0
+                                        
+                                            (460)
+                                        
+                                    </td>
+                                    <td>22.06.29</td>
+                                    <td>22.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'22.01.01 <br>~'22.12.31</td>
+                                    <td>9,160</td>
+                                    <td>73,280</td>
+                                    <td>1,914,440</td>
+                                    <td>5.05
+                                        
+                                            (440)
+                                        
+                                    </td>
+                                    <td>21.07.12</td>
+                                    <td>21.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'21.01.01 <br>~'21.12.31</td>
+                                    <td>8,720</td>
+                                    <td>69,760</td>
+                                    <td>1,822,480</td>
+                                    <td>1.5
+                                        
+                                            (130)
+                                        
+                                    </td>
+                                    <td>20.07.14</td>
+                                    <td>20.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'20.01.01 <br>~'20.12.31</td>
+                                    <td>8,590</td>
+                                    <td>68,720</td>
+                                    <td>1,795,310</td>
+                                    <td>2.87
+                                        
+                                            (240)
+                                        
+                                    </td>
+                                    <td>19.07.12</td>
+                                    <td>19.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'19.01.01 <br>~'19.12.31</td>
+                                    <td>8,350</td>
+                                    <td>66,800</td>
+                                    <td>1,745,150</td>
+                                    <td>10.9
+                                        
+                                            (820)
+                                        
+                                    </td>
+                                    <td>18.07.14</td>
+                                    <td>18.08.03</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'18.01.01 <br>~'18.12.31</td>
+                                    <td>7,530</td>
+                                    <td>60,240</td>
+                                    <td>1,573,770</td>
+                                    <td>16.4
+                                        
+                                            (1,060)
+                                        
+                                    </td>
+                                    <td>17.07.15</td>
+                                    <td>17.08.04</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'17.01.01 <br>~'17.12.31</td>
+                                    <td>6,470</td>
+                                    <td>51,760</td>
+                                    <td>1,352,230</td>
+                                    <td>7.3
+                                        
+                                            (440)
+                                        
+                                    </td>
+                                    <td>16.07.16</td>
+                                    <td>16.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'16.01.01 <br>~'16.12.31</td>
+                                    <td>6,030</td>
+                                    <td>48,240</td>
+                                    <td>1,260,270</td>
+                                    <td>8.1
+                                        
+                                            (450)
+                                        
+                                    </td>
+                                    <td>15.07.09</td>
+                                    <td>15.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'15.01.01 <br>~'15.12.31</td>
+                                    <td>5,580</td>
+                                    <td>44,640</td>
+                                    <td></td>
+                                    <td>7.1
+                                        
+                                            (370)
+                                        
+                                    </td>
+                                    <td>14.06.27</td>
+                                    <td>14.08.04</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'14.01.01 <br>~'14.12.31</td>
+                                    <td>5,210</td>
+                                    <td>41,680</td>
+                                    <td></td>
+                                    <td>7.2
+                                        
+                                            (350)
+                                        
+                                    </td>
+                                    <td>13.07.05</td>
+                                    <td>13.08.02</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'13.01.01 <br>~'13.12.31</td>
+                                    <td>4,860</td>
+                                    <td>38,880</td>
+                                    <td></td>
+                                    <td>6.1
+                                        
+                                            (280)
+                                        
+                                    </td>
+                                    <td>12.06.30</td>
+                                    <td>12.08.01</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'12.01.01 <br>~'12.12.31</td>
+                                    <td>4,580</td>
+                                    <td>36,640</td>
+                                    <td></td>
+                                    <td>6.0
+                                        
+                                            (260)
+                                        
+                                    </td>
+                                    <td>11.07.13</td>
+                                    <td>11.08.01</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'11.01.01 <br>~'11.12.31</td>
+                                    <td>4,320</td>
+                                    <td>34,560</td>
+                                    <td></td>
+                                    <td>5.1
+                                        
+                                            (210)
+                                        
+                                    </td>
+                                    <td>10.07.03</td>
+                                    <td>10.08.03</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'10.01.01 <br>~'10.12.31</td>
+                                    <td>4,110</td>
+                                    <td>32,880</td>
+                                    <td></td>
+                                    <td>2.75
+                                        
+                                            (110)
+                                        
+                                    </td>
+                                    <td>09.06.30</td>
+                                    <td>09.08.03</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'09.01.01 <br>~'09.12.31</td>
+                                    <td>4,000</td>
+                                    <td>32,000</td>
+                                    <td></td>
+                                    <td>6.1
+                                        
+                                            (230)
+                                        
+                                    </td>
+                                    <td>08.06.27</td>
+                                    <td>08.07.23</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'08.01.01 <br>~'08.12.31</td>
+                                    <td>3,770</td>
+                                    <td>30,160</td>
+                                    <td></td>
+                                    <td>8.3
+                                        
+                                            (290)
+                                        
+                                    </td>
+                                    <td>07.06.27</td>
+                                    <td>07.08.01</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'07.01.01 <br>~'07.12.31</td>
+                                    <td>3,480</td>
+                                    <td>27,840</td>
+                                    <td></td>
+                                    <td>12.3
+                                        
+                                            (380)
+                                        
+                                    </td>
+                                    <td>06.06.29</td>
+                                    <td>06.08.03</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'05.09.01 <br>~'06.12.31</td>
+                                    <td>3,100</td>
+                                    <td>24,800</td>
+                                    <td></td>
+                                    <td>9.2
+                                        
+                                            (260)
+                                        
+                                    </td>
+                                    <td>05.06.29</td>
+                                    <td>05.07.28</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'04.09.01 <br>~'05.08.31</td>
+                                    <td>2,840</td>
+                                    <td>22,720</td>
+                                    <td></td>
+                                    <td>13.1
+                                        
+                                            (330)
+                                        
+                                    </td>
+                                    <td>04.06.25</td>
+                                    <td>04.08.03</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'03.09.01 <br>~'04.08.31</td>
+                                    <td>2,510</td>
+                                    <td>20,080</td>
+                                    <td></td>
+                                    <td>10.3
+                                        
+                                            (235)
+                                        
+                                    </td>
+                                    <td>03.06.27</td>
+                                    <td>03.07.31</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'02.09.01 <br>~'03.08.31</td>
+                                    <td>2,275</td>
+                                    <td>18,200</td>
+                                    <td></td>
+                                    <td>8.3
+                                        
+                                            (175)
+                                        
+                                    </td>
+                                    <td>02.06.28</td>
+                                    <td>02.07.26</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'01.09.01 <br>~'02.08.31</td>
+                                    <td>2,100</td>
+                                    <td>16,800</td>
+                                    <td></td>
+                                    <td>12.6
+                                        
+                                            (235)
+                                        
+                                    </td>
+                                    <td>01.07.20</td>
+                                    <td>01.08.06</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'00.09.01 <br>~'01.08.31</td>
+                                    <td>1,865</td>
+                                    <td>14,920</td>
+                                    <td></td>
+                                    <td>16.6
+                                        
+                                            (265)
+                                        
+                                    </td>
+                                    <td>00.07.21</td>
+                                    <td>00.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'99.09.01 <br>~'00.08.31</td>
+                                    <td>1,600</td>
+                                    <td>12,800</td>
+                                    <td></td>
+                                    <td>4.9
+                                        
+                                            (75)
+                                        
+                                    </td>
+                                    <td>99.07.20</td>
+                                    <td>99.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'98.09.01 <br>~'99.08.31</td>
+                                    <td>1,525</td>
+                                    <td>12,200</td>
+                                    <td></td>
+                                    <td>2.7
+                                        
+                                            (40)
+                                        
+                                    </td>
+                                    <td>98.07.23</td>
+                                    <td>98.08.17</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'97.09.01 <br>~'98.08.31</td>
+                                    <td>1,485</td>
+                                    <td>11,880</td>
+                                    <td></td>
+                                    <td>6.1
+                                        
+                                            (85)
+                                        
+                                    </td>
+                                    <td>97.07.24</td>
+                                    <td>97.08.12</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'96.09.01 <br>~'97.08.31</td>
+                                    <td>1,400</td>
+                                    <td>11,200</td>
+                                    <td></td>
+                                    <td>9.8
+                                        
+                                            (125)
+                                        
+                                    </td>
+                                    <td>96.07.05</td>
+                                    <td>96.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'95.09.01 <br>~'96.08.31</td>
+                                    <td>1,275</td>
+                                    <td>10,200</td>
+                                    <td></td>
+                                    <td>8.97
+                                        
+                                            (105)
+                                        
+                                    </td>
+                                    <td>95.07.03</td>
+                                    <td>95.08.05</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'94.09.01 <br>~'95.08.31</td>
+                                    <td>1,170</td>
+                                    <td>9,360</td>
+                                    <td></td>
+                                    <td>7.8
+                                        
+                                            (85)
+                                        
+                                    </td>
+                                    <td>94.07.05</td>
+                                    <td>94.07.29</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'94.01.01 <br>~'94.08.31</td>
+                                    <td>1,085</td>
+                                    <td>8,680</td>
+                                    <td></td>
+                                    <td>7.96
+                                        
+                                            (80)
+                                        
+                                    </td>
+                                    <td>93.10.11</td>
+                                    <td>93.12.04</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'93.01.01 <br>~'93.12.31</td>
+                                    <td>1,005</td>
+                                    <td>8,040</td>
+                                    <td></td>
+                                    <td>8.6
+                                        
+                                            (80)
+                                        
+                                    </td>
+                                    <td>92.10.10</td>
+                                    <td>92.12.04</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'92.01.01 <br>~'92.12.31</td>
+                                    <td>925</td>
+                                    <td>7,400</td>
+                                    <td></td>
+                                    <td>12.8
+                                        
+                                            (105)
+                                        
+                                    </td>
+                                    <td>91.10.11</td>
+                                    <td>91.12.13</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'91.01.01 <br>~'91.12.31</td>
+                                    <td>820</td>
+                                    <td>6,560</td>
+                                    <td></td>
+                                    <td>18.8
+                                        
+                                            (130)
+                                        
+                                    </td>
+                                    <td>90.10.12</td>
+                                    <td>90.12.19</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'90.01.01 <br>~'90.12.31</td>
+                                    <td>690</td>
+                                    <td>5,520</td>
+                                    <td></td>
+                                    <td>15.0
+                                        
+                                            (90)
+                                        
+                                    </td>
+                                    <td>89.10.12</td>
+                                    <td>89.11.27</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'89.01.01 <br>~'89.12.31</td>
+                                    <td>600</td>
+                                    <td>4,800</td>
+                                    <td></td>
+                                    <td>1그룹 29.7(137.5) / 2그룹 23.1(112.5)
+                                        
+                                    </td>
+                                    <td>88.10.12</td>
+                                    <td>88.11.24</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>'88.01.01 <br>~'88.12.31</td>
+                                    <td>1그룹 462.50  /  2그룹 487.50</td>
+                                    <td>3,700  /  3,900</td>
+                                    <td></td>
+                                    <td>-
+                                        
+                                    </td>
+                                    <td>87.12.24</td>
+                                    <td>87.12.31</td>
+                                </tr>
+                            
+                        
+                        
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <p class="caution_txt">
+            주 :법률 제7563호 최저임금법 일부 개정법률(2005. 9. 1. 시행) 부칙 제2항에 의하여 2005년 9월 1일부터 효력을 발생하는 최저임금은 2006년12월31일까지 효력을 가짐
+        </p>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        $(".line-tab__cont  li").off("click").on("click", function (obj) {
+            $(".line-tab__cont li").removeClass("on")
+            console.log(obj)
+        })
+    })
+</script>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer">
+	<div class="footer-info">
+		<div class="inner">
+			<div class="footer-info__link">
+				<a href="/committee/privacyPolicy.do;jsessionid=ai-OCCtV+G9DsJPJ6n4sqipG.node10"><strong style="text-decoration: underline;">개인정보처리방침</strong></a>
+				<a href="/committee/contactUs/main.do;jsessionid=ai-OCCtV+G9DsJPJ6n4sqipG.node10">오시는길</a>
+				<a href="/english/main.do;jsessionid=ai-OCCtV+G9DsJPJ6n4sqipG.node10">ENGLISH</a>
+			</div>
+			<div class="footer-info__address">
+				<address>30117 세종특별시 한누리대로 422 최저임금위원회(11동 고용노동부 4층)</address>
+				<span class="tel">TEL. 044-202-8410 /  FAX. 044-202-8170</span>
+				<span class="copyright">COPYRIGHT (C) All Rights Reserved.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+
+	</body>
+</html>

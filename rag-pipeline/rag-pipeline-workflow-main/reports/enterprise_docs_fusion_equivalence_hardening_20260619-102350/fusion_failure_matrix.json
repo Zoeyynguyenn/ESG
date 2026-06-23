@@ -1,0 +1,107 @@
+{
+  "cases": [
+    {
+      "case_id": "CONSTRUCT-FUSION-NARRATIVE-TABLE-SCALED",
+      "family_id": "environment_ghg",
+      "item": "총 온실가스",
+      "extract_alignment_ok": true,
+      "equivalence_collapse_ok": true,
+      "fusion_ok": true,
+      "multi_source_confirmed": true,
+      "confirming_logical_docs": [
+        "doc_evidence_csv",
+        "doc_sr_narrative"
+      ],
+      "resolved_value": "12500",
+      "failure_stage": "none"
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "family_id": "environment_ghg",
+      "item": "스코프 3",
+      "extract_alignment_ok": true,
+      "equivalence_collapse_ok": true,
+      "fusion_ok": true,
+      "multi_source_confirmed": true,
+      "confirming_logical_docs": [
+        "doc_governance_disclosure",
+        "doc_sr_narrative"
+      ],
+      "resolved_value": "scope_3",
+      "failure_stage": "none"
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "family_id": "governance",
+      "item": "ESG 평가 등급",
+      "extract_alignment_ok": true,
+      "equivalence_collapse_ok": true,
+      "fusion_ok": true,
+      "multi_source_confirmed": true,
+      "confirming_logical_docs": [
+        "doc_governance_disclosure",
+        "doc_sr_narrative"
+      ],
+      "resolved_value": "A",
+      "failure_stage": "none"
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "family_id": "governance",
+      "item": "이사회 개최",
+      "extract_alignment_ok": true,
+      "equivalence_collapse_ok": false,
+      "fusion_ok": true,
+      "multi_source_confirmed": false,
+      "confirming_logical_docs": [
+        "doc_sr_narrative"
+      ],
+      "resolved_value": "14",
+      "failure_stage": "none"
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "family_id": "employee_headcount",
+      "item": "육아휴직",
+      "extract_alignment_ok": true,
+      "equivalence_collapse_ok": true,
+      "fusion_ok": true,
+      "multi_source_confirmed": false,
+      "confirming_logical_docs": [
+        "doc_governance_disclosure"
+      ],
+      "resolved_value": "120",
+      "failure_stage": "none"
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "family_id": "environment_ghg",
+      "item": "탄소중립",
+      "extract_alignment_ok": true,
+      "equivalence_collapse_ok": true,
+      "fusion_ok": true,
+      "multi_source_confirmed": false,
+      "confirming_logical_docs": [
+        "doc_sr_narrative"
+      ],
+      "resolved_value": "2050",
+      "failure_stage": "none"
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "family_id": "environment_ghg",
+      "item": "총 온실가스",
+      "extract_alignment_ok": true,
+      "equivalence_collapse_ok": true,
+      "fusion_ok": true,
+      "multi_source_confirmed": true,
+      "confirming_logical_docs": [
+        "doc_evidence_csv",
+        "doc_sr_narrative"
+      ],
+      "resolved_value": "12,500",
+      "failure_stage": "none"
+    }
+  ],
+  "by_failure_stage": {}
+}

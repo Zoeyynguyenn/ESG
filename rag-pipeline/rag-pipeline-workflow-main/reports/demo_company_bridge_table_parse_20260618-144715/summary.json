@@ -1,0 +1,389 @@
+{
+  "timestamp": "20260618-144715",
+  "single": {
+    "count": 20,
+    "single_doc_ready_count": 10,
+    "single_extraction_success_rate_on_ready": 0.8,
+    "single_extraction_success_rate_all": 0.4,
+    "wrong_row_risk_count": 0,
+    "semantic_bridge_usage_count": 0,
+    "narrative_metric_parse_success_count": 0,
+    "metric_type": {
+      "single_extraction_success": "proxy",
+      "wrong_row_risk": "heuristic",
+      "semantic_bridge_usage_count": "exact",
+      "narrative_metric_parse_success_count": "exact"
+    }
+  },
+  "cross": {
+    "count": 15,
+    "quantitative_cross_count": 10,
+    "aggregation_success_rate": 0.1333,
+    "aggregation_partial_rate": 0.2667,
+    "aggregation_conflict_rate": 0.0,
+    "quant_aggregation_success_rate": 0.2,
+    "table_unit_hit_rate": 0.7,
+    "semantic_bridge_usage_count": 4,
+    "narrative_metric_parse_success_count": 0,
+    "missing_role_rate": 0.0,
+    "metric_type": {
+      "quant_aggregation_success": "exact",
+      "table_unit_hit_rate": "heuristic",
+      "missing_role_rate": "exact"
+    }
+  },
+  "delta_vs_142543_note": "see delta_vs_143749 for latest comparison",
+  "delta_vs_143749": {
+    "baseline_label": "143749",
+    "single_extraction_success_rate_on_ready": {
+      "new": 0.8,
+      "old": 0.8,
+      "delta": 0.0
+    },
+    "wrong_row_risk_count": {
+      "new": 0,
+      "old": 0,
+      "delta": 0.0
+    },
+    "quant_aggregation_success_rate": {
+      "new": 0.2,
+      "old": 0.2,
+      "delta": 0.0
+    },
+    "aggregation_conflict_rate": {
+      "new": 0.0,
+      "old": 0.0,
+      "delta": 0.0
+    },
+    "table_unit_hit_rate": {
+      "new": 0.7,
+      "old": null,
+      "delta": null
+    },
+    "semantic_bridge_usage_count": {
+      "new": 4,
+      "old": null,
+      "delta": null
+    },
+    "narrative_metric_parse_success_count": {
+      "new": 0,
+      "old": null,
+      "delta": null
+    },
+    "missing_role_rate": {
+      "new": 0.0,
+      "old": null,
+      "delta": null
+    }
+  },
+  "focus_case_analysis": [
+    {
+      "item_id": "QUANT-0044",
+      "docs_sufficient": true,
+      "role_coverage": 1.0,
+      "table_unit_preferred": true,
+      "table_candidates_seen": 13,
+      "units_retrieved": [
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0001",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0003",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0002",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::04_인사_안전_통계_md::0006",
+          "is_table": false,
+          "doc": "doc_04_hr_safety"
+        },
+        {
+          "unit_id": "demo_company::07_인증_현황_md::0001",
+          "is_table": true,
+          "doc": "doc_07_certification"
+        },
+        {
+          "unit_id": "demo_company::07_인증_현황_md::0002",
+          "is_table": true,
+          "doc": "doc_07_certification"
+        }
+      ],
+      "extraction_success": false,
+      "extraction_reason": "units_retrieved_but_no_parseable_numeric_row",
+      "semantic_bridge_used": "failed",
+      "bridge_reason": null,
+      "narrative_parse": false,
+      "aggregation_status": "failed",
+      "aggregation_reason": "no_numeric_candidates_from_units",
+      "resolved_value": null,
+      "primary_fail_stage": "extraction_gap"
+    },
+    {
+      "item_id": "QUANT-0208",
+      "docs_sufficient": true,
+      "role_coverage": 1.0,
+      "table_unit_preferred": true,
+      "table_candidates_seen": 10,
+      "units_retrieved": [
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0001",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0003",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0002",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::01_사업보고서_발췌_md::0004",
+          "is_table": false,
+          "doc": "doc_01_business"
+        },
+        {
+          "unit_id": "demo_company::06_지배구조_운영_md::0004",
+          "is_table": true,
+          "doc": "doc_06_governance"
+        },
+        {
+          "unit_id": "demo_company::06_지배구조_운영_md::0005",
+          "is_table": true,
+          "doc": "doc_06_governance"
+        }
+      ],
+      "extraction_success": true,
+      "extraction_reason": "matched_row:Capital expenditures",
+      "semantic_bridge_used": true,
+      "bridge_reason": "semantic_bridge:capital expenditures",
+      "narrative_parse": false,
+      "aggregation_status": "partial",
+      "aggregation_reason": "missing_roles:doc_01_business,doc_evidence_csv",
+      "resolved_value": "2,625",
+      "primary_fail_stage": "aggregation_gap"
+    },
+    {
+      "item_id": "QUANT-0210",
+      "docs_sufficient": true,
+      "role_coverage": 1.0,
+      "table_unit_preferred": true,
+      "table_candidates_seen": 10,
+      "units_retrieved": [
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0001",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0003",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0002",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::01_사업보고서_발췌_md::0004",
+          "is_table": false,
+          "doc": "doc_01_business"
+        },
+        {
+          "unit_id": "demo_company::06_지배구조_운영_md::0004",
+          "is_table": true,
+          "doc": "doc_06_governance"
+        },
+        {
+          "unit_id": "demo_company::06_지배구조_운영_md::0005",
+          "is_table": true,
+          "doc": "doc_06_governance"
+        }
+      ],
+      "extraction_success": true,
+      "extraction_reason": "matched_row:Defined contribution plan contributions, partial benefits proxy",
+      "semantic_bridge_used": true,
+      "bridge_reason": "semantic_bridge:defined contribution plan contributions",
+      "narrative_parse": false,
+      "aggregation_status": "partial",
+      "aggregation_reason": "missing_roles:doc_01_business,doc_evidence_csv",
+      "resolved_value": "1.4",
+      "primary_fail_stage": "aggregation_gap"
+    },
+    {
+      "item_id": "QUANT-0209",
+      "docs_sufficient": true,
+      "role_coverage": 1.0,
+      "table_unit_preferred": true,
+      "table_candidates_seen": 10,
+      "units_retrieved": [
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0001",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0003",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0002",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::01_사업보고서_발췌_md::0004",
+          "is_table": false,
+          "doc": "doc_01_business"
+        },
+        {
+          "unit_id": "demo_company::06_지배구조_운영_md::0004",
+          "is_table": true,
+          "doc": "doc_06_governance"
+        },
+        {
+          "unit_id": "demo_company::06_지배구조_운영_md::0005",
+          "is_table": true,
+          "doc": "doc_06_governance"
+        }
+      ],
+      "extraction_success": true,
+      "extraction_reason": "matched_row:Interest expense, net",
+      "semantic_bridge_used": true,
+      "bridge_reason": "semantic_bridge:interest expense, net",
+      "narrative_parse": false,
+      "aggregation_status": "partial",
+      "aggregation_reason": "missing_roles:doc_01_business,doc_evidence_csv",
+      "resolved_value": "1,862",
+      "primary_fail_stage": "aggregation_gap"
+    },
+    {
+      "item_id": "QUANT-0213",
+      "docs_sufficient": true,
+      "role_coverage": 1.0,
+      "table_unit_preferred": true,
+      "table_candidates_seen": 10,
+      "units_retrieved": [
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0001",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0003",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0002",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::01_사업보고서_발췌_md::0004",
+          "is_table": false,
+          "doc": "doc_01_business"
+        },
+        {
+          "unit_id": "demo_company::01_사업보고서_발췌_md::0001",
+          "is_table": false,
+          "doc": "doc_01_business"
+        },
+        {
+          "unit_id": "demo_company::06_지배구조_운영_md::0004",
+          "is_table": true,
+          "doc": "doc_06_governance"
+        }
+      ],
+      "extraction_success": true,
+      "extraction_reason": "matched_row:Income tax expense",
+      "semantic_bridge_used": true,
+      "bridge_reason": "semantic_bridge:income tax expense",
+      "narrative_parse": false,
+      "aggregation_status": "partial",
+      "aggregation_reason": "missing_roles:doc_01_business,doc_evidence_csv",
+      "resolved_value": "1,181",
+      "primary_fail_stage": "aggregation_gap"
+    },
+    {
+      "item_id": "QUANT-0046",
+      "docs_sufficient": true,
+      "role_coverage": 1.0,
+      "table_unit_preferred": false,
+      "table_candidates_seen": 0,
+      "units_retrieved": [
+        {
+          "unit_id": "demo_company::04_인사_안전_통계_md::0003",
+          "is_table": true,
+          "doc": "doc_04_hr_safety"
+        },
+        {
+          "unit_id": "demo_company::04_인사_안전_통계_md::0005",
+          "is_table": true,
+          "doc": "doc_04_hr_safety"
+        },
+        {
+          "unit_id": "demo_company::04_인사_안전_통계_md::0002",
+          "is_table": true,
+          "doc": "doc_04_hr_safety"
+        },
+        {
+          "unit_id": "demo_company::05_사회공헌_인권_md::0001",
+          "is_table": true,
+          "doc": "doc_05_social"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0001",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        },
+        {
+          "unit_id": "demo_company::26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv::0003",
+          "is_table": true,
+          "doc": "doc_evidence_csv"
+        }
+      ],
+      "extraction_success": false,
+      "extraction_reason": "source_not_disclosed_for_metric",
+      "semantic_bridge_used": "failed",
+      "bridge_reason": null,
+      "narrative_parse": false,
+      "aggregation_status": "failed",
+      "aggregation_reason": "no_numeric_candidates_from_units",
+      "resolved_value": null,
+      "primary_fail_stage": "extraction_gap"
+    }
+  ],
+  "rescued_focus_cases": [],
+  "still_failing_focus_cases": [
+    "QUANT-0044",
+    "QUANT-0208",
+    "QUANT-0210",
+    "QUANT-0209",
+    "QUANT-0213",
+    "QUANT-0046"
+  ],
+  "open_synthesis": false,
+  "expand_to_hanssem_musinsa": false,
+  "conclusion": "Bridge/table/narrative round: quant_success=0.2, wrong_row=0, rescued=[], still_fail=['QUANT-0044', 'QUANT-0208', 'QUANT-0210', 'QUANT-0209', 'QUANT-0213', 'QUANT-0046']. Chua mo synthesis; khoa tiep demo_company.",
+  "answers": {
+    "bridge_cases_rescued": 0,
+    "table_first_helped_financial": true,
+    "narrative_parser_usable": false,
+    "biggest_bottleneck": "extraction",
+    "open_synthesis": false,
+    "stay_on_demo_company": true
+  }
+}

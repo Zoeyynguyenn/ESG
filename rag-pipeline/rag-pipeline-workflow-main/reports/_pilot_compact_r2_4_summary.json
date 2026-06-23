@@ -1,0 +1,278 @@
+{
+  "selector_version": "2.4.0-compact",
+  "generated_at": "2026-06-11T09:49:00",
+  "strategy": "compact_no_tail_fill",
+  "target_size_min": 8,
+  "target_size_max": 10,
+  "pilot_selected": 6,
+  "pilot_record_ids": [
+    "rec_3adad134db5cb9c2",
+    "rec_41a160ead0ae1be6",
+    "rec_5edea297fe4ab1d8",
+    "rec_2d0cf95b00a0fefc",
+    "rec_ba9d092227fde816",
+    "rec_147089a328626757"
+  ],
+  "vs_r23_15": {
+    "r23_size": 15,
+    "overlap_ids": [
+      "rec_147089a328626757",
+      "rec_2d0cf95b00a0fefc",
+      "rec_3adad134db5cb9c2",
+      "rec_41a160ead0ae1be6",
+      "rec_5edea297fe4ab1d8",
+      "rec_ba9d092227fde816"
+    ],
+    "overlap_count": 6,
+    "removed_from_r23": [
+      "rec_6012503bc8a4e28d",
+      "rec_66100907c00656ec",
+      "rec_86c98b945fc03e6d",
+      "rec_abdc38fe1d1a8be1",
+      "rec_b54d398775fdb14b",
+      "rec_ce1fb6e4651850d3",
+      "rec_cece4f8f062194a3",
+      "rec_f01cb7ee8b222ec9",
+      "rec_fd59eb6b40389294"
+    ],
+    "removed_count": 9
+  },
+  "output_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\pilot_hanssem_10_compact_r2_4.jsonl",
+  "target_min": 8,
+  "target_max": 10,
+  "achieved_size": 6,
+  "anchor_count": 6,
+  "expansion_count": 0,
+  "tail_filler_count": 0,
+  "unique_fingerprint_count": 6,
+  "unique_cluster_count": 5,
+  "fact_categories_covered": [
+    "governance",
+    "materiality",
+    "metric",
+    "rating_recognition",
+    "report_publication",
+    "strategy"
+  ],
+  "selection_log": [
+    {
+      "record_id": "rec_3adad134db5cb9c2",
+      "pilot_source": "proven_usable_r2_3",
+      "select_reason": "distill_r23_validated_keep",
+      "fact_tags": [
+        "fact_8_material_issues",
+        "fact_net_zero_2050",
+        "fact_double_materiality",
+        "fact_esrs_issb",
+        "fact_housing_social",
+        "fact_gov_compliance_pct",
+        "fact_board_esg_2021"
+      ],
+      "fact_categories": [
+        "materiality",
+        "strategy",
+        "governance"
+      ],
+      "substance_score": 23,
+      "noise_score": 0
+    },
+    {
+      "record_id": "rec_41a160ead0ae1be6",
+      "pilot_source": "proven_usable_r2_3",
+      "select_reason": "distill_r23_validated_keep",
+      "fact_tags": [
+        "fact_12_material_issues",
+        "fact_net_zero_2050",
+        "fact_scope3_cdp",
+        "fact_double_materiality",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish"
+      ],
+      "fact_categories": [
+        "materiality",
+        "strategy",
+        "metric",
+        "governance",
+        "report_publication"
+      ],
+      "substance_score": 22,
+      "noise_score": 6
+    },
+    {
+      "record_id": "rec_5edea297fe4ab1d8",
+      "pilot_source": "proven_usable_r2_3",
+      "select_reason": "distill_r23_validated_keep",
+      "fact_tags": [
+        "fact_12_material_issues",
+        "fact_double_materiality",
+        "fact_iso45001",
+        "fact_board_esg_2021"
+      ],
+      "fact_categories": [
+        "materiality",
+        "governance"
+      ],
+      "substance_score": 13,
+      "noise_score": 0
+    },
+    {
+      "record_id": "rec_2d0cf95b00a0fefc",
+      "pilot_source": "proven_usable_r2_3",
+      "select_reason": "distill_r23_validated_keep",
+      "fact_tags": [
+        "fact_8_material_issues",
+        "fact_net_zero_2050",
+        "fact_double_materiality",
+        "fact_esrs_issb"
+      ],
+      "fact_categories": [
+        "materiality",
+        "strategy"
+      ],
+      "substance_score": 18,
+      "noise_score": 11
+    },
+    {
+      "record_id": "rec_ba9d092227fde816",
+      "pilot_source": "proven_usable_r2_3",
+      "select_reason": "distill_r23_validated_keep",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_scope3_cdp",
+        "fact_iso45001",
+        "fact_board_esg_2021",
+        "fact_sustinvest_aa",
+        "fact_un_global_compact"
+      ],
+      "fact_categories": [
+        "rating_recognition",
+        "metric",
+        "governance"
+      ],
+      "substance_score": 19,
+      "noise_score": 16
+    },
+    {
+      "record_id": "rec_147089a328626757",
+      "pilot_source": "proven_usable_r2_3",
+      "select_reason": "distill_r23_validated_keep",
+      "fact_tags": [
+        "fact_kgcs_rating",
+        "fact_board_esg_2021",
+        "fact_consecutive_publish"
+      ],
+      "fact_categories": [
+        "rating_recognition",
+        "governance",
+        "report_publication"
+      ],
+      "substance_score": 16,
+      "noise_score": 16
+    }
+  ],
+  "pool_analysis": {
+    "hanssem_pool_size": 40,
+    "unique_body_fingerprints": 37,
+    "proven_anchor_count": 6,
+    "tail_corpus_only_estimate": 21,
+    "duplicate_clusters": 5,
+    "saturated_cluster_ids": [
+      "fact_report_edition",
+      "fact_board_esg_2021|fact_consecutive_publish_years",
+      "fact_8_material_issues|fact_board_esg_2021|fact_net_zero_2050",
+      "fact_board_esg_2021|fact_consecutive_publish_years|fact_net_zero_2050",
+      "fact_8_material_issues|fact_net_zero_2050"
+    ]
+  },
+  "distillation": {
+    "input_units": 6,
+    "output_rows": 6,
+    "keep_count": 5,
+    "drop_count": 1,
+    "usable_count": 5,
+    "by_question_type": {
+      "qualitative_strategy": 2,
+      "qualitative_narrative": 1,
+      "quantitative_fact": 2
+    },
+    "by_difficulty": {
+      "medium": 1,
+      "easy": 4
+    },
+    "by_drop_reason": {
+      "ambiguous_grounding": 1
+    },
+    "missing_ground_truth_answer": 0,
+    "missing_evidence_span": 0,
+    "missing_why_grounded": 0,
+    "weak_or_generic_keep": 0,
+    "good_grounding_keep": 5,
+    "duplicate_same_fact_drops": 0,
+    "usable_silver_ids": [
+      "SV2-P24-0001",
+      "SV2-P24-0002",
+      "SV2-P24-0003",
+      "SV2-P24-0004",
+      "SV2-P24-0005"
+    ],
+    "distillation_version": "2.1.0",
+    "model": "gpt-4o-mini",
+    "input_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step1_corpus_units\\pilot_hanssem_10_compact_r2_4.jsonl",
+    "output_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step2_silver\\pilot_hanssem_10_compact_distilled_r2_4.jsonl",
+    "errors": 0,
+    "usable_input_ratio": 0.8333,
+    "usable_keep_ratio": 1.0
+  },
+  "comparison_r23_15": {
+    "r23_input": 15,
+    "r23_usable": 6,
+    "r23_usable_input_ratio": 0.4,
+    "compact_usable_input_ratio": 0.8333,
+    "ratio_improvement": 0.4333
+  },
+  "silver_qc_limited_recommended": true,
+  "recommended_direction": "A",
+  "silver_qc_candidates": [
+    {
+      "silver_id": "SV2-P24-0001",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_3adad134db5cb9c2",
+      "record_id": "rec_3adad134db5cb9c2",
+      "question_type": "qualitative_strategy",
+      "difficulty": "medium",
+      "why_usable": "evidence_span grounded; overlap validation pass"
+    },
+    {
+      "silver_id": "SV2-P24-0002",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_41a160ead0ae1be6",
+      "record_id": "rec_41a160ead0ae1be6",
+      "question_type": "qualitative_strategy",
+      "difficulty": "easy",
+      "why_usable": "evidence_span grounded; overlap validation pass"
+    },
+    {
+      "silver_id": "SV2-P24-0003",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_5edea297fe4ab1d8",
+      "record_id": "rec_5edea297fe4ab1d8",
+      "question_type": "qualitative_narrative",
+      "difficulty": "easy",
+      "why_usable": "evidence_span grounded; overlap validation pass"
+    },
+    {
+      "silver_id": "SV2-P24-0004",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_2d0cf95b00a0fefc",
+      "record_id": "rec_2d0cf95b00a0fefc",
+      "question_type": "quantitative_fact",
+      "difficulty": "easy",
+      "why_usable": "evidence_span grounded; overlap validation pass"
+    },
+    {
+      "silver_id": "SV2-P24-0005",
+      "unit_id": "한샘_dataset_package_20260608T042739::rec_ba9d092227fde816",
+      "record_id": "rec_ba9d092227fde816",
+      "question_type": "quantitative_fact",
+      "difficulty": "easy",
+      "why_usable": "evidence_span grounded; overlap validation pass"
+    }
+  ]
+}

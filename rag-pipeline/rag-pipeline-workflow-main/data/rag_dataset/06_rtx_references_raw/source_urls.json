@@ -1,0 +1,53 @@
+{
+  "company": "RTX",
+  "dataset_lane": "06_rtx_references_raw",
+  "local_pdf_count": 4,
+  "local_web_html_count": 5,
+  "local_web_snapshot_count": 1,
+  "local_pdf_source": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\RTX_References\\References",
+  "web_snapshot_note": "5/6 raw HTML downloaded; DOJ page blocked (HTTP 403) — snapshot .md retained as fallback",
+  "web_references": [
+    {
+      "title": "RTX Corporation 2025 Proxy Statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/101829/000130817925000067/rtx4383903-def14a.htm",
+      "local_html": "web_sources/rtx_proxy_2025.html",
+      "local_snapshot": "web_sources/rtx_proxy_2025.md",
+      "download_status": "ok"
+    },
+    {
+      "title": "RTX FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000006/rtx-20251231.htm",
+      "local_html": "web_sources/rtx_10k_2025.html",
+      "local_snapshot": "web_sources/rtx_10k_2025.md",
+      "download_status": "ok"
+    },
+    {
+      "title": "RTX FY2024 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182925000005/rtx-20241231.htm",
+      "local_html": "web_sources/rtx_10k_2024.html",
+      "local_snapshot": "web_sources/rtx_10k_2024.md",
+      "download_status": "ok"
+    },
+    {
+      "title": "RTX Data Security and Privacy",
+      "url": "https://www.rtx.com/our-responsibility/data-security-and-privacy",
+      "local_html": "web_sources/rtx_data_security_privacy.html",
+      "local_snapshot": "web_sources/rtx_data_security_privacy.md",
+      "download_status": "ok"
+    },
+    {
+      "title": "RTX Ethics and Compliance",
+      "url": "https://www.rtx.com/who-we-are/ethics-and-compliance",
+      "local_html": "web_sources/rtx_ethics_compliance.html",
+      "local_snapshot": "web_sources/rtx_ethics_compliance.md",
+      "download_status": "ok"
+    },
+    {
+      "title": "U.S. DOJ Raytheon/RTX resolution press release",
+      "url": "https://www.justice.gov/archives/opa/pr/raytheon-company-pay-over-950m-connection-defective-pricing-foreign-bribery-and-export",
+      "local_html": "web_sources/doj_rtx_resolution_press_release.html",
+      "local_snapshot": "web_sources/doj_rtx_resolution_press_release.md",
+      "download_status": "fail"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "company_id": "hanssem",
+  "input_units": 864,
+  "output_units": 864,
+  "document_count": 9,
+  "by_family_pool_units": {
+    "employee_headcount": 598,
+    "environment_ghg": 624,
+    "governance": 864
+  },
+  "output": "data/enterprise_docs/hanssem/corpus_units_family_scoped.jsonl",
+  "status": "ok"
+}

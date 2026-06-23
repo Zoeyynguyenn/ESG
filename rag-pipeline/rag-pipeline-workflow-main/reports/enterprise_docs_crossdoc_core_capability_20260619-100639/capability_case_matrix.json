@@ -1,0 +1,1746 @@
+{
+  "cases_path": "data/enterprise_docs/crossdoc_capability_cases.jsonl",
+  "total_cases": 22,
+  "results": [
+    {
+      "case_id": "CONSTRUCT-ALIAS-SCOPE3",
+      "case_origin": "constructed",
+      "capability": "alias_normalization",
+      "capability_tags": [
+        "alias_normalization",
+        "cross_doc_equivalence"
+      ],
+      "passed": true,
+      "alias_normalization_ok": true,
+      "pair_results": [
+        {
+          "a": "Scope 3",
+          "b": "scope3",
+          "equivalent": true,
+          "expected_match": true
+        },
+        {
+          "a": "스코프 3",
+          "b": "Scope 3",
+          "equivalent": true,
+          "expected_match": true
+        },
+        {
+          "a": "Scope3",
+          "b": "scope 3",
+          "equivalent": true,
+          "expected_match": true
+        }
+      ],
+      "score": 1.0,
+      "family_id": "environment_ghg"
+    },
+    {
+      "case_id": "CONSTRUCT-ALIAS-NETZERO-YEAR",
+      "case_origin": "constructed",
+      "capability": "alias_normalization",
+      "capability_tags": [
+        "alias_normalization"
+      ],
+      "passed": false,
+      "alias_normalization_ok": false,
+      "pair_results": [
+        {
+          "a": "2050",
+          "b": "2030",
+          "equivalent": true,
+          "expected_match": false
+        }
+      ],
+      "score": 0.0,
+      "family_id": "environment_ghg"
+    },
+    {
+      "case_id": "CONSTRUCT-EQUIV-GRADE",
+      "case_origin": "constructed",
+      "capability": "cross_doc_equivalence",
+      "capability_tags": [
+        "cross_doc_equivalence",
+        "alias_normalization"
+      ],
+      "passed": false,
+      "canonical_keys": [
+        "esg_grade_a",
+        "esg_grade_a",
+        "esg_grade_a"
+      ],
+      "expected_same_canonical": false,
+      "score": 0.0,
+      "family_id": "governance"
+    },
+    {
+      "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+      "case_origin": "constructed",
+      "capability": "cross_role_extraction",
+      "capability_tags": [
+        "cross_role_extraction",
+        "semantic_bridge"
+      ],
+      "family_id": "environment_ghg",
+      "passed": false,
+      "extract_per_doc": {
+        "doc_sr_narrative": false,
+        "doc_governance_disclosure": false
+      },
+      "extract_alignment_ok": false,
+      "aggregation": {
+        "resolved_value": null,
+        "multi_source_confirmed": false,
+        "confirming_logical_docs": [],
+        "conflict_flags": [],
+        "sufficiency_status": "failed"
+      },
+      "conflict_status": "metric_absent",
+      "conflict_reason": "metric_absent_in_role_or_corpus",
+      "classification_ok": true,
+      "fusion_ok": false,
+      "resolution_status": "failed",
+      "promotion": {
+        "before_state": "extraction_ready",
+        "after_state": "extraction_ready",
+        "promoted": false,
+        "promotion_target": "single_source_sufficient",
+        "blockers": [
+          "missing_predicted_value",
+          "evidence_bundle_insufficient",
+          "primary_doc_missing"
+        ]
+      },
+      "promotion_ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-FUSION-GRADE-A",
+      "case_origin": "constructed",
+      "capability": "evidence_fusion",
+      "capability_tags": [
+        "evidence_fusion",
+        "cross_doc_equivalence",
+        "readiness_promotion"
+      ],
+      "family_id": "governance",
+      "passed": false,
+      "extract_per_doc": {
+        "doc_sr_narrative": false,
+        "doc_governance_disclosure": false
+      },
+      "extract_alignment_ok": false,
+      "aggregation": {
+        "resolved_value": null,
+        "multi_source_confirmed": false,
+        "confirming_logical_docs": [],
+        "conflict_flags": [],
+        "sufficiency_status": "failed"
+      },
+      "conflict_status": "metric_absent",
+      "conflict_reason": "metric_absent_in_role_or_corpus",
+      "classification_ok": false,
+      "fusion_ok": false,
+      "resolution_status": "failed",
+      "promotion": {
+        "before_state": "extraction_ready",
+        "after_state": "extraction_ready",
+        "promoted": false,
+        "promotion_target": "single_source_sufficient",
+        "blockers": [
+          "missing_predicted_value",
+          "evidence_bundle_insufficient",
+          "primary_doc_missing"
+        ]
+      },
+      "promotion_ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+      "case_origin": "constructed",
+      "capability": "conflict_classification",
+      "capability_tags": [
+        "conflict_classification",
+        "conflict_resolution",
+        "evidence_fusion"
+      ],
+      "family_id": "governance",
+      "passed": false,
+      "extract_per_doc": {
+        "doc_sr_narrative": false,
+        "doc_governance_disclosure": false
+      },
+      "extract_alignment_ok": false,
+      "aggregation": {
+        "resolved_value": null,
+        "multi_source_confirmed": false,
+        "confirming_logical_docs": [],
+        "conflict_flags": [],
+        "sufficiency_status": "failed"
+      },
+      "conflict_status": "metric_absent",
+      "conflict_reason": "metric_absent_in_role_or_corpus",
+      "classification_ok": false,
+      "fusion_ok": true,
+      "resolution_status": "failed",
+      "promotion": {
+        "before_state": "extraction_ready",
+        "after_state": "extraction_ready",
+        "promoted": false,
+        "promotion_target": "single_source_sufficient",
+        "blockers": [
+          "missing_predicted_value",
+          "evidence_bundle_insufficient",
+          "primary_doc_missing"
+        ]
+      },
+      "promotion_ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+      "case_origin": "constructed",
+      "capability": "conflict_classification",
+      "capability_tags": [
+        "conflict_classification"
+      ],
+      "family_id": "employee_headcount",
+      "passed": false,
+      "extract_per_doc": {
+        "doc_sr_narrative": false,
+        "doc_governance_disclosure": false
+      },
+      "extract_alignment_ok": false,
+      "aggregation": {
+        "resolved_value": null,
+        "multi_source_confirmed": false,
+        "confirming_logical_docs": [],
+        "conflict_flags": [],
+        "sufficiency_status": "failed"
+      },
+      "conflict_status": "metric_absent",
+      "conflict_reason": "metric_absent_in_role_or_corpus",
+      "classification_ok": false,
+      "fusion_ok": true,
+      "resolution_status": "failed",
+      "promotion": {
+        "before_state": "extraction_ready",
+        "after_state": "extraction_ready",
+        "promoted": false,
+        "promotion_target": "single_source_sufficient",
+        "blockers": [
+          "missing_predicted_value",
+          "evidence_bundle_insufficient",
+          "primary_doc_missing"
+        ]
+      },
+      "promotion_ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-SINGLE-SOURCE",
+      "case_origin": "constructed",
+      "capability": "readiness_promotion",
+      "capability_tags": [
+        "readiness_promotion",
+        "evidence_fusion"
+      ],
+      "family_id": "environment_ghg",
+      "passed": false,
+      "extract_per_doc": {
+        "doc_sr_narrative": false
+      },
+      "extract_alignment_ok": false,
+      "aggregation": {
+        "resolved_value": null,
+        "multi_source_confirmed": false,
+        "confirming_logical_docs": [],
+        "conflict_flags": [],
+        "sufficiency_status": "failed"
+      },
+      "conflict_status": "metric_absent",
+      "conflict_reason": "metric_absent_in_role_or_corpus",
+      "classification_ok": false,
+      "fusion_ok": true,
+      "resolution_status": "failed",
+      "promotion": {
+        "before_state": "extraction_ready",
+        "after_state": "extraction_ready",
+        "promoted": false,
+        "promotion_target": "single_source_sufficient",
+        "blockers": [
+          "missing_predicted_value",
+          "evidence_bundle_insufficient",
+          "primary_doc_missing"
+        ]
+      },
+      "promotion_ok": true
+    },
+    {
+      "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+      "case_origin": "constructed",
+      "capability": "cross_role_extraction",
+      "capability_tags": [
+        "cross_role_extraction"
+      ],
+      "family_id": "environment_ghg",
+      "passed": false,
+      "extract_per_doc": {
+        "doc_sr_narrative": false,
+        "doc_evidence_csv": true
+      },
+      "extract_alignment_ok": false,
+      "aggregation": {
+        "resolved_value": "12,500",
+        "multi_source_confirmed": false,
+        "confirming_logical_docs": [
+          "doc_evidence_csv"
+        ],
+        "conflict_flags": [],
+        "sufficiency_status": "resolved_single_source_sufficient"
+      },
+      "conflict_status": "single_source_sufficient",
+      "conflict_reason": "single_authoritative_source",
+      "classification_ok": true,
+      "fusion_ok": false,
+      "resolution_status": "resolved",
+      "promotion": {
+        "before_state": "extraction_ready",
+        "after_state": "single_source_sufficient",
+        "promoted": true,
+        "promotion_target": "single_source_sufficient",
+        "blockers": [],
+        "promotion_reason": "aggregator_sufficiency"
+      },
+      "promotion_ok": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-002",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "item": "탄소중립",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-002",
+        "company_id": "hanssem",
+        "family_id": "environment_ghg",
+        "item": "탄소중립",
+        "logical_docs_with_candidates": [
+          "doc_sr_narrative"
+        ],
+        "logical_doc_overlap_count": 1,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {
+          "doc_sr_narrative": [
+            {
+              "label": "2050 탄소중립을 앞당기는데 책임을 다하기 위함입니다.",
+              "value": "2050",
+              "unit": null,
+              "year": 2050,
+              "row_match_score": 0.87,
+              "row_match_reason": "narrative_metric:semantic_bridge:2050",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0003",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": true,
+              "bridge_reason": "semantic_bridge:2050",
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:탄소중립",
+              "narrative_confidence": 0.87,
+              "normalized_numeric_value": "2050",
+              "normalized_unit": null
+            },
+            {
+              "label": "한 전사 에너지 관리체계를 구축했습니다. 기후변화에 선제적으로 대응하고\n2050 탄소중립을 앞당기는데 책임을 다하기 위함입니다.\n이를 통해 에너지 현황을 월 단",
+              "value": "2050",
+              "unit": null,
+              "year": 2050,
+              "row_match_score": 0.87,
+              "row_match_reason": "narrative_metric:semantic_bridge:2050",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0003",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": true,
+              "bridge_reason": "semantic_bridge:2050",
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:탄소중립",
+              "narrative_confidence": 0.87,
+              "normalized_numeric_value": "2050",
+              "normalized_unit": null
+            },
+            {
+              "label": "2050 탄소중립을 앞당기는데 책임을 다하기 위함입니다.",
+              "value": "2050",
+              "unit": null,
+              "year": 2050,
+              "row_match_score": 0.87,
+              "row_match_reason": "narrative_metric:semantic_bridge:2050",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0003",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": true,
+              "bridge_reason": "semantic_bridge:2050",
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:탄소중립",
+              "narrative_confidence": 0.87,
+              "normalized_numeric_value": "2050",
+              "normalized_unit": null
+            }
+          ]
+        },
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {
+          "doc_sr_narrative": [
+            "net_zero_year"
+          ]
+        },
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": true,
+        "zero_overlap": false
+      },
+      "failure_mode": "corpus_limited_single_logical_doc",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-003",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "item": "이사회 개최",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-003",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "이사회 개최",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-004",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "item": "ESG 평가 등급",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-004",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "ESG 평가 등급",
+        "logical_docs_with_candidates": [
+          "doc_sr_narrative"
+        ],
+        "logical_doc_overlap_count": 1,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {
+          "doc_sr_narrative": [
+            {
+              "label": "ESG등급(KCGS)",
+              "value": "G",
+              "unit": null,
+              "year": null,
+              "row_match_score": 0.87,
+              "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": true,
+              "bridge_reason": "semantic_bridge:KCGS",
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+              "narrative_confidence": 0.87,
+              "normalized_numeric_value": "G",
+              "normalized_unit": null
+            },
+            {
+              "label": "립일\t*설립등기\t1973년\t9월\n1970\n년\n9\n월\n대표이사\n강승수\nESG등급(KCGS)\nB+\n동반성장지수등급 우수\n본사 소재지\n경기도 안산시 단원구",
+              "value": "G",
+              "unit": null,
+              "year": null,
+              "row_match_score": 0.87,
+              "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": true,
+              "bridge_reason": "semantic_bridge:KCGS",
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+              "narrative_confidence": 0.87,
+              "normalized_numeric_value": "G",
+              "normalized_unit": null
+            }
+          ]
+        },
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {
+          "doc_sr_narrative": [
+            "governance:ESG 평가 등급"
+          ]
+        },
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": true,
+        "zero_overlap": false
+      },
+      "failure_mode": "corpus_limited_single_logical_doc",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-007",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "item": "스코프 3",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-007",
+        "company_id": "hanssem",
+        "family_id": "environment_ghg",
+        "item": "스코프 3",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-013",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "employee_headcount",
+      "item": "구성원",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-013",
+        "company_id": "hanssem",
+        "family_id": "employee_headcount",
+        "item": "구성원",
+        "logical_docs_with_candidates": [
+          "doc_sr_narrative"
+        ],
+        "logical_doc_overlap_count": 1,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {
+          "doc_sr_narrative": [
+            {
+              "label": "duction\n07\n매출액\n2\n조\n674\n억 원\n영업이익\n931\n억 원\n임직원 수\n2,495\n명\n사업영역\n리하우스/온라인/\n키친바흐/특판/인테리어\n설립일\t*설립등기\t1",
+              "value": "2,495",
+              "unit": null,
+              "year": null,
+              "row_match_score": 0.88,
+              "row_match_reason": "narrative_metric:item_in_label",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": false,
+              "bridge_reason": null,
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:총 구성원",
+              "narrative_confidence": 0.88,
+              "normalized_numeric_value": "2495",
+              "normalized_unit": null
+            },
+            {
+              "label": "SSEM at a Glance\n현지법인\n3\n개국 (中·美·日)\n해외법인 임직원\n251\n명\nJAPAN\n日 Hanssem INC.\n·  Osaka Head Offi",
+              "value": "251",
+              "unit": null,
+              "year": null,
+              "row_match_score": 0.88,
+              "row_match_reason": "narrative_metric:item_in_label",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0010",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": false,
+              "bridge_reason": null,
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:총 구성원",
+              "narrative_confidence": 0.88,
+              "normalized_numeric_value": "251",
+              "normalized_unit": null
+            }
+          ]
+        },
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {
+          "doc_sr_narrative": [
+            "employee_headcount:구성원"
+          ]
+        },
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": true,
+        "zero_overlap": false
+      },
+      "failure_mode": "corpus_limited_single_logical_doc",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-014",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "item": "이사회 안건",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-014",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "이사회 안건",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-015",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "item": "환경 ESG 등급",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-015",
+        "company_id": "hanssem",
+        "family_id": "environment_ghg",
+        "item": "환경 ESG 등급",
+        "logical_docs_with_candidates": [
+          "doc_sr_narrative"
+        ],
+        "logical_doc_overlap_count": 1,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {
+          "doc_sr_narrative": [
+            {
+              "label": "ESG등급(KCGS)",
+              "value": "G",
+              "unit": null,
+              "year": null,
+              "row_match_score": 0.87,
+              "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": true,
+              "bridge_reason": "semantic_bridge:KCGS",
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+              "narrative_confidence": 0.87,
+              "normalized_numeric_value": "G",
+              "normalized_unit": null
+            },
+            {
+              "label": "립일\t*설립등기\t1973년\t9월\n1970\n년\n9\n월\n대표이사\n강승수\nESG등급(KCGS)\nB+\n동반성장지수등급 우수\n본사 소재지\n경기도 안산시 단원구",
+              "value": "G",
+              "unit": null,
+              "year": null,
+              "row_match_score": 0.87,
+              "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+              "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+              "logical_doc": "doc_sr_narrative",
+              "semantic_bridge_used": true,
+              "bridge_reason": "semantic_bridge:KCGS",
+              "narrative_metric_parse_used": true,
+              "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+              "narrative_confidence": 0.87,
+              "normalized_numeric_value": "G",
+              "normalized_unit": null
+            }
+          ]
+        },
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {
+          "doc_sr_narrative": [
+            "environment_ghg:환경 ESG 등급"
+          ]
+        },
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": true,
+        "zero_overlap": false
+      },
+      "failure_mode": "corpus_limited_single_logical_doc",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": true
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-016",
+      "case_origin": "natural",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "item": "중대성 평가",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-016",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "중대성 평가",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M004",
+      "case_origin": "natural",
+      "company_id": "musinsa",
+      "family_id": "employee_headcount",
+      "item": "MAU",
+      "cross_doc_eligible": false,
+      "overlap": {
+        "probe_id": "HOLDOUT-M004",
+        "company_id": "musinsa",
+        "family_id": "employee_headcount",
+        "item": "MAU",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M007",
+      "case_origin": "natural",
+      "company_id": "musinsa",
+      "family_id": "employee_headcount",
+      "item": "구성원",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-M007",
+        "company_id": "musinsa",
+        "family_id": "employee_headcount",
+        "item": "구성원",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M009",
+      "case_origin": "natural",
+      "company_id": "musinsa",
+      "family_id": "environment_ghg",
+      "item": "임팩트 리포트",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-M009",
+        "company_id": "musinsa",
+        "family_id": "environment_ghg",
+        "item": "임팩트 리포트",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M010",
+      "case_origin": "natural",
+      "company_id": "musinsa",
+      "family_id": "governance",
+      "item": "이사회 개최",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-M010",
+        "company_id": "musinsa",
+        "family_id": "governance",
+        "item": "이사회 개최",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    },
+    {
+      "case_id": "NATURAL-HOLDOUT-M011",
+      "case_origin": "natural",
+      "company_id": "musinsa",
+      "family_id": "employee_headcount",
+      "item": "MAU",
+      "cross_doc_eligible": true,
+      "overlap": {
+        "probe_id": "HOLDOUT-M011",
+        "company_id": "musinsa",
+        "family_id": "employee_headcount",
+        "item": "MAU",
+        "logical_docs_with_candidates": [],
+        "logical_doc_overlap_count": 0,
+        "multi_logical_doc_candidate": false,
+        "multi_logical_doc_agreeing_values": false,
+        "candidate_preview": {},
+        "candidate_overlap_rate": 0.0,
+        "canonical_values_by_doc": {},
+        "agreeing_logical_doc_pairs": [],
+        "single_source_only": false,
+        "zero_overlap": true
+      },
+      "failure_mode": "corpus_limited_no_candidate",
+      "corpus_limited": true,
+      "system_gap": false,
+      "passed": false
+    }
+  ],
+  "by_capability": {
+    "alias_normalization": [
+      {
+        "case_id": "CONSTRUCT-ALIAS-SCOPE3",
+        "case_origin": "constructed",
+        "capability": "alias_normalization",
+        "capability_tags": [
+          "alias_normalization",
+          "cross_doc_equivalence"
+        ],
+        "passed": true,
+        "alias_normalization_ok": true,
+        "pair_results": [
+          {
+            "a": "Scope 3",
+            "b": "scope3",
+            "equivalent": true,
+            "expected_match": true
+          },
+          {
+            "a": "스코프 3",
+            "b": "Scope 3",
+            "equivalent": true,
+            "expected_match": true
+          },
+          {
+            "a": "Scope3",
+            "b": "scope 3",
+            "equivalent": true,
+            "expected_match": true
+          }
+        ],
+        "score": 1.0,
+        "family_id": "environment_ghg"
+      },
+      {
+        "case_id": "CONSTRUCT-ALIAS-NETZERO-YEAR",
+        "case_origin": "constructed",
+        "capability": "alias_normalization",
+        "capability_tags": [
+          "alias_normalization"
+        ],
+        "passed": false,
+        "alias_normalization_ok": false,
+        "pair_results": [
+          {
+            "a": "2050",
+            "b": "2030",
+            "equivalent": true,
+            "expected_match": false
+          }
+        ],
+        "score": 0.0,
+        "family_id": "environment_ghg"
+      }
+    ],
+    "cross_doc_equivalence": [
+      {
+        "case_id": "CONSTRUCT-EQUIV-GRADE",
+        "case_origin": "constructed",
+        "capability": "cross_doc_equivalence",
+        "capability_tags": [
+          "cross_doc_equivalence",
+          "alias_normalization"
+        ],
+        "passed": false,
+        "canonical_keys": [
+          "esg_grade_a",
+          "esg_grade_a",
+          "esg_grade_a"
+        ],
+        "expected_same_canonical": false,
+        "score": 0.0,
+        "family_id": "governance"
+      }
+    ],
+    "cross_role_extraction": [
+      {
+        "case_id": "CONSTRUCT-EXTRACT-SCOPE3-CROSSROLE",
+        "case_origin": "constructed",
+        "capability": "cross_role_extraction",
+        "capability_tags": [
+          "cross_role_extraction",
+          "semantic_bridge"
+        ],
+        "family_id": "environment_ghg",
+        "passed": false,
+        "extract_per_doc": {
+          "doc_sr_narrative": false,
+          "doc_governance_disclosure": false
+        },
+        "extract_alignment_ok": false,
+        "aggregation": {
+          "resolved_value": null,
+          "multi_source_confirmed": false,
+          "confirming_logical_docs": [],
+          "conflict_flags": [],
+          "sufficiency_status": "failed"
+        },
+        "conflict_status": "metric_absent",
+        "conflict_reason": "metric_absent_in_role_or_corpus",
+        "classification_ok": true,
+        "fusion_ok": false,
+        "resolution_status": "failed",
+        "promotion": {
+          "before_state": "extraction_ready",
+          "after_state": "extraction_ready",
+          "promoted": false,
+          "promotion_target": "single_source_sufficient",
+          "blockers": [
+            "missing_predicted_value",
+            "evidence_bundle_insufficient",
+            "primary_doc_missing"
+          ]
+        },
+        "promotion_ok": true
+      },
+      {
+        "case_id": "CONSTRUCT-NARRATIVE-VS-TABLE",
+        "case_origin": "constructed",
+        "capability": "cross_role_extraction",
+        "capability_tags": [
+          "cross_role_extraction"
+        ],
+        "family_id": "environment_ghg",
+        "passed": false,
+        "extract_per_doc": {
+          "doc_sr_narrative": false,
+          "doc_evidence_csv": true
+        },
+        "extract_alignment_ok": false,
+        "aggregation": {
+          "resolved_value": "12,500",
+          "multi_source_confirmed": false,
+          "confirming_logical_docs": [
+            "doc_evidence_csv"
+          ],
+          "conflict_flags": [],
+          "sufficiency_status": "resolved_single_source_sufficient"
+        },
+        "conflict_status": "single_source_sufficient",
+        "conflict_reason": "single_authoritative_source",
+        "classification_ok": true,
+        "fusion_ok": false,
+        "resolution_status": "resolved",
+        "promotion": {
+          "before_state": "extraction_ready",
+          "after_state": "single_source_sufficient",
+          "promoted": true,
+          "promotion_target": "single_source_sufficient",
+          "blockers": [],
+          "promotion_reason": "aggregator_sufficiency"
+        },
+        "promotion_ok": true
+      }
+    ],
+    "evidence_fusion": [
+      {
+        "case_id": "CONSTRUCT-FUSION-GRADE-A",
+        "case_origin": "constructed",
+        "capability": "evidence_fusion",
+        "capability_tags": [
+          "evidence_fusion",
+          "cross_doc_equivalence",
+          "readiness_promotion"
+        ],
+        "family_id": "governance",
+        "passed": false,
+        "extract_per_doc": {
+          "doc_sr_narrative": false,
+          "doc_governance_disclosure": false
+        },
+        "extract_alignment_ok": false,
+        "aggregation": {
+          "resolved_value": null,
+          "multi_source_confirmed": false,
+          "confirming_logical_docs": [],
+          "conflict_flags": [],
+          "sufficiency_status": "failed"
+        },
+        "conflict_status": "metric_absent",
+        "conflict_reason": "metric_absent_in_role_or_corpus",
+        "classification_ok": false,
+        "fusion_ok": false,
+        "resolution_status": "failed",
+        "promotion": {
+          "before_state": "extraction_ready",
+          "after_state": "extraction_ready",
+          "promoted": false,
+          "promotion_target": "single_source_sufficient",
+          "blockers": [
+            "missing_predicted_value",
+            "evidence_bundle_insufficient",
+            "primary_doc_missing"
+          ]
+        },
+        "promotion_ok": true
+      }
+    ],
+    "conflict_classification": [
+      {
+        "case_id": "CONSTRUCT-CONFLICT-NUMERIC",
+        "case_origin": "constructed",
+        "capability": "conflict_classification",
+        "capability_tags": [
+          "conflict_classification",
+          "conflict_resolution",
+          "evidence_fusion"
+        ],
+        "family_id": "governance",
+        "passed": false,
+        "extract_per_doc": {
+          "doc_sr_narrative": false,
+          "doc_governance_disclosure": false
+        },
+        "extract_alignment_ok": false,
+        "aggregation": {
+          "resolved_value": null,
+          "multi_source_confirmed": false,
+          "confirming_logical_docs": [],
+          "conflict_flags": [],
+          "sufficiency_status": "failed"
+        },
+        "conflict_status": "metric_absent",
+        "conflict_reason": "metric_absent_in_role_or_corpus",
+        "classification_ok": false,
+        "fusion_ok": true,
+        "resolution_status": "failed",
+        "promotion": {
+          "before_state": "extraction_ready",
+          "after_state": "extraction_ready",
+          "promoted": false,
+          "promotion_target": "single_source_sufficient",
+          "blockers": [
+            "missing_predicted_value",
+            "evidence_bundle_insufficient",
+            "primary_doc_missing"
+          ]
+        },
+        "promotion_ok": true
+      },
+      {
+        "case_id": "CONSTRUCT-NOTDISC-VS-NUMERIC",
+        "case_origin": "constructed",
+        "capability": "conflict_classification",
+        "capability_tags": [
+          "conflict_classification"
+        ],
+        "family_id": "employee_headcount",
+        "passed": false,
+        "extract_per_doc": {
+          "doc_sr_narrative": false,
+          "doc_governance_disclosure": false
+        },
+        "extract_alignment_ok": false,
+        "aggregation": {
+          "resolved_value": null,
+          "multi_source_confirmed": false,
+          "confirming_logical_docs": [],
+          "conflict_flags": [],
+          "sufficiency_status": "failed"
+        },
+        "conflict_status": "metric_absent",
+        "conflict_reason": "metric_absent_in_role_or_corpus",
+        "classification_ok": false,
+        "fusion_ok": true,
+        "resolution_status": "failed",
+        "promotion": {
+          "before_state": "extraction_ready",
+          "after_state": "extraction_ready",
+          "promoted": false,
+          "promotion_target": "single_source_sufficient",
+          "blockers": [
+            "missing_predicted_value",
+            "evidence_bundle_insufficient",
+            "primary_doc_missing"
+          ]
+        },
+        "promotion_ok": true
+      }
+    ],
+    "readiness_promotion": [
+      {
+        "case_id": "CONSTRUCT-SINGLE-SOURCE",
+        "case_origin": "constructed",
+        "capability": "readiness_promotion",
+        "capability_tags": [
+          "readiness_promotion",
+          "evidence_fusion"
+        ],
+        "family_id": "environment_ghg",
+        "passed": false,
+        "extract_per_doc": {
+          "doc_sr_narrative": false
+        },
+        "extract_alignment_ok": false,
+        "aggregation": {
+          "resolved_value": null,
+          "multi_source_confirmed": false,
+          "confirming_logical_docs": [],
+          "conflict_flags": [],
+          "sufficiency_status": "failed"
+        },
+        "conflict_status": "metric_absent",
+        "conflict_reason": "metric_absent_in_role_or_corpus",
+        "classification_ok": false,
+        "fusion_ok": true,
+        "resolution_status": "failed",
+        "promotion": {
+          "before_state": "extraction_ready",
+          "after_state": "extraction_ready",
+          "promoted": false,
+          "promotion_target": "single_source_sufficient",
+          "blockers": [
+            "missing_predicted_value",
+            "evidence_bundle_insufficient",
+            "primary_doc_missing"
+          ]
+        },
+        "promotion_ok": true
+      }
+    ],
+    "unknown": [
+      {
+        "case_id": "NATURAL-HOLDOUT-002",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "environment_ghg",
+        "item": "탄소중립",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-002",
+          "company_id": "hanssem",
+          "family_id": "environment_ghg",
+          "item": "탄소중립",
+          "logical_docs_with_candidates": [
+            "doc_sr_narrative"
+          ],
+          "logical_doc_overlap_count": 1,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {
+            "doc_sr_narrative": [
+              {
+                "label": "2050 탄소중립을 앞당기는데 책임을 다하기 위함입니다.",
+                "value": "2050",
+                "unit": null,
+                "year": 2050,
+                "row_match_score": 0.87,
+                "row_match_reason": "narrative_metric:semantic_bridge:2050",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0003",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": true,
+                "bridge_reason": "semantic_bridge:2050",
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:탄소중립",
+                "narrative_confidence": 0.87,
+                "normalized_numeric_value": "2050",
+                "normalized_unit": null
+              },
+              {
+                "label": "한 전사 에너지 관리체계를 구축했습니다. 기후변화에 선제적으로 대응하고\n2050 탄소중립을 앞당기는데 책임을 다하기 위함입니다.\n이를 통해 에너지 현황을 월 단",
+                "value": "2050",
+                "unit": null,
+                "year": 2050,
+                "row_match_score": 0.87,
+                "row_match_reason": "narrative_metric:semantic_bridge:2050",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0003",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": true,
+                "bridge_reason": "semantic_bridge:2050",
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:탄소중립",
+                "narrative_confidence": 0.87,
+                "normalized_numeric_value": "2050",
+                "normalized_unit": null
+              },
+              {
+                "label": "2050 탄소중립을 앞당기는데 책임을 다하기 위함입니다.",
+                "value": "2050",
+                "unit": null,
+                "year": 2050,
+                "row_match_score": 0.87,
+                "row_match_reason": "narrative_metric:semantic_bridge:2050",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0003",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": true,
+                "bridge_reason": "semantic_bridge:2050",
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:탄소중립",
+                "narrative_confidence": 0.87,
+                "normalized_numeric_value": "2050",
+                "normalized_unit": null
+              }
+            ]
+          },
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {
+            "doc_sr_narrative": [
+              "net_zero_year"
+            ]
+          },
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": true,
+          "zero_overlap": false
+        },
+        "failure_mode": "corpus_limited_single_logical_doc",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": true
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-003",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "이사회 개최",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-003",
+          "company_id": "hanssem",
+          "family_id": "governance",
+          "item": "이사회 개최",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-004",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "ESG 평가 등급",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-004",
+          "company_id": "hanssem",
+          "family_id": "governance",
+          "item": "ESG 평가 등급",
+          "logical_docs_with_candidates": [
+            "doc_sr_narrative"
+          ],
+          "logical_doc_overlap_count": 1,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {
+            "doc_sr_narrative": [
+              {
+                "label": "ESG등급(KCGS)",
+                "value": "G",
+                "unit": null,
+                "year": null,
+                "row_match_score": 0.87,
+                "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": true,
+                "bridge_reason": "semantic_bridge:KCGS",
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+                "narrative_confidence": 0.87,
+                "normalized_numeric_value": "G",
+                "normalized_unit": null
+              },
+              {
+                "label": "립일\t*설립등기\t1973년\t9월\n1970\n년\n9\n월\n대표이사\n강승수\nESG등급(KCGS)\nB+\n동반성장지수등급 우수\n본사 소재지\n경기도 안산시 단원구",
+                "value": "G",
+                "unit": null,
+                "year": null,
+                "row_match_score": 0.87,
+                "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": true,
+                "bridge_reason": "semantic_bridge:KCGS",
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+                "narrative_confidence": 0.87,
+                "normalized_numeric_value": "G",
+                "normalized_unit": null
+              }
+            ]
+          },
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {
+            "doc_sr_narrative": [
+              "governance:ESG 평가 등급"
+            ]
+          },
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": true,
+          "zero_overlap": false
+        },
+        "failure_mode": "corpus_limited_single_logical_doc",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": true
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-007",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "environment_ghg",
+        "item": "스코프 3",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-007",
+          "company_id": "hanssem",
+          "family_id": "environment_ghg",
+          "item": "스코프 3",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-013",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "employee_headcount",
+        "item": "구성원",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-013",
+          "company_id": "hanssem",
+          "family_id": "employee_headcount",
+          "item": "구성원",
+          "logical_docs_with_candidates": [
+            "doc_sr_narrative"
+          ],
+          "logical_doc_overlap_count": 1,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {
+            "doc_sr_narrative": [
+              {
+                "label": "duction\n07\n매출액\n2\n조\n674\n억 원\n영업이익\n931\n억 원\n임직원 수\n2,495\n명\n사업영역\n리하우스/온라인/\n키친바흐/특판/인테리어\n설립일\t*설립등기\t1",
+                "value": "2,495",
+                "unit": null,
+                "year": null,
+                "row_match_score": 0.88,
+                "row_match_reason": "narrative_metric:item_in_label",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": false,
+                "bridge_reason": null,
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:총 구성원",
+                "narrative_confidence": 0.88,
+                "normalized_numeric_value": "2495",
+                "normalized_unit": null
+              },
+              {
+                "label": "SSEM at a Glance\n현지법인\n3\n개국 (中·美·日)\n해외법인 임직원\n251\n명\nJAPAN\n日 Hanssem INC.\n·  Osaka Head Offi",
+                "value": "251",
+                "unit": null,
+                "year": null,
+                "row_match_score": 0.88,
+                "row_match_reason": "narrative_metric:item_in_label",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0010",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": false,
+                "bridge_reason": null,
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:총 구성원",
+                "narrative_confidence": 0.88,
+                "normalized_numeric_value": "251",
+                "normalized_unit": null
+              }
+            ]
+          },
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {
+            "doc_sr_narrative": [
+              "employee_headcount:구성원"
+            ]
+          },
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": true,
+          "zero_overlap": false
+        },
+        "failure_mode": "corpus_limited_single_logical_doc",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": true
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-014",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "이사회 안건",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-014",
+          "company_id": "hanssem",
+          "family_id": "governance",
+          "item": "이사회 안건",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-015",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "environment_ghg",
+        "item": "환경 ESG 등급",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-015",
+          "company_id": "hanssem",
+          "family_id": "environment_ghg",
+          "item": "환경 ESG 등급",
+          "logical_docs_with_candidates": [
+            "doc_sr_narrative"
+          ],
+          "logical_doc_overlap_count": 1,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {
+            "doc_sr_narrative": [
+              {
+                "label": "ESG등급(KCGS)",
+                "value": "G",
+                "unit": null,
+                "year": null,
+                "row_match_score": 0.87,
+                "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": true,
+                "bridge_reason": "semantic_bridge:KCGS",
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+                "narrative_confidence": 0.87,
+                "normalized_numeric_value": "G",
+                "normalized_unit": null
+              },
+              {
+                "label": "립일\t*설립등기\t1973년\t9월\n1970\n년\n9\n월\n대표이사\n강승수\nESG등급(KCGS)\nB+\n동반성장지수등급 우수\n본사 소재지\n경기도 안산시 단원구",
+                "value": "G",
+                "unit": null,
+                "year": null,
+                "row_match_score": 0.87,
+                "row_match_reason": "narrative_metric:semantic_bridge:KCGS",
+                "unit_id": "hanssem::09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf::0006",
+                "logical_doc": "doc_sr_narrative",
+                "semantic_bridge_used": true,
+                "bridge_reason": "semantic_bridge:KCGS",
+                "narrative_metric_parse_used": true,
+                "narrative_parse_reason": "narrative_pattern:ESG 평가 등급",
+                "narrative_confidence": 0.87,
+                "normalized_numeric_value": "G",
+                "normalized_unit": null
+              }
+            ]
+          },
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {
+            "doc_sr_narrative": [
+              "environment_ghg:환경 ESG 등급"
+            ]
+          },
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": true,
+          "zero_overlap": false
+        },
+        "failure_mode": "corpus_limited_single_logical_doc",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": true
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-016",
+        "case_origin": "natural",
+        "company_id": "hanssem",
+        "family_id": "governance",
+        "item": "중대성 평가",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-016",
+          "company_id": "hanssem",
+          "family_id": "governance",
+          "item": "중대성 평가",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-M004",
+        "case_origin": "natural",
+        "company_id": "musinsa",
+        "family_id": "employee_headcount",
+        "item": "MAU",
+        "cross_doc_eligible": false,
+        "overlap": {
+          "probe_id": "HOLDOUT-M004",
+          "company_id": "musinsa",
+          "family_id": "employee_headcount",
+          "item": "MAU",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-M007",
+        "case_origin": "natural",
+        "company_id": "musinsa",
+        "family_id": "employee_headcount",
+        "item": "구성원",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-M007",
+          "company_id": "musinsa",
+          "family_id": "employee_headcount",
+          "item": "구성원",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-M009",
+        "case_origin": "natural",
+        "company_id": "musinsa",
+        "family_id": "environment_ghg",
+        "item": "임팩트 리포트",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-M009",
+          "company_id": "musinsa",
+          "family_id": "environment_ghg",
+          "item": "임팩트 리포트",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-M010",
+        "case_origin": "natural",
+        "company_id": "musinsa",
+        "family_id": "governance",
+        "item": "이사회 개최",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-M010",
+          "company_id": "musinsa",
+          "family_id": "governance",
+          "item": "이사회 개최",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      },
+      {
+        "case_id": "NATURAL-HOLDOUT-M011",
+        "case_origin": "natural",
+        "company_id": "musinsa",
+        "family_id": "employee_headcount",
+        "item": "MAU",
+        "cross_doc_eligible": true,
+        "overlap": {
+          "probe_id": "HOLDOUT-M011",
+          "company_id": "musinsa",
+          "family_id": "employee_headcount",
+          "item": "MAU",
+          "logical_docs_with_candidates": [],
+          "logical_doc_overlap_count": 0,
+          "multi_logical_doc_candidate": false,
+          "multi_logical_doc_agreeing_values": false,
+          "candidate_preview": {},
+          "candidate_overlap_rate": 0.0,
+          "canonical_values_by_doc": {},
+          "agreeing_logical_doc_pairs": [],
+          "single_source_only": false,
+          "zero_overlap": true
+        },
+        "failure_mode": "corpus_limited_no_candidate",
+        "corpus_limited": true,
+        "system_gap": false,
+        "passed": false
+      }
+    ]
+  }
+}

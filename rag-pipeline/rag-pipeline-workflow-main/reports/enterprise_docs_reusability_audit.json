@@ -1,0 +1,119 @@
+{
+  "lane": "enterprise_internal_doc",
+  "rule_count": 27,
+  "by_class_counts": {
+    "reusable_generic_rule": 13,
+    "pattern_specific_rule": 3,
+    "pilot_only_rule": 7,
+    "coverage_or_abstain_rule": 2,
+    "synthesis_blocker_rule": 2
+  },
+  "reusable_generic_count": 13,
+  "pattern_specific_count": 3,
+  "pilot_only_count": 7,
+  "demo_company_dependent_count": 8,
+  "reusable_system_coverage": 0.4815,
+  "pilot_only_dependency": 0.2593,
+  "productize_candidates": [
+    "ED-PARSE-001",
+    "ED-PARSE-002",
+    "ED-INGEST-001",
+    "ED-RETR-001",
+    "ED-RETR-002",
+    "ED-RETR-003",
+    "ED-RETR-005",
+    "ED-EXT-001",
+    "ED-EXT-002",
+    "ED-EXT-006",
+    "ED-EXT-007",
+    "ED-AGG-001",
+    "ED-AGG-002",
+    "ED-AGG-004",
+    "ED-AGG-005",
+    "ED-DIAG-001",
+    "ED-DIAG-002",
+    "ED-DIAG-003",
+    "ED-QUAL-001"
+  ],
+  "abstraction_backlog": [
+    "ED-ROUTE-001",
+    "ED-EXT-004",
+    "ED-EXT-005",
+    "ED-AGG-003"
+  ],
+  "holdout_sanity": {
+    "probe_count": 8,
+    "parser_ok_rate": 1.0,
+    "retrieval_feasible_rate": 0.875,
+    "extraction_feasible_rate": 0.375,
+    "aggregation_feasible_rate": 0.375,
+    "reusable_signals": [
+      "reusable:ED-PARSE-001",
+      "reusable:ED-QUAL-001",
+      "reusable:ED-RETR-001"
+    ],
+    "corpus_specific_signals": [
+      "corpus_specific:ED-MAP-001_no_logical_mapping",
+      "corpus_specific:narrative_only_no_table"
+    ],
+    "abstraction_signals": [
+      "needs_abstraction:ED-EXT-005_narrative_patterns",
+      "needs_abstraction:synthesis_gate"
+    ]
+  },
+  "demo_readiness_baseline": {
+    "total": 35,
+    "readiness_counts": {
+      "extraction_ready": 8,
+      "retrieval_ready": 14,
+      "not_ready_for_synthesis": 5,
+      "single_source_sufficient": 6,
+      "multi_source_sufficient": 1,
+      "honest_abstain": 1
+    },
+    "readiness_rates": {
+      "extraction_ready": 0.2286,
+      "retrieval_ready": 0.4,
+      "not_ready_for_synthesis": 0.1429,
+      "single_source_sufficient": 0.1714,
+      "multi_source_sufficient": 0.0286,
+      "honest_abstain": 0.0286
+    },
+    "by_kind": {
+      "quantitative": {
+        "extraction_ready": 8,
+        "retrieval_ready": 14,
+        "single_source_sufficient": 6,
+        "multi_source_sufficient": 1,
+        "honest_abstain": 1
+      },
+      "qualitative": {
+        "not_ready_for_synthesis": 5
+      }
+    },
+    "by_answer_mode": {
+      "single_document_answer": {
+        "extraction_ready": 8,
+        "retrieval_ready": 12
+      },
+      "cross_document_answer": {
+        "not_ready_for_synthesis": 5,
+        "single_source_sufficient": 6,
+        "retrieval_ready": 2,
+        "multi_source_sufficient": 1,
+        "honest_abstain": 1
+      }
+    },
+    "quantitative_count": 30,
+    "qualitative_count": 5,
+    "synthesis_gate_allowed_count": 7,
+    "synthesis_gate_allowed_rate_quant": 0.2333
+  },
+  "architecture_recommendation": {
+    "continue_demo_company_dev": true,
+    "expand_to_hanssem_musinsa_holdout": true,
+    "open_synthesis_yet": false,
+    "priority_next": "abstraction_rule_registry",
+    "weakest_layer": "synthesis"
+  }
+}

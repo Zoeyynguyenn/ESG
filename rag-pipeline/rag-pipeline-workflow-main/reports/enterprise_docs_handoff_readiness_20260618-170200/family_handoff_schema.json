@@ -1,0 +1,179 @@
+{
+  "version": "1.0.0",
+  "description": "Family-level handoff schema for enterprise internal-doc lane (preparation only, not LangGraph trial)",
+  "promotion_rules": {
+    "single_source_sufficient": {
+      "requires": [
+        "kind_quantitative",
+        "predicted_value_present",
+        "evidence_bundle_min_count",
+        "primary_doc_or_narrative_anchor",
+        "confidence_min",
+        "no_promotion_blockers"
+      ],
+      "blockers": [
+        "coverage_gap",
+        "needs_sme_review",
+        "honest_abstain",
+        "not_ready_for_synthesis",
+        "qualitative_kind",
+        "unresolved_conflict",
+        "wrong_row_risk",
+        "missing_predicted_unit_when_required"
+      ]
+    },
+    "multi_source_sufficient": {
+      "requires": [
+        "kind_quantitative",
+        "predicted_value_present",
+        "evidence_bundle_min_count",
+        "aggregation_success_or_multi_role_resolved",
+        "no_promotion_blockers"
+      ],
+      "inherits": "single_source_sufficient"
+    }
+  },
+  "families": {
+    "employee_headcount": {
+      "family_id": "employee_headcount",
+      "pilot_order": 1,
+      "question_type": "quantitative_headcount",
+      "required_readiness_state": "single_source_sufficient",
+      "required_evidence_count": 1,
+      "primary_doc_rule": "doc_hr_safety_or_sustainability_report",
+      "supporting_doc_rule": "optional_context_only",
+      "required_fields": [
+        "question_id",
+        "company_id",
+        "predicted_value",
+        "evidence_bundle",
+        "primary_doc",
+        "confidence",
+        "readiness_state"
+      ],
+      "optional_fields": [
+        "predicted_unit",
+        "supporting_docs",
+        "sufficiency_status"
+      ],
+      "confidence_rule": {
+        "min_table_extraction": 0.85,
+        "min_narrative_extraction": 0.25,
+        "prefer_table_when_available": true
+      },
+      "unit_required": false,
+      "review_owner_rule": {
+        "needs_sme_review": "sme",
+        "coverage_gap": "dataset",
+        "default": null
+      },
+      "handoff_blockers": [
+        "qualitative_kind",
+        "coverage_gap",
+        "wrong_row_risk",
+        "missing_predicted_value"
+      ],
+      "narrative_single_source_ok": true,
+      "holdout_pattern_families": [
+        "employee_headcount",
+        "platform_metric"
+      ],
+      "notes": "Pilot family — table on demo_company; narrative headcount on holdout SR corpus"
+    },
+    "environment_ghg": {
+      "family_id": "environment_ghg",
+      "pilot_order": 2,
+      "question_type": "quantitative_climate_metric",
+      "required_readiness_state": "single_source_sufficient",
+      "required_evidence_count": 1,
+      "primary_doc_rule": "sustainability_report_or_ghg_doc",
+      "supporting_doc_rule": "csv_summary_optional_pilot_only",
+      "required_fields": [
+        "question_id",
+        "company_id",
+        "predicted_value",
+        "evidence_bundle",
+        "confidence",
+        "readiness_state"
+      ],
+      "optional_fields": [
+        "predicted_unit",
+        "primary_doc",
+        "supporting_docs"
+      ],
+      "confidence_rule": {
+        "min_table_extraction": 0.85,
+        "min_narrative_extraction": 0.25,
+        "prefer_table_when_available": true
+      },
+      "unit_required": false,
+      "review_owner_rule": {
+        "needs_sme_review": "sme",
+        "coverage_gap": "dataset",
+        "default": null
+      },
+      "handoff_blockers": [
+        "qualitative_kind",
+        "coverage_gap",
+        "unresolved_conflict"
+      ],
+      "narrative_single_source_ok": true,
+      "holdout_pattern_families": [
+        "climate_narrative",
+        "scope_expansion",
+        "environment_esg_grade",
+        "environment_cdp",
+        "environment_narrative"
+      ],
+      "notes": "Climate/year/scope narrative metrics; qualitative CDP probes remain blocked"
+    },
+    "governance": {
+      "family_id": "governance",
+      "pilot_order": 3,
+      "question_type": "quantitative_governance_narrative",
+      "required_readiness_state": "single_source_sufficient",
+      "required_evidence_count": 1,
+      "primary_doc_rule": "governance_or_sustainability_report",
+      "supporting_doc_rule": "optional_financial_anchor_demo_only",
+      "required_fields": [
+        "question_id",
+        "company_id",
+        "predicted_value",
+        "evidence_bundle",
+        "confidence",
+        "readiness_state"
+      ],
+      "optional_fields": [
+        "predicted_unit",
+        "primary_doc",
+        "supporting_docs"
+      ],
+      "confidence_rule": {
+        "min_table_extraction": 0.85,
+        "min_narrative_extraction": 0.25,
+        "prefer_table_when_available": false
+      },
+      "unit_required": false,
+      "review_owner_rule": {
+        "needs_sme_review": "sme",
+        "coverage_gap": "dataset",
+        "default": null
+      },
+      "handoff_blockers": [
+        "qualitative_kind",
+        "coverage_gap",
+        "wrong_row_risk"
+      ],
+      "narrative_single_source_ok": true,
+      "holdout_pattern_families": [
+        "governance_narrative",
+        "governance_numeric_narrative",
+        "governance_materiality",
+        "esg_rating_narrative",
+        "governance_board",
+        "governance_dart"
+      ],
+      "notes": "Board meetings, ESG grades, materiality counts — narrative-first on holdout"
+    }
+  }
+}

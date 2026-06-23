@@ -1,0 +1,21 @@
+{
+  "company_id": "demo_company",
+  "source_root": "C:\\Users\\nguye\\Downloads\\data-company\\demo_company\\rtx_7step_dataset\\rtx_7step_dataset",
+  "unit_count": 47,
+  "by_document": {
+    "01_사업보고서_발췌_md": 5,
+    "02_온실가스_에너지_명세_md": 5,
+    "03_재생에너지_계약_md": 4,
+    "04_인사_안전_통계_md": 7,
+    "05_사회공헌_인권_md": 5,
+    "06_지배구조_운영_md": 8,
+    "07_인증_현황_md": 5,
+    "README_md": 4,
+    "26_03_27_ESG_quant_RTX_EEO_CDP_evidence_2024_Update_Summary_csv": 4
+  },
+  "by_source_type": {
+    "markdown": 43,
+    "csv": 4
+  },
+  "output": "data/enterprise_docs/demo_company/corpus_units.jsonl"
+}

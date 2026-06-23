@@ -1,0 +1,91 @@
+{
+  "version": "1.1.0",
+  "description": "Source role semantics for aggregation sufficiency and retrieval routing",
+  "routing": {
+    "qualitative_default_role": "primary narrative evidence",
+    "quantitative_default_role": "numeric table evidence",
+    "csv_supporting_role": "aggregated performance summary / year series",
+    "cross_document_signals": [
+      {"type": "blob_tokens_all", "tokens": ["비율", "매출"]},
+      {"type": "blob_tokens_all", "tokens": ["scope 1", "scope 3"]},
+      {"type": "blob_tokens_all", "tokens": ["재생에너지", "온실가스"]},
+      {"type": "primary_logical_pair", "logical_ids": ["doc_01_business", "doc_04_hr_safety"]}
+    ],
+    "quantitative_notes": {
+      "cross_doc": "Multi-table or multi-domain metric — may need merge across docs.",
+      "single_doc": "Heuristic: one primary markdown table likely sufficient.",
+      "qualitative": "Qualitative items typically require synthesis across strategy/governance/social docs."
+    }
+  },
+  "retrieval_policy": {
+    "planned_corpus_boost": 1.25,
+    "table_inject_score": 2.5,
+    "table_score_multiplier": 1.6,
+    "csv_floor_min_score": 0.5,
+    "financial_metric_markers": [
+      "백만", "얼마", "비용", "세금", "법인세", "유형자산", "이자", "급여", "복리후생",
+      "투자", "financial", "governance", "경제적 가치"
+    ]
+  },
+  "family_source_expectations": {
+    "environment_ghg": {
+      "preferred_document_types": ["sustainability_report"],
+      "scope": "generic",
+      "notes": "Climate metrics expected in SR / impact report narrative units"
+    },
+    "governance_narrative": {
+      "preferred_document_types": ["sustainability_report", "governance_report", "dart_filing"],
+      "scope": "generic"
+    },
+    "employee_headcount": {
+      "preferred_document_types": ["sustainability_report", "annual_report"],
+      "scope": "generic"
+    }
+  },
+  "role_classes": {
+    "required": "Must contribute numeric value when metric exists in corpus",
+    "supporting": "May contribute numeric or context; not a sole blocker",
+    "optional": "Context-only or aggregate summary; absent_by_design OK",
+    "authoritative": "Single-source sufficient anchor when others absent"
+  },
+  "classification_rules": [
+    {
+      "role_class": "optional",
+      "match_tokens": ["summary", "aggregate", "context", "narrative evidence"]
+    },
+    {
+      "role_class": "authoritative",
+      "match_tokens": ["authoritative", "financial / enterprise metrics", "primary numeric table"]
+    },
+    {
+      "role_class": "supporting",
+      "match_tokens": ["supporting", "secondary"]
+    }
+  ],
+  "default_role_class": "required",
+  "sufficiency_rules": {
+    "single_source_sufficient": {
+      "requires": ["resolved_value", "authoritative_or_probe_source"],
+      "optional_roles_absent_ok": true
+    },
+    "multi_source_sufficient": {
+      "requires": ["resolved_value", "roles_with_metric>=1"]
+    },
+    "honest_abstain": {
+      "requires": ["source_not_disclosed_or_coverage_gap"]
+    }
+  },
+  "synthesis_gate": {
+    "allowed_readiness_states": [
+      "single_source_sufficient",
+      "multi_source_sufficient",
+      "aggregation_ready"
+    ],
+    "min_quant_rate": 0.6,
+    "qualitative_requires_synthesis": true
+  },
+  "retrieval_boosts": {
+    "doc_evidence_csv": 2.0,
+    "notes": "pilot_only CSV boost for demo_company; move to per-company optional doc config"
+  }
+}

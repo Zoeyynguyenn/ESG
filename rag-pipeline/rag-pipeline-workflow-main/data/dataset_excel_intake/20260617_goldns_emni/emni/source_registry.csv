@@ -1,0 +1,5 @@
+﻿company_id,company_name,source_url,file_url,doc_title,source_type,link_check,confidence
+emni,이엠앤아이,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000723,colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_주요정보/2025_empSttus.json,2025_empSttus.json,dataset_excel_reference,direct filing page,high
+emni,이엠앤아이,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001534,colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_주요정보/2024_empSttus.json,2024_empSttus.json,dataset_excel_reference,direct filing page,high
+emni,이엠앤아이,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001778,colletor-ai/output_restart_emni_20260617/이엠앤아이_일반자료_20260617/02_재무_신용/DART_주요정보/2023_empSttus.json,2023_empSttus.json,dataset_excel_reference,direct filing page,high
+emni,이엠앤아이,https://www.minimumwage.go.kr/minWage/policy/decisionMain.do,,2025 최저임금 고시,dataset_excel_reference,direct official page,high

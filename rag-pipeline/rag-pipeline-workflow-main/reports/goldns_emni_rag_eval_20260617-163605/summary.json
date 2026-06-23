@@ -1,0 +1,31 @@
+{
+  "total_questions": 530,
+  "answerable_count": 67,
+  "abstain_count": 463,
+  "retrieval_hit_rate": 0.2388,
+  "source_match_rate": 0.9851,
+  "answer_accuracy": 0.4627,
+  "abstain_accuracy": 0.1382,
+  "overall_score": 0.4562,
+  "by_company": {
+    "emni": {
+      "total": 279,
+      "answerable": 43,
+      "abstain": 236,
+      "retrieval_hit_rate": 0.093,
+      "answer_accuracy": 0.3721,
+      "abstain_accuracy": 0.0
+    },
+    "goldns": {
+      "total": 251,
+      "answerable": 24,
+      "abstain": 227,
+      "retrieval_hit_rate": 0.5,
+      "answer_accuracy": 0.625,
+      "abstain_accuracy": 0.2819
+    }
+  },
+  "blocked_sources_logged": [
+    "case.ftc.go.kr self_redirect_loop_blocked_by_site (web download lane)"
+  ]
+}

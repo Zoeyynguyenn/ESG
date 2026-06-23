@@ -1,0 +1,54 @@
+# Golden Set v2 — Silver → Gold pipeline (company_export_json lane)
+pipeline_id: golden_set_v2_silver_to_gold
+version: "2.0.0"
+dataset_root: data/rag_dataset/05_company_export_json
+output_root: data/golden_set/v2
+
+# Lane RAG production (chunking/index aligned)
+rag_stack:
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  lane: company_export_json_full
+
+companies:
+  - package: 한샘_dataset_package_20260608T042739
+    short_name: 한샘
+    record_split: full
+  - package: 레이시온_dataset_package_20260608T055801
+    short_name: 레이시온
+    record_split: full
+  - package: 무신사_dataset_package_20260608T092823
+    short_name: 무신사
+    record_split: full
+
+# ESG taxonomy seeds (optional; rows drive question templates + GRI metadata)
+taxonomy:
+  quantitative_csv: null  # e.g. path to ESG-정량.csv on your machine
+  qualitative_csv: null
+
+generation:
+  llm_model: gpt-4o-mini
+  max_units_per_company: 40
+  distill_per_unit: 1
+  evolve_ratio: 0.25
+  evolve_modes:
+    - reasoning
+    - multi_context
+  text_max_chars: 1200
+
+qc:
+  min_question_chars: 12
+  min_answer_chars: 8
+  min_context_overlap: 0.15
+  drop_if_answer_not_in_context: true
+
+gold:
+  target_size: 50
+  sme_required: true
+  eval_set_out: .rag/rag-pipeline-practice/eval_set_golden_v2_ko.md
+
+# LLM-as-judge thay human SME (step 5 --ai-sme)
+ai_sme:
+  judge_model: gpt-4o-mini   # dùng gpt-4o nếu cần chất lượng cao hơn (~5x cost)
+  min_confidence: 0.75

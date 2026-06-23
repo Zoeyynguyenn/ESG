@@ -1,0 +1,278 @@
+{
+  "version": "1.5.0",
+  "description": "Metric families for extraction and aggregation — generic + company-scoped",
+  "families": [
+    {
+      "family_id": "employee_headcount",
+      "scope": "generic",
+      "companies": ["demo_company", "hanssem", "musinsa"],
+      "row_aliases": {
+        "총 구성원 수": ["총 임직원", "total employees", "총 구성원", "구성원", "임직원"],
+        "총 구성원": ["총 임직원", "total employees", "구성원", "직원"],
+        "MAU": ["MAU", "월간 활성", "월간활성", "사용자 수"]
+      },
+      "narrative_patterns": [
+        {
+          "label": "총 구성원",
+          "pattern": "(?:임직원|구성원|직원)[^\\d]{0,40}(\\d[\\d,]*)\\s*명",
+          "ignore_case": true
+        },
+        {
+          "label": "MAU",
+          "pattern": "MAU[^\\d]{0,20}(\\d[\\d,.]*)\\s*만",
+          "ignore_case": true
+        }
+      ]
+    },
+    {
+      "family_id": "employee_ratio",
+      "scope": "generic",
+      "companies": ["demo_company"],
+      "row_aliases": {
+        "정규직 직원 비율": ["정규직 직원 비율", "regular employees ratio"],
+        "여성 비율": ["여성", "female", "women", "gender"]
+      }
+    },
+    {
+      "family_id": "environment_ghg",
+      "scope": "generic",
+      "companies": ["demo_company", "hanssem", "musinsa"],
+      "row_aliases": {
+        "총 온실가스": ["scope 1+2", "total ghg", "총 온실가스", "scope 1+2 ghg"],
+        "scope 1": ["scope 1", "직접 온실가스"],
+        "scope 2": ["scope 2", "간접 온실가스"],
+        "총 에너지": ["total energy", "총 에너지", "total energy consumed"],
+        "탄소중립": ["탄소중립", "Net Zero", "넷제로", "2050", "탄소중립 목표"],
+        "스코프 3": ["스코프 3", "Scope 3", "scope 3", "스코프(Scope) 3"],
+        "온실가스": ["온실가스 배출", "온실가스 관리", "온실가스", "GHG emissions", "greenhouse gas"],
+        "환경 ESG 등급": ["환경은", "environment rating", "환경 분야", "B+등급", "environment score"],
+        "임팩트 리포트": ["임팩트 리포트", "impact report", "지속가능경영보고서", "sustainability report"],
+        "CDP": ["CDP", "Carbon Disclosure", "탄소정보 공개"],
+        "지속가능경영보고서": ["지속가능경영보고서", "sustainability report", "SR report", "ESG report"]
+      },
+      "semantic_bridge": {
+        "탄소중립": ["net zero", "carbon neutral", "2050"],
+        "스코프 3": ["scope 3", "value chain emissions"],
+        "총 온실가스": ["total ghg", "scope 1+2 emissions"],
+        "온실가스": ["ghg", "greenhouse gas emissions"]
+      },
+      "extraction_hints": {
+        "preferred_document_types": ["sustainability_report"],
+        "scope": "generic",
+        "notes": "Narrative climate metrics from SR/impact report sections"
+      },
+      "narrative_patterns": [
+        {
+          "label": "탄소중립",
+          "pattern": "(20\\d{2})\\s*(?:년\\s*)?(?:탄소중립|Net Zero|넷제로|carbon neutral)",
+          "ignore_case": true
+        },
+        {
+          "label": "탄소중립",
+          "pattern": "(?:탄소중립|Net Zero|넷제로|carbon neutral).{0,40}(20\\d{2})",
+          "ignore_case": true
+        },
+        {
+          "label": "탄소중립",
+          "pattern": "(20\\d{2}).{0,30}(?:탄소중립|Net Zero|넷제로)",
+          "ignore_case": true
+        },
+        {
+          "label": "스코프 3",
+          "pattern": "(?:스코프|Scope)\\s*\\(?\\s*3\\s*\\)?",
+          "ignore_case": true
+        },
+        {
+          "label": "스코프 범위",
+          "pattern": "(?:스코프|Scope)\\s*(?:1|2|3)",
+          "ignore_case": true
+        },
+        {
+          "label": "총 온실가스",
+          "pattern": "(?:총\\s*)?(?:온실가스|GHG)[^\\d]{0,30}(\\d[\\d,.]*)",
+          "ignore_case": true
+        },
+        {
+          "label": "환경 ESG 등급",
+          "pattern": "환경[^\\n]{0,50}['\"]?([A-Z][+]?)[\"']?\\s*등급",
+          "ignore_case": true
+        },
+        {
+          "label": "임팩트 리포트",
+          "pattern": "(20\\d{2}).{0,40}(?:임팩트 리포트|impact report)",
+          "ignore_case": true
+        }
+      ]
+    },
+    {
+      "family_id": "governance_narrative",
+      "scope": "generic",
+      "companies": ["demo_company", "hanssem", "musinsa"],
+      "row_aliases": {
+        "이사회 개최": ["이사회를 개최", "이사회 개최", "이사회 활동", "board meetings"],
+        "ESG 평가 등급": ["ESG경영 평가", "ESG 평가", "KGCS", "KCGS", "ESG 평가 등급", "등급", "A등급"],
+        "ESG 위원회": ["ESG 위원회", "ESG위원회", "ESG committee"],
+        "중대성 평가": ["중대성 평가", "Double Materiality", "이중 중대성"],
+        "거래액": ["거래액", "GMV", "거래 규모", "transaction volume"]
+      },
+      "semantic_bridge": {
+        "이사회 개최": ["board meetings", "directors meetings", "이사회 활동"],
+        "ESG 평가 등급": ["ESG rating", "KGCS", "ESG grade"],
+        "중대성 평가": ["materiality assessment", "double materiality"],
+        "이사회 안건": ["board agenda", "안건", "의안"]
+      },
+      "narrative_patterns": [
+        {
+          "label": "이사회 개최",
+          "pattern": "(\\d+)\\s*회(?:의)?\\s*이사회",
+          "ignore_case": true
+        },
+        {
+          "label": "이사회 안건",
+          "pattern": "총\\s*(\\d+)\\s*건",
+          "ignore_case": true
+        },
+        {
+          "label": "ESG 평가 등급",
+          "pattern": "(?:KGCS|KCGS|ESG)[^\\n]{0,60}['\"]?([A-Z][+]?)[\"']?\\s*등급",
+          "ignore_case": true
+        },
+        {
+          "label": "ESG 평가 등급",
+          "pattern": "['\"]?([A-Z][+]?)[\"']?\\s*등급",
+          "ignore_case": true
+        },
+        {
+          "label": "거래액",
+          "pattern": "거래액[^\\d]{0,30}(\\d+\\.?\\d*)\\s*조",
+          "ignore_case": true
+        },
+        {
+          "label": "ESG 위원회",
+          "pattern": "ESG\\s*위원회",
+          "ignore_case": true
+        },
+        {
+          "label": "중대성 평가",
+          "pattern": "(?:중대성|Double Materiality|이중 중대성)",
+          "ignore_case": true
+        },
+        {
+          "label": "중대성 평가",
+          "pattern": "(\\d+)\\s*개\\s*중대",
+          "ignore_case": true
+        }
+      ],
+      "probe_logical_doc_resolver": "sustainability_report"
+    },
+    {
+      "family_id": "demo_company_table_aliases",
+      "scope": "pilot_only",
+      "companies": ["demo_company"],
+      "row_aliases": {
+        "자발적 이직률": ["자발적 이직률", "voluntary turnover"],
+        "총 신규 채용": ["신규채용 총 인원", "신규 채용", "hiring", "신규채용 총 인원"],
+        "매출액": ["enterprise revenue", "total net sales", "매출", "net sales"],
+        "사회공헌": ["social contribution", "사회공헌", "charitable", "corporate giving", "Total corporate giving"],
+        "연간 인당 근로시간": ["근로시간", "working hours"],
+        "노사협의회": ["노사협의회", "collective bargaining"],
+        "평가 사업장": ["평가 사업장", "sites assessed"],
+        "윤리 위반 제보": ["ethics", "제보", "reports received"],
+        "반부패": ["anti-corruption", "bribery", "반부패", "뇌물"],
+        "윤리 위반 처리": ["cases processed", "처리 건수"],
+        "장애인": ["장애인", "disability"],
+        "친환경 인증": ["certified", "친환경"],
+        "폐수": ["wastewater", "폐수", "water discharged"],
+        "복리후생비": ["복리후생", "welfare", "benefits", "employee benefits"],
+        "육아휴직": ["육아휴직", "parental leave", "육아 휴직"],
+        "육아휴직 대상자 수": ["육아휴직", "parental leave"],
+        "환경투자액": ["환경 투자", "environmental investment", "environmental capex", "환경투자"],
+        "유형자산": ["유형자산", "tangible assets", "ppe"],
+        "자가 발전": ["자가발전", "on-site", "self-generated", "자가 발전"]
+      },
+      "replacement": "per-company table alias families when structured tables exist"
+    },
+    {
+      "family_id": "financial_en_bridge",
+      "scope": "generic",
+      "companies": ["demo_company", "hanssem", "musinsa"],
+      "semantic_bridge": {
+        "유형자산 취득": ["capital expenditures", "tangible assets acquired", "유형자산"],
+        "이자비용": ["interest expense, net", "interest expense", "이자비용"],
+        "세금 및 공과 + 법인세": ["income tax expense", "법인세"],
+        "법인세": ["income tax expense", "corporate tax"],
+        "급여+복리후생비+퇴직급여": ["defined contribution plan contributions", "personnel expenses"],
+        "복리후생비": ["defined contribution plan contributions", "employee benefits"],
+        "환경투자액": ["facility energy/ghg reduction", "environmental investment", "ghg reduction investment", "환경 투자"],
+        "매출발생 부서": ["female", "women"],
+        "거래액": ["GMV", "transaction volume", "매출"],
+        "총 온실가스": ["scope 1+2", "total ghg"],
+        "이사회 개최": ["board meetings", "directors meetings"]
+      },
+      "replacement": "metric_family_registry financial_en_bridge per company when EN table exists"
+    },
+    {
+      "family_id": "governance_financial_anchor",
+      "scope": "generic",
+      "companies": ["demo_company", "hanssem", "musinsa"],
+      "anchor_logical_doc": "doc_06_governance",
+      "anchor_logical_doc_by_company": {
+        "hanssem": "doc_governance_disclosure",
+        "musinsa": "doc_dart_disclosure"
+      },
+      "anchor_metrics": [
+        "유형자산 취득",
+        "이자비용",
+        "급여+복리후생비+퇴직급여",
+        "세금 및 공과 + 법인세",
+        "이사회 개최",
+        "ESG 평가 등급",
+        "이사회 안건"
+      ],
+      "replacement": "authoritative_source_registry per company"
+    },
+    {
+      "family_id": "narrative_investment",
+      "scope": "pilot_only",
+      "companies": ["demo_company"],
+      "probe_metrics": ["환경투자액"],
+      "probe_logical_doc": "doc_01_business",
+      "narrative_patterns": [
+        {
+          "label": "환경투자액",
+          "pattern": "(?:facility energy/GHG reduction projects?\\s*)?투자액[:\\s]*(?:USD\\s*)?([\\d,.]+)\\s*(mil(?:lion)?|billion)?",
+          "ignore_case": true
+        },
+        {
+          "label": "환경투자액",
+          "pattern": "facility energy/GHG reduction investment amount[:\\s.]*([\\d,.]+)\\s*(million|billion)?",
+          "ignore_case": true
+        },
+        {
+          "label": "육아휴직",
+          "pattern": "육아휴직\\s*대상자[^:]*:\\s*(Not disclosed|not disclosed)",
+          "ignore_case": true
+        }
+      ],
+      "replacement": "narrative_pattern_family registry per document_type"
+    },
+    {
+      "family_id": "hr_welfare",
+      "scope": "generic",
+      "companies": ["demo_company"],
+      "row_aliases": {
+        "복리후생비": ["복리후생", "welfare", "benefits", "employee benefits"],
+        "육아휴직": ["육아휴직", "parental leave", "육아 휴직"],
+        "육아휴직 대상자 수": ["육아휴직", "parental leave"]
+      }
+    },
+    {
+      "family_id": "social_contribution",
+      "scope": "generic",
+      "companies": ["demo_company"],
+      "row_aliases": {
+        "사회공헌": ["social contribution", "사회공헌", "charitable", "corporate giving", "Total corporate giving"]
+      }
+    }
+  ]
+}

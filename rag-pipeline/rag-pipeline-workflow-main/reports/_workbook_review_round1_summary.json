@@ -1,0 +1,51 @@
+{
+  "review_version": "ref_review_v4_r1",
+  "generated_at": "2026-06-11T12:18:25",
+  "input_total": 175,
+  "keep": 35,
+  "rewrite": 72,
+  "reject": 35,
+  "collapse_into_cluster": 33,
+  "reviewable_after_round1": 107,
+  "by_company": {
+    "레이시온": {
+      "reject": 17,
+      "rewrite": 12,
+      "keep": 2
+    },
+    "무신사": {
+      "reject": 14,
+      "rewrite": 14,
+      "collapse_into_cluster": 11,
+      "keep": 8
+    },
+    "한샘": {
+      "rewrite": 46,
+      "keep": 25,
+      "reject": 4,
+      "collapse_into_cluster": 22
+    }
+  },
+  "by_reason": {
+    "cross_company_contamination": 15,
+    "insufficient_esg_substance": 13,
+    "listing_index_meta": 4,
+    "framework_only_no_company_fact": 2,
+    "portal_nav_contact": 1
+  },
+  "by_question_type": {
+    "trend": 8,
+    "quantitative": 62,
+    "qualitative": 37
+  },
+  "by_cluster_action": {
+    "anchor": 107,
+    "rejected": 35,
+    "collapsed_variant": 33
+  },
+  "manual_review_ready_flag": true,
+  "manual_review_ready_verdict": "Có — đủ sạch để mở manual review round 2 (keep+rewrite workbook)",
+  "output_reviewed_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_v4_reviewed_round1.jsonl",
+  "output_rejected_jsonl": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_candidates_v4_rejected_round1.jsonl",
+  "output_workbook": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\reference_style\\reference_seed_workbook_v4_review_round1.xlsx"
+}

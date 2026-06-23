@@ -1,0 +1,16 @@
+{
+  "revise_version": "2.4.0",
+  "generated_at": "2026-06-11T09:56:37",
+  "input_rows": 5,
+  "revise_rows": 4,
+  "before_promotion_candidate": 1,
+  "after_promotion_candidate": 3,
+  "salvaged_from_revise": 2,
+  "dropped_duplicate_losers": 1,
+  "output_path": "E:\\Documents\\rag-pipeline-workflow\\data\\golden_set\\v2\\step4_silver_qc\\pilot_hanssem_5_qc_revised_r2_4.jsonl",
+  "promote_ready_ids": [
+    "SV2-P24-0001",
+    "SV2-P24-0002",
+    "SV2-P24-0003"
+  ]
+}

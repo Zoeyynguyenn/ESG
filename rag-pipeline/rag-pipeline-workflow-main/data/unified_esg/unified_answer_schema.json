@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "unified_esg/unified_answer_schema.json",
+  "title": "Unified ESG answer record",
+  "description": "Merged answer from dataset RAG lane + enterprise internal-doc structured ESG lane",
+  "type": "object",
+  "required": ["schema_version", "identity", "resolution_status", "best_answer_origin"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "identity": {
+      "type": "object",
+      "required": ["business_key", "company_id"],
+      "properties": {
+        "question_id": { "type": ["string", "null"] },
+        "business_key": { "type": "string" },
+        "join_type": { "enum": ["question_id", "business_key"] },
+        "company_id": { "type": "string" },
+        "family_id": { "type": ["string", "null"] },
+        "metric_name": { "type": ["string", "null"] },
+        "year": { "type": ["string", "integer", "null"] }
+      }
+    },
+    "best_answer": { "type": ["string", "number", "null"] },
+    "best_answer_origin": {
+      "type": ["string", "null"],
+      "enum": ["dataset", "internal_doc", "both_confirmed", "unresolved", "candidate", null]
+    },
+    "resolution_status": {
+      "type": "string",
+      "enum": [
+        "MATCH_CONFIRMED",
+        "BACKFILL_FROM_INTERNAL",
+        "BACKFILL_FROM_DATASET",
+        "CONFLICT_REVIEW_REQUIRED",
+        "NO_ANSWER_FOUND",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "auto_confirm": { "type": "boolean" },
+    "review_required": { "type": "boolean" },
+    "review_owner": { "type": ["string", "null"] },
+    "resolution_note": { "type": "string" },
+    "confidence": { "type": "number" },
+    "readiness_state": { "type": ["string", "null"] },
+    "conflict_status": { "type": ["string", "null"] },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "dataset": { "type": "object" },
+        "internal_doc": { "type": "object" }
+      }
+    },
+    "supporting_evidence": { "type": "array" }
+  }
+}

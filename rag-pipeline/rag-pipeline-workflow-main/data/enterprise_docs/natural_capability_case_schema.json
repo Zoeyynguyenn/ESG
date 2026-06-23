@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "enterprise_docs/natural_capability_case_schema.json",
+  "title": "Enterprise internal-doc capability case",
+  "description": "Schema for natural vs constructed capability benchmark cases. Natural cases plug into the same harness as constructed regression cases without core pipeline changes.",
+  "type": "object",
+  "required": ["case_id", "case_origin", "family_id", "test_type"],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Stable unique id, e.g. NATURAL-{probe_id} or CONSTRUCT-{name}"
+    },
+    "case_origin": {
+      "type": "string",
+      "enum": ["natural", "constructed"],
+      "description": "natural = real corpus probe; constructed = synthetic capability unit"
+    },
+    "capability": {
+      "type": "string",
+      "description": "Primary capability under test, e.g. evidence_fusion, cross_role_extraction"
+    },
+    "capability_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "company_id": {
+      "type": "string",
+      "description": "Corpus company key for natural cases; capability_synthetic for constructed pipeline cases"
+    },
+    "family_id": {
+      "type": "string",
+      "enum": ["employee_headcount", "environment_ghg", "governance"],
+      "description": "Pilot metric family — must match family_retrieval_pool / registry"
+    },
+    "pattern_family": {
+      "type": "string",
+      "description": "Probe pattern family for natural overlap routing"
+    },
+    "cross_doc_eligible": {
+      "type": "boolean",
+      "description": "Whether pattern_family is in CROSS_DOC_PATTERN_FAMILIES"
+    },
+    "logical_docs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Expected logical document roles for multi-source cases (constructed or annotated natural)"
+    },
+    "expected_capability_type": {
+      "type": "string",
+      "enum": [
+        "alias_normalization",
+        "cross_doc_equivalence",
+        "cross_role_extraction",
+        "evidence_fusion",
+        "conflict_classification",
+        "readiness_promotion",
+        "natural_overlap_probe"
+      ]
+    },
+    "expected_outcome_class": {
+      "type": "string",
+      "enum": [
+        "multi_source_confirmed",
+        "single_source_sufficient",
+        "conflict_detected",
+        "corpus_limited",
+        "system_gap",
+        "equivalence_match",
+        "equivalence_mismatch",
+        "promotion_expected",
+        "promotion_blocked"
+      ],
+      "description": "High-level pass/fail interpretation for reporting — not a pipeline switch"
+    },
+    "expected_canonical_value": {
+      "type": ["string", "null"],
+      "description": "Optional gold canonical value for natural validation"
+    },
+    "expected_conflict_status": {
+      "type": ["string", "null"],
+      "description": "Optional expected conflict classifier output for constructed cases"
+    },
+    "expected_multi_source_confirmed": {
+      "type": ["boolean", "null"]
+    },
+    "readiness_expectation": {
+      "type": ["string", "null"],
+      "enum": ["promote", "hold", "review", null]
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["quantitative", "qualitative", "capability_unit"]
+    },
+    "test_type": {
+      "type": "string",
+      "enum": [
+        "natural_holdout_probe",
+        "multi_source_extraction",
+        "value_pair_equivalence",
+        "canonical_key_match"
+      ]
+    },
+    "item": { "type": "string" },
+    "question": { "type": "string" },
+    "probe": {
+      "type": "object",
+      "description": "Embedded holdout probe for natural_holdout_probe test_type"
+    },
+    "source_units": {
+      "type": "array",
+      "description": "Inline synthetic corpus for constructed multi_source_extraction cases"
+    },
+    "roles": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "primary_document_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "case_origin": { "const": "natural" } } },
+      "then": {
+        "required": ["company_id", "probe"],
+        "properties": {
+          "test_type": { "const": "natural_holdout_probe" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "case_origin": { "const": "constructed" } } },
+      "then": {
+        "properties": {
+          "test_type": {
+            "enum": ["multi_source_extraction", "value_pair_equivalence", "canonical_key_match"]
+          }
+        }
+      }
+    }
+  ]
+}

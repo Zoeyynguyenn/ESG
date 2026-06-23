@@ -1,0 +1,148 @@
+--- page 1 ---
+VM → kt cloud AI Nexus 환경  전환  가이드
+VM/BM 서버에서  kt cloud AI Nexus 로  환경  이전  가이드
+대상  독자 : 기존에  VM( 가상머신 ) 또는  BM( 베어메탈 ) 서버에서  AI/ML 워크로드
+를  운영하던  사용자  
+목적 : AI Nexus 컨테이너  기반  환경으로  최소한의  혼선  없이  이전하기  위한  단
+계별  가이드
+1. 개요  및  핵심  개념  차이  이해
+이전을  시작하기  전에 , AI Nexus 가  기존  VM/BM 환경과  어떻게  다른지  이해하는  것이  중요합니다 .
+핵심  원칙 : AI Nexus 에서  컨테이너  세션은  " 일시적인  실행  환경 " 이며 , 영속적으로  보관해야  할  데이
+터와  코드는  반드시  vFolder에  저장해야  합니다 .
+2. 사전  체크리스트
+이전  전에  기존  환경을  점검합니다 .
+2-1. 현재  환경  파악
+실행  단위 서버  인스턴스  ( 상시  가동 ) 세션 (Session) — 필요  시  생성 /
+종료
+환경  설치 OS 에  직접  패키지  설치 컨테이너  이미지  선택  (CUDA,
+PyTorch 등  사전  구성 )
+데이터  저장 서버  로컬  디스크 vFolder ( 가상  폴더 ) — 세션에
+마운트하여  사용
+GPU 할당 서버에  고정 세션  생성  시  동적  할당
+접근  방법 SSH, 원격  데스크톱 WebUI, JupyterLab, VSCode,
+SSH/SFTP 모두  지원
+소프트웨어  영속성 설치하면  유지 세션  종료  시  컨테이너  초기화
+(vFolder 내  데이터는  유지 )
+항목 VM / BM 환경 AI Nexus
+사용  중인  OS 버전  확인  (Ubuntu 20.04, 22.04 등 )
+
+--- page 2 ---
+2-2. 데이터  및  코드  자산  파악
+2-3. 네트워크  및  외부  연동  파악
+3. AI Nexus 계정  및  초기  설정
+3-1. 계정  접속  및  기본  설정
+1. 관리자로부터  AI Nexus 접속  URL 과  계정  정보를  발급받습니다 .
+2. WebUI 에  로그인한  후  설정  > 사용자  정보에서  SSH 공개키를  확인합니다 .
+3-2. vFolder 생성  — 데이터  영속성의  핵심
+vFolder 는  어떤  세션에도  마운트  가능한  영구  스토리지입니다 . 이전  환경의  로컬  디스크  역할을  대
+체합니다 .
+예시  vFolder 구조 :
+WebUI 에서 : 스토리지  > 데이터  > 폴더  생성
+4. 기존  환경  → AI Nexus 컨테이너  환경으로  매핑
+4-1. 컨테이너  이미지  선택
+기존  환경의  CUDA 버전에  맞는  이미지를  선택합니다 .
+설치된  CUDA 버전  및  드라이버  버전  확인
+사용  중인  Python 버전  및  가상환경  목록  확인
+주요  패키지  목록  추출  (pip freeze > requirements.txt)
+Conda 환경  사용  시 : conda env export > environment.yml
+커스텀  빌드  또는  소스  설치  패키지  목록  파악
+학습  데이터셋  위치  및  용량  확인
+모델  체크포인트  파일  위치  확인
+코드  저장소 (Git) 확인  — 원격  저장소  연동  여부
+로컬에만  있는  스크립트 , 설정  파일  파악
+크론잡 , 백그라운드  서비스  목록  확인
+외부  API 키 , 환경변수  목록
+사내  NFS, SMB 스토리지  마운트  정보
+방화벽  규칙 , 포트  오픈  목록
+기타  외부  서비스  연동  현황  ( 데이터베이스 , S3 등 )
+1 📁  my-datasets      ← 학습  데이터셋  ( 대용량 , 읽기  전용으로  공유  가능 )2 📁  my-checkpoints   ← 모델  체크포인트3 📁  my-code          ← 소스  코드  (Git 연동  또는  직접  업로드 )4 📁  my-outputs       ← 실험  결과 , 로그
+기존  환경 권장  AI Nexus 이미지  예시
+
+--- page 3 ---
+팁 : 기존  환경과  완전히  동일한  이미지가  없다면 , 가장  가까운  베이스  이미지를
+선택하고  requirements.txt로  추가  패키지를  설치하는  방식으로  시작하세
+요 .
+4-2. 패키지  설치  전략
+AI Nexus 세션에서  pip install한  패키지는  세션  종료  시  사라집니다 . 아래  방법  중  하나를  선
+택하세요 .
+방법  A: 세션  시작  시  자동  설치  스크립트  ( 간단한  경우 )
+vFolder 에  setup.sh를  생성하고  세션  시작  시  실행 :
+방법  B: 커스텀  컨테이너  이미지  빌드  ( 패키지가  많거나  복잡한  경우 )
+방법  C: Conda 환경을  vFolder 에  저장
+5. 데이터  이전
+5-1. 코드  이전
+Git 저장소  이용  ( 권장 ):
+직접  업로드 :
+CUDA 12.8 + PyTorch 2.7 bai-repo:7080/bai/ngc-
+pytorch:25.03-pytorch2.7-py312-
+cuda12.8
+CUDA 13.0 + vLLM 0.19.0 bai-repo:7080/bai/vllm:0.19.0-
+cuda13.0-ubuntu24.04@x86_64
+커스텀  환경  필요 관리자  문의
+1 #!/bin/bash2 pip install -r ./my-code/requirements.txt --quiet
+1 # 관리자에게  이미지  등록  요청
+1 conda create -p /my-code/envs/myenv python=3.102 conda activate /my-code/envs/myenv3 pip install -r requirements.txt4 # 이후  세션에서  activate 만  하면  재사용  가능
+1 # 세션  내  터미널에서2 cd /my-code3 git clone https://github.com/your-org/your-repo.git
+
+--- page 4 ---
+WebUI: 파일 탭  → vFolder 선택  → 파일  업로드
+SFTP: sftp -P <port> <username>@<host>
+
+--- page 5 ---
+5-2. 데이터셋  이전
+소용량  ( 수  GB 이하 ): WebUI 또는  SFTP 로  직접  업로드
+대용량  데이터셋 :
+체크포인트  이전 :
+6. 세션  생성  및  실행  환경  구성
+6-1. 인터랙티브  세션  시작  (JupyterLab / VSCode)
+WebUI 에서  세션  > 새  세션  만들기:
+6-2. SSH 접속  ( 기존  VM 처럼  사용하고  싶은  경우 )
+세션  생성  후  WebUI 에서  SSH 연결  정보를  확인 :
+1 # rsync 이용  (SFTP 지원  시 )2 rsync -avz --progress /local/dataset/ sftp://user@host/my-datasets/34 # 기존  NFS 마운트가  .AI 에  연동된  경우 : 관리자에게  vFolder ↔  NFS 연동  요청
+1 # 기존  서버에서  압축  후  업로드2 tar -czf checkpoints.tar.gz ./checkpoints/3 .ai vfolder upload my-checkpoints checkpoints.tar.gz4 # 세션  내에서  해제5 tar -xzf /mnt/my-checkpoints/checkpoints.tar.gz -C /mnt/my-checkpoints/
+이미지 4-1 에서  선택한  이미지
+CPU 기존  환경  대비  동일하거나  적절히  조정
+GPU 기존  GPU 수
+메모리 기존  환경  기준  + 여유분
+vFolder 마운트 ( 예시 ) my-code, my-datasets, my-checkpoints,
+my-outputs 전부  선택
+설정  항목 권장  설정
+
+--- page 6 ---
+VS Code Remote SSH 연동 :
+VS Code 에서  "Remote-SSH: Connect to Host" 로  접속
+7. 주요  워크플로우  변경  사항  정리
+7-1. AI Nexus  방식
+~/ 홈  디렉토리에  파일  저장 vFolder(/home/work/ 폴더명 /) 에  저장
+nohup python train.py & 로  백그라운드
+실행
+배치  세션으로  제출  ( 세션  종료돼도  작업  유지 )
+screen / tmux 로  세션  유지 불필요  — AI Nexus 터미널  세션이  그  역할  담당
+/etc/environment에  환경변수  설정 세션  생성  시  환경변수  지정  또는  .env 파일을
+vFolder 에  저장
+df -h로  디스크  용량  확인 WebUI vFolder 탭에서  용량  확인
+기존  VM/BM 활용  방식 AI Nexus 에서의  대응  방법
+
+--- page 7 ---
+7-2. 알아두어야  할  제약사항
+세션  타임아웃 : 유휴  상태로  일정  시간  경과  시  세션이  자동  종료될  수  있음 .
+포트  바인딩 : 임의  포트  리스닝은  AppProxy 를  통해서만  외부에서  접근  가능 . 커스텀  서비스  노출
+이  필요한  경우  관리자에게  문의 .
+8. 검증  및  테스트
+이전  완료  후  아래  항목을  순서대로  검증합니다 .
+vFolder 에  데이터 / 코드가  정상적으로  업로드되어  있는지  확인
+세션  내에서  ./ 폴더명 / 경로로  파일  접근  가능한지  확인
+requirements.txt 기반  패키지  설치  후  import 오류  없는지  확인
+GPU 인식  여부  확인 : nvidia-smi 또는  torch.cuda.is_available()
+기존  학습  스크립트를  소규모  데이터로  시범  실행
+체크포인트  저장이  vFolder 에  정상  기록되는지  확인
+세션  재시작  후  vFolder 데이터  유지  여부  확인
+9. 자주  묻는  질문  (FAQ)
+Q. 세션을  종료하면  내  작업이  사라지나요 ? A. vFolder 에  저장된  파일 ( 코드 , 데이터 , 체크포인트  등 )
+은  유지됩니다 . 세션  내  컨테이너  파일시스템 (/tmp, /root 등 ) 에만  저장된  파일은  사라집니다 .
+Q. 기존에  쓰던  Docker 이미지를  그대로  쓸  수  있나요 ? A. 가능합니다 . 관리자에게  커스텀  이미지  등
+록을  요청하면  세션  생성  시  해당  이미지를  선택할  수  있습니다 .
+Q. 기존  서버에서  학습  중인  작업을  중단  없이  이전할  수  있나요 ? A. 실행  중인  작업을  무중단으로  이
+전하기는  어렵습니다 . 체크포인트가  있다면  기존  작업을  특정  시점에서  저장  후  AI Nexus 에서  이어
+서  실행하는  방식을  권장합니다 .
+sudo 권한으로  패키지  설치 컨테이너  내  pip install ( 루트  권한  불필요 )

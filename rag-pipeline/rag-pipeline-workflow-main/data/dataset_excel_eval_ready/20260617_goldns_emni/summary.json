@@ -1,0 +1,26 @@
+{
+  "companies": [
+    {
+      "company_id": "emni",
+      "company_name": "이엠앤아이",
+      "question_count": 279,
+      "gold_answer_count": 279,
+      "source_row_count": 279,
+      "answerable_gold_count": 43,
+      "abstain_gold_count": 236,
+      "needs_review_count": 0,
+      "issue_count": 0
+    },
+    {
+      "company_id": "goldns",
+      "company_name": "골드앤에스",
+      "question_count": 251,
+      "gold_answer_count": 251,
+      "source_row_count": 251,
+      "answerable_gold_count": 24,
+      "abstain_gold_count": 227,
+      "needs_review_count": 0,
+      "issue_count": 0
+    }
+  ]
+}

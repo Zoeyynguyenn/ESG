@@ -1,0 +1,255 @@
+{
+  "package": "무신사_dataset_package_20260608T092823",
+  "package_root": "E:\\Documents\\rag-pipeline-workflow\\data\\rag_dataset\\05_company_export_json\\무신사_dataset_package_20260608T092823",
+  "classification": "gt_present_in_package_and_indexable",
+  "counts": {
+    "jsonl_hits_total": 36,
+    "full_jsonl_hits": 12,
+    "records_lane_hits": 12,
+    "_sources_hits": 0,
+    "1891명_in_package": 12,
+    "headcount_context_in_package": 9,
+    "1891_substring_in_full": 5
+  },
+  "anchor_1891myeong": [
+    {
+      "lane": "splits/dev.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/dev.jsonl",
+      "record_id": "rec_27e2235c5c45f84a",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "splits/dev.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/dev.jsonl",
+      "record_id": "rec_749d45345eedbac4",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "splits/dev.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/dev.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "splits/dev.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/dev.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_27e2235c5c45f84a",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_749d45345eedbac4",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "records/company_evidence.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+      "record_id": "rec_27e2235c5c45f84a",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "records/company_evidence.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+      "record_id": "rec_749d45345eedbac4",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "records/company_evidence.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    },
+    {
+      "lane": "records/company_evidence.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891명",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지"
+    }
+  ],
+  "headcount_context": [
+    {
+      "lane": "splits/dev.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/dev.jsonl",
+      "record_id": "rec_27e2235c5c45f84a",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "splits/dev.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/dev.jsonl",
+      "record_id": "rec_749d45345eedbac4",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "splits/dev.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/dev.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_27e2235c5c45f84a",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_749d45345eedbac4",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "records/company_evidence.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+      "record_id": "rec_27e2235c5c45f84a",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "records/company_evidence.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+      "record_id": "rec_749d45345eedbac4",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    },
+    {
+      "lane": "records/company_evidence.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "headcount_context",
+      "snippet": "눈에 띈다. 지난 6월까지 영입된 7명의 임원진 중 3명이 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 지속하면"
+    }
+  ],
+  "full_jsonl_1891_substring_sample": [
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_cb9b6b632d2d350d",
+      "doc_id": "doc_166c6cc07d6bfe6f",
+      "source_url": "https://www.mss.go.kr/common/board/Download.do?bcIdx=1063247&cbIdx=128&streFileNm=91506727-7c47-4923-be11-71056f95cec3.pdf",
+      "match_kind": "1891_substring",
+      "snippet": "74 공기업 및 대기업 한국남동발전1562971,772한국서부발전852041,401한국가스공사3987522한국전력공사2885977CJ제일제당851891,337한국동서발전3169402한국중부발전3677460한국수력원 자력2791546인천항만공사1726156한국수자원공사4554324한국남부발전28"
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_27e2235c5c45f84a",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891_substring",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 "
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_749d45345eedbac4",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891_substring",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 "
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891_substring",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 "
+    },
+    {
+      "lane": "splits/full.jsonl|role=company_evidence",
+      "path": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+      "record_id": "rec_9c4cb308e5b2aa59",
+      "doc_id": "doc_507acb85838aa8df",
+      "source_url": "https://www.etnews.com/20250901000141",
+      "match_kind": "1891_substring",
+      "snippet": " 테크관련 인사다. 전준희 테크부문장도 지난해 11월 무신사에 합류한 바 있다. 전체 임직원수도 287명 증가했다. 지난 6월 기준 총직원 수는1891명으로 정규직 1745명, 비정규직 146명을 합한 수다. 지난해 말 기준 직원 수는 1604명이다. 오프라인 거점 확대와 글로벌 확장 전략을 "
+    }
+  ],
+  "_sources_sample": []
+}

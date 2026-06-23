@@ -1,0 +1,50 @@
+{
+  "version": "natural_onboarding_gate_draft_v1",
+  "prior_constructed_baseline_artifact": "reports/enterprise_docs_fusion_equivalence_hardening_20260619-102350/summary.json",
+  "layers": {
+    "extraction": {
+      "metric": "cross_role_extraction_alignment_rate",
+      "scope": "constructed",
+      "minimum": 1.0,
+      "description": "Per logical-doc extraction alignment on constructed multi-source cases"
+    },
+    "equivalence_collapse": {
+      "metric": "cross_doc_equivalence_match_rate",
+      "scope": "constructed",
+      "minimum": 1.0,
+      "description": "Canonical key / alias equivalence on constructed cases"
+    },
+    "fusion": {
+      "metric": "evidence_fusion_success_rate",
+      "scope": "constructed",
+      "minimum": 1.0,
+      "description": "multi_source_confirmed + fusion contract on constructed cases"
+    },
+    "conflict_classification": {
+      "metric": "conflict_classification_accuracy",
+      "scope": "constructed",
+      "minimum": 1.0,
+      "description": "Expected conflict status match on constructed conflict cases"
+    },
+    "readiness_promotion": {
+      "metric": "single_source_to_multi_source_promotion_rate",
+      "scope": "constructed",
+      "minimum": 1.0,
+      "ghost_pass_maximum": 0,
+      "description": "Promotion must track fusion_ok; ghost_pass_count must be 0"
+    }
+  },
+  "natural_onboarding_draft": {
+    "parser_coverage_minimum": 0.5,
+    "candidate_found_rate_minimum": 0.3,
+    "corpus_limited_rate_maximum": 0.9,
+    "system_gap_rate_maximum": 0.2,
+    "cross_doc_eligible_fusion_minimum": null,
+    "notes": "Natural thresholds are draft — primary signal is failure_mode split (corpus_limited vs system_gap), not headline pass rate"
+  },
+  "regression_suite": {
+    "constructed_must_pass": true,
+    "natural_runs_for_diagnostics": true,
+    "no_core_pipeline_changes_required": true
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "timestamp": "20260618-150423",
+  "single": {
+    "single_extraction_success_rate_on_ready": 0.8,
+    "single_extraction_success_rate_all": 0.4,
+    "wrong_row_risk_count": 0,
+    "narrative_metric_parse_success_count": 0
+  },
+  "cross": {
+    "quant_aggregation_success_rate": 0.7,
+    "resolved_single_source_sufficient_rate": 0.6,
+    "aggregation_partial_rate": 0.0,
+    "aggregation_conflict_rate": 0.0,
+    "metric_absent_in_role_rate": 1.0,
+    "missing_numeric_role_rate": 0.0,
+    "narrative_metric_parse_success_count": 1,
+    "narrative_metric_parse_success_rate": 0.1
+  },
+  "delta_vs_144715": {
+    "baseline_label": "144715",
+    "quant_aggregation_success_rate": {
+      "new": 0.7,
+      "old": 0.2,
+      "delta": 0.5
+    },
+    "resolved_single_source_sufficient_rate": {
+      "new": 0.6,
+      "old": null,
+      "delta": null
+    },
+    "aggregation_partial_rate": {
+      "new": 0.0,
+      "old": 0.2667,
+      "delta": -0.2667
+    },
+    "aggregation_conflict_rate": {
+      "new": 0.0,
+      "old": 0.0,
+      "delta": 0.0
+    },
+    "metric_absent_in_role_rate": {
+      "new": 1.0,
+      "old": null,
+      "delta": null
+    },
+    "missing_numeric_role_rate": {
+      "new": 0.0,
+      "old": null,
+      "delta": null
+    },
+    "narrative_metric_parse_success_count": {
+      "new": 1,
+      "old": 0,
+      "delta": 1.0
+    }
+  },
+  "focus_case_analysis": [
+    {
+      "item_id": "QUANT-0044",
+      "extraction_ok": false,
+      "extraction_reason": "units_retrieved_but_no_parseable_numeric_row",
+      "needs_multi_role": true,
+      "required_roles": [
+        "doc_04_hr_safety"
+      ],
+      "optional_roles": [
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "roles_with_metric": [],
+      "roles_absent_by_design": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "missing_numeric_roles": [],
+      "sufficiency_status": "failed",
+      "sufficiency_reason": "no_candidates",
+      "aggregation_status": "failed",
+      "resolved_value": null,
+      "narrative_parse": false,
+      "recommended_label": "metric_absent"
+    },
+    {
+      "item_id": "QUANT-0133",
+      "extraction_ok": false,
+      "extraction_reason": "units_retrieved_but_no_parseable_numeric_row",
+      "needs_multi_role": true,
+      "required_roles": [
+        "doc_02_ghg_energy",
+        "doc_03_renewable"
+      ],
+      "optional_roles": [
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "roles_with_metric": [
+        "doc_01_business"
+      ],
+      "roles_absent_by_design": [
+        "doc_02_ghg_energy",
+        "doc_03_renewable",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "missing_numeric_roles": [],
+      "sufficiency_status": "resolved_single_source_sufficient",
+      "sufficiency_reason": "single_authoritative_source_metric_absent_elsewhere",
+      "aggregation_status": "success",
+      "resolved_value": "20.8",
+      "narrative_parse": false,
+      "recommended_label": "resolved_single_source_sufficient"
+    },
+    {
+      "item_id": "QUANT-0208",
+      "extraction_ok": true,
+      "extraction_reason": "matched_row:Capital expenditures",
+      "needs_multi_role": true,
+      "required_roles": [
+        "doc_06_governance"
+      ],
+      "optional_roles": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "roles_with_metric": [
+        "doc_06_governance"
+      ],
+      "roles_absent_by_design": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "missing_numeric_roles": [],
+      "sufficiency_status": "resolved_single_source_sufficient",
+      "sufficiency_reason": "single_authoritative_source_metric_absent_elsewhere",
+      "aggregation_status": "success",
+      "resolved_value": "2,625",
+      "narrative_parse": false,
+      "recommended_label": "resolved_single_source_sufficient"
+    },
+    {
+      "item_id": "QUANT-0210",
+      "extraction_ok": true,
+      "extraction_reason": "matched_row:Defined contribution plan contributions, partial benefits proxy",
+      "needs_multi_role": true,
+      "required_roles": [
+        "doc_06_governance"
+      ],
+      "optional_roles": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "roles_with_metric": [
+        "doc_06_governance"
+      ],
+      "roles_absent_by_design": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "missing_numeric_roles": [],
+      "sufficiency_status": "resolved_single_source_sufficient",
+      "sufficiency_reason": "single_authoritative_source_metric_absent_elsewhere",
+      "aggregation_status": "success",
+      "resolved_value": "1.4",
+      "narrative_parse": false,
+      "recommended_label": "resolved_single_source_sufficient"
+    },
+    {
+      "item_id": "QUANT-0209",
+      "extraction_ok": true,
+      "extraction_reason": "matched_row:Interest expense, net",
+      "needs_multi_role": true,
+      "required_roles": [
+        "doc_06_governance"
+      ],
+      "optional_roles": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "roles_with_metric": [
+        "doc_06_governance"
+      ],
+      "roles_absent_by_design": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "missing_numeric_roles": [],
+      "sufficiency_status": "resolved_single_source_sufficient",
+      "sufficiency_reason": "single_authoritative_source_metric_absent_elsewhere",
+      "aggregation_status": "success",
+      "resolved_value": "1,862",
+      "narrative_parse": false,
+      "recommended_label": "resolved_single_source_sufficient"
+    },
+    {
+      "item_id": "QUANT-0213",
+      "extraction_ok": true,
+      "extraction_reason": "matched_row:Income tax expense",
+      "needs_multi_role": true,
+      "required_roles": [
+        "doc_06_governance"
+      ],
+      "optional_roles": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "roles_with_metric": [
+        "doc_06_governance"
+      ],
+      "roles_absent_by_design": [
+        "doc_01_business",
+        "doc_evidence_csv"
+      ],
+      "missing_numeric_roles": [],
+      "sufficiency_status": "resolved_single_source_sufficient",
+      "sufficiency_reason": "single_authoritative_source_metric_absent_elsewhere",
+      "aggregation_status": "success",
+      "resolved_value": "1,181",
+      "narrative_parse": false,
+      "recommended_label": "resolved_single_source_sufficient"
+    },
+    {
+      "item_id": "QUANT-0046",
+      "extraction_ok": false,
+      "extraction_reason": "source_not_disclosed_for_metric",
+      "needs_multi_role": true,
+      "required_roles": [
+        "doc_04_hr_safety"
+      ],
+      "optional_roles": [
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "roles_with_metric": [],
+      "roles_absent_by_design": [
+        "doc_04_hr_safety",
+        "doc_05_social",
+        "doc_07_certification",
+        "doc_evidence_csv"
+      ],
+      "missing_numeric_roles": [],
+      "sufficiency_status": "failed",
+      "sufficiency_reason": "no_candidates",
+      "aggregation_status": "failed",
+      "resolved_value": null,
+      "narrative_parse": false,
+      "recommended_label": "not_disclosed_honest_fail"
+    }
+  ],
+  "partial_to_single_source_sufficient": [
+    "QUANT-0208",
+    "QUANT-0210",
+    "QUANT-0209",
+    "QUANT-0213"
+  ],
+  "open_synthesis": false,
+  "benchmark_honesty_note": "quant_aggregation_success chi tang khi co rationale single_source_sufficient; partial giam khi role phu la metric_absent_in_role, khong inflate success vo co.",
+  "conclusion": "partial→single_source_sufficient: 6 cases; quant_success=0.7; chua mo synthesis; khoa demo_company.",
+  "answers": {
+    "partial_were_single_source_sufficient": [
+      "QUANT-0042",
+      "QUANT-0133",
+      "QUANT-0208",
+      "QUANT-0210",
+      "QUANT-0209",
+      "QUANT-0213"
+    ],
+    "metric_absent_cases": [
+      "QUANT-0042",
+      "QUANT-0044",
+      "QUANT-0133",
+      "QUANT-0134",
+      "QUANT-0208",
+      "QUANT-0210",
+      "QUANT-0209",
+      "QUANT-0213",
+      "QUANT-0155",
+      "QUANT-0046"
+    ],
+    "narrative_saved_env_investment": true,
+    "biggest_bottleneck": "extraction",
+    "open_synthesis": false,
+    "stay_on_demo_company": true
+  }
+}

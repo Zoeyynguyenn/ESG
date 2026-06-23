@@ -1,0 +1,23 @@
+{
+  "scope_name": "structured_esg_retrieval_ready",
+  "input_units": 45266,
+  "output_units": 864,
+  "document_count": 9,
+  "by_source_type": {
+    "xml": 266,
+    "pdf": 598
+  },
+  "top_documents": {
+    "02_재무_신용_DART_원본문서_20240531801324_기업지배구조보고서공시_20240531801324_xml": 120,
+    "02_재무_신용_DART_원본문서_20250530800612_기업지배구조보고서공시_20250530800612_xml": 120,
+    "09_기타_에이전트다운로더_IR자료_2021_hanssem_sustain_kr_final_0728_pdf": 120,
+    "09_기타_에이전트다운로더_IR자료_En_2022_hanssem_sustainability_report_pdf": 120,
+    "09_기타_에이전트다운로더_기타_2024_hanssem_sustainability_report_kr_pdf": 120,
+    "09_기타_에이전트다운로더_기타_hanssem_sustainability_report_kr_2025_pdf": 120,
+    "09_기타_에이전트다운로더_기타_2022_hanssem_sustainability_report_kr_pdf": 118,
+    "02_재무_신용_DART_원본문서_20240628801115_지속가능경영보고서등관련사항_자율공시_20240628801115_xml": 13
+  },
+  "company_id": "hanssem",
+  "status": "ok",
+  "output": "data/enterprise_docs/hanssem/corpus_units_filtered.jsonl"
+}

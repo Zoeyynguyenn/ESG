@@ -1,0 +1,8 @@
+{
+  "company_id": "musinsa",
+  "input_units": 348,
+  "output_units": 308,
+  "document_count": 6,
+  "output": "data/enterprise_docs/musinsa/corpus_units_overlap_ready.jsonl",
+  "status": "ok"
+}

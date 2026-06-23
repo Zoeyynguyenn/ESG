@@ -1,0 +1,17 @@
+{
+  "company_id": "goldns",
+  "company_name": "골드앤에스",
+  "doc_title": "2025_재무_OFS.json",
+  "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000991",
+  "file_url": "colletor-ai/output_restart_goldns_20260616/골드앤에스_일반자료_20260616/02_재무_신용/DART_재무/2025_재무_OFS.json",
+  "link_check": "direct filing page",
+  "confidence": "high",
+  "source_kind": "collector_file_reference",
+  "recommended_action": "resolve_local_file_first",
+  "review_reason": "",
+  "domain": "dart.fss.or.kr",
+  "schema": "dart_financial_statement",
+  "record_count": 116,
+  "resolved_local_path": "C:\\Users\\nguye\\Downloads\\data-company\\dataset-excel\\output_restart_goldns_20260616\\output_restart_goldns_20260616\\골드앤에스_일반자료_20260616\\02_재무_신용\\DART_재무\\2025_재무_OFS.json",
+  "artifact_dir": "data\\source_raw\\20260617_goldns_emni_local\\goldns\\local_json\\2025_재무_OFS"
+}

@@ -1,0 +1,190 @@
+{
+  "version": "1.0.0",
+  "description": "Family-level metric aliases, semantic equivalence, value normalization — system-level cross-role extraction",
+  "family_buckets": {
+    "environment_ghg": {
+      "registry_families": ["environment_ghg"]
+    },
+    "governance": {
+      "registry_families": ["governance_narrative", "governance_financial_anchor", "financial_en_bridge"]
+    },
+    "employee_headcount": {
+      "registry_families": ["employee_headcount", "hr_welfare"]
+    }
+  },
+  "metric_item_aliases": {
+    "environment_ghg": {
+      "스코프 3": ["scope 3", "scope3", "scope 3", "스코프(Scope) 3", "value chain", "value chain emissions", "스코프 3"],
+      "탄소중립": ["net zero", "carbon neutral", "2050", "넷제로", "탄소중립", "carbon neutrality"],
+      "총 온실가스": ["total ghg", "total ghg emissions", "scope 1+2", "총 온실가스", "ghg emissions", "tco2e"],
+      "온실가스": ["ghg", "greenhouse gas", "greenhouse gas emissions", "온실가스 관리"]
+    },
+    "governance": {
+      "ESG 평가 등급": ["esg rating", "esg grade", "esg evaluation", "kcg s", "kcgs", "kgcs", "a등급", "등급", "grade obtained"],
+      "이사회 개최": ["board meeting", "board meetings", "directors meeting", "directors met", "이사회 개최", "이사회를 개최"]
+    },
+    "employee_headcount": {
+      "육아휴직": ["parental leave", "육아휴직", "육아 휴직", "육아휴직 사용"],
+      "구성원": ["employees", "total employees", "임직원", "구성원"]
+    }
+  },
+  "cross_role_narrative_patterns": {
+    "environment_ghg": [
+      {
+        "items": ["스코프 3"],
+        "label": "스코프 3",
+        "pattern": "(?:스코프\\s*\\(?\\s*Scope\\s*\\)?|Scope)[^0-9]{0,20}3",
+        "value_group": 0,
+        "qualitative_value": "scope_3",
+        "ignore_case": true
+      },
+      {
+        "items": ["스코프 3"],
+        "label": "스코프 3 expansion",
+        "pattern": "(?:expanded|확대).{0,40}(?:스코프|Scope)\\s*\\(?\\s*3\\s*\\)?",
+        "value_group": 0,
+        "qualitative_value": "scope_3",
+        "ignore_case": true
+      },
+      {
+        "items": ["탄소중립"],
+        "label": "탄소중립",
+        "pattern": "(20\\d{2})\\s*(?:년\\s*)?(?:탄소중립|Net Zero|넷제로|carbon neutral)",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["탄소중립"],
+        "label": "탄소중립 reverse",
+        "pattern": "(?:carbon neutral|Net Zero|탄소중립).{0,30}(20\\d{2})",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["총 온실가스"],
+        "label": "총 온실가스 EN",
+        "pattern": "(?:were|was|is|reported as)\\s+(\\d[\\d,]*)\\s*tCO2e",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["총 온실가스"],
+        "label": "총 온실가스 KR",
+        "pattern": "(?:총\\s*)?온실가스[^\\d]{0,30}(\\d[\\d,.]*)",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["총 온실가스"],
+        "label": "GHG thousand EN",
+        "pattern": "Total GHG[^\\d]{0,40}(\\d+(?:\\.\\d+)?)\\s*thousand",
+        "value_group": 1,
+        "ignore_case": true
+      }
+    ],
+    "governance": [
+      {
+        "items": ["ESG 평가 등급"],
+        "label": "ESG 평가 등급 KR",
+        "pattern": "(?:KGCS|KCGS|ESG)[^\\n]{0,60}['\"]?([A-Z][+]?)[\"']?\\s*등급",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["ESG 평가 등급"],
+        "label": "ESG 평가 등급 EN",
+        "pattern": "(?:KGCS|KCGS|ESG)[^\\n]{0,60}['\"]?([A-Z][+]?)[\"']?\\s*grade",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["ESG 평가 등급"],
+        "label": "ESG grade KR suffix",
+        "pattern": "([A-Z][+]?)[\"']?\\s*등급",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["이사회 개최"],
+        "label": "이사회 개최 KR",
+        "pattern": "(20\\d{2})년\\s*이사회를\\s*(\\d+)\\s*회",
+        "value_group": 2,
+        "ignore_case": true
+      },
+      {
+        "items": ["이사회 개최"],
+        "label": "이사회 개최 KR alt",
+        "pattern": "(\\d+)\\s*회(?:의)?\\s*이사회",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["이사회 개최"],
+        "label": "이사회 개최 EN",
+        "pattern": "board of directors met\\s*(\\d+)\\s*times",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["이사회 개최"],
+        "label": "이사회 개최 EN alt",
+        "pattern": "(\\d+)\\s*times in\\s*(20\\d{2})",
+        "value_group": 1,
+        "ignore_case": true
+      }
+    ],
+    "employee_headcount": [
+      {
+        "items": ["육아휴직"],
+        "label": "육아휴직 numeric",
+        "pattern": "육아휴직[^\\d]{0,20}(\\d+)\\s*명",
+        "value_group": 1,
+        "ignore_case": true
+      },
+      {
+        "items": ["육아휴직"],
+        "label": "육아휴직 not disclosed",
+        "pattern": "육아휴직[^\\n]{0,40}(Not disclosed|not disclosed)",
+        "value_group": 1,
+        "not_disclosed": true,
+        "ignore_case": true
+      }
+    ]
+  },
+    "value_equivalence": {
+    "scope_3": ["scope 3", "scope3", "스코프 3", "스코프(scope) 3", "scope_3"],
+    "net_zero_year_2050": ["2050"],
+    "net_zero_year_2030": ["2030"],
+    "esg_grade_a": ["a", "a등급"],
+    "esg_grade_a_plus": ["a+", "a+등급"],
+    "ghg_emissions_12500": ["12500", "12,500", "12500.0", "12,500.0"]
+  },
+  "semantic_equivalence": {
+    "environment_ghg": {
+      "스코프 3": ["scope 3", "scope3", "value chain", "스코프(Scope) 3", "expanded to scope 3"],
+      "탄소중립": ["net zero", "carbon neutral", "2050", "넷제로"],
+      "총 온실가스": ["total ghg", "ghg emissions", "scope 1+2", "tco2e"]
+    },
+    "governance": {
+      "ESG 평가 등급": ["esg rating", "esg grade", "esg evaluation", "kcg s", "grade obtained"],
+      "이사회 개최": ["board of directors met", "directors meeting", "board meetings", "이사회를 개최"]
+    },
+    "employee_headcount": {
+      "육아휴직": ["parental leave", "육아휴직 사용"]
+    }
+  },
+  "label_match_phrases": {
+    "environment_ghg": {
+      "스코프 3": ["scope 3", "scope3", "스코프 3", "스코프(scope) 3", "value chain", "ghg management"],
+      "탄소중립": ["carbon neutral", "net zero", "탄소중립", "2050"],
+      "총 온실가스": ["total ghg", "ghg emissions", "총 온실가스", "tco2e"]
+    },
+    "governance": {
+      "ESG 평가 등급": ["esg evaluation", "esg rating", "esg grade", "kcg s", "등급", "grade"],
+      "이사회 개최": ["board of directors", "directors met", "이사회", "board meeting"]
+    },
+    "employee_headcount": {
+      "육아휴직": ["육아휴직", "parental leave", "not disclosed"]
+    }
+  }
+}

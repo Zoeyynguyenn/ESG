@@ -1,0 +1,254 @@
+{
+  "gt_audit": {
+    "indexed_lane": "splits/full.jsonl (company_evidence only)",
+    "musinsa_male_workforce_pct": "not_found",
+    "musinsa_female_workforce_pct": "not_found",
+    "golden_set_qt002": "dataset_issue",
+    "ai_extracted_gender_metrics": "taxonomy stubs without numeric values; not indexed",
+    "noise_false_positives": [
+      "여성 패션 잡화 거래액 50%",
+      "여성비율(47.0)",
+      "여성기업"
+    ]
+  },
+  "rows": [
+    {
+      "query": "해당 기업의 남성 비율은 몇 %인가요?",
+      "group": "P",
+      "gt_status": "blocked",
+      "expected_note": "No Musinsa workforce male % in indexed company_evidence",
+      "rewritten": "무신사의 남성 비율은 몇 %인가요?",
+      "bm25_query": "무신사의 남성 비율은 몇 %인가요?",
+      "headcount_path": false,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "rec_21a52266362d5400",
+      "top1_preview": "record_id: rec_21a52266362d5400 doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.4"
+      }
+    },
+    {
+      "query": "해당 기업의 여성 비율은 몇 %인가요?",
+      "group": "P",
+      "gt_status": "blocked",
+      "expected_note": "No Musinsa workforce female % in indexed company_evidence",
+      "rewritten": "무신사의 여성 비율은 몇 %인가요?",
+      "bm25_query": "무신사의 여성 비율은 몇 %인가요?",
+      "headcount_path": false,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "rec_c959827fdefe1ad4",
+      "top1_preview": "record_id: rec_c959827fdefe1ad4 doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "domain_mismatch",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [
+          "여성기업"
+        ],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.4"
+      }
+    },
+    {
+      "query": "무신사의 여성 비율은 몇 퍼센트인가요?",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "QT-002 dataset_issue in golden_set",
+      "rewritten": "무신사의 여성 비율은 몇 퍼센트인가요?",
+      "bm25_query": "무신사의 여성 비율은 몇 퍼센트인가요?",
+      "headcount_path": false,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "rec_1eef8d4dc53ed481",
+      "top1_preview": "record_id: rec_1eef8d4dc53ed481 doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "domain_mismatch",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [
+          "여성기업"
+        ],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.4"
+      }
+    },
+    {
+      "query": "이 회사의 남성 구성 비율은 몇 %인가요?",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "",
+      "rewritten": "무신사의 남성 구성 비율은 몇 %인가요?",
+      "bm25_query": "무신사의 남성 구성 비율은 몇 %인가요?",
+      "headcount_path": false,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "rec_a5cd30158bd3ae20",
+      "top1_preview": "record_id: rec_a5cd30158bd3ae20 doc_id: doc_3bec4ab6cd04402e company: 무신사 year: None sourc",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.4"
+      }
+    },
+    {
+      "query": "무신사의 여성 구성 비중은 얼마인가요?",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "",
+      "rewritten": "무신사의 여성 구성 비중은 얼마인가요?",
+      "bm25_query": "무신사의 여성 구성 비중은 얼마인가요?",
+      "headcount_path": false,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "rec_2a7eca4eb720549a",
+      "top1_preview": "record_id: rec_2a7eca4eb720549a doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [
+          "여성기업"
+        ],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.4"
+      }
+    },
+    {
+      "query": "해당 회사의 성비 중 여성 비율은 몇 %입니까?",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "",
+      "rewritten": "무신사의 성비 중 여성 비율은 몇 %입니까?",
+      "bm25_query": "무신사의 성비 중 여성 비율은 몇 %입니까?",
+      "headcount_path": false,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "rec_1eef8d4dc53ed481",
+      "top1_preview": "record_id: rec_1eef8d4dc53ed481 doc_id: doc_166c6cc07d6bfe6f company: 무신사 year: None sourc",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "domain_mismatch",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [
+          "여성기업"
+        ],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.4"
+      }
+    },
+    {
+      "query": "해당 기업 남녀 비율 중 남성은?",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "",
+      "rewritten": "무신사 남녀 비율 중 남성은?",
+      "bm25_query": "무신사 남녀 비율 중 남성은?",
+      "headcount_path": false,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "",
+      "top1_preview": ".44%에서 4.2%로 올라섰다. 3월에는 상하이에 무신사 스탠다드 매장을 열며 해외 접점도 넓혔다. 남은 숙제도 뚜렷하다. 외형이 24% 커지는 동안 연결 영업",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.4"
+      }
+    },
+    {
+      "query": "무신사 임직원 여성 비율",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "",
+      "rewritten": "무신사 임직원 여성 비율",
+      "bm25_query": "무신사 임직원 여성 비율 인원 구성원 근로자 총직원 전체인원 사람수 직원수 임직원수 종업원 인력규모 고용인원",
+      "headcount_path": true,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "",
+      "top1_preview": "임직원 수가 늘어난 것은 글로벌과 오프라인 등 새로운 사업 확장에 속도를 내고 있기 때문”이라며 “신사업뿐만 아니라 테크 고도화를 위한 투자도 이어가고, 비상경영",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.35"
+      }
+    },
+    {
+      "query": "이 회사 여성 구성원 비율은?",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "",
+      "rewritten": "무신사 여성 구성원 비율은?",
+      "bm25_query": "무신사 여성 구성원 비율은? 인원 직원 임직원 근로자 총직원 전체인원 사람수 직원수 임직원수 종업원 인력규모 고용인원",
+      "headcount_path": true,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "",
+      "top1_preview": "링 디렉터, 쿠팡 출신 엔지니어인 김상범 엔지니어링 담당임원 등이 올해 영입한 임원이다. 특히 테크 인력 확대가 눈에 띈다. 지난 6월까지 영입된 7명의 임원진 ",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.35"
+      }
+    },
+    {
+      "query": "해당 회사의 남성 직원 비율은 몇 %인가요?",
+      "group": "R",
+      "gt_status": "blocked",
+      "expected_note": "",
+      "rewritten": "무신사의 남성 직원 비율은 몇 %인가요?",
+      "bm25_query": "무신사의 남성 직원 비율은 몇 %인가요? 인원 구성원 임직원 근로자 총직원 전체인원 사람수 직원수 임직원수 종업원 인력규모 고용인원",
+      "headcount_path": true,
+      "ratio_path": false,
+      "rerank_status": "jina_api",
+      "top1_record_id": "",
+      "top1_preview": "링 디렉터, 쿠팡 출신 엔지니어인 김상범 엔지니어링 담당임원 등이 올해 영입한 임원이다. 특히 테크 인력 확대가 눈에 띈다. 지난 6월까지 영입된 7명의 임원진 ",
+      "failure": "gt_blocked",
+      "abstain_recommended": true,
+      "no_relevant_evidence": true,
+      "retrieval_confidence": "low",
+      "abstain_reason": "metric_anchor_missing",
+      "abstain_ok": true,
+      "extra": {
+        "ambiguous_top3": [],
+        "retrieve_note": "ok;rerank_jina_api;prefilter=16;blend_alpha=0.35"
+      }
+    }
+  ]
+}

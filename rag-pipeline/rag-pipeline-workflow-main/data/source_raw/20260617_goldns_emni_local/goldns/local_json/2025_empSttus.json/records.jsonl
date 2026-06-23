@@ -1,0 +1,2 @@
+{"record_id": "2025_empSttus.json::1", "schema": "dart_employee_status", "text": "corp=골드앤에스 | division=교육 | sex=남 | regular=12 | contract=- | total=12 | avg_tenure=1.92 | annual_salary=692,606,000 | monthly_salary=46,173,000 | stlm_dt=2025-12-31"}
+{"record_id": "2025_empSttus.json::2", "schema": "dart_employee_status", "text": "corp=골드앤에스 | division=교육 | sex=여 | regular=34 | contract=- | total=34 | avg_tenure=2.56 | annual_salary=1,304,947,000 | monthly_salary=31,827,000 | stlm_dt=2025-12-31"}

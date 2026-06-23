@@ -1,0 +1,4 @@
+﻿company_id,company_name,doc_title,source_url,file_url,link_check,confidence,source_kind,recommended_action,review_reason,domain
+goldns,골드앤에스,제재이력.json,https://www.safetykorea.kr/recall/recallBoard?selectedOption=3&textWord=%EA%B3%A8%EB%93%9C%EC%95%A4%EC%97%90%EC%8A%A4&pageNo=0,,direct official page,high,web_public,crawl_web,,www.safetykorea.kr
+goldns,골드앤에스,제재이력.json,https://www.pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS074&mCode=C020010000&searchCnd=0&searchWrd=%EA%B3%A8%EB%93%9C%EC%95%A4%EC%97%90%EC%8A%A4,,direct official page,high,web_public,crawl_web,,www.pipc.go.kr
+goldns,골드앤에스,제재이력.json,https://case.ftc.go.kr/ocp/co/violtLawList.do,,direct official page,high,web_public,crawl_web,,case.ftc.go.kr

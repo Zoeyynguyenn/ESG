@@ -1,0 +1,78 @@
+# Production stack — frozen 2026-06-10 (Post-C2 pivot, rerank none)
+# Superseded by production_openai_hybrid_qdrant_jina.yaml (Jina gate pass hit 1.0).
+
+production_id: e2e_openai_hybrid_qdrant_generative
+frozen_at: "2026-06-10"
+status: superseded
+superseded_by: configs/production_openai_hybrid_qdrant_jina.yaml
+supersedes: configs/production_openai_hybrid_qdrant_flashrank.yaml
+gate_ablation: configs/benchmark_exportjson_openai_flashrank_gate.yaml
+description: >
+  OpenAI + hybrid_dense_bm25 + Qdrant + gpt-4o-mini, rerank none.
+  Gate 한샘 10 cau: none composite 0.84 vs FlashRank 0.79, cung hit/cit 1.0.
+cache_root: artifacts/benchmark_cache
+
+stack:
+  lane: company_export_json_full
+  company_filter: 넥스트아이_dataset_package_20260528T091409
+  corpus_version: nexteye_esg_v1_1_1_openai_full_e2e
+  parser_version: jsonl_v1
+  corpus_ratio: 1.0
+  chunking_profile: section_based
+  chunk_size: 800
+  chunk_overlap: 120
+  embedding_model: openai:text-embedding-3-small
+  openai_embed_batch: 32
+  retrieval_mode: hybrid_dense_bm25
+  reranker: none
+  vector_store: qdrant
+  candidate_pool: 64
+  top_k: 4
+  benchmark_language: ko
+  answer_mode: generative
+  llm_provider: openai_api
+  llm_model: gpt-4o-mini
+
+eval:
+  full_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_dev_ko.md
+  smoke_set_path: .rag/rag-pipeline-practice/eval_set_company_export_json_smoke_ci_ko.md
+
+smoke_ci:
+  question_ids:
+    - CE-J02   # governance hit/citation
+    - CE-J03   # governance dart corp code
+    - CE-J06   # manifest export type
+    - CE-J07   # manifest version
+    - CE-J16   # insufficient handling
+  per_question:
+    CE-J02:
+      require: [retrieval_hit, citation_correct]
+    CE-J03:
+      require: [retrieval_hit, citation_correct, answer_correct]
+    CE-J06:
+      require: [retrieval_hit, citation_correct]
+      waive_answer: true
+      note: "J06 generative follow-up ticket P1-J06"
+    CE-J07:
+      require: [retrieval_hit, citation_correct, answer_correct]
+    CE-J16:
+      require: [insufficient_ok]
+
+monitoring:
+  thresholds:
+    retrieval_hit_rate_min: 1.0
+    citation_correctness_min: 1.0
+    insufficient_smoke_min: 1.0
+    answer_correctness_min: 0.6
+    answer_correctness_waived_ids:
+      - CE-J06
+    query_time_avg_max_sec: 8.0
+  alert_on_regression:
+    - retrieval_hit_rate
+    - citation_correctness
+    - insufficient_smoke_min
+
+baseline_reference:
+  gate: P0.1
+  generative_answer_correct_full_20: 12
+  report: reports/openai_generative_results_summary.md

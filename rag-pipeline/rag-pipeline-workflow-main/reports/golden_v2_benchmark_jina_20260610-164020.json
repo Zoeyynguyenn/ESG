@@ -1,0 +1,1128 @@
+{
+  "aggregate": {
+    "total_questions": 87,
+    "retrieval_hit_rate": 1.0,
+    "citation_correctness": 1.0,
+    "answer_correctness": 0.3678,
+    "query_time_avg": 3.5852,
+    "latency_total_sec": 415.6
+  },
+  "cases": [
+    {
+      "run_id": "golden_v2_hanssem_20260610-164020",
+      "config_id": "golden_v2_jina_hanssem",
+      "dataset_lane": "company_export_json_full",
+      "status": "success",
+      "error_reason": "",
+      "error_code": "",
+      "ingest_status": "reused_index_cache",
+      "cache_key": "p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=golden_v2_per_record_chunks__lane=company_export_json_full__vs=qdrant__company=b9e6339843",
+      "chunking": "section_based",
+      "embedding_model": "openai:text-embedding-3-small",
+      "retrieval_mode": "hybrid_dense_bm25_rerank",
+      "reranker": "jina_api",
+      "extraction_mode": "heuristic_v4",
+      "verification_mode": "v6_loop_mixed_policy_boost",
+      "benchmark_mode": "full_pipeline",
+      "benchmark_kind": "full_pipeline",
+      "answer_mode": "generative",
+      "llm_provider": "openai_api",
+      "embedding_model_effective": "openai:text-embedding-3-small",
+      "retrieval_mode_effective": "hybrid_dense_bm25_rerank",
+      "reranker_effective": "true",
+      "candidate_pool": 64,
+      "vector_store": "qdrant",
+      "company_filter": "한샘_dataset_package_20260608T042739",
+      "qdrant_status": "enabled",
+      "index_build_time": 0.0,
+      "query_time_avg": 4.167,
+      "reranker_latency": "",
+      "latency": 117.15,
+      "started_at": "2026-06-10T16:40:20",
+      "ended_at": "2026-06-10T16:44:26",
+      "failure_audit_samples": [
+        {
+          "question_id": "GV2-001",
+          "question": "㈜한샘의 지속가능경영 보고서는 몇 번째 발간되는 것인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_ea632bae09735059",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-002",
+          "question": "한샘의 지속가능경영 보고서는 몇 번째 발간인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_fcab1197e3c245b6",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-003",
+          "question": "한샘이 발간한 지속가능경영보고서는 몇 번째인지, 그 이유는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_adf521a49feec751",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-005",
+          "question": "한샘의 시장 가치는 얼마인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_aed5e8dc6d6699d8",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-006",
+          "question": "한샘은 언제부터 지속가능경영보고서를 발간하고 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_89c6e8dd36c4db22",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-007",
+          "question": "한샘은 언제부터 지속가능경영보고서를 발간하고 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_2ac36b6aa8233480",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-008",
+          "question": "한샘은 지속가능경영보고서를 발간하기 시작한 해와 그 이후의 ESG 경영 활동에 대해 설명해 주실 수 있습니까?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_66100907c00656ec",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-009",
+          "question": "한샘이 발간한 지속가능경영보고서는 어떤 내용을 담고 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_86c98b945fc03e6d",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-010",
+          "question": "한샘이 발간한 '2025 지속가능경영보고서'는 어떤 ESG 경영 성과와 청사진을 포함하고 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_ce1fb6e4651850d3",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-011",
+          "question": "한샘이 ESG 지속가능경영보고서를 발간한 날짜는 언제인가요? 이 정보를 통해 한샘의 ESG 경영 활동의 지속성을 어떻게 알 수 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_ba9d092227fde816",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-012",
+          "question": "한샘은 언제 ESG 경영 보고서를 발간했나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_acac077bde904698",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-013",
+          "question": "한샘이 ESG 경영 보고서를 발간한 날짜와 그 내용은 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608T042739/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/한샘_dataset_package_20260608t042739/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_1739ded4980a9b9b",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        }
+      ],
+      "retrieval_hit_rate": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 0.9655,
+      "answer_correctness": 0.6207,
+      "insufficient_information_handling": 1.0,
+      "pass_rate": 0.6207,
+      "partial_rate": 0.3793,
+      "fail_rate": 0.0,
+      "reranker_effective_model": "jina-reranker-v3",
+      "field_coverage": 0.2857,
+      "verified_rate": 0.1786,
+      "insufficient_rate": 0.7143,
+      "conflict_rate": 0.0,
+      "priority_field_completion": 0.5714,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "model_judge": "",
+      "ragas_status": "skipped",
+      "ragas_reason": "stagewise_dev_internal_metrics_only",
+      "company": "한샘",
+      "package": "한샘_dataset_package_20260608T042739",
+      "n_questions": 29,
+      "eval_path": "data\\golden_set\\v2\\step6_gold\\eval_by_company\\eval_golden_v2_hanssem_ko.md"
+    },
+    {
+      "run_id": "golden_v2_raysolution_20260610-164020",
+      "config_id": "golden_v2_jina_raysolution",
+      "dataset_lane": "company_export_json_full",
+      "status": "success",
+      "error_reason": "",
+      "error_code": "",
+      "ingest_status": "reused_index_cache",
+      "cache_key": "p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=golden_v2_per_record_chunks__lane=company_export_json_full__vs=qdrant__company=f0873784b4",
+      "chunking": "section_based",
+      "embedding_model": "openai:text-embedding-3-small",
+      "retrieval_mode": "hybrid_dense_bm25_rerank",
+      "reranker": "jina_api",
+      "extraction_mode": "heuristic_v4",
+      "verification_mode": "v6_loop_mixed_policy_boost",
+      "benchmark_mode": "full_pipeline",
+      "benchmark_kind": "full_pipeline",
+      "answer_mode": "generative",
+      "llm_provider": "openai_api",
+      "embedding_model_effective": "openai:text-embedding-3-small",
+      "retrieval_mode_effective": "hybrid_dense_bm25_rerank",
+      "reranker_effective": "true",
+      "candidate_pool": 64,
+      "vector_store": "qdrant",
+      "company_filter": "레이시온_dataset_package_20260608T055801",
+      "qdrant_status": "enabled",
+      "index_build_time": 0.0,
+      "query_time_avg": 3.372,
+      "reranker_latency": "",
+      "latency": 166.19,
+      "started_at": "2026-06-10T16:44:27",
+      "ended_at": "2026-06-10T16:49:03",
+      "failure_audit_samples": [
+        {
+          "question_id": "GV2-033",
+          "question": "레이시온의 감사보고서는 언제 제출되었나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_8c1f92062aa72144",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-034",
+          "question": "민원서비스에서 어떤 정보를 신청할 수 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_3e74cbf0392f892b",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-035",
+          "question": "여수항의 일반현황은 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_a0562eb6dcc8b62e",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-036",
+          "question": "공사는 ESG경영 활동에 대한 이해관계자의 관심 사항을 어떻게 파악하고 있습니까?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_40b94d178a66babb",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-037",
+          "question": "온라인 민원신청은 어떻게 하나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_3cad6b2bbd4ab446",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-038",
+          "question": "정보공개제도는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_61bc03594c440dcd",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-039",
+          "question": "정보공개제도는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_17348d0b03ca0375",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-040",
+          "question": "여수광양항만공사에서 제공하는 정보공개제도는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_29aa4eae07aa4eb5",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-041",
+          "question": "최고경영자의 인사말은 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_a94dfee9e98416f6",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-042",
+          "question": "여수광양항만공사의 정보공개제도는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_dcb75421507d0e47",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-043",
+          "question": "여수광양항만공사에서 제공하는 정보공개제도는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_660868aebfafbdae",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-044",
+          "question": "현대트랜시스는 언제까지 모든 사업장에서 재생에너지를 100% 사용할 계획인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608T055801/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/레이시온_dataset_package_20260608t055801/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_823a35d2b3f3713b",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        }
+      ],
+      "retrieval_hit_rate": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 0.8,
+      "answer_correctness": 0.2333,
+      "insufficient_information_handling": 1.0,
+      "pass_rate": 0.2333,
+      "partial_rate": 0.7667,
+      "fail_rate": 0.0,
+      "reranker_effective_model": "jina-reranker-v3",
+      "field_coverage": 0.25,
+      "verified_rate": 0.1786,
+      "insufficient_rate": 0.75,
+      "conflict_rate": 0.0,
+      "priority_field_completion": 0.5714,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "model_judge": "",
+      "ragas_status": "skipped",
+      "ragas_reason": "stagewise_dev_internal_metrics_only",
+      "company": "레이시온",
+      "package": "레이시온_dataset_package_20260608T055801",
+      "n_questions": 30,
+      "eval_path": "data\\golden_set\\v2\\step6_gold\\eval_by_company\\eval_golden_v2_raysolution_ko.md"
+    },
+    {
+      "run_id": "golden_v2_musinsa_20260610-164020",
+      "config_id": "golden_v2_jina_musinsa",
+      "dataset_lane": "company_export_json_full",
+      "status": "success",
+      "error_reason": "",
+      "error_code": "",
+      "ingest_status": "reused_index_cache",
+      "cache_key": "p=jsonl_v1__c=section_based_800_120__e=openai_text-embedding-3-small__d=golden_v2_per_record_chunks__lane=company_export_json_full__vs=qdrant__company=efb99cde07",
+      "chunking": "section_based",
+      "embedding_model": "openai:text-embedding-3-small",
+      "retrieval_mode": "hybrid_dense_bm25_rerank",
+      "reranker": "jina_api",
+      "extraction_mode": "heuristic_v4",
+      "verification_mode": "v6_loop_mixed_policy_boost",
+      "benchmark_mode": "full_pipeline",
+      "benchmark_kind": "full_pipeline",
+      "answer_mode": "generative",
+      "llm_provider": "openai_api",
+      "embedding_model_effective": "openai:text-embedding-3-small",
+      "retrieval_mode_effective": "hybrid_dense_bm25_rerank",
+      "reranker_effective": "true",
+      "candidate_pool": 64,
+      "vector_store": "qdrant",
+      "company_filter": "무신사_dataset_package_20260608T092823",
+      "qdrant_status": "enabled",
+      "index_build_time": 0.0,
+      "query_time_avg": 3.211,
+      "reranker_latency": "",
+      "latency": 132.25,
+      "started_at": "2026-06-10T16:49:04",
+      "ended_at": "2026-06-10T16:52:53",
+      "failure_audit_samples": [
+        {
+          "question_id": "GV2-068",
+          "question": "무신사의 주요사항보고서는 어떤 날짜에 접수되었으며, 접수번호는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/manifest.json",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/manifest.json",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_178e8f363d6da94a",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-069",
+          "question": "2025 무신사 임팩트 리포트는 언제 작성되었나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_93859ee4d0b90c4b",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-070",
+          "question": "무신사의 2025 임팩트 리포트가 공시된 날짜는 무엇인가요? 그리고 이 리포트의 파일 크기는 얼마인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_dc18be3272f4012f",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-071",
+          "question": "무신사의 임팩트 리포트는 언제 공시되었나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_e629a394a7ccc338",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-072",
+          "question": "무신사의 임팩트 리포트가 작성된 날짜는 어떤 정보를 바탕으로 알 수 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_3ee4b3161961b0cd",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-073",
+          "question": "무신사의 임팩트 리포트는 언제 발표되었나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_ee1596734ad3d6bc",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-074",
+          "question": "무신사의 ESG 임팩트 리포트는 언제 발행되었나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_660f7d466f6a678a",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-075",
+          "question": "무신사의 지속가능경영보고서를 확인할 수 있는 방법은 무엇인가요? 그리고 이 보고서는 어디에서 찾을 수 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_cd469b0fcf513be5",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-076",
+          "question": "무신사는 어떤 ESG 리포트를 발간했나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_753b38dd437e46d0",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-077",
+          "question": "무신사가 발간한 2024 무신사 임팩트 리포트에는 어떤 내용이 포함되어 있나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_609ec5bf54523097",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-078",
+          "question": "무신사는 어떤 ESG 리포트를 발간했나요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_cd9b913a55b40918",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        },
+        {
+          "question_id": "GV2-079",
+          "question": "무신사가 발간한 '2024 무신사 임팩트 리포트'는 어떤 주요 내용을 포함하고 있으며, 이 리포트가 외부 이해관계자를 대상으로 발간된 이유는 무엇인가요?",
+          "expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/records/company_evidence.jsonl",
+          "retrieval_hit": true,
+          "citation_correct": true,
+          "top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608T092823/splits/full.jsonl"
+          ],
+          "normalized_expected_source": "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/records/company_evidence.jsonl",
+          "normalized_top_sources": [
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl",
+            "data/rag_dataset/05_company_export_json/무신사_dataset_package_20260608t092823/splits/full.jsonl"
+          ],
+          "expected_record_id": "rec_fdca0e685d50348d",
+          "expected_doc_id": "",
+          "match_reason": "package_split_match",
+          "fail_kind": "ok",
+          "retrieval_mode": "hybrid_dense_bm25_rerank",
+          "pool": 64
+        }
+      ],
+      "retrieval_hit_rate": 1.0,
+      "citation_correctness": 1.0,
+      "groundedness": 0.75,
+      "answer_correctness": 0.25,
+      "insufficient_information_handling": 1.0,
+      "pass_rate": 0.25,
+      "partial_rate": 0.75,
+      "fail_rate": 0.0,
+      "reranker_effective_model": "jina-reranker-v3",
+      "field_coverage": 0.25,
+      "verified_rate": 0.2143,
+      "insufficient_rate": 0.75,
+      "conflict_rate": 0.0,
+      "priority_field_completion": 0.5714,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "model_judge": "",
+      "ragas_status": "skipped",
+      "ragas_reason": "stagewise_dev_internal_metrics_only",
+      "company": "무신사",
+      "package": "무신사_dataset_package_20260608T092823",
+      "n_questions": 28,
+      "eval_path": "data\\golden_set\\v2\\step6_gold\\eval_by_company\\eval_golden_v2_musinsa_ko.md"
+    }
+  ]
+}

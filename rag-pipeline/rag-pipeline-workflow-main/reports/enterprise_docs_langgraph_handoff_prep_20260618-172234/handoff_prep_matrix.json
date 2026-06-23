@@ -1,0 +1,781 @@
+{
+  "by_company": {
+    "demo_company": {
+      "total_cases": 18,
+      "promoted_count": 6,
+      "handoff_allowed_for_preparation": 6,
+      "blocked_count": 12,
+      "review_required_count": 0,
+      "prep_status_distribution": {
+        "handoff_allowed_for_preparation": 6,
+        "handoff_blocked": 12
+      },
+      "review_owner_distribution": {
+        "None": 6,
+        "blocked_no_owner": 12
+      }
+    },
+    "hanssem": {
+      "total_cases": 16,
+      "promoted_count": 6,
+      "handoff_allowed_for_preparation": 6,
+      "blocked_count": 10,
+      "review_required_count": 0,
+      "prep_status_distribution": {
+        "handoff_blocked": 10,
+        "handoff_allowed_for_preparation": 6
+      },
+      "review_owner_distribution": {
+        "blocked_no_owner": 10,
+        "None": 6
+      }
+    },
+    "musinsa": {
+      "total_cases": 11,
+      "promoted_count": 4,
+      "handoff_allowed_for_preparation": 4,
+      "blocked_count": 7,
+      "review_required_count": 0,
+      "prep_status_distribution": {
+        "handoff_blocked": 7,
+        "handoff_allowed_for_preparation": 4
+      },
+      "review_owner_distribution": {
+        "blocked_no_owner": 7,
+        "None": 4
+      }
+    }
+  },
+  "by_family": {
+    "employee": {
+      "preparation_ready_count": 1,
+      "blocked_count": 2,
+      "review_required_count": 0,
+      "promoted_count": 1,
+      "dominant_blocker": "qualitative_kind",
+      "dominant_review_owner": "unset",
+      "blocker_breakdown": {
+        "qualitative_kind": 2,
+        "handoff_blocked_state:not_ready_for_synthesis": 2,
+        "missing_predicted_value": 2,
+        "evidence_bundle_insufficient": 2,
+        "confidence_below_min": 2
+      },
+      "review_owner_breakdown": {
+        "unset": 2,
+        "None": 1
+      }
+    },
+    "employee_headcount": {
+      "preparation_ready_count": 2,
+      "blocked_count": 2,
+      "review_required_count": 0,
+      "promoted_count": 2,
+      "dominant_blocker": "missing_predicted_value",
+      "dominant_review_owner": "RAG",
+      "blocker_breakdown": {
+        "missing_predicted_value": 2,
+        "evidence_bundle_insufficient": 2,
+        "confidence_below_min": 2
+      },
+      "review_owner_breakdown": {
+        "RAG": 2,
+        "None": 2
+      }
+    },
+    "environment_ghg": {
+      "preparation_ready_count": 7,
+      "blocked_count": 7,
+      "review_required_count": 0,
+      "promoted_count": 7,
+      "dominant_blocker": "missing_predicted_value",
+      "dominant_review_owner": "None",
+      "blocker_breakdown": {
+        "qualitative_kind": 2,
+        "handoff_blocked_state:not_ready_for_synthesis": 2,
+        "missing_predicted_value": 5,
+        "evidence_bundle_insufficient": 5,
+        "confidence_below_min": 5
+      },
+      "review_owner_breakdown": {
+        "None": 7,
+        "unset": 2,
+        "RAG": 5
+      }
+    },
+    "financial": {
+      "preparation_ready_count": 1,
+      "blocked_count": 0,
+      "review_required_count": 0,
+      "promoted_count": 1,
+      "dominant_blocker": null,
+      "dominant_review_owner": "None",
+      "blocker_breakdown": {},
+      "review_owner_breakdown": {
+        "None": 1
+      }
+    },
+    "governance": {
+      "preparation_ready_count": 5,
+      "blocked_count": 13,
+      "review_required_count": 0,
+      "promoted_count": 5,
+      "dominant_blocker": "missing_predicted_value",
+      "dominant_review_owner": "RAG",
+      "blocker_breakdown": {
+        "qualitative_kind": 4,
+        "handoff_blocked_state:not_ready_for_synthesis": 4,
+        "missing_predicted_value": 9,
+        "evidence_bundle_insufficient": 9,
+        "confidence_below_min": 9
+      },
+      "review_owner_breakdown": {
+        "unset": 4,
+        "None": 5,
+        "RAG": 9
+      }
+    },
+    "other": {
+      "preparation_ready_count": 0,
+      "blocked_count": 5,
+      "review_required_count": 0,
+      "promoted_count": 0,
+      "dominant_blocker": "qualitative_kind",
+      "dominant_review_owner": "unset",
+      "blocker_breakdown": {
+        "qualitative_kind": 5,
+        "handoff_blocked_state:not_ready_for_synthesis": 5,
+        "missing_predicted_value": 5,
+        "evidence_bundle_insufficient": 5,
+        "confidence_below_min": 5
+      },
+      "review_owner_breakdown": {
+        "unset": 5
+      }
+    }
+  },
+  "by_blocker_category": {
+    "synthesis_blocker": 26,
+    "package_blocker": 46,
+    "confidence_blocker": 23
+  },
+  "by_prep_status": {
+    "handoff_blocked": 29,
+    "handoff_allowed_for_preparation": 16
+  },
+  "cases": [
+    {
+      "question_id": "HOLDOUT-001",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-002",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-003",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-004",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-005",
+      "company_id": "hanssem",
+      "family_id": "employee",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-006",
+      "company_id": "hanssem",
+      "family_id": "other",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-007",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-008",
+      "company_id": "hanssem",
+      "family_id": "other",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-009",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-010",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-011",
+      "company_id": "hanssem",
+      "family_id": "employee",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-012",
+      "company_id": "hanssem",
+      "family_id": "other",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-013",
+      "company_id": "hanssem",
+      "family_id": "employee_headcount",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-014",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-015",
+      "company_id": "hanssem",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-016",
+      "company_id": "hanssem",
+      "family_id": "governance",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-M001",
+      "company_id": "musinsa",
+      "family_id": "other",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-M002",
+      "company_id": "musinsa",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-M003",
+      "company_id": "musinsa",
+      "family_id": "financial",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-M004",
+      "company_id": "musinsa",
+      "family_id": "employee",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-M005",
+      "company_id": "musinsa",
+      "family_id": "other",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-M006",
+      "company_id": "musinsa",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-M007",
+      "company_id": "musinsa",
+      "family_id": "employee_headcount",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-M008",
+      "company_id": "musinsa",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": null,
+      "promoted": false,
+      "readiness_state_after": "not_ready_for_synthesis",
+      "handoff_blockers": [
+        "qualitative_kind",
+        "handoff_blocked_state:not_ready_for_synthesis",
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-M009",
+      "company_id": "musinsa",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "HOLDOUT-M010",
+      "company_id": "musinsa",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "HOLDOUT-M011",
+      "company_id": "musinsa",
+      "family_id": "employee_headcount",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0001",
+      "company_id": "demo_company",
+      "family_id": "employee_headcount",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0146",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "QUANT-0147",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0151",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0200",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0215",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "QUANT-0219",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "QUANT-0224",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "QUANT-0207",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0144",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_allowed_for_preparation",
+      "handoff_allowed_for_preparation": true,
+      "needs_review_by": "None",
+      "promoted": true,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0220",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "QUANT-0133",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0134",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "retrieval_ready",
+      "handoff_blockers": [
+        "missing_predicted_value",
+        "evidence_bundle_insufficient",
+        "confidence_below_min"
+      ]
+    },
+    {
+      "question_id": "QUANT-0208",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0210",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0209",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0213",
+      "company_id": "demo_company",
+      "family_id": "governance",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    },
+    {
+      "question_id": "QUANT-0155",
+      "company_id": "demo_company",
+      "family_id": "environment_ghg",
+      "prep_status": "handoff_blocked",
+      "handoff_allowed_for_preparation": false,
+      "needs_review_by": "RAG",
+      "promoted": false,
+      "readiness_state_after": "single_source_sufficient",
+      "handoff_blockers": []
+    }
+  ]
+}
