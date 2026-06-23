@@ -1,0 +1,25 @@
+{
+  "artifact_kind": "synthetic_answerability_eval",
+  "date": "2026-06-22",
+  "generator": "scripts/eval_answerability_suite.py",
+  "seed": 7,
+  "warning": "Synthetic eval (self-generated). Easy tier passes by construction so it only validates the mechanism across many family/metric combinations. The real signal is the adversarial tier (known failure modes) and abstain_safety_rate. A meaningful headline accuracy still requires REAL company questions.",
+  "total": 201,
+  "overall_accuracy": 0.8557,
+  "by_tier": {
+    "easy": {"correct": 172, "total": 172, "accuracy": 1.0},
+    "adversarial": {"correct": 0, "total": 29, "accuracy": 0.0}
+  },
+  "abstain_safety_rate": 0.9431,
+  "confusion_expected_predicted": {
+    "answerable": {"answerable": 63, "no_information": 15},
+    "no_information": {"no_information": 49, "out_of_scope": 7, "answerable": 7},
+    "out_of_scope": {"out_of_scope": 60}
+  },
+  "tier_composition": {
+    "easy_answerable": "non-scope item present + scope token match",
+    "easy_no_information": "recognized family, value absent",
+    "easy_out_of_scope": "non-ESG questions",
+    "adversarial": "no-keyword ESG, token-present-no-value (abstain-unsafe), phrasing mismatch"
+  }
+}

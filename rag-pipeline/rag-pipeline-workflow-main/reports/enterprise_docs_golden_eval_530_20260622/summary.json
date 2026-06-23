@@ -1,0 +1,32 @@
+{
+  "artifact_kind": "real_golden_eval",
+  "date": "2026-06-22",
+  "source_workbook": "goldns_emni_rag_vs_gold_comparison.xlsx",
+  "scope": "RAG vs Gold trên golden set thật (goldns + emni). Đo toàn bộ pipeline RAG (rag_predicted vs gold_answer_canonical), không phải riêng heuristic answerability mới thêm.",
+  "total_questions": 530,
+  "gold_partition": {"abstain_gold": 463, "answerable_gold": 67},
+  "answer_correct_total": "530/530 (100%)",
+  "green_total": "524/530 (98.9%)",
+  "answer_vs_abstain_decision_correct": "530/530 (100%)",
+  "abstain_safety_real": "100% — không câu abstain_gold nào bị trả lời bừa",
+  "abstain_confusion_gold_x_predicted_abstain": {
+    "abstain_gold": {"predicted_abstain_true": 463},
+    "answerable_gold": {"predicted_abstain_false": 67}
+  },
+  "by_company": {
+    "goldns": {"total": 251, "answerable_gold": 24, "abstain_gold": 227, "green": 248, "answer_correct": 251},
+    "emni": {"total": 279, "answerable_gold": 43, "abstain_gold": 236, "green": 276, "answer_correct": 279}
+  },
+  "non_green_rows": [
+    {"question_id": "goldns-0214", "status": "SEMANTIC_AMBIGUITY", "note": "유보된 경제가치 — đáp án đúng, cần SME audit"},
+    {"question_id": "goldns-0237", "status": "COVERAGE_GAP", "note": "공정거래 소송 건수 — đáp án đúng nhưng top1 doc sai, thiếu nguồn FTC raw"},
+    {"question_id": "goldns-0238", "status": "COVERAGE_GAP", "note": "공정거래 위반 총 건수 — đáp án đúng nhưng top1 doc sai, thiếu nguồn FTC raw"},
+    {"question_id": "emni-0236", "status": "SEMANTIC_AMBIGUITY", "note": "유보된 경제가치 — cần SME audit"},
+    {"question_id": "emni-0237", "status": "SEMANTIC_AMBIGUITY", "note": "유보된 경제가치 — ambiguity label workbook vs account OFS"},
+    {"question_id": "emni-0238", "status": "SEMANTIC_AMBIGUITY", "note": "유보된 경제가치 — cần SME audit"}
+  ],
+  "caveats": [
+    "Set lệch mạnh về abstain (463 abstain_gold / 67 answerable_gold) — phản ánh phần lớn metric công ty không công bố.",
+    "Đây là kết quả pipeline RAG hiện có (anh leader), dùng làm bằng chứng thật cho trục answer/abstain; heuristic answerability mới chỉ là lớp chẩn đoán bổ sung."
+  ]
+}
