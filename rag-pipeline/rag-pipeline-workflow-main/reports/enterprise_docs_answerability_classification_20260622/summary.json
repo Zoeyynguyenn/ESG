@@ -1,0 +1,36 @@
+{
+  "artifact": "reports/enterprise_docs_answerability_classification_20260622",
+  "date": "2026-06-22",
+  "purpose": "Tách câu hỏi không rõ / lạc đề / không có thông tin khỏi corpus_limited và system_gap",
+  "regression_gate_unchanged": {
+    "cross_role_extraction_alignment_rate": 1.0,
+    "cross_doc_equivalence_match_rate": 1.0,
+    "evidence_fusion_success_rate": 1.0,
+    "conflict_classification_accuracy": 1.0,
+    "single_source_to_multi_source_promotion_rate": 1.0,
+    "note": "Answerability cases do NOT carry the five regression signals, so the gate is unaffected."
+  },
+  "answerability_metrics": {
+    "case_count": 18,
+    "answerability_accuracy": 0.8333,
+    "abstain_safety_rate": 0.9091,
+    "by_expected_predicted": {
+      "answerable": {"answerable": 6, "no_information": 1},
+      "out_of_scope": {"out_of_scope": 5},
+      "no_information": {"no_information": 4, "out_of_scope": 1, "answerable": 1}
+    }
+  },
+  "eval_set_composition": {
+    "answerable": 6,
+    "out_of_scope": 5,
+    "no_information": 4,
+    "adversarial_known_limits": 3,
+    "note": "18 case tự xây gồm cả case khó. Đây là eval khởi đầu (smoke + adversarial), chưa phải trên dữ liệu thật."
+  },
+  "known_limitations": [
+    {"case_id": "ADV-NO-KEYWORD", "issue": "Câu ESG không có từ khóa -> routing trả None -> bị xếp out_of_scope thay vì no_information (phụ thuộc từ khóa)."},
+    {"case_id": "ADV-TOKEN-FALSEPOS", "issue": "Corpus nhắc token 'Scope 3' nhưng không có giá trị -> bị xếp answerable (so token bỏ qua việc có giá trị thật). Đây là case abstain-unsafe."},
+    {"case_id": "ADV-PHRASING", "issue": "Giá trị có nhưng diễn đạt khác ('여성 비중' vs 'item 여성 임원 비율') -> no_information thay vì answerable (so khớp item theo chuỗi chính xác)."}
+  ],
+  "next_step": "Khi có dữ liệu thật: thay heuristic so-token bằng kiểm tra có giá trị số gắn với metric; bổ sung từ điển family rộng hơn; mở rộng eval bằng câu hỏi thật."
+}
